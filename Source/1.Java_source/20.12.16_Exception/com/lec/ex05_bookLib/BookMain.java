@@ -11,7 +11,7 @@ public class BookMain
 	{
 		BookLib[] books = 
 			{
-					new BookLib("890ㄱ-01", "java", "홍길동"),
+				new BookLib("890ㄱ-01", "java", "홍길동"),
 				new BookLib("890ㄱ-02", "dbms", "홍신촌"),
 				new BookLib("890ㄱ-03", "html", "김신춘"),
 				new BookLib("890ㄱ-04", "hadoop", "이마포"),
