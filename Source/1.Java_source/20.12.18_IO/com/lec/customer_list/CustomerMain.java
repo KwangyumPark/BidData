@@ -43,9 +43,7 @@ public class CustomerMain {
 			address = sc.nextLine();
 			
 			if(birth.equals(todayStr)) {
-				
 				System.out.println(name + "\t" + "회원님의 생일을 축하합니다.");
-				
 			}
 			
 			customerlist.add(new Customer(name, phone, birth, address));
@@ -62,9 +60,7 @@ public class CustomerMain {
 				for(Customer customer : customerlist)
 				{
 					byte[] bs = customer.toString().getBytes();
-					
 					System.out.println(customer);
-					
 					os.write(bs);
 				}
 				
@@ -73,7 +69,9 @@ public class CustomerMain {
 				System.out.println("회원 리스트를 찾지 못했습니다." + e.getMessage());
 				
 			} catch (IOException e) {
+				
 				System.out.println("회원 리스트를 사용할 수 없습니다." + e.getMessage());
+				
 			} finally {
 				try {
 					if(os != null) os.close();

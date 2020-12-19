@@ -1,4 +1,1 @@
-Hong	010-4545-7890	12-18생	Seoul Mapogu
-Kim	123-4445-6987	01-23생	Seoul Jongrogu
-Lee	010-4545-7878	02-22생	Seoul Eunpyunggu
-Park	123-4545-7778	08-23생	Goyangsi donaedong
+이름:Kim	 전화번호:010-7897-8989	 생일:12-17	 주소:Seoul이름:Park	 전화번호:010-4567-8912	 생일:03-17	 주소:Seoul이름:Lee	 전화번호:010-2222-3333	 생일:04-15	 주소:Kyunggi

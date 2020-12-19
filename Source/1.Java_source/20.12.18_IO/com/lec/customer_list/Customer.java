@@ -12,9 +12,9 @@ public class Customer {
 
 	public Customer(String name, String phone, String birth, String address) {
 		
-		this.name = name;
-		this.phone = phone;
-		this.birth = birth;
+		this.name    = name;
+		this.phone   = phone;
+		this.birth   = birth;
 		this.address = address;
 		
 	}// main
@@ -22,7 +22,7 @@ public class Customer {
 	@Override
 	public String toString() {
 		
-		return name +"\t"+ phone + "\t"+ birth + "생\t"+ address + "\r\n";
+		return "이름:"+name+"\t 전화번호:"+phone+"\t 생일:"+birth+"\t 주소:"+ address+"\r";
 	
 	}// String
 	
