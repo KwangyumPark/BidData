@@ -1,0 +1,212 @@
+﻿
+/*전체 레이아웃 setting*/
+
+@font-face {
+    font-family: 'Amarante';
+    src: url('../font/Amarante-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman','Amarante', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*header part*/
+
+#header_nav {
+    width: 100%; 
+    min-width: 1000px;
+    height: 30px; 
+    line-height: 30px;
+    background-color: darkmagenta;
+    overflow: hidden;
+}
+
+#header_nav a {
+    color: white;
+    font-size: 20px;
+}
+
+#header_nav .gnb {
+    width: 700px; 
+    margin-left: 3px; 
+}
+
+#header_nav .gnb ul li {
+    margin-right: 10px; 
+    float: left;
+}
+
+#header_nav .survivalFootball {
+    float: right; 
+    margin-right: 3px;
+    font-size: 0.9em;
+}
+
+#header_nav .survivalFootball img {
+    width: 15px;
+}
+
+#header_info {
+    width: 1000px; 
+    margin: 0 auto; 
+    overflow: hidden;
+}
+
+#header_info .logo { 
+    margin: 10px; 
+    float: left;
+}
+
+#header_info .search { 
+    float: left;
+}
+
+#header_info .search input[type='text'] {
+    width: 400px; 
+    font-size: 20px;
+    border: 1px solid lightblue;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+#header_info .search input[type='text']:focus {
+    outline: 1px solid lightblue;
+}
+
+#header_info .search input.btn_search {
+    width: 120px; 
+    height: 35px;
+    background: url('../img/search_btn.png');
+    border: 0;
+    outline: 0;
+    color: white;
+}
+
+#header_info .service {
+    float: right;
+}
+
+#header_info .service ul li {
+    float: left;
+    margin: 30px 25px 30px 0;
+}
+
+#header_info .service ul li a {
+    color: darkmagenta;
+    font-weight: bold;
+}
+
+
+/*content part*/
+
+#content {
+    width: 1000px; 
+    margin: 30px auto 0; 
+    overflow: hidden;
+}
+
+#content #main_menu {
+    width: 155px; 
+    float: left;
+}
+
+#content #main_menu ul li {
+    line-height: 35px; 
+    padding: 5px;
+}
+
+#content #main  {
+    width: 600px; 
+    float: left;
+}
+
+#content #main div {
+    border: 1px solid lightgray; 
+    margin: 3px;
+}
+
+#content #main .mainBigBanner {
+    height: 300px;
+}
+
+#content #main .mainSlideBanner { 
+    height: 150px;
+}
+
+#content #main .smallMenu {
+    height: 50px;
+    line-height: 50px;
+    background-color: darkmagenta;
+}
+
+#content #main .smallMenu ul { 
+    overflow: hidden;
+}
+
+#content #main .smallMenu ul li { 
+    float: left; 
+    width: 98px; 
+    text-align: center;
+}
+
+#content #main .smallMenu ul li a {
+    color:white;
+}
+
+#content #main .maintopic {
+    height:100px;
+}
+
+
+#content #main_banner { 
+    width:230px; float:left;
+}
+
+#content #main_banner div {
+    border:1px solid lightgray;
+    margin:3px;
+}
+
+#content #main_banner .hit, #content #main_banner .ad1 {
+    height:100px;
+}
+
+#content #main_banner .ad2,#content #main_banner .ad3 { 
+    height:150px;
+}
+
+#content #main_banner .ad4 {
+    height:200px;
+}
+
+
+/*footer part*/
+
+footer {
+    width: 1000px; 
+    height: 100px; 
+    margin: 0 auto; 
+    border: 1px solid lightgray;
+}
+
+footer ul { 
+    overflow: hidden;
+}
+
+footer ul li { 
+    margin: 20px 10px 20px 20px;
+    float: left;
+}
+
