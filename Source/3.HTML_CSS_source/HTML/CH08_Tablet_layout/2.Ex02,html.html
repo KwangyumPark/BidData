@@ -1,0 +1,195 @@
+﻿<!-- 21.01.21 테블릿PC 레이아웃 실습 2 -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width"/>
+    <title></title>
+
+    <style>
+
+        /* 페이지 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium',Arial;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        /* 고정바 - #top_bar */
+        #top_bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            line-height: 100px;
+            background-color: #ffd800;
+            border-bottom: 1px solid #c0a300;
+        }
+
+        #top_bar ul {
+            overflow: hidden;
+        }
+
+        #top_bar ul li {
+            float: left;
+            width: 16.6666%;
+            border-right: 1px dashed gray;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        #top_bar ul li a {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /* 고정바 - #left_bar */
+        #left_bar {
+            width: 300px;
+            position: fixed;
+            left: 0;
+            top: 100px;
+            bottom: 100px;
+            background-color: #a09450;
+        }
+
+        #left_bar ul li a {
+            display: block;
+            padding: 15px;
+            border-bottom: 1px solid gray;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        /* 고정바 - #right_bar */
+        #right_bar {
+            width: 300px;
+            position: fixed;
+            right: 0;
+            top: 100px;
+            bottom: 100px;
+            background-color: lightyellow;
+        }
+
+        #right_bar ul li {
+            padding: 15px 0;
+        }
+
+        #right_bar img {
+            width: 300px;
+            height: 100px;
+        }
+
+        /* 고정바 - #bottom_bar */
+        #bottom_bar {
+            height: 100px;
+            line-height: 100px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: lightgoldenrodyellow;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* #wrap */
+        #wrap {
+            margin: 100px 300px;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        #wrap img {
+            float: left;
+            margin: 0 20px 10px 10px;
+        }
+
+        #wrap p {
+            font-size: 1.2em;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div id="top_bar">
+        <ul>
+            <li><a href="#">GNB_1</a></li>
+            <li><a href="#">GNB_2</a></li>
+            <li><a href="#">GNB_3</a></li>
+            <li><a href="#">GNB_4</a></li>
+            <li><a href="#">GNB_5</a></li>
+            <li><a href="#">GNB_6</a></li>
+        </ul>
+    </div>
+    <div id="left_bar">
+        <ul>
+            <li><a href="#">LNB_01</a></li>
+            <li><a href="#">LNB_02</a></li>
+            <li><a href="#">LNB_03</a></li>
+            <li><a href="#">LNB_04</a></li>
+            <li><a href="#">LNB_05</a></li>
+            <li><a href="#">LNB_06</a></li>
+            <li><a href="#">LNB_07</a></li>
+            <li><a href="#">LNB_07</a></li>
+            <li><a href="#">LNB_09</a></li>
+            <li><a href="#">LNB_09</a></li>
+        </ul>
+    </div>
+    <div id="right_bar">
+        <ul>
+            <li>
+                <a href="http://www.daum.net">
+                    <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png" />
+                </a>
+            </li>
+            <li>
+                <a href="http://placehold.it">
+                    <img src="http://placehold.it/200x150" />
+                </a>
+            </li>
+            <li>
+                <a href="http://www.daum.net">
+                    <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png" />
+                </a>
+            </li>
+            <li>
+                <a href="http://placehold.it">
+                    <img src="http://placehold.it/200x150" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="bottom_bar">
+        <p>
+            copyright ⓒ tjoeun Co., All rights reserved.
+            101 abc 123-ro Molra-Gu, Seoul, Korea.
+        </p>
+    </div>
+    <div id="wrap">
+        <img src="0121_imgTab/100.jpg" />
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+</body>
+
+</html>

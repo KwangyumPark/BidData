@@ -1,0 +1,205 @@
+﻿<!-- 21.01.21 스마트폰 레이아웃 실습 1 -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,
+        initial-scale=1.0, user-scalable=no" />
+    <title></title>
+    
+    <style>
+
+        /* * * * * 페이지 초기화 * * * * */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* * * * * * * header * * * *  * * * */
+        header {
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            / background:url('0120_imgEx1/bg_header.png');
+            position: relative;
+        }
+
+        header .left {
+            position: absolute;
+            left: 10px;
+            top: 7px;
+        }
+
+        header .right {
+            position: absolute;
+            right: 10px;
+            top: 7px;
+        }
+
+        /* * * * * * * #gnb 디자인* * * *  * * * */
+        #gnb ul {
+            overflow: hidden;
+            border: 5px solid gray;
+        }
+
+        #gnb ul li {
+            float: left;
+            width: 10%;
+            margin: 1.25%;
+            border: 1px solid gray;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        #gnb {
+            display: none;
+        }
+
+        #toggle:checked ~ #gnb {
+            display: block;
+        }
+
+        #toggle {
+            display: none;
+        }
+
+        /* * * * * * * #lnb * * * * * * * */
+        #lnb ul {
+            overflow: hidden;
+        }
+
+        #lnb ul li {
+            float: left;
+            width: 20%;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            background-color: #137163;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #lnb ul li a {
+            color: #FFFFFF;
+        }
+
+        /* * * * * * * * #content * * * * * * * * */
+        #content {
+            padding: 10px;
+            color: #333333;
+        }
+
+        #content #content_header {
+            padding: 10px;
+            border-bottom: 1px solid gray;
+        }
+
+        #content #content_body p:first-child {
+            color: deepskyblue;
+            font-weight: bold;
+            padding: 10px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        #content #content_body p:last-child {
+            background: url('0120_imgEx1/bg_image.jpg') -500px 0;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        footer .logo {
+            text-align: center; 
+            border-top: 1px solid lightgray;
+            border-bottom: 1px solid lightgray;
+            margin: 10px 0; 
+        }
+
+        footer .logo img {
+            width: 200px;
+        }
+
+        footer .info {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        footer .address {
+            text-align: center;
+            font-size: .8em;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <input type="checkbox" id="toggle" />
+    
+    <header>
+        <a hef="#" class="left">
+            <img src="0120_imgEx1/category.png" />
+        </a>
+        <h1>Mobile</h1>
+        <label for="toggle" class="right">
+            <img src="0120_imgEx1/menu.png" />
+        </label>
+    </header>
+
+    <div id="gnb">
+        <ul>
+            <li><a href="#">gnb1</a></li>
+            <li><a href="#">gnb2</a></li>
+            <li><a href="#">gnb3</a></li>
+            <li><a href="#">gnb4</a></li>
+            <li><a href="#">gnb5</a></li>
+            <li><a href="#">gnb6</a></li>
+            <li><a href="#">gnb7</a></li>
+            <li><a href="#">gnb8</a></li>
+        </ul>
+    </div>
+
+    <div id="lnb">
+        <ul>
+            <li><a href="#">lnb1</a></li>
+            <li><a href="#">lnb2</a></li>
+            <li><a href="#">lnb3</a></li>
+            <li><a href="#">lnb4</a></li>
+            <li><a href="#">lnb5</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div id="content_header">
+            <h1>홍길동</h1>
+        </div>
+        <div id="content_body">
+            <p>홍길동(洪吉同)은 1443년경 전라도 장성현 아차곡에서 경성절제사 홍상직(洪尙直)과 관기 옥영향(玉英香) 사이에서 태어난 얼자(孼子)로 알려지고 있다</p>
+            <p>그는 조선 연산군때 도적떼의 우두머리로, 세상을 떠들썩하게 했던 실존 인물이며, 선조 때 허균이 지은 《홍길동전》(洪吉童傳)의 실제 모델로 알려지고 있다. 성호 이익은 《성호사설》에서 그를 임꺽정(林巪正)·장길산(張吉山)과 더불어 ‘조선의 3대 도둑’으로 꼽기도 하였다.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png" alt="로고" />
+        </div>
+        <div class="info">XX 주식회사</div>
+        <div class="address">서울시 마포구 노고산동 xx빌딩 704호</div>
+    </footer>
+
+</body>
+
+</html>

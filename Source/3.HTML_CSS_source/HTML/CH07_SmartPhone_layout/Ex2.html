@@ -1,0 +1,298 @@
+﻿<!-- 21.01.21 스마트폰 레이아웃 실습 2 -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.7" />
+    <title></title>
+    <style>
+        /**** 페이지 초기화 ********/
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*********헤더*************/
+        header {
+            height: 100px;
+            background-color: #ea8f00;
+        }
+  
+        header #logo_wrap {
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            position: relative;
+        }
+
+        header #logo_wrap a {
+            color: #FFFFFF;
+        }
+
+        header #logo_wrap img.menu {
+            position: absolute;
+            top: 0;
+            left: 10px;
+        }
+
+        header #logo_wrap img.myinfo {
+            position: absolute;
+            top: 0;
+            right: 10px;
+        }
+
+        /******* header의 #search ***********/
+        header #search {
+            height: 50px;
+            position: relative; 
+        }
+
+        header #search input[type='text'] {
+            width: 100%;
+            height: 50px;
+            border: 3px solid #ea8f00;
+            outline: 3px solid #ea8f00;
+            box-sizing: border-box;
+            padding: 5px 55px 5px 5px;
+            font-size: 1.3em;
+        }
+
+        header #search input[type='submit'] {
+            background: url('0120_imgEx2/search.png');
+            width: 50px;
+            height: 50px;
+            border: 0;
+            outline: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        /************* #lnb ********************/
+        #lnb ul {
+            overflow: hidden;
+            margin: 7px 0; 
+        }
+
+        #lnb ul li {
+            float: left;
+            width: 16.6666%;
+            border-right: 1px solid #ea8f00;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+         #lnb ul li:last-child {
+             border: 0;
+         }
+
+        /***********section의 #section1 *****************/
+        #section1 .row1, #section1 .row2, #section1 .row3 {
+            overflow: hidden;
+        }
+
+        .row1 div, .row2 div, .row3 div {
+            float: left;
+            width: 50%;
+            height: 135px;
+            border: 2px solid white;
+            box-sizing: border-box;
+        }
+
+        #section1 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /**********section의 #section2 *******************/
+        section #section2 {
+            margin: 7px;
+        }
+
+        section #section2 ul li {
+            padding: 8px;
+            border: 1px solid lightgray;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /******** section의 #section3 ********************/
+        section #section3 ul li {
+            border: 1px solid lightgray;
+            height: 120px;
+            padding: 10px;
+            margin: 7px;
+            position: relative;
+        }
+
+        section #section3 ul li p.img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+        }
+
+        section #section3 ul li p.txt {
+            width: 100%-20px;
+            padding: 10px 20px 10px 120px;
+        }
+
+        section #section3 ul li p.txt span:first-child {
+            display: block;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: darkblue;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        footer {
+            background-color: #ea8f00;
+            text-align: center;
+        }
+
+        footer p:last-child {
+            margin: 5px;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+
+        <div id="logo_wrap">
+            <img src="0120_imgEx2/menu.png" class="menu" alt="메뉴 아이콘" />
+            <a href="ex2.html" class="logo">mobile logo</a>
+            <img src="0120_imgEx2/myinfo.png" class="myinfo" alt="내정보" />
+        </div>
+
+        <div id="search">
+            <form action="">
+                <input type="text" name="query_word" />
+                <input type="submit" value="" />
+            </form>
+        </div>
+
+    </header>
+
+    <div id="lnb">
+        <ul>
+            <li><a href="#">lnb1</a></li>
+            <li><a href="#">lnb2</a></li>
+            <li><a href="#">lnb3</a></li>
+            <li><a href="#">lnb4</a></li>
+            <li><a href="#">lnb4</a></li>
+            <li><a href="#">lnb6</a></li>
+        </ul>
+    </div>
+
+    <section>
+
+        <div id="section1">
+            <div class="row1">
+                <div>
+                    <a href="https://entertain.v.daum.net/v/20210120152003149">
+                        <img src="http://placehold.it/100x100" alt="1행 1열" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://entertain.v.daum.net/v/20210120152003149">
+                        <img src="http://placehold.it/200x200" alt="1행 2열" />
+                    </a>
+                </div>
+            </div>
+            <div class="row2">
+                <div>
+                    <a href="https://entertain.v.daum.net/v/20210120152003149">
+                        <img src="http://placehold.it/300x300" alt="2행 1열" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://entertain.v.daum.net/v/20210120152003149">
+                        <img src="http://placehold.it/400x400" alt="2행 2열" />
+                    </a>
+                </div>
+            </div>
+            <div class="row3">
+                <div>
+                    <a href="https://entertain.v.daum.net/v/20210120152003149">
+                        <img src="http://placehold.it/300x135" alt="3행 1열" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://entertain.v.daum.net/v/20210120152003149">
+                        <img src="http://placehold.it/300x135" alt="3행 2열" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="section2">
+            <ul>
+                <li>
+                    <a href="https://entertain.daum.net/tv/5128407/video/415889726">
+                        진짜 진짜 투자계 거물이 생각하는 2021년 뜨는 직종은 다음과 같다
+                    </a>
+                </li>
+                <li>
+                    <a href="https://entertain.daum.net/tv/5128407/video/415889726">
+                        거물이 생각하는 2021년 뜨는 직종은 다음과 같다
+                    </a>
+                </li>
+                <li>
+                    <a href="https://entertain.daum.net/tv/5128407/video/415889726">
+                        거물이 생각하는 2021년 뜨는 직종은 다음과 같다
+                    </a>
+                </li>
+                <li>
+                    <a href="https://entertain.daum.net/tv/5128407/video/415889726">
+                        거물이 생각하는 2021년 뜨는 직종은 다음과 같다
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="section3">
+            <ul>
+                <li>
+                    <p class="img"><img src="http://placehold.it/100x100" /></p>
+                    <p class="txt">
+                        <span>첫번째 span은 말줄임 할 예정입니다. 첫번째 span은 말줄임 할 예정입니다. </span>
+                        <span>두번째 span은 말줄임 안 할 예정입니다. 두번째 </span>
+                    </p>
+                </li>
+                <li>
+                    <p class="img"><img src="http://placehold.it/100x100" /></p>
+                    <p class="txt">
+                        <span>첫번째 span은 말줄임 할 예정입니다. 첫번째 span은 말줄임 할 예정입니다. </span>
+                        <span>두번째 span은 말줄임 안 할 예정입니다. 두번째 </span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p><img src="0120_imgEx2/logo.png" alt="회사로고" /></p>
+        <p>서울시 마포구 노고산동 XX빌딩 704호</p>
+    </footer>
+
+</body>
+</html>
