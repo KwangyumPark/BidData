@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+
+        var cnt = 0;
+        var colour = ['yellow', 'red', 'orange'];
+        var img = ['url("0125_img/img01.png")',
+                   'url("0125_img/img02.png")',
+                   'url("0125_img/img03.png")'];
+
+        var id = setInterval(function () {
+
+            document.write(new Date + '</br>');
+            document.body.style.fontWeight = 'bold';
+            document.body.style.backgroundSize = '100%';
+            document.body.style.backgroundImage = img[cnt % 3];
+            document.body.style.color = colour[cnt % 3];
+            cnt++;
+
+        }, 1000);
+
+        setTimeout(function () {
+
+            clearInterval(id);
+
+        }, 10000);
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>
