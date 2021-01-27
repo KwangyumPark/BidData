@@ -1,0 +1,28 @@
+﻿<!--  21.01.27 JavaScript 작은 그림위에 마우스를 올리면 자동으로 큰그림 창이 실행 -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+        var child;
+        function openBig() {
+            child = open('4.Big_Pic.html', '', 'width=500, height=610');
+            if (!child) {
+                alert('팝업차단 해제하세요');
+            }
+        }
+        function closeBig() {
+            child.close();
+        }
+    </script>
+
+</head>
+<body>
+    <h2>작은 그림의 parent 창</h2>
+    <img src="ch09_img/small.jpg" alt="작은 그림" onmouseover="openBig()" onmouseout="closeBig()" />
+</body>
+</html>
