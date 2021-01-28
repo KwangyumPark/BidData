@@ -1,0 +1,62 @@
+﻿<!-- 21.01.28 JavaScript 이벤트를 이용하여 숫자 입력시 해당칸 색상 변경-->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+
+        window.onkeyup = function () {
+
+            var tds = document.getElementsByTagName('td');
+
+            if (event.keyCode >= 96 && event.keyCode <= 104) {
+             
+                for (var i = 0; i < tds.length; i++) { 
+                    tds[i].style.backgroundColor = 'white';
+                }
+                tds[event.keyCode - 96].style.backgroundColor = 'yellow';
+            }
+
+            if (event.keyCode >= 48 && event.keyCode <= 56) {
+  
+                for (var i = 0; i < tds.length; i++) {
+                    tds[i].style.backgroundColor = 'white';
+                }
+                tds[event.keyCode - 48].style.backgroundColor = 'red'; 
+            }
+
+        };
+
+    </script>
+
+    <style>
+
+        table {
+            width: 500px;
+            margin: 50px auto;
+            background-color: darkgreen;
+        }
+
+        td {
+            background-color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <table>
+        <tr><td>0</td><td>1</td><td>2</td></tr>
+        <tr><td>3</td><td>4</td><td>5</td></tr>
+        <tr><td>6</td><td>7</td><td>8</td></tr>
+    </table>
+
+</body>
+</html>

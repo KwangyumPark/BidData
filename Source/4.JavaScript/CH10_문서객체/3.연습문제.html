@@ -1,0 +1,76 @@
+﻿<!-- 21.01.28 JavaScript 문서 객체를 이용한 글씨색 바꾸기 -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script>
+
+        var color = ['red', 'orange', 'yellow', 'green', 'blue', 'navy', 'violet'];
+        var message;
+
+        window.onload = function () {
+
+            var td = document.querySelectorAll('td');
+
+            for (var idx = 0; idx < td.length; idx++) {
+
+                td[idx].style.cssText = 'background-color:' + color[idx];
+            }
+
+        };
+
+        function showMessage(n) {
+
+            message = document.getElementById('message');
+            message.innerHTML = '<h2>야호 목요일이다</h2>';
+            message.style.color = color[n];
+            document.body.style.backgroundColor = 'black';
+
+        }
+
+        function removeMessage() {
+
+            document.body.style.backgroundColor = 'white';
+            message.innerHTML = '';
+
+        }
+
+    </script>
+
+    <style>
+
+        table {
+            width: 280px;
+            height: 80px;
+            margin: 0 auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <table>
+
+        <tr onmouseout="removeMessage()">
+
+            <td onmouseover="showMessage(0)"></td>
+            <td onmouseover="showMessage(1)"></td>
+            <td onmouseover="showMessage(2)"></td>
+            <td onmouseover="showMessage(3)"></td>
+            <td onmouseover="showMessage(4)"></td>
+            <td onmouseover="showMessage(5)"></td>
+            <td onmouseover="showMessage(6)"></td>
+
+        </tr>
+
+    </table>
+
+    <p id="message"></p>
+
+</body>
+</html>
