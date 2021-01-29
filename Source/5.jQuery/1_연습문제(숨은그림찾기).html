@@ -1,0 +1,86 @@
+﻿<!-- 21.01.29 jQuery 숨은그림 찾기 연습문제 1. -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+        h3, td, div {
+            text-align: center;
+            color: royalblue;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        table td {
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+        }
+
+        .tdClick {
+            background-color: palevioletred;
+        }
+
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            var image = parseInt(Math.random() * 9);
+
+            $('td').click(function () {
+
+                $('td').removeClass('tdClick');
+
+                var idx = Number($(this).attr('id'));
+
+                if (idx == image) {
+
+                    $('#msg').html('축하합니다! 떡이 있는 칸을 맞췄습니다.');
+                  //  $('input[name="msg"]').val('떡이 있는곳을 맞췄습니다.');
+                    $(this).css('background-image', 'url("img/dduk.jpg")');
+                    $(this).css('background-size', '100%');
+                    $('td').off();
+
+                } else {
+
+                    $('#msg').html('떡이 있는곳이 아닙니다. hint:' + image);
+                 //   $('input[name=msg]').html('떡이 있는곳이 아닙니다.' + image);
+                    $(this).addClass('tdClick');
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+</head>
+<body>
+
+    <h3>연습문제 1. 떡이 있는 칸 맞추기</h3>
+
+    <table>
+
+        <tr><td id="0"></td><td id="1"></td><td id="2"></td></tr>
+        <tr><td id="3"></td><td id="4"></td><td id="5"></td></tr>
+        <tr><td id="6"></td><td id="7"></td><td id="8"></td></tr>
+
+    </table>
+    
+    <div id="msg"> 떡이 있는 칸을 맞춰 보세요. </div>
+
+</body>
+</html>
