@@ -1,0 +1,59 @@
+﻿<!-- 21.02.01 aJax를 이용한 파일 불러오기 -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        td {
+            padding: 10px;
+            border-top: 1px solid red;
+        }
+
+        tr:last-child td {
+            border-bottom: 1px solid red;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <script>
+
+        $(document).ready(function () {
+
+            $.ajax({
+        
+                url: 'ex.json',
+                dataType: 'json',
+
+                success: function (data) {
+       
+                    out = '<tr><th>ID</th><th>이름</th><th>가격</th><th>설명</th></tr>';
+
+                    $.each(data, function (idx, item) {
+
+                        out += '<tr><td>' + item.id + '</td><td>'
+                            + item.name + '</td><td>'
+                            + item.price + '</td><td>'
+                            + item.description + '</td></tr>';
+
+                    });// each함수 끝
+
+                    $('#dataShow').html(out);
+
+                }// success 콜백함수 끝
+
+            });//ajax함수 끝
+
+        });// jQuery 끝
+
+    </script>
+
+</head>
+<body>
+    <table id="dataShow"></table>
+</body>
+</html>

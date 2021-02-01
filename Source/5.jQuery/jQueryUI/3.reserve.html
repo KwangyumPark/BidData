@@ -1,0 +1,145 @@
+﻿<!-- 21.02.01 JQuery UI를 이용한 예약 페이지 만들기 실습 -->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        input[type=submit] {
+            background-image: url('reservation.png');
+            background-size: 100%;
+            width: 100px;
+            height: 70px;
+            background-color: white;
+        }
+    </style>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <script>
+
+        $(function () {
+            $("#datepicker").datepicker({
+                dateFormat: "yy-mm-dd",
+                changeMonth: true, // 월을 바꿀 셀렉트박스 생성
+                monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월',
+                    '7월', '8월', '9월', '10월', '11월', '12월'],
+                changeYear: true, // 년을 바꿀 셀렉트 박스 생성
+                yearSuffix: '년',
+                showOtherMonths: true,
+                showMonthAfterYear: true,
+                minDate: 0, // 지난 날은 select 불가
+                onSelect: function (dateText, inst) {
+
+                    $('.reservedDate').val(dateText);
+                    for (var i = 6; i <= 23; i++) {
+                        $('#' + i).attr('disabled', false);
+                        $('#' + i).css('color', '#000000');
+                    }
+                    $('.result').html(dateText);
+                    $('.reservedTime').val('');
+
+                    var today = new Date(); //2021-02-01
+                    var year = today.getFullYear(); // 2021
+                    var month = today.getMonth() + 1; // 2 -> '02'
+                    if (month < 10) {
+                        month = '0' + month;
+                    }
+                    var day = today.getDate(); // 1 -> '01'
+                    if (day < 10) {
+                        day = '0' + day; // '01'
+                    }
+                    temp = year + '-' + month + '-' + day;
+                    if (dateText == temp) {
+                        for (var i = 6; i <= today.getHours(); i++) {
+                            $('#' + i).attr('disabled', 'disabled');
+                            // $('#' + i).attr('disabled', true);
+                            $('#' + i).css('color', '#cccccc');
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $('#am input').click(function () {
+                $('.reservedTime').val($('.reservedTime').val() +
+                    '오전' + $(this).attr('class') + '시 ');
+                $('.result').append('오전' + $(this).attr('class') + '시 ');
+                $(this).attr('disabled', 'disabled');
+                $(this).css('color', 'red');
+            });
+
+            $('#pm input').click(function () {
+                $('.reservedTime').val($('.reservedTime').val() +
+                    '오후' + $(this).attr('class') + '시 ');
+                $('.result').append('오후' + $(this).attr('class') + '시 ');
+                $(this).attr('disabled', 'disabled');
+                $(this).css('color', 'red');
+            });
+        })
+
+    </script>
+
+</head>
+<body>
+
+    <div id="datepicker"></div>
+
+    <form>
+        <p>
+            <b>Date:</b><input type="text" name="reservedDate"
+                               class="reservedDate" />
+        </p>
+        <p><b>시간선택</b></p>
+        <table>
+            <tr>
+                <td id="am">
+                    <span style="display:block">오전</span>
+                    <input type="button" id="6" class="6" value="6시" />
+                    <input type="button" id="7" class="7" value="7시" />
+                    <input type="button" id="8" class="8" value="8시" />
+                    <input type="button" id="9" class="9" value="9시" />
+                    <input type="button" id="10" class="10" value="10시" />
+                    <input type="button" id="11" class="11" value="11시" />
+                </td>
+            </tr>
+            <tr>
+                <td id="pm">
+                    <span style="display:block">오후</span>
+                    <input type="button" id="12" class="12" value="12시" />
+                    <input type="button" id="13" class="1" value="1시" />
+                    <input type="button" id="14" class="2" value="2시" />
+                    <input type="button" id="15" class="3" value="3시" />
+                    <input type="button" id="16" class="4" value="4시" />
+                    <input type="button" id="17" class="5" value="5시" />
+                    <input type="button" id="18" class="6" value="6시" />
+                    <input type="button" id="19" class="7" value="7시" />
+                    <input type="button" id="20" class="8" value="8시" />
+                    <input type="button" id="21" class="9" value="9시" />
+                    <input type="button" id="22" class="10" value="10시" />
+                    <input type="button" id="23" class="11" value="11시" />
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            <b>Time:</b>
+            <input type="text" name="reservedTime" class="reservedTime"
+                   size="50" />
+        </p>
+
+        <p><b>예약결과 : </b><span class="result"></span></p>
+        <p><input type="submit" value="" /></p>
+
+    </form>
+
+</body>
+</html>
