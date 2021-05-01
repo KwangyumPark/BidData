@@ -1,0 +1,4896 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0250bd67f7aa4be8a152c371f0a100fb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0250bd67f7aa4be8a152c371f0a100fb" ></div>
+        
+</body>
+<script>    
+    
+            var map_0250bd67f7aa4be8a152c371f0a100fb = L.map(
+                "map_0250bd67f7aa4be8a152c371f0a100fb",
+                {
+                    center: [35.864212, 126.999182],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8522f4749f9d4628a0edbf99d06590da = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var tile_layer_84d7f0f924104e2b8f30c452620fb3d1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_16fc57803d9f4382a51a3f839d05a4de = new L.Control.MiniMap(
+                tile_layer_84d7f0f924104e2b8f30c452620fb3d1,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_0250bd67f7aa4be8a152c371f0a100fb.addControl(mini_map_16fc57803d9f4382a51a3f839d05a4de);
+        
+    
+            var marker_57cdccc25ce6428195de51de824f3fef = L.marker(
+                [35.8057802, 127.09923429999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_e12451a2cd084194a25efe246a90e392 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_57cdccc25ce6428195de51de824f3fef.setIcon(icon_e12451a2cd084194a25efe246a90e392);
+        
+    
+            marker_57cdccc25ce6428195de51de824f3fef.bindTooltip(
+                `<div>
+                     반야돌솥밥 본점 : 한식 - 전주시 완산구 효자동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8dab9f9d626d45f48a32dde048fd6dd1 = L.marker(
+                [35.9637465, 126.7284172],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a819e6eac66f4d9d81c56df1efb31fe2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8dab9f9d626d45f48a32dde048fd6dd1.setIcon(icon_a819e6eac66f4d9d81c56df1efb31fe2);
+        
+    
+            marker_8dab9f9d626d45f48a32dde048fd6dd1.bindTooltip(
+                `<div>
+                     일품횟집 : 일식 - 전북 군산시 미장동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8003215b68e544b29cd3e5a3f5be939e = L.marker(
+                [35.8409513, 127.13637290000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_d1633b770ea64c1e92a40b905852c9aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8003215b68e544b29cd3e5a3f5be939e.setIcon(icon_d1633b770ea64c1e92a40b905852c9aa);
+        
+    
+            marker_8003215b68e544b29cd3e5a3f5be939e.bindTooltip(
+                `<div>
+                     한국관 본점 : 한식 - 전주시 덕진구 금암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ced9175c249c4d09b06becbe6b1b6a8a = L.marker(
+                [35.972775299999995, 126.7410781],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_e445a1711ce2482a8d3ab2458273cced = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ced9175c249c4d09b06becbe6b1b6a8a.setIcon(icon_e445a1711ce2482a8d3ab2458273cced);
+        
+    
+            marker_ced9175c249c4d09b06becbe6b1b6a8a.bindTooltip(
+                `<div>
+                     원조군산아구회집 : 한식 - 전북 군산시 조촌동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3914d82ae54043eea1884063ae9546d6 = L.marker(
+                [35.70865379999999, 126.7449134],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_0103103931144e93ba334ac4f4943981 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3914d82ae54043eea1884063ae9546d6.setIcon(icon_0103103931144e93ba334ac4f4943981);
+        
+    
+            marker_3914d82ae54043eea1884063ae9546d6.bindTooltip(
+                `<div>
+                     슬지네찐빵 : 분식 - 전북 부안군 부안읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4d16691a4944f3a9f19a253e8050e8e = L.marker(
+                [35.6430852, 126.5350386],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_50c55e26166a44b181452d7a62c045dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a4d16691a4944f3a9f19a253e8050e8e.setIcon(icon_50c55e26166a44b181452d7a62c045dc);
+        
+    
+            marker_a4d16691a4944f3a9f19a253e8050e8e.bindTooltip(
+                `<div>
+                     격포식당 : 한식 - 전북 부안군 변산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fdd91069eba4cf4b1bf23aeb6b5d1b3 = L.marker(
+                [35.9577138, 126.9833095],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_32382bedb5374d01bb1840aa5ff47977 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9fdd91069eba4cf4b1bf23aeb6b5d1b3.setIcon(icon_32382bedb5374d01bb1840aa5ff47977);
+        
+    
+            marker_9fdd91069eba4cf4b1bf23aeb6b5d1b3.bindTooltip(
+                `<div>
+                     족발형제 : 한식 - 전북 익산시 어양동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20392f2d44114ec9ac72dec0dc26b814 = L.marker(
+                [35.972775299999995, 126.7410781],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_b7d6192c8a734ab6b3673938edd4e6e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20392f2d44114ec9ac72dec0dc26b814.setIcon(icon_b7d6192c8a734ab6b3673938edd4e6e1);
+        
+    
+            marker_20392f2d44114ec9ac72dec0dc26b814.bindTooltip(
+                `<div>
+                     궁전꽃게장 : 한식 - 전북 군산시 조촌동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c7b08c43855498d8e263904e5c0e78f = L.marker(
+                [35.832746, 127.17043020000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_b16205196a5648a4a12c3f7e1aa5141a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c7b08c43855498d8e263904e5c0e78f.setIcon(icon_b16205196a5648a4a12c3f7e1aa5141a);
+        
+    
+            marker_3c7b08c43855498d8e263904e5c0e78f.bindTooltip(
+                `<div>
+                     진안흑돼지연탄생구이 : 한식 - 전주시 덕진구 우아동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a52440c11a849178768c2e47ecf548d = L.marker(
+                [35.845499, 127.11356380000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_c3c2d0751e464a30b5b9d6f86fe7becd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a52440c11a849178768c2e47ecf548d.setIcon(icon_c3c2d0751e464a30b5b9d6f86fe7becd);
+        
+    
+            marker_8a52440c11a849178768c2e47ecf548d.bindTooltip(
+                `<div>
+                     무궁화한정식 : 한식 - 전주시 덕진구 덕진동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_567e68e0a0c94181bfd191fa166f5e8e = L.marker(
+                [35.845499, 127.11356380000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_9b4c40f8aa454c48abcad37f41508be3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_567e68e0a0c94181bfd191fa166f5e8e.setIcon(icon_9b4c40f8aa454c48abcad37f41508be3);
+        
+    
+            marker_567e68e0a0c94181bfd191fa166f5e8e.bindTooltip(
+                `<div>
+                     고궁 : 한식 - 전주시 덕진구 덕진동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b31ec3291f2e4534b6c07ce70bf5c1f2 = L.marker(
+                [35.9322877, 127.8474175],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_3f1da37c2e124fc890d1cc086f3b68ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b31ec3291f2e4534b6c07ce70bf5c1f2.setIcon(icon_3f1da37c2e124fc890d1cc086f3b68ad);
+        
+    
+            marker_b31ec3291f2e4534b6c07ce70bf5c1f2.bindTooltip(
+                `<div>
+                     구천동송어마을 : 일식 - 전북 무주군 무풍면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_decb45183b3e40b9b69ec71c4cd4fdbb = L.marker(
+                [36.0115134, 127.6558912],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_8cf506e581834976a4051332e09c3a80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_decb45183b3e40b9b69ec71c4cd4fdbb.setIcon(icon_8cf506e581834976a4051332e09c3a80);
+        
+    
+            marker_decb45183b3e40b9b69ec71c4cd4fdbb.bindTooltip(
+                `<div>
+                     천지가든 : 한식 - 전북 무주군 무주읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a95f11d5a928438297f5d8825529003f = L.marker(
+                [35.8057802, 127.09923429999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_45ba8b40905744c8be5f2bfc8a4b7d8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a95f11d5a928438297f5d8825529003f.setIcon(icon_45ba8b40905744c8be5f2bfc8a4b7d8c);
+        
+    
+            marker_a95f11d5a928438297f5d8825529003f.bindTooltip(
+                `<div>
+                     동원순대집 : 한식 - 전주시 완산구 효자동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58dcee51a0a74295a2634eeddb459b48 = L.marker(
+                [35.9129844, 127.0854235],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_95e778c692db4efa823c588ffc0cc3e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58dcee51a0a74295a2634eeddb459b48.setIcon(icon_95e778c692db4efa823c588ffc0cc3e7);
+        
+    
+            marker_58dcee51a0a74295a2634eeddb459b48.bindTooltip(
+                `<div>
+                     카페비비낙안 : 카페/주점 - 전북 완주군 삼례읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a62e98f4e15444eaac9f4e839569895 = L.marker(
+                [35.9867301, 126.71001740000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_33e4e1c7a5a44d51ba1d6b33a73987d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4a62e98f4e15444eaac9f4e839569895.setIcon(icon_33e4e1c7a5a44d51ba1d6b33a73987d4);
+        
+    
+            marker_4a62e98f4e15444eaac9f4e839569895.bindTooltip(
+                `<div>
+                     스위트인디아 : 기타/세계 - 전북 군산시 신창동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7c499aecce541e5b8904817a1580f75 = L.marker(
+                [35.8167849, 127.19849369999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_9f08def9c62e4da690cbc7e6879d19fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c7c499aecce541e5b8904817a1580f75.setIcon(icon_9f08def9c62e4da690cbc7e6879d19fd);
+        
+    
+            marker_c7c499aecce541e5b8904817a1580f75.bindTooltip(
+                `<div>
+                     아중도토리묵촌 : 한식 - 전주시 덕진구 우아동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ddb16e3da4f4cc69ff905bc46901609 = L.marker(
+                [35.8247053, 127.0965305],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a8c9858042f244149552249c431cd5cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4ddb16e3da4f4cc69ff905bc46901609.setIcon(icon_a8c9858042f244149552249c431cd5cc);
+        
+    
+            marker_4ddb16e3da4f4cc69ff905bc46901609.bindTooltip(
+                `<div>
+                     써니네집 본점 : 양식 - 전주시 완산구 효자동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba6b41cd74b4494f99a7d0297cb5291c = L.marker(
+                [35.9613565, 127.0126406],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_5a8d6e2ffd4e4a36ab36de2189ab0658 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ba6b41cd74b4494f99a7d0297cb5291c.setIcon(icon_5a8d6e2ffd4e4a36ab36de2189ab0658);
+        
+    
+            marker_ba6b41cd74b4494f99a7d0297cb5291c.bindTooltip(
+                `<div>
+                     토담골 : 한식 - 전북 익산시 팔봉동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_960cf37a427543e2be937ccc962d6570 = L.marker(
+                [35.8135739, 127.1483436],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_70c2fcf9f9954f5eab2f1a338372bf6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_960cf37a427543e2be937ccc962d6570.setIcon(icon_70c2fcf9f9954f5eab2f1a338372bf6e);
+        
+    
+            marker_960cf37a427543e2be937ccc962d6570.bindTooltip(
+                `<div>
+                     행원 : 한식 - 전주시 완산구 전동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bcfe7c62ea5413b983a319d46561df0 = L.marker(
+                [35.8486059, 127.1317179],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_8abcb28bf4964e12b7a7a587c9609258 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1bcfe7c62ea5413b983a319d46561df0.setIcon(icon_8abcb28bf4964e12b7a7a587c9609258);
+        
+    
+            marker_1bcfe7c62ea5413b983a319d46561df0.bindTooltip(
+                `<div>
+                     비빔소리 : 한식 - 전주시 덕진구 덕진동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0232604db99b4092b81aecbf57e29db2 = L.marker(
+                [35.984450700000004, 126.7050645],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_6798a903721d4cdd855d20c3cb222edd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0232604db99b4092b81aecbf57e29db2.setIcon(icon_6798a903721d4cdd855d20c3cb222edd);
+        
+    
+            marker_0232604db99b4092b81aecbf57e29db2.bindTooltip(
+                `<div>
+                     커피플래닛두두 : 카페/주점 - 전북 군산시 월명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d74382ca93534fcca1c142090e9be886 = L.marker(
+                [35.816027899999995, 127.15251140000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_694af291466740d398ebb775a716c268 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d74382ca93534fcca1c142090e9be886.setIcon(icon_694af291466740d398ebb775a716c268);
+        
+    
+            marker_d74382ca93534fcca1c142090e9be886.bindTooltip(
+                `<div>
+                     교동떡갈비 : 한식 - 전주시 완산구 풍남동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b0c976edbb84420bff5c4fa9fd7cead = L.marker(
+                [35.832645, 127.15978359999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_25b0716b19894631a6c21ccb0f8eee03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b0c976edbb84420bff5c4fa9fd7cead.setIcon(icon_25b0716b19894631a6c21ccb0f8eee03);
+        
+    
+            marker_7b0c976edbb84420bff5c4fa9fd7cead.bindTooltip(
+                `<div>
+                     겐돈소바 : 일식 - 전주시 덕진구 인후동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c4ac0f873c34e8db2696933254f899a = L.marker(
+                [35.8247053, 127.0965305],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_318044d4bc90404da01c7f95bc69e649 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c4ac0f873c34e8db2696933254f899a.setIcon(icon_318044d4bc90404da01c7f95bc69e649);
+        
+    
+            marker_3c4ac0f873c34e8db2696933254f899a.bindTooltip(
+                `<div>
+                     흑두부이야기 : 한식 - 전주시 완산구 효자동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb8e8c3517f84008ad6b39b6dec4e017 = L.marker(
+                [36.0115134, 127.6558912],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_01dc31b9eb444851a7f418dc7ef3b55b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb8e8c3517f84008ad6b39b6dec4e017.setIcon(icon_01dc31b9eb444851a7f418dc7ef3b55b);
+        
+    
+            marker_eb8e8c3517f84008ad6b39b6dec4e017.bindTooltip(
+                `<div>
+                     강나루 : 한식 - 전북 무주군 무주읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ccd466d972142129b6bf51376315af6 = L.marker(
+                [35.845499, 127.11356380000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_d8f05dfd1c4342c0be38a47c636d0143 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2ccd466d972142129b6bf51376315af6.setIcon(icon_d8f05dfd1c4342c0be38a47c636d0143);
+        
+    
+            marker_2ccd466d972142129b6bf51376315af6.bindTooltip(
+                `<div>
+                     늘채움 : 한식 - 전주시 덕진구 덕진동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f197e468c58247159e0d03ee34c5ed3f = L.marker(
+                [35.8177034, 127.1222499],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_9190a12a23aa4e83812db767bc635401 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f197e468c58247159e0d03ee34c5ed3f.setIcon(icon_9190a12a23aa4e83812db767bc635401);
+        
+    
+            marker_f197e468c58247159e0d03ee34c5ed3f.bindTooltip(
+                `<div>
+                     우리밀동우 : 중식 - 전주시 완산구 중화산동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f53c449b79134d37a8ca633adcaa0cc8 = L.marker(
+                [36.0171044, 126.9382277],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a3f61990087247c8bd5ae17c8391381a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f53c449b79134d37a8ca633adcaa0cc8.setIcon(icon_a3f61990087247c8bd5ae17c8391381a);
+        
+    
+            marker_f53c449b79134d37a8ca633adcaa0cc8.bindTooltip(
+                `<div>
+                     시장비빔밥 : 한식 - 전북 익산시 황등면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca57e7e34db2457f809c50242f58eb85 = L.marker(
+                [35.815234999999994, 127.1449176],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_0b4f9badc7744daf9bd256e737d6b7dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ca57e7e34db2457f809c50242f58eb85.setIcon(icon_0b4f9badc7744daf9bd256e737d6b7dc);
+        
+    
+            marker_ca57e7e34db2457f809c50242f58eb85.bindTooltip(
+                `<div>
+                     반야돌솥밥 : 한식 - 전주시 완산구 중앙동4가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_772347c5143049b582905d26194fd75d = L.marker(
+                [35.817794, 127.14735790000002],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_e4068103768543d0a0a8decd73428e7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_772347c5143049b582905d26194fd75d.setIcon(icon_e4068103768543d0a0a8decd73428e7c);
+        
+    
+            marker_772347c5143049b582905d26194fd75d.bindTooltip(
+                `<div>
+                     PNB풍년제과 전주본점 : 베이커리 - 전주시 완산구 경원동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_390c0cac6209402fa4bb5f647c6d7ece = L.marker(
+                [36.000470899999996, 126.8792119],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_32e8bf4af1f949caba248c073fec91ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_390c0cac6209402fa4bb5f647c6d7ece.setIcon(icon_32e8bf4af1f949caba248c073fec91ae);
+        
+    
+            marker_390c0cac6209402fa4bb5f647c6d7ece.bindTooltip(
+                `<div>
+                     서수해장국 : 한식 - 전북 군산시 서수면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7b34b1ef81746b4a045df70a67ed88d = L.marker(
+                [35.81291160000001, 127.1618395],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_4feddbb1183e4fb1972399608886a004 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7b34b1ef81746b4a045df70a67ed88d.setIcon(icon_4feddbb1183e4fb1972399608886a004);
+        
+    
+            marker_a7b34b1ef81746b4a045df70a67ed88d.bindTooltip(
+                `<div>
+                     쿠쿠루자 전주한옥마을점 : 기타/세계 - 전주시 완산구 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccc8a9c436d8461e840ea56b24ab5d1b = L.marker(
+                [35.9908777, 126.70684479999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_67cdad0d35324524836c7580bff9e075 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ccc8a9c436d8461e840ea56b24ab5d1b.setIcon(icon_67cdad0d35324524836c7580bff9e075);
+        
+    
+            marker_ccc8a9c436d8461e840ea56b24ab5d1b.bindTooltip(
+                `<div>
+                     벽란도횟집 내항점 : 일식 - 전북 군산시 금동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f6e6495b93d44a39dd9d240bc0cae50 = L.marker(
+                [35.8135739, 127.1483436],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_c3817234ead1465f91668264753f905f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0f6e6495b93d44a39dd9d240bc0cae50.setIcon(icon_c3817234ead1465f91668264753f905f);
+        
+    
+            marker_0f6e6495b93d44a39dd9d240bc0cae50.bindTooltip(
+                `<div>
+                     진미집 : 한식 - 전주시 완산구 전동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_050f09da22de46c9b608e95fc03f0034 = L.marker(
+                [35.9348593, 127.672881],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_927170dd8aca4731b360da8d6fedb53d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_050f09da22de46c9b608e95fc03f0034.setIcon(icon_927170dd8aca4731b360da8d6fedb53d);
+        
+    
+            marker_050f09da22de46c9b608e95fc03f0034.bindTooltip(
+                `<div>
+                     산성가든 : 한식 - 전북 무주군 적상면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1757d49cd3244036a0135765823836d5 = L.marker(
+                [35.9792948, 126.7158932],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_8c5a31c6acca468080be8cdfa9be65e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1757d49cd3244036a0135765823836d5.setIcon(icon_8c5a31c6acca468080be8cdfa9be65e5);
+        
+    
+            marker_1757d49cd3244036a0135765823836d5.bindTooltip(
+                `<div>
+                     지린성 : 중식 - 전북 군산시 미원동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bde239dd700946d7a3561301e31deb3a = L.marker(
+                [35.6430852, 126.5350386],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_4b91f486ed2848f4b95a7246ce1e83ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bde239dd700946d7a3561301e31deb3a.setIcon(icon_4b91f486ed2848f4b95a7246ce1e83ff);
+        
+    
+            marker_bde239dd700946d7a3561301e31deb3a.bindTooltip(
+                `<div>
+                     바다마을식당 : 한식 - 전북 부안군 변산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4f3916bd66949629c6f6e7f7dac0cc8 = L.marker(
+                [35.9893166, 126.7142115],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_80ce667d5212453e9adf65535716fc36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b4f3916bd66949629c6f6e7f7dac0cc8.setIcon(icon_80ce667d5212453e9adf65535716fc36);
+        
+    
+            marker_b4f3916bd66949629c6f6e7f7dac0cc8.bindTooltip(
+                `<div>
+                     미즈커피 : 카페/주점 - 전북 군산시 장미동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9559853fd1c845c98bb9b24c92428802 = L.marker(
+                [35.952090000000005, 126.7086965],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_55d9cc9ce75e476dbf38676befb2f385 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9559853fd1c845c98bb9b24c92428802.setIcon(icon_55d9cc9ce75e476dbf38676befb2f385);
+        
+    
+            marker_9559853fd1c845c98bb9b24c92428802.bindTooltip(
+                `<div>
+                     대북경 : 중식 - 전북 군산시 지곡동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70578d5911734c2795b5a4edf2d24523 = L.marker(
+                [35.9732781, 127.0839524],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_03c39522be5b4187a01afc1c6ed03578 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_70578d5911734c2795b5a4edf2d24523.setIcon(icon_03c39522be5b4187a01afc1c6ed03578);
+        
+    
+            marker_70578d5911734c2795b5a4edf2d24523.bindTooltip(
+                `<div>
+                     청마루 : 중식 - 전북 익산시 왕궁면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29ade14e84434def8debc915e300f0a3 = L.marker(
+                [35.962454799999996, 126.69706509999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_094dd749f78843a48198628075473f45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_29ade14e84434def8debc915e300f0a3.setIcon(icon_094dd749f78843a48198628075473f45);
+        
+    
+            marker_29ade14e84434def8debc915e300f0a3.bindTooltip(
+                `<div>
+                     요다지 : 양식 - 전북 군산시 나운동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebbdefa3f9024d8e803e5e9f9356fe45 = L.marker(
+                [35.8135739, 127.1483436],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_bea7aba136cc4b408e1b2a3dde9d0c74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ebbdefa3f9024d8e803e5e9f9356fe45.setIcon(icon_bea7aba136cc4b408e1b2a3dde9d0c74);
+        
+    
+            marker_ebbdefa3f9024d8e803e5e9f9356fe45.bindTooltip(
+                `<div>
+                     종로회관 : 한식 - 전주시 완산구 전동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd0b5f1e7b7f423880fe987d4b95c13b = L.marker(
+                [35.8577749, 127.2556986],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_d194f261a2c14ee7a101ea53fa7a3b4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cd0b5f1e7b7f423880fe987d4b95c13b.setIcon(icon_d194f261a2c14ee7a101ea53fa7a3b4d);
+        
+    
+            marker_cd0b5f1e7b7f423880fe987d4b95c13b.bindTooltip(
+                `<div>
+                     원조화심두부 : 한식 - 전북 완주군 소양면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9d7d4e34e7d4fe0bb5b64a1f7738527 = L.marker(
+                [35.825987899999994, 127.14623],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_65df9c9056b54fc7901bd58ff37fc441 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e9d7d4e34e7d4fe0bb5b64a1f7738527.setIcon(icon_65df9c9056b54fc7901bd58ff37fc441);
+        
+    
+            marker_e9d7d4e34e7d4fe0bb5b64a1f7738527.bindTooltip(
+                `<div>
+                     진미집 : 한식 - 전주시 완산구 서노송동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d23e9b25e23d4bc99cad9bf797a45daf = L.marker(
+                [35.6430852, 126.5350386],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_f7bbcf199bf148b68f4f8b8936945509 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d23e9b25e23d4bc99cad9bf797a45daf.setIcon(icon_f7bbcf199bf148b68f4f8b8936945509);
+        
+    
+            marker_d23e9b25e23d4bc99cad9bf797a45daf.bindTooltip(
+                `<div>
+                     변산반도b카페 : 카페/주점 - 전북 부안군 변산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7609aed20f87497abc58021135f56261 = L.marker(
+                [35.9490239, 126.94245359999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_c02c2e1455294479ab5a3af93cdc0711 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7609aed20f87497abc58021135f56261.setIcon(icon_c02c2e1455294479ab5a3af93cdc0711);
+        
+    
+            marker_7609aed20f87497abc58021135f56261.bindTooltip(
+                `<div>
+                     스시노백쉐프 익산모현 3호점 : 일식 - 전북 익산시 모현동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b954dc6436b8418b97b215713d8bc232 = L.marker(
+                [35.81716420000001, 127.14370179999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_d189c9f502d14c59b77880cb174e0bbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b954dc6436b8418b97b215713d8bc232.setIcon(icon_d189c9f502d14c59b77880cb174e0bbe);
+        
+    
+            marker_b954dc6436b8418b97b215713d8bc232.bindTooltip(
+                `<div>
+                     일품향 : 중식 - 전주시 완산구 중앙동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdb892c54f2945bd89f7edea92e94163 = L.marker(
+                [35.832645, 127.15978359999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_ea95559d8a5746a492da8ad72127fee6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bdb892c54f2945bd89f7edea92e94163.setIcon(icon_ea95559d8a5746a492da8ad72127fee6);
+        
+    
+            marker_bdb892c54f2945bd89f7edea92e94163.bindTooltip(
+                `<div>
+                     명성옥 : 한식 - 전주시 덕진구 인후동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25d9d539fc11444998b9546400558c7e = L.marker(
+                [35.962454799999996, 126.69706509999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_8debe4636e8f4cdd8de2329b9c83f39f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_25d9d539fc11444998b9546400558c7e.setIcon(icon_8debe4636e8f4cdd8de2329b9c83f39f);
+        
+    
+            marker_25d9d539fc11444998b9546400558c7e.bindTooltip(
+                `<div>
+                     파라디소페르두또 : 양식 - 전북 군산시 나운동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ba6661c3e3f433c9da229c02f7b13f8 = L.marker(
+                [35.962454799999996, 126.69706509999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_7621391849184137a511024b30161684 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ba6661c3e3f433c9da229c02f7b13f8.setIcon(icon_7621391849184137a511024b30161684);
+        
+    
+            marker_9ba6661c3e3f433c9da229c02f7b13f8.bindTooltip(
+                `<div>
+                     이모네연탄구이 : 한식 - 전북 군산시 나운동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0175f5d8d0244c6b678a5fb0e891bb0 = L.marker(
+                [35.815234999999994, 127.1449176],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_0ea55bd299314d7cae100b849704d044 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f0175f5d8d0244c6b678a5fb0e891bb0.setIcon(icon_0ea55bd299314d7cae100b849704d044);
+        
+    
+            marker_f0175f5d8d0244c6b678a5fb0e891bb0.bindTooltip(
+                `<div>
+                     한국식당 : 한식 - 전주시 완산구 중앙동4가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c40547f99d043bd9578146dfa973db8 = L.marker(
+                [35.8202418, 127.14302690000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_1b40b3b204474894a823252ad2921339 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8c40547f99d043bd9578146dfa973db8.setIcon(icon_1b40b3b204474894a823252ad2921339);
+        
+    
+            marker_8c40547f99d043bd9578146dfa973db8.bindTooltip(
+                `<div>
+                     원조함흥냉면 : 한식 - 전주시 완산구 고사동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f27d6bd2f5fa481fa0a8b47061db2913 = L.marker(
+                [35.7968971, 127.1204432],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_b9f55f0d4fbb40dd9f7285b4605be591 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f27d6bd2f5fa481fa0a8b47061db2913.setIcon(icon_b9f55f0d4fbb40dd9f7285b4605be591);
+        
+    
+            marker_f27d6bd2f5fa481fa0a8b47061db2913.bindTooltip(
+                `<div>
+                     용진집 : 한식 - 전주시 완산구 삼천동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58f2650d79f24804b9b2cedaa65b6387 = L.marker(
+                [35.964178600000004, 126.7173685],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_acfb09d956474b05ba252647dfd2dbed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58f2650d79f24804b9b2cedaa65b6387.setIcon(icon_acfb09d956474b05ba252647dfd2dbed);
+        
+    
+            marker_58f2650d79f24804b9b2cedaa65b6387.bindTooltip(
+                `<div>
+                     스시노백쉐프 군산수송 5호점 : 일식 - 전북 군산시 수송동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f61e8dcb6304e5a8e9d657e7d3fb153 = L.marker(
+                [35.8486059, 127.1317179],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_f1e63570f57840beb9ada487a42f5c6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f61e8dcb6304e5a8e9d657e7d3fb153.setIcon(icon_f1e63570f57840beb9ada487a42f5c6e);
+        
+    
+            marker_1f61e8dcb6304e5a8e9d657e7d3fb153.bindTooltip(
+                `<div>
+                     충만치킨 전북대점 : 패스트푸드 - 전주시 덕진구 덕진동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09626373418a4876b6e2198189e2cdfa = L.marker(
+                [35.962454799999996, 126.69706509999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_656d0f35f5b549c98dba0dca75ed6a7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09626373418a4876b6e2198189e2cdfa.setIcon(icon_656d0f35f5b549c98dba0dca75ed6a7f);
+        
+    
+            marker_09626373418a4876b6e2198189e2cdfa.bindTooltip(
+                `<div>
+                     돈부리야 : 일식 - 전북 군산시 나운동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e37ab09a5cd64540b21763fc84fb69d1 = L.marker(
+                [35.6045256, 126.57156450000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_6f40405493804b1f8445691ea182a09e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e37ab09a5cd64540b21763fc84fb69d1.setIcon(icon_6f40405493804b1f8445691ea182a09e);
+        
+    
+            marker_e37ab09a5cd64540b21763fc84fb69d1.bindTooltip(
+                `<div>
+                     현정이네 : 한식 - 전북 부안군 진서면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09d8772bfff24725880f82abe055ef08 = L.marker(
+                [35.825987899999994, 127.14623],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_38bca50c8a3342e6bb0bb533ab6da7f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09d8772bfff24725880f82abe055ef08.setIcon(icon_38bca50c8a3342e6bb0bb533ab6da7f5);
+        
+    
+            marker_09d8772bfff24725880f82abe055ef08.bindTooltip(
+                `<div>
+                     큰가마 : 한식 - 전주시 완산구 서노송동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4a85a85b55a41348608f46a577fe05e = L.marker(
+                [35.8176343, 127.14516850000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_d0ee8414711f4ac7be4fd9aa3abe1a72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f4a85a85b55a41348608f46a577fe05e.setIcon(icon_d0ee8414711f4ac7be4fd9aa3abe1a72);
+        
+    
+            marker_f4a85a85b55a41348608f46a577fe05e.bindTooltip(
+                `<div>
+                     가족회관 : 한식 - 전주시 완산구 중앙동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_418c2207b77941348b0172e291918bba = L.marker(
+                [35.8409513, 127.13637290000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_3ace2b51763044d594e6c40ef03300ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_418c2207b77941348b0172e291918bba.setIcon(icon_3ace2b51763044d594e6c40ef03300ac);
+        
+    
+            marker_418c2207b77941348b0172e291918bba.bindTooltip(
+                `<div>
+                     전주우족탕 : 한식 - 전주시 덕진구 금암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0cb26ba449194df2b7f0421a030b7c1d = L.marker(
+                [35.81291160000001, 127.1618395],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_b157d2c57dbd47a79f4818ddedaee882 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0cb26ba449194df2b7f0421a030b7c1d.setIcon(icon_b157d2c57dbd47a79f4818ddedaee882);
+        
+    
+            marker_0cb26ba449194df2b7f0421a030b7c1d.bindTooltip(
+                `<div>
+                     족떡이네 교동점 : 한식 - 전주시 완산구 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e066f6593a0746759ca7cf0780eb489d = L.marker(
+                [35.845499, 127.11356380000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a465a4ec3a92464db23867f66d24fba5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e066f6593a0746759ca7cf0780eb489d.setIcon(icon_a465a4ec3a92464db23867f66d24fba5);
+        
+    
+            marker_e066f6593a0746759ca7cf0780eb489d.bindTooltip(
+                `<div>
+                     초담불고기 : 한식 - 전주시 덕진구 덕진동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0964013a52124f6eb631161106aabcaf = L.marker(
+                [35.9543251, 127.7830903],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_8cb68ed54a36484dacbcdf50e011eecc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0964013a52124f6eb631161106aabcaf.setIcon(icon_8cb68ed54a36484dacbcdf50e011eecc);
+        
+    
+            marker_0964013a52124f6eb631161106aabcaf.bindTooltip(
+                `<div>
+                     원조전주맛집 : 한식 - 전북 무주군 설천면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_018dac41756147a3889a7b9b7a33170c = L.marker(
+                [35.832645, 127.15978359999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_c24668f2e80340fe81fad080bd766f6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_018dac41756147a3889a7b9b7a33170c.setIcon(icon_c24668f2e80340fe81fad080bd766f6c);
+        
+    
+            marker_018dac41756147a3889a7b9b7a33170c.bindTooltip(
+                `<div>
+                     옛촌막걸리 : 카페/주점 - 전주시 덕진구 인후동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b375183c3624be4b454dc4960d979b9 = L.marker(
+                [35.8177034, 127.1222499],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_e154e1a2d2544474ac60a099e3ae039e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3b375183c3624be4b454dc4960d979b9.setIcon(icon_e154e1a2d2544474ac60a099e3ae039e);
+        
+    
+            marker_3b375183c3624be4b454dc4960d979b9.bindTooltip(
+                `<div>
+                     반달곰 : 카페/주점 - 전주시 완산구 중화산동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ad83fe8f5c2482888fd06a11ecd158f = L.marker(
+                [35.978202100000004, 126.71905990000002],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_3e4d3ce1e30c455e87018ac94f5e999f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8ad83fe8f5c2482888fd06a11ecd158f.setIcon(icon_3e4d3ce1e30c455e87018ac94f5e999f);
+        
+    
+            marker_8ad83fe8f5c2482888fd06a11ecd158f.bindTooltip(
+                `<div>
+                     뽀빠이냉면 : 한식 - 전북 군산시 장재동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a15a6aef3789468ab01f8e9fd972c72e = L.marker(
+                [35.8057802, 127.09923429999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_689cf7db46bd46158136ab410decfaea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a15a6aef3789468ab01f8e9fd972c72e.setIcon(icon_689cf7db46bd46158136ab410decfaea);
+        
+    
+            marker_a15a6aef3789468ab01f8e9fd972c72e.bindTooltip(
+                `<div>
+                     바이킹스(VIKINGS) 전주점 : 뷔페 - 전주시 완산구 효자동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee31c339be964f3ab837aef365720331 = L.marker(
+                [35.832338899999996, 127.1158685],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_b8391d55a63a4b18a79f88019c222701 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee31c339be964f3ab837aef365720331.setIcon(icon_b8391d55a63a4b18a79f88019c222701);
+        
+    
+            marker_ee31c339be964f3ab837aef365720331.bindTooltip(
+                `<div>
+                     팔도명가 : 한식 - 전주시 완산구 서신동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdf3fb8937d14cf596151b90a15ca9b9 = L.marker(
+                [35.8247053, 127.0965305],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_4e997a609fcc4724b9ef51da98a7885e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cdf3fb8937d14cf596151b90a15ca9b9.setIcon(icon_4e997a609fcc4724b9ef51da98a7885e);
+        
+    
+            marker_cdf3fb8937d14cf596151b90a15ca9b9.bindTooltip(
+                `<div>
+                     담소 : 한식 - 전주시 완산구 효자동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3aebdbf80e8840c891b2a2f5205cef61 = L.marker(
+                [35.755602200000006, 127.08939509999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a019ffcba8a64e8184474c6e0d742a89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3aebdbf80e8840c891b2a2f5205cef61.setIcon(icon_a019ffcba8a64e8184474c6e0d742a89);
+        
+    
+            marker_3aebdbf80e8840c891b2a2f5205cef61.bindTooltip(
+                `<div>
+                     풀꽃세상 : 뷔페 - 전주시 완산구 중인동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16920b32e0cc4873a5beae226de8f0bf = L.marker(
+                [35.9891217, 126.71116509999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_2eb872cdc3fb40378258d59764a8272a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_16920b32e0cc4873a5beae226de8f0bf.setIcon(icon_2eb872cdc3fb40378258d59764a8272a);
+        
+    
+            marker_16920b32e0cc4873a5beae226de8f0bf.bindTooltip(
+                `<div>
+                     틈 : 카페/주점 - 전북 군산시 영화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0474719089154d6997e145d3a3c31410 = L.marker(
+                [35.9858971, 126.72313829999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_d716d669cb3041b1aef4aade6c27b005 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0474719089154d6997e145d3a3c31410.setIcon(icon_d716d669cb3041b1aef4aade6c27b005);
+        
+    
+            marker_0474719089154d6997e145d3a3c31410.bindTooltip(
+                `<div>
+                     중앙식당 : 한식 - 전북 군산시 금암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fccbe10c02d34fdf8ab96cce6c199b39 = L.marker(
+                [35.972775299999995, 126.7410781],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_29c093ff76754124aa8519ac3126ce92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fccbe10c02d34fdf8ab96cce6c199b39.setIcon(icon_29c093ff76754124aa8519ac3126ce92);
+        
+    
+            marker_fccbe10c02d34fdf8ab96cce6c199b39.bindTooltip(
+                `<div>
+                     청기와아구 : 한식 - 전북 군산시 조촌동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b47a96130f6f438aaf007ae65943bfd3 = L.marker(
+                [35.8148263, 127.1419564],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_aa408b37e5ad4d24b8083188505379ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b47a96130f6f438aaf007ae65943bfd3.setIcon(icon_aa408b37e5ad4d24b8083188505379ab);
+        
+    
+            marker_b47a96130f6f438aaf007ae65943bfd3.bindTooltip(
+                `<div>
+                     백번집 : 한식 - 전주시 완산구 다가동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc726296b9144236a41712a065ef3c44 = L.marker(
+                [35.6430852, 126.5350386],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_e0e204bebc4041958e6db14a0088f29f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bc726296b9144236a41712a065ef3c44.setIcon(icon_e0e204bebc4041958e6db14a0088f29f);
+        
+    
+            marker_bc726296b9144236a41712a065ef3c44.bindTooltip(
+                `<div>
+                     변산명인바지락죽 : 한식 - 전북 부안군 변산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f62e6d28ca764b2a8da6482d36f353f3 = L.marker(
+                [35.6569177, 126.93665530000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_18a864554a674efdb6afe8eefe3e247e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f62e6d28ca764b2a8da6482d36f353f3.setIcon(icon_18a864554a674efdb6afe8eefe3e247e);
+        
+    
+            marker_f62e6d28ca764b2a8da6482d36f353f3.bindTooltip(
+                `<div>
+                     대일정 : 한식 - 전북 정읍시 태인면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc9fe72744e6433ab45ae105f5f69eda = L.marker(
+                [35.81716420000001, 127.14370179999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_6bbeb6d27ffe41419e357d5b1bbf99e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dc9fe72744e6433ab45ae105f5f69eda.setIcon(icon_6bbeb6d27ffe41419e357d5b1bbf99e4);
+        
+    
+            marker_dc9fe72744e6433ab45ae105f5f69eda.bindTooltip(
+                `<div>
+                     차녀 : 양식 - 전주시 완산구 중앙동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4159769edc8d4a269c8180d6a6aed7b6 = L.marker(
+                [35.8202418, 127.14302690000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_15ab7a0e00e94959bc5a17c8b0c1eae7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4159769edc8d4a269c8180d6a6aed7b6.setIcon(icon_15ab7a0e00e94959bc5a17c8b0c1eae7);
+        
+    
+            marker_4159769edc8d4a269c8180d6a6aed7b6.bindTooltip(
+                `<div>
+                     리쉐프하우스(LEE CHEF HOUSE) : 양식 - 전주시 완산구 고사동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25f30fc52d5746eb8769112c98770007 = L.marker(
+                [35.964178600000004, 126.7173685],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_cebe93ae7a6740279d0cef3f813aa51a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_25f30fc52d5746eb8769112c98770007.setIcon(icon_cebe93ae7a6740279d0cef3f813aa51a);
+        
+    
+            marker_25f30fc52d5746eb8769112c98770007.bindTooltip(
+                `<div>
+                     장미칼국수 직영점 : 한식 - 전북 군산시 수송동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_023e6cc73c1d4abab05474d835c847f8 = L.marker(
+                [35.6204625, 126.66528259999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_93319be8209d420b848b86a535b178b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_023e6cc73c1d4abab05474d835c847f8.setIcon(icon_93319be8209d420b848b86a535b178b2);
+        
+    
+            marker_023e6cc73c1d4abab05474d835c847f8.bindTooltip(
+                `<div>
+                     금동숯불삼겹살 : 한식 - 전북 부안군 보안면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1406e8e835904101b986a1ded668394a = L.marker(
+                [35.8202418, 127.14302690000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_e42c5861c0ae4f239c12d308c7109110 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1406e8e835904101b986a1ded668394a.setIcon(icon_e42c5861c0ae4f239c12d308c7109110);
+        
+    
+            marker_1406e8e835904101b986a1ded668394a.bindTooltip(
+                `<div>
+                     또순이네집 : 한식 - 전주시 완산구 고사동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5556b01df81a41d8bc31be638b4fb2bb = L.marker(
+                [35.9577138, 126.9833095],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_2ff018d3c4704d748543715e713a4e7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5556b01df81a41d8bc31be638b4fb2bb.setIcon(icon_2ff018d3c4704d748543715e713a4e7d);
+        
+    
+            marker_5556b01df81a41d8bc31be638b4fb2bb.bindTooltip(
+                `<div>
+                     별미아구 : 한식 - 전북 익산시 어양동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a6ec0fab5d04391959127c0ec375963 = L.marker(
+                [35.8247053, 127.0965305],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_7eaa783909f342d0b77e8133ef8ad0d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a6ec0fab5d04391959127c0ec375963.setIcon(icon_7eaa783909f342d0b77e8133ef8ad0d5);
+        
+    
+            marker_7a6ec0fab5d04391959127c0ec375963.bindTooltip(
+                `<div>
+                     몬스터함바그(MONSTER HAMBAGU) : 양식 - 전주시 완산구 효자동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdf8371dfcdb4f5888dc2b71509c4b6e = L.marker(
+                [35.8202418, 127.14302690000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_b613e1246f194e59afcadc9d921690aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bdf8371dfcdb4f5888dc2b71509c4b6e.setIcon(icon_b613e1246f194e59afcadc9d921690aa);
+        
+    
+            marker_bdf8371dfcdb4f5888dc2b71509c4b6e.bindTooltip(
+                `<div>
+                     삼백집 : 한식 - 전주시 완산구 고사동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dffcf3bf85df493bb9d15dfd247f86ed = L.marker(
+                [36.0115134, 127.6558912],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a799f20c8bcd4cb6b94b410ea9be223a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dffcf3bf85df493bb9d15dfd247f86ed.setIcon(icon_a799f20c8bcd4cb6b94b410ea9be223a);
+        
+    
+            marker_dffcf3bf85df493bb9d15dfd247f86ed.bindTooltip(
+                `<div>
+                     한풍루한우 : 한식 - 전북 무주군 무주읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bc15b44dcb241c68a17a244c2f8b296 = L.marker(
+                [35.8413717, 127.1929663],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_eb2723be746d4cf0bf5a6e1bd081a172 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9bc15b44dcb241c68a17a244c2f8b296.setIcon(icon_eb2723be746d4cf0bf5a6e1bd081a172);
+        
+    
+            marker_9bc15b44dcb241c68a17a244c2f8b296.bindTooltip(
+                `<div>
+                     한옥집 : 한식 - 전주시 덕진구 금상동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4a7fbc162e040f4842242dba04ffd6c = L.marker(
+                [35.8135739, 127.1483436],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_9573b445da844beb9394d742008a06ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f4a7fbc162e040f4842242dba04ffd6c.setIcon(icon_9573b445da844beb9394d742008a06ad);
+        
+    
+            marker_f4a7fbc162e040f4842242dba04ffd6c.bindTooltip(
+                `<div>
+                     풍남정 : 한식 - 전주시 완산구 전동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5de8926b9bfe4aeb8a71aa5745e3f4c2 = L.marker(
+                [35.4048283, 127.3830821],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_0bd6cb2e84744bc18671c89eafcb71e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5de8926b9bfe4aeb8a71aa5745e3f4c2.setIcon(icon_0bd6cb2e84744bc18671c89eafcb71e6);
+        
+    
+            marker_5de8926b9bfe4aeb8a71aa5745e3f4c2.bindTooltip(
+                `<div>
+                     산들다헌 : 카페/주점 - 전북 남원시 쌍교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00b33b4b63094d34a7c90c9086662d33 = L.marker(
+                [35.805963899999995, 127.1228659],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_bd32c7415d1342ed82c98a343d738c08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_00b33b4b63094d34a7c90c9086662d33.setIcon(icon_bd32c7415d1342ed82c98a343d738c08);
+        
+    
+            marker_00b33b4b63094d34a7c90c9086662d33.bindTooltip(
+                `<div>
+                     만나별미 : 한식 - 전주시 완산구 효자동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8bbaf31bfaa40e4adb2feab52b31637 = L.marker(
+                [35.825987899999994, 127.14623],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a7130e82cb2b408183e5c254dbf67092 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f8bbaf31bfaa40e4adb2feab52b31637.setIcon(icon_a7130e82cb2b408183e5c254dbf67092);
+        
+    
+            marker_f8bbaf31bfaa40e4adb2feab52b31637.bindTooltip(
+                `<div>
+                     펄펄닭내장 : 한식 - 전주시 완산구 서노송동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_587be31e4c8b425da55f2a6b21d00fec = L.marker(
+                [35.820744, 127.1490085],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_2f4ac1fb870d407c9086c4a628c92c80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_587be31e4c8b425da55f2a6b21d00fec.setIcon(icon_2f4ac1fb870d407c9086c4a628c92c80);
+        
+    
+            marker_587be31e4c8b425da55f2a6b21d00fec.bindTooltip(
+                `<div>
+                     영동슈퍼 : 카페/주점 - 전주시 완산구 경원동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eed93e6adf6f4bfca72e03339eb35f61 = L.marker(
+                [35.9837476, 126.71007709999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a7bac9ba17e94ac1bbdacf8d5bc81303 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eed93e6adf6f4bfca72e03339eb35f61.setIcon(icon_a7bac9ba17e94ac1bbdacf8d5bc81303);
+        
+    
+            marker_eed93e6adf6f4bfca72e03339eb35f61.bindTooltip(
+                `<div>
+                     만남스넥 : 분식 - 전북 군산시 명산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_461e5dbf52fc4d06b6fc49e9049f3763 = L.marker(
+                [35.818831200000005, 127.152548],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_c449fa1fd58649779c40b359b649769d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_461e5dbf52fc4d06b6fc49e9049f3763.setIcon(icon_c449fa1fd58649779c40b359b649769d);
+        
+    
+            marker_461e5dbf52fc4d06b6fc49e9049f3763.bindTooltip(
+                `<div>
+                     장가네왕족발 : 한식 - 전주시 완산구 풍남동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d0e1469eb0f4b8bb63e971d868a0a1f = L.marker(
+                [35.81291160000001, 127.1618395],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_244a715597e54a4ca03e6cd311e886ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3d0e1469eb0f4b8bb63e971d868a0a1f.setIcon(icon_244a715597e54a4ca03e6cd311e886ff);
+        
+    
+            marker_3d0e1469eb0f4b8bb63e971d868a0a1f.bindTooltip(
+                `<div>
+                     소복 전주한옥마을점 : 카페/주점 - 전주시 완산구 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f89b03c6a87b439abb9fc1bfec35fef3 = L.marker(
+                [35.9545844, 126.53212340000002],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_95799953af7b414db4ff01c72e4f837d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f89b03c6a87b439abb9fc1bfec35fef3.setIcon(icon_95799953af7b414db4ff01c72e4f837d);
+        
+    
+            marker_f89b03c6a87b439abb9fc1bfec35fef3.bindTooltip(
+                `<div>
+                     바지락명가장가네 : 한식 - 전북 군산시 비응도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_058d94324eeb4e30ace8d689ea54fa78 = L.marker(
+                [35.957818200000006, 126.9722892],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_b24a4f35aa5448c69283106e68ded15c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_058d94324eeb4e30ace8d689ea54fa78.setIcon(icon_b24a4f35aa5448c69283106e68ded15c);
+        
+    
+            marker_058d94324eeb4e30ace8d689ea54fa78.bindTooltip(
+                `<div>
+                     백제갈비 어양동본점 : 한식 - 전북 익산시 영등동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94383c681f3e4fbf9e1c8d2f6f5c123c = L.marker(
+                [35.832338899999996, 127.1158685],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_537fd122c99e4a54996a14ec5b4c994d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_94383c681f3e4fbf9e1c8d2f6f5c123c.setIcon(icon_537fd122c99e4a54996a14ec5b4c994d);
+        
+    
+            marker_94383c681f3e4fbf9e1c8d2f6f5c123c.bindTooltip(
+                `<div>
+                     옛촌막걸리 본점 : 카페/주점 - 전주시 완산구 서신동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92922d135dee46139af14e95ebf62c0c = L.marker(
+                [35.8131619, 127.14490659999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_4c0898bc001a4a20a2d92992f9ddeb7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92922d135dee46139af14e95ebf62c0c.setIcon(icon_4c0898bc001a4a20a2d92992f9ddeb7c);
+        
+    
+            marker_92922d135dee46139af14e95ebf62c0c.bindTooltip(
+                `<div>
+                     그때그집 : 한식 - 전주시 완산구 전동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77e64072af104ac48ccb8d6d4846f956 = L.marker(
+                [35.818831200000005, 127.152548],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_9e9f229a815d48028aaad56224f57c79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_77e64072af104ac48ccb8d6d4846f956.setIcon(icon_9e9f229a815d48028aaad56224f57c79);
+        
+    
+            marker_77e64072af104ac48ccb8d6d4846f956.bindTooltip(
+                `<div>
+                     가인막걸리 : 카페/주점 - 전주시 완산구 풍남동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eabced92980948f1851f57c1b078bd9e = L.marker(
+                [35.8167849, 127.19849369999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_1aa680ed7b8643e6b29f6d479cc89435 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eabced92980948f1851f57c1b078bd9e.setIcon(icon_1aa680ed7b8643e6b29f6d479cc89435);
+        
+    
+            marker_eabced92980948f1851f57c1b078bd9e.bindTooltip(
+                `<div>
+                     예촌면사무소 : 한식 - 전주시 덕진구 우아동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_311a0cbab112412abce560975fecadad = L.marker(
+                [35.816027899999995, 127.15251140000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_fe7e0d2455134e178c40dfd0e7989768 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_311a0cbab112412abce560975fecadad.setIcon(icon_fe7e0d2455134e178c40dfd0e7989768);
+        
+    
+            marker_311a0cbab112412abce560975fecadad.bindTooltip(
+                `<div>
+                     다화원 : 카페/주점 - 전주시 완산구 풍남동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a60d6858207641eeb9de91f047861f70 = L.marker(
+                [35.9908777, 126.70684479999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_035a4071cd634660af464743905b2be9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a60d6858207641eeb9de91f047861f70.setIcon(icon_035a4071cd634660af464743905b2be9);
+        
+    
+            marker_a60d6858207641eeb9de91f047861f70.bindTooltip(
+                `<div>
+                     쌍용반점 : 중식 - 전북 군산시 금동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75cf9dc78edc48afb660b8ab0619c7af = L.marker(
+                [35.9543251, 127.7830903],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_5ca1c8f365c44ca69312246e516bc35e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_75cf9dc78edc48afb660b8ab0619c7af.setIcon(icon_5ca1c8f365c44ca69312246e516bc35e);
+        
+    
+            marker_75cf9dc78edc48afb660b8ab0619c7af.bindTooltip(
+                `<div>
+                     선화가든 : 한식 - 전북 무주군 설천면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ed613fad6334910ad0aa1b7b0c67f5d = L.marker(
+                [35.9543251, 127.7830903],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_72f3ec4cb51d4a46b14f93c8136b772e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4ed613fad6334910ad0aa1b7b0c67f5d.setIcon(icon_72f3ec4cb51d4a46b14f93c8136b772e);
+        
+    
+            marker_4ed613fad6334910ad0aa1b7b0c67f5d.bindTooltip(
+                `<div>
+                     맛고을회관 : 한식 - 전북 무주군 설천면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b1d368997024b708273d10aa8762202 = L.marker(
+                [35.9543251, 127.7830903],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_75f4b9e3e6f7475083f0f9e61a13eef7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0b1d368997024b708273d10aa8762202.setIcon(icon_75f4b9e3e6f7475083f0f9e61a13eef7);
+        
+    
+            marker_0b1d368997024b708273d10aa8762202.bindTooltip(
+                `<div>
+                     예촌본가 : 한식 - 전북 무주군 설천면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72075968257b45f8a0ca224f4730c4cf = L.marker(
+                [35.8180613, 127.14945759999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_26829b0d4e0a41ce95e799062440ed37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_72075968257b45f8a0ca224f4730c4cf.setIcon(icon_26829b0d4e0a41ce95e799062440ed37);
+        
+    
+            marker_72075968257b45f8a0ca224f4730c4cf.bindTooltip(
+                `<div>
+                     동문원 : 한식 - 전주시 완산구 경원동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da2e6160fcb9436c9c1ed715792145f6 = L.marker(
+                [35.9804224, 126.7312433],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_11ecc29496b54ce18d64a31893097f99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_da2e6160fcb9436c9c1ed715792145f6.setIcon(icon_11ecc29496b54ce18d64a31893097f99);
+        
+    
+            marker_da2e6160fcb9436c9c1ed715792145f6.bindTooltip(
+                `<div>
+                     중동호떡 : 분식 - 전북 군산시 경암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f0d91bf433e46259470b1dc43b691bf = L.marker(
+                [35.837421899999995, 127.1331348],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_5e0521d617a644dbb43d09c61cdb9f8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5f0d91bf433e46259470b1dc43b691bf.setIcon(icon_5e0521d617a644dbb43d09c61cdb9f8e);
+        
+    
+            marker_5f0d91bf433e46259470b1dc43b691bf.bindTooltip(
+                `<div>
+                     포디움 : 카페/주점 - 전주시 덕진구 금암1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac2fa274a5ff469dbb74e4f1c89f8af0 = L.marker(
+                [35.9837476, 126.71007709999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_441c064005414802b2ca754a30f7021b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac2fa274a5ff469dbb74e4f1c89f8af0.setIcon(icon_441c064005414802b2ca754a30f7021b);
+        
+    
+            marker_ac2fa274a5ff469dbb74e4f1c89f8af0.bindTooltip(
+                `<div>
+                     또리분식 : 한식 - 전북 군산시 명산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_887c19e05efe42a18121f7b8e0ae30c8 = L.marker(
+                [35.818831200000005, 127.152548],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_23688cb647fe46f19d7016017654981b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_887c19e05efe42a18121f7b8e0ae30c8.setIcon(icon_23688cb647fe46f19d7016017654981b);
+        
+    
+            marker_887c19e05efe42a18121f7b8e0ae30c8.bindTooltip(
+                `<div>
+                     남노갈비집 : 한식 - 전주시 완산구 풍남동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84f43c2e1f35447389ef726994f2d016 = L.marker(
+                [35.9804224, 126.7312433],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_55833912deb14ce2a3697bc43be9bc88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_84f43c2e1f35447389ef726994f2d016.setIcon(icon_55833912deb14ce2a3697bc43be9bc88);
+        
+    
+            marker_84f43c2e1f35447389ef726994f2d016.bindTooltip(
+                `<div>
+                     가소 : 한식 - 전북 군산시 경암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a287cc351b9b4c0fb7b06dbd7cf68524 = L.marker(
+                [35.6045256, 126.57156450000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_aa993f121b4347b3b7da7ce65b73d50f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a287cc351b9b4c0fb7b06dbd7cf68524.setIcon(icon_aa993f121b4347b3b7da7ce65b73d50f);
+        
+    
+            marker_a287cc351b9b4c0fb7b06dbd7cf68524.bindTooltip(
+                `<div>
+                     식도락게장 : 한식 - 전북 부안군 진서면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_168c5210291241c381a71da3f1c3126f = L.marker(
+                [35.816027899999995, 127.15251140000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_da35334fbcc943a88ab5431fafd8b249 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_168c5210291241c381a71da3f1c3126f.setIcon(icon_da35334fbcc943a88ab5431fafd8b249);
+        
+    
+            marker_168c5210291241c381a71da3f1c3126f.bindTooltip(
+                `<div>
+                     상덕커리 : 한식 - 전주시 완산구 풍남동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3e6e43e078240d5b8cb956ec27b6aec = L.marker(
+                [35.6430852, 126.5350386],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_5d2aaf9d927c444f849b99b0b2b6e772 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a3e6e43e078240d5b8cb956ec27b6aec.setIcon(icon_5d2aaf9d927c444f849b99b0b2b6e772);
+        
+    
+            marker_a3e6e43e078240d5b8cb956ec27b6aec.bindTooltip(
+                `<div>
+                     새전주횟집 : 한식 - 전북 부안군 변산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11c61a6d51eb4b868142bbb7fe10f3f7 = L.marker(
+                [35.817794, 127.14735790000002],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_7e733a23a41c4f3aafac6a3a3da0f919 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_11c61a6d51eb4b868142bbb7fe10f3f7.setIcon(icon_7e733a23a41c4f3aafac6a3a3da0f919);
+        
+    
+            marker_11c61a6d51eb4b868142bbb7fe10f3f7.bindTooltip(
+                `<div>
+                     신성반점 : 중식 - 전주시 완산구 경원동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62644dbb4749422ea0648ad782dd1fa8 = L.marker(
+                [35.9891217, 126.71116509999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_66307b6521a9406580c51994185f225d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_62644dbb4749422ea0648ad782dd1fa8.setIcon(icon_66307b6521a9406580c51994185f225d);
+        
+    
+            marker_62644dbb4749422ea0648ad782dd1fa8.bindTooltip(
+                `<div>
+                     한주옥 : 한식 - 전북 군산시 영화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e08e2b290ab4a1586e06c71c1b156f8 = L.marker(
+                [35.81706629999999, 127.1400953],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_79fdb53c2d0d4d11b2680e8fd3cb6acb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8e08e2b290ab4a1586e06c71c1b156f8.setIcon(icon_79fdb53c2d0d4d11b2680e8fd3cb6acb);
+        
+    
+            marker_8e08e2b290ab4a1586e06c71c1b156f8.bindTooltip(
+                `<div>
+                     한미반점 : 중식 - 전주시 완산구 다가동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58229c72be3d4bdeac9914763bb5605b = L.marker(
+                [35.8131619, 127.14490659999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_8e31d9f1cd0d49f0abe46fcc1400a02a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58229c72be3d4bdeac9914763bb5605b.setIcon(icon_8e31d9f1cd0d49f0abe46fcc1400a02a);
+        
+    
+            marker_58229c72be3d4bdeac9914763bb5605b.bindTooltip(
+                `<div>
+                     운암식당 : 한식 - 전주시 완산구 전동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81beb19a33c34a4fa7e1883f1cb65f5e = L.marker(
+                [35.962454799999996, 126.69706509999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_f03a3958196e42fb967864f140c889b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_81beb19a33c34a4fa7e1883f1cb65f5e.setIcon(icon_f03a3958196e42fb967864f140c889b7);
+        
+    
+            marker_81beb19a33c34a4fa7e1883f1cb65f5e.bindTooltip(
+                `<div>
+                     비행장정문부대찌개 : 한식 - 전북 군산시 나운동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11348bb2843b4f4a85a0cb60786c5d48 = L.marker(
+                [35.965173, 126.69922659999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_0b9866e4ad7c4ca7b6fb5ecc55c1fbd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_11348bb2843b4f4a85a0cb60786c5d48.setIcon(icon_0b9866e4ad7c4ca7b6fb5ecc55c1fbd4);
+        
+    
+            marker_11348bb2843b4f4a85a0cb60786c5d48.bindTooltip(
+                `<div>
+                     우정명태 : 한식 - 전북 군산시 나운2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bc92628d42d471b8325e74f979abcff = L.marker(
+                [35.837421899999995, 127.1331348],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_cc84c9bb712544f59eaa237beb758734 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6bc92628d42d471b8325e74f979abcff.setIcon(icon_cc84c9bb712544f59eaa237beb758734);
+        
+    
+            marker_6bc92628d42d471b8325e74f979abcff.bindTooltip(
+                `<div>
+                     감로헌 : 한식 - 전주시 덕진구 금암1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a657f49360c64ce38f64eae90e437dbe = L.marker(
+                [35.8409513, 127.13637290000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_c068d90704c345729c44544790daec72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a657f49360c64ce38f64eae90e437dbe.setIcon(icon_c068d90704c345729c44544790daec72);
+        
+    
+            marker_a657f49360c64ce38f64eae90e437dbe.bindTooltip(
+                `<div>
+                     전주옥 : 한식 - 전주시 덕진구 금암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9e4787dbb5c4e8ab1b2ca74796378e8 = L.marker(
+                [35.8486059, 127.1317179],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_f9a780d840fe4f1dad7bf3ad31e8f174 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c9e4787dbb5c4e8ab1b2ca74796378e8.setIcon(icon_f9a780d840fe4f1dad7bf3ad31e8f174);
+        
+    
+            marker_c9e4787dbb5c4e8ab1b2ca74796378e8.bindTooltip(
+                `<div>
+                     얼시아지매콩나물국밥 : 한식 - 전주시 덕진구 덕진동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db651b6907ae4d2a8ce0fc4c5b4d937d = L.marker(
+                [35.9482021, 126.6876009],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_96a18e1159c04303b449600813732cc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_db651b6907ae4d2a8ce0fc4c5b4d937d.setIcon(icon_96a18e1159c04303b449600813732cc6);
+        
+    
+            marker_db651b6907ae4d2a8ce0fc4c5b4d937d.bindTooltip(
+                `<div>
+                     크레마 : 양식 - 전북 군산시 미룡동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf83c6802bb44f2e95ab4f520dd98af6 = L.marker(
+                [35.81291160000001, 127.1618395],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_99c6c5261bf54340adf651f191a34dd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cf83c6802bb44f2e95ab4f520dd98af6.setIcon(icon_99c6c5261bf54340adf651f191a34dd6);
+        
+    
+            marker_cf83c6802bb44f2e95ab4f520dd98af6.bindTooltip(
+                `<div>
+                     외할머니솜씨 : 카페/주점 - 전주시 완산구 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c300d2624bde4b8eb3f32fcf86b62a68 = L.marker(
+                [35.842292900000004, 127.1475497],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_9f78b4a9856b4e3da4c84d164cf5b467 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c300d2624bde4b8eb3f32fcf86b62a68.setIcon(icon_9f78b4a9856b4e3da4c84d164cf5b467);
+        
+    
+            marker_c300d2624bde4b8eb3f32fcf86b62a68.bindTooltip(
+                `<div>
+                     다담 : 한식 - 전주시 덕진구 인후동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_015857b8c20342aa9bb3aac5bf6b9e28 = L.marker(
+                [35.9867301, 126.71001740000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_dd730cb2588f4b1bb35109efca7f4921 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_015857b8c20342aa9bb3aac5bf6b9e28.setIcon(icon_dd730cb2588f4b1bb35109efca7f4921);
+        
+    
+            marker_015857b8c20342aa9bb3aac5bf6b9e28.bindTooltip(
+                `<div>
+                     사골뚝배기 : 한식 - 전북 군산시 신창동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ccf519b8aeb41f4b394c32ac1492c63 = L.marker(
+                [35.837421899999995, 127.1331348],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a5b7428755c146ebaa13db62c94bd76c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2ccf519b8aeb41f4b394c32ac1492c63.setIcon(icon_a5b7428755c146ebaa13db62c94bd76c);
+        
+    
+            marker_2ccf519b8aeb41f4b394c32ac1492c63.bindTooltip(
+                `<div>
+                     금암동부대찌개 : 한식 - 전주시 덕진구 금암1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bb7bb8f13c24e4fb036328b518e89a4 = L.marker(
+                [35.981638700000005, 126.71511229999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_117a92ebe85f44ad81c2954fd3c41cc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6bb7bb8f13c24e4fb036328b518e89a4.setIcon(icon_117a92ebe85f44ad81c2954fd3c41cc6);
+        
+    
+            marker_6bb7bb8f13c24e4fb036328b518e89a4.bindTooltip(
+                `<div>
+                     안동집 : 한식 - 전북 군산시 둔율동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72885c97a19248b9963d2f3f6c2467b4 = L.marker(
+                [35.780871000000005, 127.01787479999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_647c769ab32247ae93aa6e71260468bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_72885c97a19248b9963d2f3f6c2467b4.setIcon(icon_647c769ab32247ae93aa6e71260468bc);
+        
+    
+            marker_72885c97a19248b9963d2f3f6c2467b4.bindTooltip(
+                `<div>
+                     다솜차반 : 한식 - 전북 김제시 금구면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e40a6a3e74b843ec884b6897cf33eeb5 = L.marker(
+                [35.986020700000005, 126.7169818],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_0fc6e447f643466091bcc4ce0d0d1ce3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e40a6a3e74b843ec884b6897cf33eeb5.setIcon(icon_0fc6e447f643466091bcc4ce0d0d1ce3);
+        
+    
+            marker_e40a6a3e74b843ec884b6897cf33eeb5.bindTooltip(
+                `<div>
+                     완주옥 : 한식 - 전북 군산시 죽성동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_454e3ddbdd7c4ceeac56f118ac7ca8fe = L.marker(
+                [35.9853536, 126.7194987],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_9a5e51b1acbc48118180da6cff8b464c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_454e3ddbdd7c4ceeac56f118ac7ca8fe.setIcon(icon_9a5e51b1acbc48118180da6cff8b464c);
+        
+    
+            marker_454e3ddbdd7c4ceeac56f118ac7ca8fe.bindTooltip(
+                `<div>
+                     똘이네집 : 한식 - 전북 군산시 신영동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fc4eebce0504585984f8386406c00ff = L.marker(
+                [35.832338899999996, 127.1158685],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_de0130fc4180415eab509147e627700b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9fc4eebce0504585984f8386406c00ff.setIcon(icon_de0130fc4180415eab509147e627700b);
+        
+    
+            marker_9fc4eebce0504585984f8386406c00ff.bindTooltip(
+                `<div>
+                     루나세라 : 양식 - 전주시 완산구 서신동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f58355b6b00741129240ed2d155f2db5 = L.marker(
+                [35.962454799999996, 126.69706509999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_0c06886180e34e6786d6b497c7dd6c67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f58355b6b00741129240ed2d155f2db5.setIcon(icon_0c06886180e34e6786d6b497c7dd6c67);
+        
+    
+            marker_f58355b6b00741129240ed2d155f2db5.bindTooltip(
+                `<div>
+                     인투더그레이(SHOP INTO THE GREY) : 카페/주점 - 전북 군산시 나운동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81370ba5a7de49379354217252213038 = L.marker(
+                [35.984589, 126.7137338],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_0ed476ad88ae4bbeaa025c8db0ba67aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_81370ba5a7de49379354217252213038.setIcon(icon_0ed476ad88ae4bbeaa025c8db0ba67aa);
+        
+    
+            marker_81370ba5a7de49379354217252213038.bindTooltip(
+                `<div>
+                     나는섬 : 카페/주점 - 전북 군산시 개복동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_749ee8a95c124a40849ac4cb00372f97 = L.marker(
+                [35.8202418, 127.14302690000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_ac7b98dfd0f845c0a00c7e34b3650f70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_749ee8a95c124a40849ac4cb00372f97.setIcon(icon_ac7b98dfd0f845c0a00c7e34b3650f70);
+        
+    
+            marker_749ee8a95c124a40849ac4cb00372f97.bindTooltip(
+                `<div>
+                     김밥이야기 : 분식 - 전주시 완산구 고사동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d278cc69da24870aa76cf2facbdd9c0 = L.marker(
+                [35.820744, 127.1490085],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_24ef36d6d16545c08a0b1377be31935e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4d278cc69da24870aa76cf2facbdd9c0.setIcon(icon_24ef36d6d16545c08a0b1377be31935e);
+        
+    
+            marker_4d278cc69da24870aa76cf2facbdd9c0.bindTooltip(
+                `<div>
+                     연지본관 : 한식 - 전주시 완산구 경원동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c660e63d11fb40b685039031eceb099e = L.marker(
+                [35.81291160000001, 127.1618395],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_9c18ddb6315648c1b1aec4dcb49bfa8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c660e63d11fb40b685039031eceb099e.setIcon(icon_9c18ddb6315648c1b1aec4dcb49bfa8e);
+        
+    
+            marker_c660e63d11fb40b685039031eceb099e.bindTooltip(
+                `<div>
+                     신뱅이 : 한식 - 전주시 완산구 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3852a48b2b0c4af9b5b454bf89114fd4 = L.marker(
+                [35.81291160000001, 127.1618395],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_3c81e54d09c34c9388c3d4535b35ebaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3852a48b2b0c4af9b5b454bf89114fd4.setIcon(icon_3c81e54d09c34c9388c3d4535b35ebaa);
+        
+    
+            marker_3852a48b2b0c4af9b5b454bf89114fd4.bindTooltip(
+                `<div>
+                     교동집 : 중식 - 전주시 완산구 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83182da9647942a389eff1c5d727e334 = L.marker(
+                [35.81291160000001, 127.1618395],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_f3fc0fe3f157458f81accd30c02eac26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_83182da9647942a389eff1c5d727e334.setIcon(icon_f3fc0fe3f157458f81accd30c02eac26);
+        
+    
+            marker_83182da9647942a389eff1c5d727e334.bindTooltip(
+                `<div>
+                     베테랑분식 : 한식 - 전주시 완산구 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5797069950c941ecab5a65db37ec1509 = L.marker(
+                [35.81291160000001, 127.1618395],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_12ca3f8c687a4b8b924b166065d76fd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5797069950c941ecab5a65db37ec1509.setIcon(icon_12ca3f8c687a4b8b924b166065d76fd9);
+        
+    
+            marker_5797069950c941ecab5a65db37ec1509.bindTooltip(
+                `<div>
+                     교동다원 : 카페/주점 - 전주시 완산구 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db8e522f80d24f039d61de20848bdb25 = L.marker(
+                [35.820744, 127.1490085],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_2354539b73af467ab027f5e458a7449f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_db8e522f80d24f039d61de20848bdb25.setIcon(icon_2354539b73af467ab027f5e458a7449f);
+        
+    
+            marker_db8e522f80d24f039d61de20848bdb25.bindTooltip(
+                `<div>
+                     전일수퍼 : 카페/주점 - 전주시 완산구 경원동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22894a29e59d418ca2e3d037fc4deb45 = L.marker(
+                [35.832338899999996, 127.1158685],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_576303700b9c49cbab225a45c0d6bd81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_22894a29e59d418ca2e3d037fc4deb45.setIcon(icon_576303700b9c49cbab225a45c0d6bd81);
+        
+    
+            marker_22894a29e59d418ca2e3d037fc4deb45.bindTooltip(
+                `<div>
+                     에루화 : 한식 - 전주시 완산구 서신동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b0dd5f2fecf4398b022ce4f7e8739a3 = L.marker(
+                [36.0285125, 126.83328],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_90371f50dd814e94a0d2671bfe6a45f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b0dd5f2fecf4398b022ce4f7e8739a3.setIcon(icon_90371f50dd814e94a0d2671bfe6a45f0);
+        
+    
+            marker_1b0dd5f2fecf4398b022ce4f7e8739a3.bindTooltip(
+                `<div>
+                     옹고집쌈밥 : 한식 - 전북 군산시 나포면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b43bce43243b482895ea5dfb166bacfc = L.marker(
+                [35.825987899999994, 127.14623],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_5b1a1730b44d4965a04fae8ff8801730 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b43bce43243b482895ea5dfb166bacfc.setIcon(icon_5b1a1730b44d4965a04fae8ff8801730);
+        
+    
+            marker_b43bce43243b482895ea5dfb166bacfc.bindTooltip(
+                `<div>
+                     카페츄 객사점 : 카페/주점 - 전주시 완산구 서노송동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ea6615f9edf4d689c93ae9069abacc5 = L.marker(
+                [35.8131619, 127.14490659999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_e0035fcfaea94215b1ee89205e9ed237 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7ea6615f9edf4d689c93ae9069abacc5.setIcon(icon_e0035fcfaea94215b1ee89205e9ed237);
+        
+    
+            marker_7ea6615f9edf4d689c93ae9069abacc5.bindTooltip(
+                `<div>
+                     우정식당 : 한식 - 전주시 완산구 전동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03585e57c71c465791e40c5bf6dcdcbc = L.marker(
+                [35.816027899999995, 127.15251140000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_1b5d370f22914a89a7a62654d765c6cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_03585e57c71c465791e40c5bf6dcdcbc.setIcon(icon_1b5d370f22914a89a7a62654d765c6cb);
+        
+    
+            marker_03585e57c71c465791e40c5bf6dcdcbc.bindTooltip(
+                `<div>
+                     경기전중앙숯불 : 한식 - 전주시 완산구 풍남동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d381afbda6f44ac9104ec92df9bfadd = L.marker(
+                [35.9867301, 126.71001740000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a2630910b1904a7293616da4f93e93f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d381afbda6f44ac9104ec92df9bfadd.setIcon(icon_a2630910b1904a7293616da4f93e93f0);
+        
+    
+            marker_6d381afbda6f44ac9104ec92df9bfadd.bindTooltip(
+                `<div>
+                     한일옥 : 한식 - 전북 군산시 신창동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa41d1d0140846a587d1fb03b34058c2 = L.marker(
+                [35.837421899999995, 127.1331348],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_62b7b2759c4b48f8a7e1207095725a1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa41d1d0140846a587d1fb03b34058c2.setIcon(icon_62b7b2759c4b48f8a7e1207095725a1b);
+        
+    
+            marker_aa41d1d0140846a587d1fb03b34058c2.bindTooltip(
+                `<div>
+                     쌈가 : 한식 - 전주시 덕진구 금암1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_022b7b2bff9c48fcbb423abefc2aa9f7 = L.marker(
+                [35.8486059, 127.1317179],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_dcdd120799b54fd68f53176f3e61716f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_022b7b2bff9c48fcbb423abefc2aa9f7.setIcon(icon_dcdd120799b54fd68f53176f3e61716f);
+        
+    
+            marker_022b7b2bff9c48fcbb423abefc2aa9f7.bindTooltip(
+                `<div>
+                     카페레몬테이블 : 양식 - 전주시 덕진구 덕진동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e64963dfbe348b4ba1f48cf0dfd4111 = L.marker(
+                [35.8131619, 127.14490659999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a6ad275373924dc0aaa92e06d8a1eeae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4e64963dfbe348b4ba1f48cf0dfd4111.setIcon(icon_a6ad275373924dc0aaa92e06d8a1eeae);
+        
+    
+            marker_4e64963dfbe348b4ba1f48cf0dfd4111.bindTooltip(
+                `<div>
+                     현대옥 남부시장점 : 한식 - 전주시 완산구 전동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aede9ab0cedf422c97cb60028e984ab8 = L.marker(
+                [35.973861, 126.70422859999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_caf6f62ed185409194d2d2124b3aff72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aede9ab0cedf422c97cb60028e984ab8.setIcon(icon_caf6f62ed185409194d2d2124b3aff72);
+        
+    
+            marker_aede9ab0cedf422c97cb60028e984ab8.bindTooltip(
+                `<div>
+                     커피점빵 : 카페/주점 - 전북 군산시 문화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e222cc4c86e45b99ea2b128ff67fbf9 = L.marker(
+                [35.803209, 126.8888936],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_06507c33f12f411686620a36195fc13c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0e222cc4c86e45b99ea2b128ff67fbf9.setIcon(icon_06507c33f12f411686620a36195fc13c);
+        
+    
+            marker_0e222cc4c86e45b99ea2b128ff67fbf9.bindTooltip(
+                `<div>
+                     대흥각 : 중식 - 전북 김제시 요촌동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bcaf1891601d4e97946f14c376079570 = L.marker(
+                [35.816027899999995, 127.15251140000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_1d52eb81a6284c609f81ad7cae19f1d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bcaf1891601d4e97946f14c376079570.setIcon(icon_1d52eb81a6284c609f81ad7cae19f1d5);
+        
+    
+            marker_bcaf1891601d4e97946f14c376079570.bindTooltip(
+                `<div>
+                     모심 : 카페/주점 - 전주시 완산구 풍남동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b652c2075a040b8967e437ccea23d95 = L.marker(
+                [35.9893166, 126.7142115],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_efd9436fe356463996fc937068c621e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b652c2075a040b8967e437ccea23d95.setIcon(icon_efd9436fe356463996fc937068c621e7);
+        
+    
+            marker_1b652c2075a040b8967e437ccea23d95.bindTooltip(
+                `<div>
+                     빈해원 : 중식 - 전북 군산시 장미동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1363cea62524af6b348f265acc09375 = L.marker(
+                [35.4087385, 127.38805090000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_e86359d3252142d792c7af4d3eab35ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d1363cea62524af6b348f265acc09375.setIcon(icon_e86359d3252142d792c7af4d3eab35ec);
+        
+    
+            marker_d1363cea62524af6b348f265acc09375.bindTooltip(
+                `<div>
+                     동춘원 : 중식 - 전북 남원시 죽항동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f79ee090d534805986d6e7436384716 = L.marker(
+                [35.81291160000001, 127.1618395],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_8e5c40529ebf49f8a32bcc9025f5fff8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f79ee090d534805986d6e7436384716.setIcon(icon_8e5c40529ebf49f8a32bcc9025f5fff8);
+        
+    
+            marker_3f79ee090d534805986d6e7436384716.bindTooltip(
+                `<div>
+                     길거리야 교동점 : 베이커리 - 전주시 완산구 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23ea229c15f44ba1978f54faff747b5f = L.marker(
+                [35.9543251, 127.7830903],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_c4ee0efdf38e41a5b51df42a4514a571 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_23ea229c15f44ba1978f54faff747b5f.setIcon(icon_c4ee0efdf38e41a5b51df42a4514a571);
+        
+    
+            marker_23ea229c15f44ba1978f54faff747b5f.bindTooltip(
+                `<div>
+                     한윤순할매보쌈 : 한식 - 전북 무주군 설천면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf6bceb0ebcb40a289c9c0b5eb7078d7 = L.marker(
+                [35.972775299999995, 126.7410781],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_b6fdef4760ca4075b2f37bf223956837 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cf6bceb0ebcb40a289c9c0b5eb7078d7.setIcon(icon_b6fdef4760ca4075b2f37bf223956837);
+        
+    
+            marker_cf6bceb0ebcb40a289c9c0b5eb7078d7.bindTooltip(
+                `<div>
+                     키친후가(Kitchen Hygge) : 패스트푸드 - 전북 군산시 조촌동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20c0ba9208434012b2770d06f0db4768 = L.marker(
+                [35.8202418, 127.14302690000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_f5470cce6ba046a7814df6a6656dd6de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20c0ba9208434012b2770d06f0db4768.setIcon(icon_f5470cce6ba046a7814df6a6656dd6de);
+        
+    
+            marker_20c0ba9208434012b2770d06f0db4768.bindTooltip(
+                `<div>
+                     맘은콩밭에 : 한식 - 전주시 완산구 고사동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7ebc2f0e3294a4f897b246bdc929545 = L.marker(
+                [35.8131619, 127.14490659999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_80e88a3c27e44078b71b774e0791d7f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7ebc2f0e3294a4f897b246bdc929545.setIcon(icon_80e88a3c27e44078b71b774e0791d7f3);
+        
+    
+            marker_b7ebc2f0e3294a4f897b246bdc929545.bindTooltip(
+                `<div>
+                     엄마손순대국 : 한식 - 전주시 완산구 전동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb872e27cab7467aa2e8755aedd605d2 = L.marker(
+                [35.8180613, 127.14945759999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_330e538b25cb40298397d9250938011a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb872e27cab7467aa2e8755aedd605d2.setIcon(icon_330e538b25cb40298397d9250938011a);
+        
+    
+            marker_eb872e27cab7467aa2e8755aedd605d2.bindTooltip(
+                `<div>
+                     천년누리봄 : 한식 - 전주시 완산구 경원동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7573600a2ae4c74b1a8e3ae1aba1d8f = L.marker(
+                [35.81291160000001, 127.1618395],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_566e4210d64f49e18a6ddd54c412dd00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7573600a2ae4c74b1a8e3ae1aba1d8f.setIcon(icon_566e4210d64f49e18a6ddd54c412dd00);
+        
+    
+            marker_b7573600a2ae4c74b1a8e3ae1aba1d8f.bindTooltip(
+                `<div>
+                     빈스인가배몽 : 카페/주점 - 전주시 완산구 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_befbda8b17354df49d7d72a005a37e12 = L.marker(
+                [35.965173, 126.69922659999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_6d11cc5b1a86451797ffa33778629f85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_befbda8b17354df49d7d72a005a37e12.setIcon(icon_6d11cc5b1a86451797ffa33778629f85);
+        
+    
+            marker_befbda8b17354df49d7d72a005a37e12.bindTooltip(
+                `<div>
+                     청춘 : 양식 - 전북 군산시 나운2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1dff917a3e0e4eb4b35e6cfeefba4643 = L.marker(
+                [35.8135739, 127.1483436],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_5e95c47779ce44e4a8892c5c080c8a68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1dff917a3e0e4eb4b35e6cfeefba4643.setIcon(icon_5e95c47779ce44e4a8892c5c080c8a68);
+        
+    
+            marker_1dff917a3e0e4eb4b35e6cfeefba4643.bindTooltip(
+                `<div>
+                     국수꽃 : 한식 - 전주시 완산구 전동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c3ee28c95ec49b59e95721d9536ba89 = L.marker(
+                [35.9867301, 126.71001740000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_535337fa2439467d8a003a7db52ec585 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5c3ee28c95ec49b59e95721d9536ba89.setIcon(icon_535337fa2439467d8a003a7db52ec585);
+        
+    
+            marker_5c3ee28c95ec49b59e95721d9536ba89.bindTooltip(
+                `<div>
+                     메카닉 : 카페/주점 - 전북 군산시 신창동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32568502da0848b6a991615d6093c68e = L.marker(
+                [35.816027899999995, 127.15251140000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_f28e8352ac80404b82a6f8e0d13f97b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_32568502da0848b6a991615d6093c68e.setIcon(icon_f28e8352ac80404b82a6f8e0d13f97b6);
+        
+    
+            marker_32568502da0848b6a991615d6093c68e.bindTooltip(
+                `<div>
+                     꿈꾸는기린 : 카페/주점 - 전주시 완산구 풍남동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbc13f32b4924fae9999e88bd5c25169 = L.marker(
+                [35.4078027, 127.37953629999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_cf457cf64a3b4eb8ba2b9972a741c540 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cbc13f32b4924fae9999e88bd5c25169.setIcon(icon_cf457cf64a3b4eb8ba2b9972a741c540);
+        
+    
+            marker_cbc13f32b4924fae9999e88bd5c25169.bindTooltip(
+                `<div>
+                     명문제과 : 베이커리 - 전북 남원시 하정동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45b558a6f1d1422d8b24286bd0f986ac = L.marker(
+                [35.8180613, 127.14945759999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_fdcea82923bf4198937f7089fb7777f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_45b558a6f1d1422d8b24286bd0f986ac.setIcon(icon_fdcea82923bf4198937f7089fb7777f5);
+        
+    
+            marker_45b558a6f1d1422d8b24286bd0f986ac.bindTooltip(
+                `<div>
+                     풍전콩나물국밥 : 한식 - 전주시 완산구 경원동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4aaa98a266ed48b4a893f6b0202c17e0 = L.marker(
+                [35.8135739, 127.1483436],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_1cbfcc0bf53e49e891cd349c550fe571 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4aaa98a266ed48b4a893f6b0202c17e0.setIcon(icon_1cbfcc0bf53e49e891cd349c550fe571);
+        
+    
+            marker_4aaa98a266ed48b4a893f6b0202c17e0.bindTooltip(
+                `<div>
+                     삼번집 : 한식 - 전주시 완산구 전동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92f105d5b8af48dd818aae9dcb18199a = L.marker(
+                [35.964178600000004, 126.7173685],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_5dc82fe4f8b44be59ab452c13b2d4fe9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92f105d5b8af48dd818aae9dcb18199a.setIcon(icon_5dc82fe4f8b44be59ab452c13b2d4fe9);
+        
+    
+            marker_92f105d5b8af48dd818aae9dcb18199a.bindTooltip(
+                `<div>
+                     카페베베모스 : 카페/주점 - 전북 군산시 수송동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_646bdcee0d464bc7b77afcd30f08c350 = L.marker(
+                [35.81291160000001, 127.1618395],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_e0ccec8a43224d07b20259f873a0764f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_646bdcee0d464bc7b77afcd30f08c350.setIcon(icon_e0ccec8a43224d07b20259f873a0764f);
+        
+    
+            marker_646bdcee0d464bc7b77afcd30f08c350.bindTooltip(
+                `<div>
+                     하누리 : 한식 - 전주시 완산구 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1418931d94c49aeab8db5d299518491 = L.marker(
+                [35.9605855, 126.78609070000002],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_0be0e9c159df4ec9bd728365cec044f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a1418931d94c49aeab8db5d299518491.setIcon(icon_0be0e9c159df4ec9bd728365cec044f1);
+        
+    
+            marker_a1418931d94c49aeab8db5d299518491.bindTooltip(
+                `<div>
+                     바나나팩토리 : 카페/주점 - 전북 군산시 개정면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_788d67117252442a813532f6c73914f7 = L.marker(
+                [35.9482021, 126.6876009],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_4da92d5faf2c40f29d768ae28af02b52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_788d67117252442a813532f6c73914f7.setIcon(icon_4da92d5faf2c40f29d768ae28af02b52);
+        
+    
+            marker_788d67117252442a813532f6c73914f7.bindTooltip(
+                `<div>
+                     티티카카 : 카페/주점 - 전북 군산시 미룡동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0e37baae0a048ab80f02a589cd8c0bd = L.marker(
+                [35.984450700000004, 126.7050645],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_f28dc6bb6f0a441cb2221f136e8fcdc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b0e37baae0a048ab80f02a589cd8c0bd.setIcon(icon_f28dc6bb6f0a441cb2221f136e8fcdc2);
+        
+    
+            marker_b0e37baae0a048ab80f02a589cd8c0bd.bindTooltip(
+                `<div>
+                     작은떡시루 : 카페/주점 - 전북 군산시 월명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_671c80f310cc4a098fed29496cd2b811 = L.marker(
+                [35.81291160000001, 127.1618395],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_9a879c349e17417a88e8f788e203fc32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_671c80f310cc4a098fed29496cd2b811.setIcon(icon_9a879c349e17417a88e8f788e203fc32);
+        
+    
+            marker_671c80f310cc4a098fed29496cd2b811.bindTooltip(
+                `<div>
+                     한벽집 : 한식 - 전주시 완산구 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5b3dd47444f4009ba0af1a9bacd8a37 = L.marker(
+                [35.8202418, 127.14302690000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_13fe9c6d13264c89b540e6ec38306d78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f5b3dd47444f4009ba0af1a9bacd8a37.setIcon(icon_13fe9c6d13264c89b540e6ec38306d78);
+        
+    
+            marker_f5b3dd47444f4009ba0af1a9bacd8a37.bindTooltip(
+                `<div>
+                     삼일관 : 한식 - 전주시 완산구 고사동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_596f95e9211540c0b01daef232c2f33f = L.marker(
+                [35.8202418, 127.14302690000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_f7674a56ea1e49b8ba6dc213c0c540a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_596f95e9211540c0b01daef232c2f33f.setIcon(icon_f7674a56ea1e49b8ba6dc213c0c540a1);
+        
+    
+            marker_596f95e9211540c0b01daef232c2f33f.bindTooltip(
+                `<div>
+                     카페페르마타 : 카페/주점 - 전주시 완산구 고사동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00907c1ca6b04ef4bc6979f84b82f865 = L.marker(
+                [35.816027899999995, 127.15251140000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a7cc686929b24fd9bad5431d48132dd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_00907c1ca6b04ef4bc6979f84b82f865.setIcon(icon_a7cc686929b24fd9bad5431d48132dd3);
+        
+    
+            marker_00907c1ca6b04ef4bc6979f84b82f865.bindTooltip(
+                `<div>
+                     투모로우 : 카페/주점 - 전주시 완산구 풍남동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3dfd772d5188409dad3aa7b6cbde92d0 = L.marker(
+                [35.973861, 126.70422859999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_dd072a924695452188b3e5eb5dcb21fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3dfd772d5188409dad3aa7b6cbde92d0.setIcon(icon_dd072a924695452188b3e5eb5dcb21fb);
+        
+    
+            marker_3dfd772d5188409dad3aa7b6cbde92d0.bindTooltip(
+                `<div>
+                     스테이인더코너 : 카페/주점 - 전북 군산시 문화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e15c9ba150ff4ca2b087573e49ff0ff2 = L.marker(
+                [35.8177034, 127.1222499],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_73b2a7f42ee449939a522ae25b96f5a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e15c9ba150ff4ca2b087573e49ff0ff2.setIcon(icon_73b2a7f42ee449939a522ae25b96f5a0);
+        
+    
+            marker_e15c9ba150ff4ca2b087573e49ff0ff2.bindTooltip(
+                `<div>
+                     현대옥 본점 : 한식 - 전주시 완산구 중화산동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_074967837f214c709ff45705f5e44e66 = L.marker(
+                [35.964178600000004, 126.7173685],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_223103f5cc4b49fe9abd083c06ff618b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_074967837f214c709ff45705f5e44e66.setIcon(icon_223103f5cc4b49fe9abd083c06ff618b);
+        
+    
+            marker_074967837f214c709ff45705f5e44e66.bindTooltip(
+                `<div>
+                     청담횟집 : 일식 - 전북 군산시 수송동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f6860027eb64777adc663f3a22c3bb5 = L.marker(
+                [35.8861172, 126.90450459999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_e347e7cd4b994e77871f5812f8c43707 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f6860027eb64777adc663f3a22c3bb5.setIcon(icon_e347e7cd4b994e77871f5812f8c43707);
+        
+    
+            marker_3f6860027eb64777adc663f3a22c3bb5.bindTooltip(
+                `<div>
+                     명천슈퍼식당 : 한식 - 전북 김제시 공덕면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_251cb6571cd54fed9f32f75a973c57a7 = L.marker(
+                [35.6430852, 126.5350386],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_cad6b0a03e3e4dd39fd1b04932377efd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_251cb6571cd54fed9f32f75a973c57a7.setIcon(icon_cad6b0a03e3e4dd39fd1b04932377efd);
+        
+    
+            marker_251cb6571cd54fed9f32f75a973c57a7.bindTooltip(
+                `<div>
+                     씨윈드카페(Seawind) : 카페/주점 - 전북 부안군 변산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b492ab53a1b7496a8efbf6f4f67f9274 = L.marker(
+                [35.9891217, 126.71116509999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_e0278dad35a84b72b66f96f4841754e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b492ab53a1b7496a8efbf6f4f67f9274.setIcon(icon_e0278dad35a84b72b66f96f4841754e4);
+        
+    
+            marker_b492ab53a1b7496a8efbf6f4f67f9274.bindTooltip(
+                `<div>
+                     안젤라분식 : 분식 - 전북 군산시 영화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb1df118820a42deb6407ad45374f089 = L.marker(
+                [36.0115134, 127.6558912],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_11832454e2d74d839ecebf16574eb18c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bb1df118820a42deb6407ad45374f089.setIcon(icon_11832454e2d74d839ecebf16574eb18c);
+        
+    
+            marker_bb1df118820a42deb6407ad45374f089.bindTooltip(
+                `<div>
+                     섬마을 : 한식 - 전북 무주군 무주읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb830eeadb3b45389aed4dffc1a02f30 = L.marker(
+                [35.805963899999995, 127.1228659],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_fa67e3f6f44c4b2c9ae2b24fd28341d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fb830eeadb3b45389aed4dffc1a02f30.setIcon(icon_fa67e3f6f44c4b2c9ae2b24fd28341d0);
+        
+    
+            marker_fb830eeadb3b45389aed4dffc1a02f30.bindTooltip(
+                `<div>
+                     육일식당 : 한식 - 전주시 완산구 효자동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2158bb22560646afa80379105542d574 = L.marker(
+                [35.8057802, 127.09923429999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_4511bae8d7544576ab082b7fe35ac912 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2158bb22560646afa80379105542d574.setIcon(icon_4511bae8d7544576ab082b7fe35ac912);
+        
+    
+            marker_2158bb22560646afa80379105542d574.bindTooltip(
+                `<div>
+                     샤브193 : 한식 - 전주시 완산구 효자동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99d0be6c67b5449484bc1d97faf4fea0 = L.marker(
+                [35.9804224, 126.7312433],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_4180601b581a4eb1965b395e98e24e10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_99d0be6c67b5449484bc1d97faf4fea0.setIcon(icon_4180601b581a4eb1965b395e98e24e10);
+        
+    
+            marker_99d0be6c67b5449484bc1d97faf4fea0.bindTooltip(
+                `<div>
+                     금강 식당 : 한식 - 전북 군산시 경암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17a3ce59a96849d0b27e8e40dc512d18 = L.marker(
+                [35.820744, 127.1490085],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_e9d7500bf43a48618327045b7b4582b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_17a3ce59a96849d0b27e8e40dc512d18.setIcon(icon_e9d7500bf43a48618327045b7b4582b0);
+        
+    
+            marker_17a3ce59a96849d0b27e8e40dc512d18.bindTooltip(
+                `<div>
+                     백일홍찐빵만두 : 분식 - 전주시 완산구 경원동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_856f96394558421496854d82bda823fc = L.marker(
+                [35.8409513, 127.13637290000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_2c1f78e79c014a22a958749fff0df187 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_856f96394558421496854d82bda823fc.setIcon(icon_2c1f78e79c014a22a958749fff0df187);
+        
+    
+            marker_856f96394558421496854d82bda823fc.bindTooltip(
+                `<div>
+                     다잡수소 : 한식 - 전주시 덕진구 금암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_203653469b0f4b378412bfb360309c17 = L.marker(
+                [35.8177034, 127.1222499],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_7916c7bca45b485e91a1cc84a0a8144a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_203653469b0f4b378412bfb360309c17.setIcon(icon_7916c7bca45b485e91a1cc84a0a8144a);
+        
+    
+            marker_203653469b0f4b378412bfb360309c17.bindTooltip(
+                `<div>
+                     옛날팥죽집 : 한식 - 전주시 완산구 중화산동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2997f686c25437c9342a5f9061a9e7b = L.marker(
+                [35.7968971, 127.1204432],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_27416ee42e2f4e41904ff2c1699b4c47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e2997f686c25437c9342a5f9061a9e7b.setIcon(icon_27416ee42e2f4e41904ff2c1699b4c47);
+        
+    
+            marker_e2997f686c25437c9342a5f9061a9e7b.bindTooltip(
+                `<div>
+                     예지촌 : 한식 - 전주시 완산구 삼천동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd4aaf0dd81e47c28073757d39cb57b7 = L.marker(
+                [35.8135739, 127.1483436],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_344d3c108a2c4878bb8514d9a3ff4c36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cd4aaf0dd81e47c28073757d39cb57b7.setIcon(icon_344d3c108a2c4878bb8514d9a3ff4c36);
+        
+    
+            marker_cd4aaf0dd81e47c28073757d39cb57b7.bindTooltip(
+                `<div>
+                     한국집 : 한식 - 전주시 완산구 전동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1dbfb75cece247eb9438765a303d1e26 = L.marker(
+                [35.6045256, 126.57156450000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_c51b8438f6c04f6eaa84032b18e529a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1dbfb75cece247eb9438765a303d1e26.setIcon(icon_c51b8438f6c04f6eaa84032b18e529a4);
+        
+    
+            marker_1dbfb75cece247eb9438765a303d1e26.bindTooltip(
+                `<div>
+                     곰소궁삼대젓갈 : 한식 - 전북 부안군 진서면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8e320aa0bbf43f5a88327c8d31fdddc = L.marker(
+                [35.6430852, 126.5350386],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_bfa10106576f4e7d9a1fcbd5a1fed773 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c8e320aa0bbf43f5a88327c8d31fdddc.setIcon(icon_bfa10106576f4e7d9a1fcbd5a1fed773);
+        
+    
+            marker_c8e320aa0bbf43f5a88327c8d31fdddc.bindTooltip(
+                `<div>
+                     변산온천산장 : 한식 - 전북 부안군 변산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_647c6db48257443c9d74bad3eab2c0b5 = L.marker(
+                [35.722868299999995, 126.70589620000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_0ec8cf4cb37744d0aae75ebe9d4565c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_647c6db48257443c9d74bad3eab2c0b5.setIcon(icon_0ec8cf4cb37744d0aae75ebe9d4565c4);
+        
+    
+            marker_647c6db48257443c9d74bad3eab2c0b5.bindTooltip(
+                `<div>
+                     계화회관 : 한식 - 전북 부안군 행안면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad7b971f0e3f4acaa491c2b7d293c5d7 = L.marker(
+                [35.842292900000004, 127.1475497],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_9388556fb1fc49fb8c01d09817e8bdc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ad7b971f0e3f4acaa491c2b7d293c5d7.setIcon(icon_9388556fb1fc49fb8c01d09817e8bdc2);
+        
+    
+            marker_ad7b971f0e3f4acaa491c2b7d293c5d7.bindTooltip(
+                `<div>
+                     이연잔치국수 : 한식 - 전주시 덕진구 인후동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b2d224f9b454016a8790baacbd43abd = L.marker(
+                [35.467273600000006, 126.61143229999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_533677b5ee504836884ca78bc5bc0225 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b2d224f9b454016a8790baacbd43abd.setIcon(icon_533677b5ee504836884ca78bc5bc0225);
+        
+    
+            marker_6b2d224f9b454016a8790baacbd43abd.bindTooltip(
+                `<div>
+                     신덕식당 : 한식 - 전북 고창군 아산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20ff986594324d06b5212f92083e0277 = L.marker(
+                [35.8176343, 127.14516850000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_f12a01ea96d941d1bad6379a84530188 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20ff986594324d06b5212f92083e0277.setIcon(icon_f12a01ea96d941d1bad6379a84530188);
+        
+    
+            marker_20ff986594324d06b5212f92083e0277.bindTooltip(
+                `<div>
+                     성미당 : 한식 - 전주시 완산구 중앙동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c842862299fe429bb57f0d8434151c0e = L.marker(
+                [35.9908777, 126.70684479999998],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_e642f4e1bf2d43ae99848c21c49e8e70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c842862299fe429bb57f0d8434151c0e.setIcon(icon_e642f4e1bf2d43ae99848c21c49e8e70);
+        
+    
+            marker_c842862299fe429bb57f0d8434151c0e.bindTooltip(
+                `<div>
+                     군산회집 : 일식 - 전북 군산시 금동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c135baa1c2c450ebff67b902975eb9b = L.marker(
+                [35.9494187, 126.95666940000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_722a89458ae349ea91b06078b597c53a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5c135baa1c2c450ebff67b902975eb9b.setIcon(icon_722a89458ae349ea91b06078b597c53a);
+        
+    
+            marker_5c135baa1c2c450ebff67b902975eb9b.bindTooltip(
+                `<div>
+                     청주숯불갈비 : 한식 - 전북 익산시 남중동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44093266c97c4a2ba15191f4b3200225 = L.marker(
+                [35.9642444, 126.959756],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_1c29edd64d414c059742d5e89a512d05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_44093266c97c4a2ba15191f4b3200225.setIcon(icon_1c29edd64d414c059742d5e89a512d05);
+        
+    
+            marker_44093266c97c4a2ba15191f4b3200225.bindTooltip(
+                `<div>
+                     원조교동짬뽕 : 중식 - 전북 익산시 신동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69e8d59d65824a7786bc2503813d8e89 = L.marker(
+                [35.952090000000005, 126.7086965],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_bfc8d273c3224d03900ab457ce7a1e57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_69e8d59d65824a7786bc2503813d8e89.setIcon(icon_bfc8d273c3224d03900ab457ce7a1e57);
+        
+    
+            marker_69e8d59d65824a7786bc2503813d8e89.bindTooltip(
+                `<div>
+                     조박사설렁탕 : 한식 - 전북 군산시 지곡동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7626dbe35b59496e8eafde92817a5596 = L.marker(
+                [35.9374549, 126.8997072],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_ac89a07d60e64510a8d40bfe25f86037 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7626dbe35b59496e8eafde92817a5596.setIcon(icon_ac89a07d60e64510a8d40bfe25f86037);
+        
+    
+            marker_7626dbe35b59496e8eafde92817a5596.bindTooltip(
+                `<div>
+                     흙가든허브오리찰흙구이 : 한식 - 전북 익산시 오산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4dc51d978cb44ceae5b8256f4d41237 = L.marker(
+                [35.9642444, 126.959756],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_d770a7ae2aec4534bd19c5e440a70800 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e4dc51d978cb44ceae5b8256f4d41237.setIcon(icon_d770a7ae2aec4534bd19c5e440a70800);
+        
+    
+            marker_e4dc51d978cb44ceae5b8256f4d41237.bindTooltip(
+                `<div>
+                     본향 : 한식 - 전북 익산시 신동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_234ca49fe1974620a721270dbf33ea3a = L.marker(
+                [35.957818200000006, 126.9722892],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_13e9986b1abf4f93bc0b7b8a557a157e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_234ca49fe1974620a721270dbf33ea3a.setIcon(icon_13e9986b1abf4f93bc0b7b8a557a157e);
+        
+    
+            marker_234ca49fe1974620a721270dbf33ea3a.bindTooltip(
+                `<div>
+                     동서네낙지 : 한식 - 전북 익산시 영등동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3401c8c305a24eb3b2c757dd818559c0 = L.marker(
+                [35.962454799999996, 126.69706509999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_cf4a11d136204381898175d67e9a852f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3401c8c305a24eb3b2c757dd818559c0.setIcon(icon_cf4a11d136204381898175d67e9a852f);
+        
+    
+            marker_3401c8c305a24eb3b2c757dd818559c0.bindTooltip(
+                `<div>
+                     삼거리매운탕 : 한식 - 전북 군산시 나운동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e31af5b7915435dad30e768710a4001 = L.marker(
+                [35.8577749, 127.2556986],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a67583f4c1074463b15e25880fdafb0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1e31af5b7915435dad30e768710a4001.setIcon(icon_a67583f4c1074463b15e25880fdafb0a);
+        
+    
+            marker_1e31af5b7915435dad30e768710a4001.bindTooltip(
+                `<div>
+                     몽펠리에레스토랑 : 양식 - 전북 완주군 소양면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5784f0f3f9842f995a8373c2779a1b3 = L.marker(
+                [35.962454799999996, 126.69706509999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_b75704a1ca9f4562b3a1df76e03b84b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f5784f0f3f9842f995a8373c2779a1b3.setIcon(icon_b75704a1ca9f4562b3a1df76e03b84b4);
+        
+    
+            marker_f5784f0f3f9842f995a8373c2779a1b3.bindTooltip(
+                `<div>
+                     두메골 : 한식 - 전북 군산시 나운동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd8fe6a2810647f69ffb6a9379788877 = L.marker(
+                [35.9822622, 126.7519828],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_fb518d3a9e1c48fc9b7021addb72bb36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cd8fe6a2810647f69ffb6a9379788877.setIcon(icon_fb518d3a9e1c48fc9b7021addb72bb36);
+        
+    
+            marker_cd8fe6a2810647f69ffb6a9379788877.bindTooltip(
+                `<div>
+                     장국명가 : 한식 - 전북 군산시 구암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36d9fbaff440477eb367bfb1b65fff8f = L.marker(
+                [35.9543251, 127.7830903],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_720db2d83bab4244a6229a174a6f0d35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_36d9fbaff440477eb367bfb1b65fff8f.setIcon(icon_720db2d83bab4244a6229a174a6f0d35);
+        
+    
+            marker_36d9fbaff440477eb367bfb1b65fff8f.bindTooltip(
+                `<div>
+                     산들애 : 한식 - 전북 무주군 설천면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b018358f71c42cbbc4c966d5b45ca19 = L.marker(
+                [35.957818200000006, 126.9722892],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_f21961341aa940cd8f960e403983bde0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2b018358f71c42cbbc4c966d5b45ca19.setIcon(icon_f21961341aa940cd8f960e403983bde0);
+        
+    
+            marker_2b018358f71c42cbbc4c966d5b45ca19.bindTooltip(
+                `<div>
+                     청목 : 한식 - 전북 익산시 영등동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9deaf0ff6005490dbb912c02afaa4ca9 = L.marker(
+                [35.957818200000006, 126.9722892],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_92b61dc3a0ef479f8930659847ce1d3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9deaf0ff6005490dbb912c02afaa4ca9.setIcon(icon_92b61dc3a0ef479f8930659847ce1d3c);
+        
+    
+            marker_9deaf0ff6005490dbb912c02afaa4ca9.bindTooltip(
+                `<div>
+                     장승골 : 한식 - 전북 익산시 영등동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_305c659048e4474a96644f2f3973e9b9 = L.marker(
+                [36.0071967, 127.04171940000002],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_b62a91d4d891476cb7cec453a9f8e911 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_305c659048e4474a96644f2f3973e9b9.setIcon(icon_b62a91d4d891476cb7cec453a9f8e911);
+        
+    
+            marker_305c659048e4474a96644f2f3973e9b9.bindTooltip(
+                `<div>
+                     우리맛황토쌈밥 : 한식 - 전북 익산시 금마면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53e9b2b70a184d2b98b8e74fbac7ef38 = L.marker(
+                [35.9891217, 126.71116509999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_dfe635c4b86d439c97b8d160b9f59325 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_53e9b2b70a184d2b98b8e74fbac7ef38.setIcon(icon_dfe635c4b86d439c97b8d160b9f59325);
+        
+    
+            marker_53e9b2b70a184d2b98b8e74fbac7ef38.bindTooltip(
+                `<div>
+                     밥하지마 : 한식 - 전북 군산시 영화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea7b27af26e247f5b8e8f1caf59ee56f = L.marker(
+                [35.9577138, 126.9833095],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_f489f314f0d74f3ea7f51c9b9c3ba16c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ea7b27af26e247f5b8e8f1caf59ee56f.setIcon(icon_f489f314f0d74f3ea7f51c9b9c3ba16c);
+        
+    
+            marker_ea7b27af26e247f5b8e8f1caf59ee56f.bindTooltip(
+                `<div>
+                     북경 : 중식 - 전북 익산시 어양동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d778fb4352f64716b5cd8a73d5bb6507 = L.marker(
+                [35.964178600000004, 126.7173685],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_71b6165017ec4155ad41ee2333d93f83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d778fb4352f64716b5cd8a73d5bb6507.setIcon(icon_71b6165017ec4155ad41ee2333d93f83);
+        
+    
+            marker_d778fb4352f64716b5cd8a73d5bb6507.bindTooltip(
+                `<div>
+                     제주도횟집 : 일식 - 전북 군산시 수송동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_132376b99215480981acf0c93673317d = L.marker(
+                [35.9543251, 127.7830903],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_abf170ea254a4e09be5958fd9f32a3b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_132376b99215480981acf0c93673317d.setIcon(icon_abf170ea254a4e09be5958fd9f32a3b2);
+        
+    
+            marker_132376b99215480981acf0c93673317d.bindTooltip(
+                `<div>
+                     미가한식 : 한식 - 전북 무주군 설천면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fb69f2143d641b4bb004b7f8e04b8cd = L.marker(
+                [36.0004935, 126.7906034],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_2f4f4a34bf934581ace32892123e23bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3fb69f2143d641b4bb004b7f8e04b8cd.setIcon(icon_2f4f4a34bf934581ace32892123e23bf);
+        
+    
+            marker_3fb69f2143d641b4bb004b7f8e04b8cd.bindTooltip(
+                `<div>
+                     강촌마을 : 한식 - 전북 군산시 성산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8ee5ab300f0434184cbfdb258d4542c = L.marker(
+                [35.816694399999996, 127.14227930000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_18e8b52d2f524d0a82d5b1430fac41a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f8ee5ab300f0434184cbfdb258d4542c.setIcon(icon_18e8b52d2f524d0a82d5b1430fac41a0);
+        
+    
+            marker_f8ee5ab300f0434184cbfdb258d4542c.bindTooltip(
+                `<div>
+                     두부키친 : 카페/주점 - 전주시 완산구 중앙동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_845ff7e3897b47d49b2722156cfda3e9 = L.marker(
+                [35.952090000000005, 126.7086965],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_97e6e7c44b1a432b80bc8c0de3d8ac20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_845ff7e3897b47d49b2722156cfda3e9.setIcon(icon_97e6e7c44b1a432b80bc8c0de3d8ac20);
+        
+    
+            marker_845ff7e3897b47d49b2722156cfda3e9.bindTooltip(
+                `<div>
+                     은파종점 : 한식 - 전북 군산시 지곡동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cbda92a456b486e979da3b71914b90e = L.marker(
+                [35.972775299999995, 126.7410781],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_253752a378324f6e85dc60a5256044a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6cbda92a456b486e979da3b71914b90e.setIcon(icon_253752a378324f6e85dc60a5256044a8);
+        
+    
+            marker_6cbda92a456b486e979da3b71914b90e.bindTooltip(
+                `<div>
+                     서울면옥 : 한식 - 전북 군산시 조촌동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c01c72ee9524ed7a9972bfcba927d8a = L.marker(
+                [36.0171044, 126.9382277],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_30d8294b7ab74f0dba726ef8733daa89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4c01c72ee9524ed7a9972bfcba927d8a.setIcon(icon_30d8294b7ab74f0dba726ef8733daa89);
+        
+    
+            marker_4c01c72ee9524ed7a9972bfcba927d8a.bindTooltip(
+                `<div>
+                     한일식당 : 한식 - 전북 익산시 황등면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ee759067dbd40d68e17e0680118c6cd = L.marker(
+                [35.6430852, 126.5350386],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_cde01e2b1ed44ea8be3edf61fd602334 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1ee759067dbd40d68e17e0680118c6cd.setIcon(icon_cde01e2b1ed44ea8be3edf61fd602334);
+        
+    
+            marker_1ee759067dbd40d68e17e0680118c6cd.bindTooltip(
+                `<div>
+                     청상어횟집 : 일식 - 전북 부안군 변산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f886e9a3a8449d68a2d128152652c1f = L.marker(
+                [35.6430852, 126.5350386],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_566738147d0e477fa013e3c5665e9cdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7f886e9a3a8449d68a2d128152652c1f.setIcon(icon_566738147d0e477fa013e3c5665e9cdf);
+        
+    
+            marker_7f886e9a3a8449d68a2d128152652c1f.bindTooltip(
+                `<div>
+                     미가도횟집 : 일식 - 전북 부안군 변산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25acf6a8b91f4e70b537afaadd6727e6 = L.marker(
+                [35.9642444, 126.959756],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_54d4999df84f436d805291f68d5b35c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_25acf6a8b91f4e70b537afaadd6727e6.setIcon(icon_54d4999df84f436d805291f68d5b35c4);
+        
+    
+            marker_25acf6a8b91f4e70b537afaadd6727e6.bindTooltip(
+                `<div>
+                     옛맛칼국수 : 한식 - 전북 익산시 신동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67ec064a54144438b6da2e20aeb2fc5e = L.marker(
+                [35.962454799999996, 126.69706509999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_3016289fd3424bcd94bdbf361371be1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_67ec064a54144438b6da2e20aeb2fc5e.setIcon(icon_3016289fd3424bcd94bdbf361371be1a);
+        
+    
+            marker_67ec064a54144438b6da2e20aeb2fc5e.bindTooltip(
+                `<div>
+                     신선장어 : 한식 - 전북 군산시 나운동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39e07e1541d74772b60ae24aec085233 = L.marker(
+                [35.957818200000006, 126.9722892],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_e589507da9ba4977956339889846adcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_39e07e1541d74772b60ae24aec085233.setIcon(icon_e589507da9ba4977956339889846adcc);
+        
+    
+            marker_39e07e1541d74772b60ae24aec085233.bindTooltip(
+                `<div>
+                     월남쌈김상사 익산점 : 한식 - 전북 익산시 영등동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d67e7b3e1b9c48c5bc636c63a3c9c2a3 = L.marker(
+                [35.467273600000006, 126.61143229999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_6ed96f88e49f4b72860b016041dc031f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d67e7b3e1b9c48c5bc636c63a3c9c2a3.setIcon(icon_6ed96f88e49f4b72860b016041dc031f);
+        
+    
+            marker_d67e7b3e1b9c48c5bc636c63a3c9c2a3.bindTooltip(
+                `<div>
+                     청원가든 : 한식 - 전북 고창군 아산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca699f9fdf9247838df1c94a2fd9b70c = L.marker(
+                [35.9605855, 126.78609070000002],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_8f33dfdf1f3b452aa739783479b9f819 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ca699f9fdf9247838df1c94a2fd9b70c.setIcon(icon_8f33dfdf1f3b452aa739783479b9f819);
+        
+    
+            marker_ca699f9fdf9247838df1c94a2fd9b70c.bindTooltip(
+                `<div>
+                     계곡가든 : 한식 - 전북 군산시 개정면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc9c966079db4df1b9b6fd3492f023c7 = L.marker(
+                [35.8177034, 127.1222499],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_7da3aac4834d4116ab1706401c8eba53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dc9c966079db4df1b9b6fd3492f023c7.setIcon(icon_7da3aac4834d4116ab1706401c8eba53);
+        
+    
+            marker_dc9c966079db4df1b9b6fd3492f023c7.bindTooltip(
+                `<div>
+                     한우물바지락죽 : 한식 - 전주시 완산구 중화산동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb3d36846be543d984f597175b1bf51a = L.marker(
+                [35.9792948, 126.7158932],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_4e579a97f82c4e6f88ba38f49c8997f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb3d36846be543d984f597175b1bf51a.setIcon(icon_4e579a97f82c4e6f88ba38f49c8997f8);
+        
+    
+            marker_eb3d36846be543d984f597175b1bf51a.bindTooltip(
+                `<div>
+                     복성루 : 중식 - 전북 군산시 미원동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f0b47eceb354058a2545e0e7bc22d13 = L.marker(
+                [35.8180613, 127.14945759999999],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a61b225aed9245daaddcd43ad602d0b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6f0b47eceb354058a2545e0e7bc22d13.setIcon(icon_a61b225aed9245daaddcd43ad602d0b6);
+        
+    
+            marker_6f0b47eceb354058a2545e0e7bc22d13.bindTooltip(
+                `<div>
+                     전주왱이콩나물국밥전문점 : 한식 - 전주시 완산구 경원동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5edb82d39b154351b5cb7811973c9cf1 = L.marker(
+                [35.984589, 126.7137338],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_49f9a8d85de94379bebc202eee860147 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5edb82d39b154351b5cb7811973c9cf1.setIcon(icon_49f9a8d85de94379bebc202eee860147);
+        
+    
+            marker_5edb82d39b154351b5cb7811973c9cf1.bindTooltip(
+                `<div>
+                     운정 : 한식 - 전북 군산시 개복동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c22ae345064480c82b6c5ef6bce3d07 = L.marker(
+                [35.9545844, 126.53212340000002],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_67020389b0fb4a05be1a92a491885b26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2c22ae345064480c82b6c5ef6bce3d07.setIcon(icon_67020389b0fb4a05be1a92a491885b26);
+        
+    
+            marker_2c22ae345064480c82b6c5ef6bce3d07.bindTooltip(
+                `<div>
+                     등대로 : 일식 - 전북 군산시 비응도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11511ecc059f4298ac30cdf56675ccce = L.marker(
+                [35.9580193, 126.94150230000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_ccd26bdc43bd4b6c898733ac168aad64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_11511ecc059f4298ac30cdf56675ccce.setIcon(icon_ccd26bdc43bd4b6c898733ac168aad64);
+        
+    
+            marker_11511ecc059f4298ac30cdf56675ccce.bindTooltip(
+                `<div>
+                     담수어어탕 : 한식 - 전북 익산시 모현동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c787a28bf1254c16b08b679adb4ca509 = L.marker(
+                [35.8409513, 127.13637290000001],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_cdbbde3d94fc456e9107f1df72edeffd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c787a28bf1254c16b08b679adb4ca509.setIcon(icon_cdbbde3d94fc456e9107f1df72edeffd);
+        
+    
+            marker_c787a28bf1254c16b08b679adb4ca509.bindTooltip(
+                `<div>
+                     금암우족탕 : 한식 - 전주시 덕진구 금암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76a77c13be1546d183560886ba567ac0 = L.marker(
+                [35.6430852, 126.5350386],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_2b325da58e2b44528b8f4dfb7c2bd983 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_76a77c13be1546d183560886ba567ac0.setIcon(icon_2b325da58e2b44528b8f4dfb7c2bd983);
+        
+    
+            marker_76a77c13be1546d183560886ba567ac0.bindTooltip(
+                `<div>
+                     김인경바지락죽 : 한식 - 전북 부안군 변산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_227dcb8b8f694802b9d5e7b03aeaf343 = L.marker(
+                [35.976013, 126.7233751],
+                {}
+            ).addTo(map_0250bd67f7aa4be8a152c371f0a100fb);
+        
+    
+            var icon_a5b0d7c434d04148ac2ded6447961a86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_227dcb8b8f694802b9d5e7b03aeaf343.setIcon(icon_a5b0d7c434d04148ac2ded6447961a86);
+        
+    
+            marker_227dcb8b8f694802b9d5e7b03aeaf343.bindTooltip(
+                `<div>
+                     이성당 : 베이커리 - 전북 군산시 중앙로1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

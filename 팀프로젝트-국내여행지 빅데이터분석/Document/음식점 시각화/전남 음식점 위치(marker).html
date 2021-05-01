@@ -1,0 +1,4096 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c94416f5ba324c318d6a1a84131d52d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c94416f5ba324c318d6a1a84131d52d6" ></div>
+        
+</body>
+<script>    
+    
+            var map_c94416f5ba324c318d6a1a84131d52d6 = L.map(
+                "map_c94416f5ba324c318d6a1a84131d52d6",
+                {
+                    center: [34.925997, 127.274228],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10.3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1487ef6ae1cf41c1bba460c6808f8c4b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var tile_layer_9a125648fb0444f48d3ffd564ea912d7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_d53a6a7727204116968e756783250afb = new L.Control.MiniMap(
+                tile_layer_9a125648fb0444f48d3ffd564ea912d7,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_c94416f5ba324c318d6a1a84131d52d6.addControl(mini_map_d53a6a7727204116968e756783250afb);
+        
+    
+            var marker_9ab90bc73deb463e978f768c5b6647a3 = L.marker(
+                [34.7473778, 127.70669509999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_5ab4fe30e3514835bc3de2a207c4c76c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ab90bc73deb463e978f768c5b6647a3.setIcon(icon_5ab4fe30e3514835bc3de2a207c4c76c);
+        
+    
+            marker_9ab90bc73deb463e978f768c5b6647a3.bindTooltip(
+                `<div>
+                     한일관 : 한식 - 전남 여수시 여서동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d796482260b4fe5a2c81a13abe4934d = L.marker(
+                [34.747313, 127.6809309],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_a714a30f69774f31b0676bb0b4590184 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d796482260b4fe5a2c81a13abe4934d.setIcon(icon_a714a30f69774f31b0676bb0b4590184);
+        
+    
+            marker_9d796482260b4fe5a2c81a13abe4934d.bindTooltip(
+                `<div>
+                     온더블랙(ON THE BLACK) 웅천점 : 양식 - 전남 여수시 웅천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb31400717494ba7a6f005050eff3905 = L.marker(
+                [34.762109499999994, 127.66198689999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_f94ea484145a404293390c338296e4f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb31400717494ba7a6f005050eff3905.setIcon(icon_f94ea484145a404293390c338296e4f0);
+        
+    
+            marker_eb31400717494ba7a6f005050eff3905.bindTooltip(
+                `<div>
+                     어가일식 : 일식 - 전남 여수시 학동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe53b208d65c41898905a11b85d8af9d = L.marker(
+                [34.6457729, 127.76221740000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_b4873c51469a4c85a33cc3a7ac289c2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe53b208d65c41898905a11b85d8af9d.setIcon(icon_b4873c51469a4c85a33cc3a7ac289c2a);
+        
+    
+            marker_fe53b208d65c41898905a11b85d8af9d.bindTooltip(
+                `<div>
+                     백초횟집 : 일식 - 전남 여수시 돌산읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e38f53ff5b9543f88f4f9035d24e5ce6 = L.marker(
+                [35.3208704, 126.9826119],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_2bf8c4f6921b461d831de06618cd50ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e38f53ff5b9543f88f4f9035d24e5ce6.setIcon(icon_2bf8c4f6921b461d831de06618cd50ae);
+        
+    
+            marker_e38f53ff5b9543f88f4f9035d24e5ce6.bindTooltip(
+                `<div>
+                     대담카페 : 카페/주점 - 전남 담양군 담양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a95e426a3104ebc9e82cba9c51789c1 = L.marker(
+                [35.407120899999995, 126.86901259999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_8473e7134a914ccdb2fb5949d23b1abd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a95e426a3104ebc9e82cba9c51789c1.setIcon(icon_8473e7134a914ccdb2fb5949d23b1abd);
+        
+    
+            marker_7a95e426a3104ebc9e82cba9c51789c1.bindTooltip(
+                `<div>
+                     달콤한주전자 : 카페/주점 - 전남 장성군 북하면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9575d34bc81344bca6d955e290d3790b = L.marker(
+                [34.95402670000001, 127.4851838],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_2ad03edce73e45349c87ac294f35192d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9575d34bc81344bca6d955e290d3790b.setIcon(icon_2ad03edce73e45349c87ac294f35192d);
+        
+    
+            marker_9575d34bc81344bca6d955e290d3790b.bindTooltip(
+                `<div>
+                     화월당 : 베이커리 - 전남 순천시 남내동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60a45190d38344bb94d96e23bb8f4d49 = L.marker(
+                [34.8481399, 127.57097309999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_f320189119a34499ae2b197545abaf8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_60a45190d38344bb94d96e23bb8f4d49.setIcon(icon_f320189119a34499ae2b197545abaf8f);
+        
+    
+            marker_60a45190d38344bb94d96e23bb8f4d49.bindTooltip(
+                `<div>
+                     거문도식당 : 한식 - 전남 여수시 율촌면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6972f0c7a57349aa8ea243189166d1e7 = L.marker(
+                [34.9581395, 127.6035014],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_faef1e3db82544c78809c1c0f79f9324 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6972f0c7a57349aa8ea243189166d1e7.setIcon(icon_faef1e3db82544c78809c1c0f79f9324);
+        
+    
+            marker_6972f0c7a57349aa8ea243189166d1e7.bindTooltip(
+                `<div>
+                     삼대광양불고기집 : 한식 - 전남 광양시 광양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cee2470d27644f17a0d1eb18a4709306 = L.marker(
+                [35.319743, 127.46784209999998],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_2bed176b7128413ca26f2084540ed451 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cee2470d27644f17a0d1eb18a4709306.setIcon(icon_2bed176b7128413ca26f2084540ed451);
+        
+    
+            marker_cee2470d27644f17a0d1eb18a4709306.bindTooltip(
+                `<div>
+                     혜림회관 : 한식 - 전남 구례군 산동면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ff7996911de4ac0af613f7d16e65cf4 = L.marker(
+                [34.9614526, 127.5244699],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_7a6110819a9d490e809e63e4bd9ce38d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5ff7996911de4ac0af613f7d16e65cf4.setIcon(icon_7a6110819a9d490e809e63e4bd9ce38d);
+        
+    
+            marker_5ff7996911de4ac0af613f7d16e65cf4.bindTooltip(
+                `<div>
+                     금성가든 : 한식 - 전남 순천시 조례동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2560a265a459427bb5a4620d15469835 = L.marker(
+                [34.95578870000001, 127.49692140000002],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_e3641b5180154d69a780aa33edf14d01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2560a265a459427bb5a4620d15469835.setIcon(icon_e3641b5180154d69a780aa33edf14d01);
+        
+    
+            marker_2560a265a459427bb5a4620d15469835.bindTooltip(
+                `<div>
+                     해월식당 : 한식 - 전남 순천시 조곡동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3623f012c2854299bd4df4c8a4e1463a = L.marker(
+                [34.751019899999996, 127.06967420000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_14232e265755469899beb04141591d59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3623f012c2854299bd4df4c8a4e1463a.setIcon(icon_14232e265755469899beb04141591d59);
+        
+    
+            marker_3623f012c2854299bd4df4c8a4e1463a.bindTooltip(
+                `<div>
+                     보성녹차떡갈비 : 한식 - 전남 보성군 보성읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39912abe0f2046939c698cad65c56a12 = L.marker(
+                [35.159071600000004, 127.03989479999998],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_249aed0ce72c404990aae8a1cb65fa20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_39912abe0f2046939c698cad65c56a12.setIcon(icon_249aed0ce72c404990aae8a1cb65fa20);
+        
+    
+            marker_39912abe0f2046939c698cad65c56a12.bindTooltip(
+                `<div>
+                     하여가 : 한식 - 전남 담양군 남면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2856e7307ef4dc28e3d858283547e0f = L.marker(
+                [34.743552, 127.7540088],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_22d48f0a66fb40c18faf3fec9e232e3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f2856e7307ef4dc28e3d858283547e0f.setIcon(icon_22d48f0a66fb40c18faf3fec9e232e3f);
+        
+    
+            marker_f2856e7307ef4dc28e3d858283547e0f.bindTooltip(
+                `<div>
+                     엠블호텔여수 아드리아 : 뷔페 - 전남 여수시 수정동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4db72cfefe94424194703be3a87c156a = L.marker(
+                [34.5580343, 126.56616880000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_e04dac7662b144458930db226a632926 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4db72cfefe94424194703be3a87c156a.setIcon(icon_e04dac7662b144458930db226a632926);
+        
+    
+            marker_4db72cfefe94424194703be3a87c156a.bindTooltip(
+                `<div>
+                     호산정 : 한식 - 전남 해남군 해남읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2aad4d8e33304f268bbd3989eda0db8b = L.marker(
+                [34.9560807, 127.4848644],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_fea396225ee9488d8517bc19185ab8ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2aad4d8e33304f268bbd3989eda0db8b.setIcon(icon_fea396225ee9488d8517bc19185ab8ed);
+        
+    
+            marker_2aad4d8e33304f268bbd3989eda0db8b.bindTooltip(
+                `<div>
+                     베니샤프 : 카페/주점 - 전남 순천시 중앙동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72556ff4e86e497389ae2b4393e08baa = L.marker(
+                [35.24324910000001, 127.4994267],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_df3ab31df8054ed687be0103276bd11e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_72556ff4e86e497389ae2b4393e08baa.setIcon(icon_df3ab31df8054ed687be0103276bd11e);
+        
+    
+            marker_72556ff4e86e497389ae2b4393e08baa.bindTooltip(
+                `<div>
+                     그옛날산채식당 : 한식 - 전남 구례군 마산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_233afb5dcc3e45c597fd2629a23ca2ac = L.marker(
+                [35.2845315, 126.8878687],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_44e4ae479de441c5b58981cf3f6ba9cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_233afb5dcc3e45c597fd2629a23ca2ac.setIcon(icon_44e4ae479de441c5b58981cf3f6ba9cc);
+        
+    
+            marker_233afb5dcc3e45c597fd2629a23ca2ac.bindTooltip(
+                `<div>
+                     대숲마을 : 한식 - 전남 담양군 대전면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c855758078474b2fada6830228c15d26 = L.marker(
+                [34.7350454, 127.7301406],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_8aa2e9bbd7c04ef691dfe66618d04299 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c855758078474b2fada6830228c15d26.setIcon(icon_8aa2e9bbd7c04ef691dfe66618d04299);
+        
+    
+            marker_c855758078474b2fada6830228c15d26.bindTooltip(
+                `<div>
+                     궁전횟집 여수점 : 한식 - 전남 여수시 남산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12c43f3b330c4f7087f911c8bb4c81f6 = L.marker(
+                [34.7358806, 127.7207465],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_09f063b0a94f4f7f8976fb48a3118692 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_12c43f3b330c4f7087f911c8bb4c81f6.setIcon(icon_09f063b0a94f4f7f8976fb48a3118692);
+        
+    
+            marker_12c43f3b330c4f7087f911c8bb4c81f6.bindTooltip(
+                `<div>
+                     산골식당 : 한식 - 전남 여수시 봉산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c724fa54340e4dcf93d9b1fde658a8b3 = L.marker(
+                [34.7358806, 127.7207465],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_ac8e73366ab940f595f137ce64909601 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c724fa54340e4dcf93d9b1fde658a8b3.setIcon(icon_ac8e73366ab940f595f137ce64909601);
+        
+    
+            marker_c724fa54340e4dcf93d9b1fde658a8b3.bindTooltip(
+                `<div>
+                     갯마을장어탕 : 한식 - 전남 여수시 봉산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a681840b8e6b40c39469ef60bad95e73 = L.marker(
+                [34.7557018, 127.6499105],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_f6bca7a0ab7b4779ba28797097aab363 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a681840b8e6b40c39469ef60bad95e73.setIcon(icon_f6bca7a0ab7b4779ba28797097aab363);
+        
+    
+            marker_a681840b8e6b40c39469ef60bad95e73.bindTooltip(
+                `<div>
+                     하얀집 : 한식 - 전남 여수시 안산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f0303429ddd4312b063abb050309bcb = L.marker(
+                [35.269112, 126.95595829999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_efca3e5af04d49dea1a453cfda38addf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f0303429ddd4312b063abb050309bcb.setIcon(icon_efca3e5af04d49dea1a453cfda38addf);
+        
+    
+            marker_1f0303429ddd4312b063abb050309bcb.bindTooltip(
+                `<div>
+                     담양애꽃 : 한식 - 전남 담양군 봉산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35319bf994b44792967c981502c75266 = L.marker(
+                [34.751019899999996, 127.06967420000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_e5765ce289d24463a66e7d1d68363104 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_35319bf994b44792967c981502c75266.setIcon(icon_e5765ce289d24463a66e7d1d68363104);
+        
+    
+            marker_35319bf994b44792967c981502c75266.bindTooltip(
+                `<div>
+                     예담 찰보리빵 : 카페/주점 - 전남 보성군 보성읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32549b864ae147ab9559290395f41d9a = L.marker(
+                [34.738671999999994, 127.6435064],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_57642c06d6374e2bb859d27851052e5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_32549b864ae147ab9559290395f41d9a.setIcon(icon_57642c06d6374e2bb859d27851052e5f);
+        
+    
+            marker_32549b864ae147ab9559290395f41d9a.bindTooltip(
+                `<div>
+                     갯벌낙지수제비 여수점 : 한식 - 전남 여수시 소호동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61673191a30a4f5aad44cac30b0464d8 = L.marker(
+                [34.762109499999994, 127.66198689999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_2a8ff89750e942728f20b1e42238bf92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_61673191a30a4f5aad44cac30b0464d8.setIcon(icon_2a8ff89750e942728f20b1e42238bf92);
+        
+    
+            marker_61673191a30a4f5aad44cac30b0464d8.bindTooltip(
+                `<div>
+                     플로리안레스토랑 : 양식 - 전남 여수시 학동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9d67b94831647a4a8cb9809361091ae = L.marker(
+                [35.0621626, 126.96333590000002],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_1b47360d749345e39789d58db88119dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d9d67b94831647a4a8cb9809361091ae.setIcon(icon_1b47360d749345e39789d58db88119dd);
+        
+    
+            marker_d9d67b94831647a4a8cb9809361091ae.bindTooltip(
+                `<div>
+                     포르코로소 : 양식 - 전남 화순군 화순읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcd3976fe8cd484d8ebf97d5bbd1d2d9 = L.marker(
+                [35.319743, 127.46784209999998],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_fa95727f486c497fa5da3ddb7bb00a0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dcd3976fe8cd484d8ebf97d5bbd1d2d9.setIcon(icon_fa95727f486c497fa5da3ddb7bb00a0f);
+        
+    
+            marker_dcd3976fe8cd484d8ebf97d5bbd1d2d9.bindTooltip(
+                `<div>
+                     덕인관 : 한식 - 전남 구례군 산동면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d0996b44c2a4f2b892348b142efe6b1 = L.marker(
+                [35.0278727, 127.4935213],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_2b8b648b33274809929929bf1438cbc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0d0996b44c2a4f2b892348b142efe6b1.setIcon(icon_2b8b648b33274809929929bf1438cbc5);
+        
+    
+            marker_0d0996b44c2a4f2b892348b142efe6b1.bindTooltip(
+                `<div>
+                     황우마을 : 한식 - 전남 순천시 서면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85998fca6fcf453a95287790dd96bdbc = L.marker(
+                [34.328582399999995, 126.71576670000002],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_5e078c06e5c6454e86a26ecb982dbc89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_85998fca6fcf453a95287790dd96bdbc.setIcon(icon_5e078c06e5c6454e86a26ecb982dbc89);
+        
+    
+            marker_85998fca6fcf453a95287790dd96bdbc.bindTooltip(
+                `<div>
+                     전사마 : 한식 - 전남 완도군 완도읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9d1f538b06649f78a128d59df159a29 = L.marker(
+                [35.353458, 126.4719466],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_badb1d5816cc475da42e84e3f5518a02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b9d1f538b06649f78a128d59df159a29.setIcon(icon_badb1d5816cc475da42e84e3f5518a02);
+        
+    
+            marker_b9d1f538b06649f78a128d59df159a29.bindTooltip(
+                `<div>
+                     토우 : 한식 - 전남 영광군 법성면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f99c19db92e4647a38453e0a3e2294e = L.marker(
+                [34.7470541, 127.74300020000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_4d78483bd8804a40baf481d3b3ae0a7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5f99c19db92e4647a38453e0a3e2294e.setIcon(icon_4d78483bd8804a40baf481d3b3ae0a7c);
+        
+    
+            marker_5f99c19db92e4647a38453e0a3e2294e.bindTooltip(
+                `<div>
+                     여수1923 : 한식 - 전남 여수시 공화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f68019bbfce43d2a6d7dae267041486 = L.marker(
+                [34.762109499999994, 127.66198689999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_4c1e46ff20584b52b26d9f1a3b5049af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7f68019bbfce43d2a6d7dae267041486.setIcon(icon_4c1e46ff20584b52b26d9f1a3b5049af);
+        
+    
+            marker_7f68019bbfce43d2a6d7dae267041486.bindTooltip(
+                `<div>
+                     거북이식당 : 한식 - 전남 여수시 학동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2720c8eef93b41ff8fe091cb8a118659 = L.marker(
+                [34.80059489999999, 127.6402456],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_4e8e0cf69b6f42a7ae2bac703e78902f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2720c8eef93b41ff8fe091cb8a118659.setIcon(icon_4e8e0cf69b6f42a7ae2bac703e78902f);
+        
+    
+            marker_2720c8eef93b41ff8fe091cb8a118659.bindTooltip(
+                `<div>
+                     삼대농원 : 한식 - 전남 여수시 해산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49cbac3dab5a4e118291035517c8f75d = L.marker(
+                [34.9404044, 127.52011399999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_78beb66817d64a009f8cf3d9de7f620f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_49cbac3dab5a4e118291035517c8f75d.setIcon(icon_78beb66817d64a009f8cf3d9de7f620f);
+        
+    
+            marker_49cbac3dab5a4e118291035517c8f75d.bindTooltip(
+                `<div>
+                     오대감 : 한식 - 전남 순천시 연향동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da038eb6d5474b63a296f4d44c61aa4e = L.marker(
+                [34.9404044, 127.52011399999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_8ae60f593ee04899b65a9382184aee46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_da038eb6d5474b63a296f4d44c61aa4e.setIcon(icon_8ae60f593ee04899b65a9382184aee46);
+        
+    
+            marker_da038eb6d5474b63a296f4d44c61aa4e.bindTooltip(
+                `<div>
+                     조훈모과자점 : 베이커리 - 전남 순천시 연향동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f61d6dbc8e1d4a76b2eafb4f35e1f7c6 = L.marker(
+                [34.9404044, 127.52011399999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_4ab50351a8c144aea1fc8f84580b9175 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f61d6dbc8e1d4a76b2eafb4f35e1f7c6.setIcon(icon_4ab50351a8c144aea1fc8f84580b9175);
+        
+    
+            marker_f61d6dbc8e1d4a76b2eafb4f35e1f7c6.bindTooltip(
+                `<div>
+                     일품매우 : 한식 - 전남 순천시 연향동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8749c3ac6914c68a56b5a6402f87f75 = L.marker(
+                [34.755508299999995, 127.69892209999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_e8120188ed5c4caaa7a71bec85e42e42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8749c3ac6914c68a56b5a6402f87f75.setIcon(icon_e8120188ed5c4caaa7a71bec85e42e42);
+        
+    
+            marker_d8749c3ac6914c68a56b5a6402f87f75.bindTooltip(
+                `<div>
+                     카페아킴(AKIM) : 카페/주점 - 전남 여수시 문수동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f87d81efbbfb4970a04caceec3989f76 = L.marker(
+                [34.7473778, 127.70669509999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_18daed4b439148c9b411281c4ec3ac35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f87d81efbbfb4970a04caceec3989f76.setIcon(icon_18daed4b439148c9b411281c4ec3ac35);
+        
+    
+            marker_f87d81efbbfb4970a04caceec3989f76.bindTooltip(
+                `<div>
+                     우사골설렁탕 : 한식 - 전남 여수시 여서동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd9fe07e3b9c40c883b91e148f37dd93 = L.marker(
+                [34.9235915, 126.49994280000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_cea8b849e88047b399c4496278060ecc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd9fe07e3b9c40c883b91e148f37dd93.setIcon(icon_cea8b849e88047b399c4496278060ecc);
+        
+    
+            marker_bd9fe07e3b9c40c883b91e148f37dd93.bindTooltip(
+                `<div>
+                     두암식당 : 한식 - 전남 무안군 몽탄면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03f6e16675a14653ace59b9f4608470e = L.marker(
+                [34.747313, 127.6809309],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_4ef848a87b9d404c8618f724b51ff41f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_03f6e16675a14653ace59b9f4608470e.setIcon(icon_4ef848a87b9d404c8618f724b51ff41f);
+        
+    
+            marker_03f6e16675a14653ace59b9f4608470e.bindTooltip(
+                `<div>
+                     롤링핀(ROLLING PIN) 여수웅천점 : 베이커리 - 전남 여수시 웅천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a11d0bcf7ba84471aa010d935dbcda6b = L.marker(
+                [34.7358806, 127.7207465],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_a8f4160524a34b1a923012ce4c1bf7cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a11d0bcf7ba84471aa010d935dbcda6b.setIcon(icon_a8f4160524a34b1a923012ce4c1bf7cb);
+        
+    
+            marker_a11d0bcf7ba84471aa010d935dbcda6b.bindTooltip(
+                `<div>
+                     민들레집 : 일식 - 전남 여수시 봉산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36718195bac54635ab5e589b7e2694fa = L.marker(
+                [34.743552, 127.7540088],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_0f01500f6e0348b19a2bac21f4b0c827 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_36718195bac54635ab5e589b7e2694fa.setIcon(icon_0f01500f6e0348b19a2bac21f4b0c827);
+        
+    
+            marker_36718195bac54635ab5e589b7e2694fa.bindTooltip(
+                `<div>
+                     마레첼로 : 양식 - 전남 여수시 수정동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80f526693dbf49038c7934c269cc7c23 = L.marker(
+                [34.960229, 127.47055990000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_9ca03db3dbe3465ca941c03dd9cf7587 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_80f526693dbf49038c7934c269cc7c23.setIcon(icon_9ca03db3dbe3465ca941c03dd9cf7587);
+        
+    
+            marker_80f526693dbf49038c7934c269cc7c23.bindTooltip(
+                `<div>
+                     일억조 : 한식 - 전남 순천시 금곡동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffbf5b5a6b674702a49817c95601c1db = L.marker(
+                [34.9058863, 127.5480436],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_8b3299e46ec64cfab4f123b3e4dcc718 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ffbf5b5a6b674702a49817c95601c1db.setIcon(icon_8b3299e46ec64cfab4f123b3e4dcc718);
+        
+    
+            marker_ffbf5b5a6b674702a49817c95601c1db.bindTooltip(
+                `<div>
+                     오리명가 : 한식 - 전남 순천시 해룡면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_339588cdad8740aa98109e5ddf8e9210 = L.marker(
+                [34.9855738, 127.45738440000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_dc353fec9b3f4346b448c907795d496e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_339588cdad8740aa98109e5ddf8e9210.setIcon(icon_dc353fec9b3f4346b448c907795d496e);
+        
+    
+            marker_339588cdad8740aa98109e5ddf8e9210.bindTooltip(
+                `<div>
+                     열풍아구찜 : 한식 - 전남 순천시 석현동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3102338284a74b4a8ecac72dfd8c6a14 = L.marker(
+                [34.739104, 127.7478736],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_483282e41e7e4e0abf225404c9007b04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3102338284a74b4a8ecac72dfd8c6a14.setIcon(icon_483282e41e7e4e0abf225404c9007b04);
+        
+    
+            marker_3102338284a74b4a8ecac72dfd8c6a14.bindTooltip(
+                `<div>
+                     오성회관 : 한식 - 전남 여수시 종화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2166b7895ef04c89a9d41886c276f37b = L.marker(
+                [34.739954600000004, 127.73242900000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_a70e9d9d6a4f48ebbfe3e5d05a755f96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2166b7895ef04c89a9d41886c276f37b.setIcon(icon_a70e9d9d6a4f48ebbfe3e5d05a755f96);
+        
+    
+            marker_2166b7895ef04c89a9d41886c276f37b.bindTooltip(
+                `<div>
+                     전주돌솥밥 : 한식 - 전남 여수시 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a892ca95cfca4476a8bff75c7c391adb = L.marker(
+                [34.679743200000004, 126.90498649999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_3d810c8c229c4e03a91c0605dbdff76a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a892ca95cfca4476a8bff75c7c391adb.setIcon(icon_3d810c8c229c4e03a91c0605dbdff76a);
+        
+    
+            marker_a892ca95cfca4476a8bff75c7c391adb.bindTooltip(
+                `<div>
+                     끄니걱정 : 한식 - 전남 장흥군 장흥읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d6a657f4b794c2eacad727fef49b139 = L.marker(
+                [34.751019899999996, 127.06967420000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_2751f0f59bcb4118a794141d1ec59ae3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d6a657f4b794c2eacad727fef49b139.setIcon(icon_2751f0f59bcb4118a794141d1ec59ae3);
+        
+    
+            marker_6d6a657f4b794c2eacad727fef49b139.bindTooltip(
+                `<div>
+                     대한다원 쉼터 : 카페/주점 - 전남 보성군 보성읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b80e7a8223b5456c8e06f21829cd2a6c = L.marker(
+                [35.0679146, 126.4888761],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_cf507349c97c4cf7a814f16d6d3f0673 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b80e7a8223b5456c8e06f21829cd2a6c.setIcon(icon_cf507349c97c4cf7a814f16d6d3f0673);
+        
+    
+            marker_b80e7a8223b5456c8e06f21829cd2a6c.bindTooltip(
+                `<div>
+                     화랑식당 : 한식 - 전남 함평군 함평읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_651b07b739d341c5a4f8cc4beef6d48f = L.marker(
+                [34.95578870000001, 127.49692140000002],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_ede27c9285e84ae08d8cb5701b7129da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_651b07b739d341c5a4f8cc4beef6d48f.setIcon(icon_ede27c9285e84ae08d8cb5701b7129da);
+        
+    
+            marker_651b07b739d341c5a4f8cc4beef6d48f.bindTooltip(
+                `<div>
+                     만석국밥 : 한식 - 전남 순천시 조곡동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5083d76002224136a83b919785a267f1 = L.marker(
+                [34.755508299999995, 127.69892209999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_f4075ea2632842b4bc0ec551d07a3d92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5083d76002224136a83b919785a267f1.setIcon(icon_f4075ea2632842b4bc0ec551d07a3d92);
+        
+    
+            marker_5083d76002224136a83b919785a267f1.bindTooltip(
+                `<div>
+                     돈쌈 : 한식 - 전남 여수시 문수동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9cdb9f9c8570459ca50e665c9909fc53 = L.marker(
+                [34.6555143, 126.989829],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_7928f617d6194927ac2e7034480f7a35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9cdb9f9c8570459ca50e665c9909fc53.setIcon(icon_7928f617d6194927ac2e7034480f7a35);
+        
+    
+            marker_9cdb9f9c8570459ca50e665c9909fc53.bindTooltip(
+                `<div>
+                     바다하우스 : 일식 - 전남 장흥군 안양면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a2c30188ade44339be99a21e4c0b2c4 = L.marker(
+                [35.2031525, 127.42594840000002],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_c1110e175ce9469ea1df375331eb4d4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9a2c30188ade44339be99a21e4c0b2c4.setIcon(icon_c1110e175ce9469ea1df375331eb4d4f);
+        
+    
+            marker_9a2c30188ade44339be99a21e4c0b2c4.bindTooltip(
+                `<div>
+                     서울회관 : 한식 - 전남 구례군 구례읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3759daeb0d54448bb90143b52e84e9e3 = L.marker(
+                [34.7473778, 127.70669509999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_e2d4806d27794a919235b95c9a72bc5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3759daeb0d54448bb90143b52e84e9e3.setIcon(icon_e2d4806d27794a919235b95c9a72bc5c);
+        
+    
+            marker_3759daeb0d54448bb90143b52e84e9e3.bindTooltip(
+                `<div>
+                     금수산식당 : 한식 - 전남 여수시 여서동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_665a09b3e79e415dad578afe47c527d6 = L.marker(
+                [34.7358806, 127.7207465],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_408d029f54c640fabeb71387d27cfc8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_665a09b3e79e415dad578afe47c527d6.setIcon(icon_408d029f54c640fabeb71387d27cfc8f);
+        
+    
+            marker_665a09b3e79e415dad578afe47c527d6.bindTooltip(
+                `<div>
+                     등가게장 : 한식 - 전남 여수시 봉산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2c5bd87a1d7454bbde6c36e3dba24eb = L.marker(
+                [34.9267876, 127.4816435],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_31f6caa0f6294df68253d5193b007685 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e2c5bd87a1d7454bbde6c36e3dba24eb.setIcon(icon_31f6caa0f6294df68253d5193b007685);
+        
+    
+            marker_e2c5bd87a1d7454bbde6c36e3dba24eb.bindTooltip(
+                `<div>
+                     벽오동 : 한식 - 전남 순천시 덕월동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69f9dbd5452e446cbb32a8c6de05ec20 = L.marker(
+                [34.8909242, 127.50689009999998],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_7be5dcef44bf48dfaba0e02355fc2705 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_69f9dbd5452e446cbb32a8c6de05ec20.setIcon(icon_7be5dcef44bf48dfaba0e02355fc2705);
+        
+    
+            marker_69f9dbd5452e446cbb32a8c6de05ec20.bindTooltip(
+                `<div>
+                     무진꼬막정식 : 한식 - 전남 순천시 대대동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9707c0a8cc8f4fbeba949d56f6bdef57 = L.marker(
+                [34.7924028, 126.38496289999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_10cca7649a9342cfb600c795301faa49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9707c0a8cc8f4fbeba949d56f6bdef57.setIcon(icon_10cca7649a9342cfb600c795301faa49);
+        
+    
+            marker_9707c0a8cc8f4fbeba949d56f6bdef57.bindTooltip(
+                `<div>
+                     수가정 : 한식 - 전남 목포시 대안동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ddfe8c385c4449382469e3b9e2901c8 = L.marker(
+                [34.9404044, 127.52011399999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_55f9a7c520804d3390a7251c2d5fc679 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8ddfe8c385c4449382469e3b9e2901c8.setIcon(icon_55f9a7c520804d3390a7251c2d5fc679);
+        
+    
+            marker_8ddfe8c385c4449382469e3b9e2901c8.bindTooltip(
+                `<div>
+                     소소카페(sosocafe) : 카페/주점 - 전남 순천시 연향동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_522db8eb4caf45e999484c0b351a45d3 = L.marker(
+                [34.7317012, 127.71448170000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_c361cd50927644d9be5753bf3fb9abc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_522db8eb4caf45e999484c0b351a45d3.setIcon(icon_c361cd50927644d9be5753bf3fb9abc9);
+        
+    
+            marker_522db8eb4caf45e999484c0b351a45d3.bindTooltip(
+                `<div>
+                     상아식당 : 한식 - 전남 여수시 국동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4579a14ce5264bc6ae7e064249ef0ee0 = L.marker(
+                [35.26994929999999, 127.4678382],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_5a84908e6ed5446cae7b8a3ba054e267 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4579a14ce5264bc6ae7e064249ef0ee0.setIcon(icon_5a84908e6ed5446cae7b8a3ba054e267);
+        
+    
+            marker_4579a14ce5264bc6ae7e064249ef0ee0.bindTooltip(
+                `<div>
+                     초가원가든 : 한식 - 전남 구례군 광의면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_653478fb6566403b9d1ff5ab95399d10 = L.marker(
+                [35.319743, 127.46784209999998],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_39f3bec0a4094b0183a5e5d889d96105 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_653478fb6566403b9d1ff5ab95399d10.setIcon(icon_39f3bec0a4094b0183a5e5d889d96105);
+        
+    
+            marker_653478fb6566403b9d1ff5ab95399d10.bindTooltip(
+                `<div>
+                     은행나무집가든 : 한식 - 전남 구례군 산동면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16b5e0f901234c75b8b68c76e956c04b = L.marker(
+                [34.9497152, 127.4888457],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_4c14893d6c8a4b3693449f34715e92c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_16b5e0f901234c75b8b68c76e956c04b.setIcon(icon_4c14893d6c8a4b3693449f34715e92c2);
+        
+    
+            marker_16b5e0f901234c75b8b68c76e956c04b.bindTooltip(
+                `<div>
+                     다락카레 : 한식 - 전남 순천시 장천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09581223f7234d00862af13ffde23a2c = L.marker(
+                [34.9566975, 127.48789350000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_3f544c1ccba945bb8fcadf2d34749de2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09581223f7234d00862af13ffde23a2c.setIcon(icon_3f544c1ccba945bb8fcadf2d34749de2);
+        
+    
+            marker_09581223f7234d00862af13ffde23a2c.bindTooltip(
+                `<div>
+                     순천제일식당 : 한식 - 전남 순천시 동외동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3fa25323ef64793b640544a4083d16f = L.marker(
+                [34.9855738, 127.45738440000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_a111af31aa5f49b986dcb7b4fb1fe78f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e3fa25323ef64793b640544a4083d16f.setIcon(icon_a111af31aa5f49b986dcb7b4fb1fe78f);
+        
+    
+            marker_e3fa25323ef64793b640544a4083d16f.bindTooltip(
+                `<div>
+                     어우림 : 한식 - 전남 순천시 석현동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80eb8e70dba748dda2077385cdde988b = L.marker(
+                [35.3208704, 126.9826119],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_70659042030041ca91df2c78eb6a3655 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_80eb8e70dba748dda2077385cdde988b.setIcon(icon_70659042030041ca91df2c78eb6a3655);
+        
+    
+            marker_80eb8e70dba748dda2077385cdde988b.bindTooltip(
+                `<div>
+                     무정식당 : 한식 - 전남 담양군 담양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_548f1da244664da79f57af50950e7920 = L.marker(
+                [34.9497152, 127.4888457],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_eac873aeb26f423489de1818657b8286 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_548f1da244664da79f57af50950e7920.setIcon(icon_eac873aeb26f423489de1818657b8286);
+        
+    
+            marker_548f1da244664da79f57af50950e7920.bindTooltip(
+                `<div>
+                     나무별 : 카페/주점 - 전남 순천시 장천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9a7c209c1764057b5cc22fd0debbef8 = L.marker(
+                [34.9404044, 127.52011399999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_febae624cc9e4e0db8e6221e46f9a522 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a9a7c209c1764057b5cc22fd0debbef8.setIcon(icon_febae624cc9e4e0db8e6221e46f9a522);
+        
+    
+            marker_a9a7c209c1764057b5cc22fd0debbef8.bindTooltip(
+                `<div>
+                     하늘지기 : 양식 - 전남 순천시 연향동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dafb11b381b1472887d7ca3f1e8fd796 = L.marker(
+                [35.3208704, 126.9826119],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_ecc5e8071622490094b6fcb86754976a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dafb11b381b1472887d7ca3f1e8fd796.setIcon(icon_ecc5e8071622490094b6fcb86754976a);
+        
+    
+            marker_dafb11b381b1472887d7ca3f1e8fd796.bindTooltip(
+                `<div>
+                     옛날대통순대전문점 : 한식 - 전남 담양군 담양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6fa945a78b448879651bc2d72ad3fc4 = L.marker(
+                [34.679743200000004, 126.90498649999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_9704321cd9e34f4bb74bb48bbea36b83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d6fa945a78b448879651bc2d72ad3fc4.setIcon(icon_9704321cd9e34f4bb74bb48bbea36b83);
+        
+    
+            marker_d6fa945a78b448879651bc2d72ad3fc4.bindTooltip(
+                `<div>
+                     한사랑한우식당 : 한식 - 전남 장흥군 장흥읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc3046e80beb440388607fdb4f0db990 = L.marker(
+                [35.4067432, 127.00534750000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_d4df893d581f4201b41d3a5dcb75be3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bc3046e80beb440388607fdb4f0db990.setIcon(icon_d4df893d581f4201b41d3a5dcb75be3a);
+        
+    
+            marker_bc3046e80beb440388607fdb4f0db990.bindTooltip(
+                `<div>
+                     장미가든 : 한식 - 전남 담양군 용면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f83a27a98d474359935d2ad81f896f2d = L.marker(
+                [34.762109499999994, 127.66198689999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_73a644a4bddd4a4588ec5da79c968407 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f83a27a98d474359935d2ad81f896f2d.setIcon(icon_73a644a4bddd4a4588ec5da79c968407);
+        
+    
+            marker_f83a27a98d474359935d2ad81f896f2d.bindTooltip(
+                `<div>
+                     세림 : 한식 - 전남 여수시 학동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c7869b0fc0349329316c3af151c3998 = L.marker(
+                [34.9614526, 127.5244699],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_1ef43c271e6447d1ab693fa19df3fa9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9c7869b0fc0349329316c3af151c3998.setIcon(icon_1ef43c271e6447d1ab693fa19df3fa9d);
+        
+    
+            marker_9c7869b0fc0349329316c3af151c3998.bindTooltip(
+                `<div>
+                     백송 금당점 : 한식 - 전남 순천시 조례동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66b8802b404e41b499109b77282a9cdb = L.marker(
+                [35.0328956, 126.7199028],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_f76d52d71b4946f8a4cb269eac4f1305 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_66b8802b404e41b499109b77282a9cdb.setIcon(icon_f76d52d71b4946f8a4cb269eac4f1305);
+        
+    
+            marker_66b8802b404e41b499109b77282a9cdb.bindTooltip(
+                `<div>
+                     나주곰탕하얀집 : 한식 - 전남 나주시 중앙동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5bab33f55dc344f195d9dfc651838877 = L.marker(
+                [34.7384241, 127.7375229],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_8dab471926294ceab431f28833fd2ef8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5bab33f55dc344f195d9dfc651838877.setIcon(icon_8dab471926294ceab431f28833fd2ef8);
+        
+    
+            marker_5bab33f55dc344f195d9dfc651838877.bindTooltip(
+                `<div>
+                     더블핸스테이크(W Hand Steak) : 양식 - 전남 여수시 중앙동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24b8a4fc128249e19658ee6f742864f9 = L.marker(
+                [34.8465759, 127.32068500000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_d2c89f35d7a546df8575867775c7c775 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_24b8a4fc128249e19658ee6f742864f9.setIcon(icon_d2c89f35d7a546df8575867775c7c775);
+        
+    
+            marker_24b8a4fc128249e19658ee6f742864f9.bindTooltip(
+                `<div>
+                     정가네꼬막식당 : 한식 - 전남 보성군 벌교읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebbbc35963154211adaeee53c0654309 = L.marker(
+                [34.972585200000005, 127.49750870000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_095a5641d4f449b49f4735bfde09fb46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ebbbc35963154211adaeee53c0654309.setIcon(icon_095a5641d4f449b49f4735bfde09fb46);
+        
+    
+            marker_ebbbc35963154211adaeee53c0654309.bindTooltip(
+                `<div>
+                     별천지 : 한식 - 전남 순천시 용당동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4f3fe9152bc433bb4a47b8d7c81b8bc = L.marker(
+                [34.8077435, 126.41854140000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_682c0b59ac984d138a85c28c449b1f7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f4f3fe9152bc433bb4a47b8d7c81b8bc.setIcon(icon_682c0b59ac984d138a85c28c449b1f7a);
+        
+    
+            marker_f4f3fe9152bc433bb4a47b8d7c81b8bc.bindTooltip(
+                `<div>
+                     독도해물탕 : 일식 - 전남 목포시 상동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_523304dd20e74b2882a9dc464d984539 = L.marker(
+                [34.8465759, 127.32068500000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_76bca06d0a2c418c89a823b1a7b26cb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_523304dd20e74b2882a9dc464d984539.setIcon(icon_76bca06d0a2c418c89a823b1a7b26cb2);
+        
+    
+            marker_523304dd20e74b2882a9dc464d984539.bindTooltip(
+                `<div>
+                     국일식당 : 한식 - 전남 보성군 벌교읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d15c6a13b3d248cabd2c0f9beb4dcecd = L.marker(
+                [34.8909242, 127.50689009999998],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_1531883ecf1142ed998575f67c1f6b15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d15c6a13b3d248cabd2c0f9beb4dcecd.setIcon(icon_1531883ecf1142ed998575f67c1f6b15);
+        
+    
+            marker_d15c6a13b3d248cabd2c0f9beb4dcecd.bindTooltip(
+                `<div>
+                     일품식당 : 한식 - 전남 순천시 대대동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56971a8706d74ac184aca34977ec89d3 = L.marker(
+                [35.0497399, 126.7154091],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_b70bb2c09b0045459a60b79752de090f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_56971a8706d74ac184aca34977ec89d3.setIcon(icon_b70bb2c09b0045459a60b79752de090f);
+        
+    
+            marker_56971a8706d74ac184aca34977ec89d3.bindTooltip(
+                `<div>
+                     송현불고기 : 한식 - 전남 나주시 대호동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4744da292ee4888b63b1d77ec4f405d = L.marker(
+                [34.7843901, 126.38295600000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_87da07aea15f49388c15c439529b305e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a4744da292ee4888b63b1d77ec4f405d.setIcon(icon_87da07aea15f49388c15c439529b305e);
+        
+    
+            marker_a4744da292ee4888b63b1d77ec4f405d.bindTooltip(
+                `<div>
+                     한일생태전문점 : 한식 - 전남 목포시 금동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65c69ecea19c4f999d9fd608a46af47b = L.marker(
+                [34.8465759, 127.32068500000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_c9bd42464c8441978be5bde646757c07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65c69ecea19c4f999d9fd608a46af47b.setIcon(icon_c9bd42464c8441978be5bde646757c07);
+        
+    
+            marker_65c69ecea19c4f999d9fd608a46af47b.bindTooltip(
+                `<div>
+                     벌교원조꼬막식당 : 한식 - 전남 보성군 벌교읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5818c54a7c1d45d881eb3145d935a88c = L.marker(
+                [34.743552, 127.7540088],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_73f9db77d6a5451e9325c8911634fbe0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5818c54a7c1d45d881eb3145d935a88c.setIcon(icon_73f9db77d6a5451e9325c8911634fbe0);
+        
+    
+            marker_5818c54a7c1d45d881eb3145d935a88c.bindTooltip(
+                `<div>
+                     전주식당 : 한식 - 전남 여수시 수정동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dced251a66044327a6416b73aba1a4b2 = L.marker(
+                [34.747313, 127.6809309],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_dc676ffe25744c5287f6e759f7d43c84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dced251a66044327a6416b73aba1a4b2.setIcon(icon_dc676ffe25744c5287f6e759f7d43c84);
+        
+    
+            marker_dced251a66044327a6416b73aba1a4b2.bindTooltip(
+                `<div>
+                     프롤라 : 양식 - 전남 여수시 웅천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff1d17939a35455d9c9d5eaa07380617 = L.marker(
+                [34.8909242, 127.50689009999998],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_d943ac4d995242a39c6eb3ac4f9203d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ff1d17939a35455d9c9d5eaa07380617.setIcon(icon_d943ac4d995242a39c6eb3ac4f9203d2);
+        
+    
+            marker_ff1d17939a35455d9c9d5eaa07380617.bindTooltip(
+                `<div>
+                     대대선창집 : 한식 - 전남 순천시 대대동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d34ba5144b84ac399c8ce6a004deccf = L.marker(
+                [34.9497152, 127.4888457],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_e6cc18cda3d645bdbff4bc1f3bd9bef5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2d34ba5144b84ac399c8ce6a004deccf.setIcon(icon_e6cc18cda3d645bdbff4bc1f3bd9bef5);
+        
+    
+            marker_2d34ba5144b84ac399c8ce6a004deccf.bindTooltip(
+                `<div>
+                     장대콩국수 : 한식 - 전남 순천시 장천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7d0c71a63514292b1daf9f437f7139d = L.marker(
+                [34.7875125, 126.3825563],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_463b5671d370497e946a67936bc34d41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d7d0c71a63514292b1daf9f437f7139d.setIcon(icon_463b5671d370497e946a67936bc34d41);
+        
+    
+            marker_d7d0c71a63514292b1daf9f437f7139d.bindTooltip(
+                `<div>
+                     초원음식점(초원식당) : 한식 - 전남 목포시 대의동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67f3b3e0d29745828410629d73783854 = L.marker(
+                [34.644574299999995, 126.82335859999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_df704a8805bc46d6adaa5dc75df0a3b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_67f3b3e0d29745828410629d73783854.setIcon(icon_df704a8805bc46d6adaa5dc75df0a3b9);
+        
+    
+            marker_67f3b3e0d29745828410629d73783854.bindTooltip(
+                `<div>
+                     청자골종가집 : 한식 - 전남 강진군 군동면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_785ef4203e0c433899006b11c67a2db6 = L.marker(
+                [34.762109499999994, 127.66198689999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_8e94c6f7fc2b43ae9b611d27312221a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_785ef4203e0c433899006b11c67a2db6.setIcon(icon_8e94c6f7fc2b43ae9b611d27312221a7);
+        
+    
+            marker_785ef4203e0c433899006b11c67a2db6.bindTooltip(
+                `<div>
+                     매화강산 : 한식 - 전남 여수시 학동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_689f2d998194463480d8bb0166570eee = L.marker(
+                [34.7924028, 126.38496289999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_3cc78088bf004bcc93af7ba89aa26e96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_689f2d998194463480d8bb0166570eee.setIcon(icon_3cc78088bf004bcc93af7ba89aa26e96);
+        
+    
+            marker_689f2d998194463480d8bb0166570eee.bindTooltip(
+                `<div>
+                     유달콩물 : 한식 - 전남 목포시 대안동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9b7d20f82804f2baa06c8033138c9e2 = L.marker(
+                [34.9350136, 127.5043715],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_6e4a8a1ea0b84384b831e9e08c691ed2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f9b7d20f82804f2baa06c8033138c9e2.setIcon(icon_6e4a8a1ea0b84384b831e9e08c691ed2);
+        
+    
+            marker_f9b7d20f82804f2baa06c8033138c9e2.bindTooltip(
+                `<div>
+                     통뼈연가 : 한식 - 전남 순천시 풍덕동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_deb865619b8b429d98112b1707356aeb = L.marker(
+                [34.9614526, 127.5244699],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_9a9a6061c193440ab15cf20d5f4a95d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_deb865619b8b429d98112b1707356aeb.setIcon(icon_9a9a6061c193440ab15cf20d5f4a95d0);
+        
+    
+            marker_deb865619b8b429d98112b1707356aeb.bindTooltip(
+                `<div>
+                     시몽관 : 한식 - 전남 순천시 조례동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38bf72cc624e4039b9e75de3420f5c63 = L.marker(
+                [35.3208704, 126.9826119],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_c55e94b46c574f44a382c1a56cb6657d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_38bf72cc624e4039b9e75de3420f5c63.setIcon(icon_c55e94b46c574f44a382c1a56cb6657d);
+        
+    
+            marker_38bf72cc624e4039b9e75de3420f5c63.bindTooltip(
+                `<div>
+                     옥빈관 : 한식 - 전남 담양군 담양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2964f03a2aee43858ebf38c1eb8680e3 = L.marker(
+                [34.7384241, 127.7375229],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_309def164cb04fdeb42ac5ae39228fe8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2964f03a2aee43858ebf38c1eb8680e3.setIcon(icon_309def164cb04fdeb42ac5ae39228fe8);
+        
+    
+            marker_2964f03a2aee43858ebf38c1eb8680e3.bindTooltip(
+                `<div>
+                     이순신수제버거 : 양식 - 전남 여수시 중앙동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c56b5f99e29749859d08cca83e92730d = L.marker(
+                [34.773924900000004, 127.70966029999998],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_a3bd59d9b8a04c48942e967c0cfa8532 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c56b5f99e29749859d08cca83e92730d.setIcon(icon_a3bd59d9b8a04c48942e967c0cfa8532);
+        
+    
+            marker_c56b5f99e29749859d08cca83e92730d.bindTooltip(
+                `<div>
+                     돈뗄 : 일식 - 전남 여수시 미평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_812179a8a2024c43a3946c530a65bede = L.marker(
+                [34.9566975, 127.48789350000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_b33c6da0fddb4d03a1c9cc392f018177 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_812179a8a2024c43a3946c530a65bede.setIcon(icon_b33c6da0fddb4d03a1c9cc392f018177);
+        
+    
+            marker_812179a8a2024c43a3946c530a65bede.bindTooltip(
+                `<div>
+                     한우식당 : 한식 - 전남 순천시 동외동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13bfcc60360344078516983b92944169 = L.marker(
+                [34.9497152, 127.4888457],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_e2f46da1aea6436daa7f6f3701a8e41b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_13bfcc60360344078516983b92944169.setIcon(icon_e2f46da1aea6436daa7f6f3701a8e41b);
+        
+    
+            marker_13bfcc60360344078516983b92944169.bindTooltip(
+                `<div>
+                     남흥회관 : 한식 - 전남 순천시 장천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0dd013d2ff04f9ca3da741658c86607 = L.marker(
+                [35.085809999999995, 127.39006670000002],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_9a8c4746b0af4c56a7349fc68f6eb38b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d0dd013d2ff04f9ca3da741658c86607.setIcon(icon_9a8c4746b0af4c56a7349fc68f6eb38b);
+        
+    
+            marker_d0dd013d2ff04f9ca3da741658c86607.bindTooltip(
+                `<div>
+                     수련산방 : 한식 - 전남 순천시 월등면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32dacf33c283427b958189e225ba2162 = L.marker(
+                [35.0497399, 126.7154091],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_8b8d3a03ca19489b9d6e37c7bdb8d222 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_32dacf33c283427b958189e225ba2162.setIcon(icon_8b8d3a03ca19489b9d6e37c7bdb8d222);
+        
+    
+            marker_32dacf33c283427b958189e225ba2162.bindTooltip(
+                `<div>
+                     나주볼테기 : 한식 - 전남 나주시 대호동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb5811aba12e4f7b9d3e89f6f0f8de39 = L.marker(
+                [35.21997, 126.97400890000002],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_edfc349b5a6d4453b57feabb41692b66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb5811aba12e4f7b9d3e89f6f0f8de39.setIcon(icon_edfc349b5a6d4453b57feabb41692b66);
+        
+    
+            marker_eb5811aba12e4f7b9d3e89f6f0f8de39.bindTooltip(
+                `<div>
+                     대가 : 한식 - 전남 담양군 고서면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7cc72e71022c4d28994695aedfc310ee = L.marker(
+                [34.9497152, 127.4888457],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_00884daf8277428688abc805fecac12d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7cc72e71022c4d28994695aedfc310ee.setIcon(icon_00884daf8277428688abc805fecac12d);
+        
+    
+            marker_7cc72e71022c4d28994695aedfc310ee.bindTooltip(
+                `<div>
+                     풍미통닭 : 한식 - 전남 순천시 장천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c56adc4738d4a9198d8e225c91eaabb = L.marker(
+                [34.7384241, 127.7375229],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_9a31083eb5c9401dbc0fee538459797b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5c56adc4738d4a9198d8e225c91eaabb.setIcon(icon_9a31083eb5c9401dbc0fee538459797b);
+        
+    
+            marker_5c56adc4738d4a9198d8e225c91eaabb.bindTooltip(
+                `<div>
+                     진복식당 : 한식 - 전남 여수시 중앙동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e25fb2053e3d4df6988634657c633afa = L.marker(
+                [34.751019899999996, 127.06967420000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_eae1bb8d58134639924972d561d99bc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e25fb2053e3d4df6988634657c633afa.setIcon(icon_eae1bb8d58134639924972d561d99bc3);
+        
+    
+            marker_e25fb2053e3d4df6988634657c633afa.bindTooltip(
+                `<div>
+                     카페루나(Cafe Luna) : 카페/주점 - 전남 보성군 보성읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc030ad82d1e40b8b3932dc171588407 = L.marker(
+                [34.7426904, 127.74280619999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_347964a6e3044f288300e1a4c8cfc2a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fc030ad82d1e40b8b3932dc171588407.setIcon(icon_347964a6e3044f288300e1a4c8cfc2a4);
+        
+    
+            marker_fc030ad82d1e40b8b3932dc171588407.bindTooltip(
+                `<div>
+                     싱글벙글빵집 : 베이커리 - 전남 여수시 관문동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d093753cd7164474aa51951daae4ed42 = L.marker(
+                [34.8077435, 126.41854140000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_a44cddd0c7d0453e9afb6e4ce5d8f3b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d093753cd7164474aa51951daae4ed42.setIcon(icon_a44cddd0c7d0453e9afb6e4ce5d8f3b2);
+        
+    
+            marker_d093753cd7164474aa51951daae4ed42.bindTooltip(
+                `<div>
+                     일레븐에이엠(11am) : 카페/주점 - 전남 목포시 상동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d94a3546da0b4233a2df0ceea0cb7667 = L.marker(
+                [34.9539601, 127.48224990000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_193905620e9b420cb6f7b2cd4ded2fa3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d94a3546da0b4233a2df0ceea0cb7667.setIcon(icon_193905620e9b420cb6f7b2cd4ded2fa3);
+        
+    
+            marker_d94a3546da0b4233a2df0ceea0cb7667.bindTooltip(
+                `<div>
+                     카페정 : 카페/주점 - 전남 순천시 영동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34116e15848345a8bb4acbd1d4d23319 = L.marker(
+                [34.8465759, 127.32068500000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_60844f3a377d496aa044f721e0ebde30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_34116e15848345a8bb4acbd1d4d23319.setIcon(icon_60844f3a377d496aa044f721e0ebde30);
+        
+    
+            marker_34116e15848345a8bb4acbd1d4d23319.bindTooltip(
+                `<div>
+                     거시기 꼬막식당 : 한식 - 전남 보성군 벌교읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7445abf8a2624d59b10fd81c472e1d0e = L.marker(
+                [34.7848158, 126.37431670000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_7a0363aa40ea4d3db47cbe7a7b7d3f91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7445abf8a2624d59b10fd81c472e1d0e.setIcon(icon_7a0363aa40ea4d3db47cbe7a7b7d3f91);
+        
+    
+            marker_7445abf8a2624d59b10fd81c472e1d0e.bindTooltip(
+                `<div>
+                     선경준치횟집 : 일식 - 전남 목포시 온금동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8dfcd5398ce4e9e87ad5c30523f5f61 = L.marker(
+                [34.98880629999999, 127.24715330000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_891a59d84a504339bd434c82b27267cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c8dfcd5398ce4e9e87ad5c30523f5f61.setIcon(icon_891a59d84a504339bd434c82b27267cb);
+        
+    
+            marker_c8dfcd5398ce4e9e87ad5c30523f5f61.bindTooltip(
+                `<div>
+                     조계산보리밥집 : 한식 - 전남 순천시 송광면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31fc6e0c7bed450289953e3b89a16cda = L.marker(
+                [34.8465759, 127.32068500000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_2ade24dbe73f436887ac1021bf19eb0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_31fc6e0c7bed450289953e3b89a16cda.setIcon(icon_2ade24dbe73f436887ac1021bf19eb0a);
+        
+    
+            marker_31fc6e0c7bed450289953e3b89a16cda.bindTooltip(
+                `<div>
+                     원조꼬막회관 : 한식 - 전남 보성군 벌교읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8aeef1f4f6d244c78f43c2d33c952d9d = L.marker(
+                [34.747313, 127.6809309],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_9bbaef267f9b44bd851b8ee6e17fc02d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8aeef1f4f6d244c78f43c2d33c952d9d.setIcon(icon_9bbaef267f9b44bd851b8ee6e17fc02d);
+        
+    
+            marker_8aeef1f4f6d244c78f43c2d33c952d9d.bindTooltip(
+                `<div>
+                     1977비스트로(1977BISTRO) : 양식 - 전남 여수시 웅천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c174c4685acb4059b50516f9f2157ba6 = L.marker(
+                [34.9556836, 127.48263329999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_de6abd19d07e42e890746f4196894524 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c174c4685acb4059b50516f9f2157ba6.setIcon(icon_de6abd19d07e42e890746f4196894524);
+        
+    
+            marker_c174c4685acb4059b50516f9f2157ba6.bindTooltip(
+                `<div>
+                     양지쌈밥 : 한식 - 전남 순천시 행동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0410e60b8714fd0b804076b8881ffc9 = L.marker(
+                [34.755508299999995, 127.69892209999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_59700b18e4c4476782d84ef02167234f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a0410e60b8714fd0b804076b8881ffc9.setIcon(icon_59700b18e4c4476782d84ef02167234f);
+        
+    
+            marker_a0410e60b8714fd0b804076b8881ffc9.bindTooltip(
+                `<div>
+                     아구회관 : 한식 - 전남 여수시 문수동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_723e5512540a469da602f97dec28cc3f = L.marker(
+                [34.804649600000005, 126.3970179],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_ffc5b6ee9fb946d1915c3acc015ac197 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_723e5512540a469da602f97dec28cc3f.setIcon(icon_ffc5b6ee9fb946d1915c3acc015ac197);
+        
+    
+            marker_723e5512540a469da602f97dec28cc3f.bindTooltip(
+                `<div>
+                     평양냉면 : 한식 - 전남 목포시 용당동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8878c5599f9049b3b23a4b5e2fe97ac9 = L.marker(
+                [35.0306056, 126.71474429999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_098e2664e33e4856bd2e56f6c284de54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8878c5599f9049b3b23a4b5e2fe97ac9.setIcon(icon_098e2664e33e4856bd2e56f6c284de54);
+        
+    
+            marker_8878c5599f9049b3b23a4b5e2fe97ac9.bindTooltip(
+                `<div>
+                     남평할매집 : 한식 - 전남 나주시 금계동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75635e4b712a495598f36b652ee4ed5f = L.marker(
+                [35.24324910000001, 127.4994267],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_5110772566f1477ba25f436fb65c443c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_75635e4b712a495598f36b652ee4ed5f.setIcon(icon_5110772566f1477ba25f436fb65c443c);
+        
+    
+            marker_75635e4b712a495598f36b652ee4ed5f.bindTooltip(
+                `<div>
+                     지리산대통밥 : 한식 - 전남 구례군 마산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c98da3ceb3a4b8082c9e24845b964bc = L.marker(
+                [34.784940500000005, 126.3829998],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_45776656b5b44e6c9e28e47c305eafd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9c98da3ceb3a4b8082c9e24845b964bc.setIcon(icon_45776656b5b44e6c9e28e47c305eafd6);
+        
+    
+            marker_9c98da3ceb3a4b8082c9e24845b964bc.bindTooltip(
+                `<div>
+                     장터식당 : 한식 - 전남 목포시 중동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e95a143aba884685844bff9da565ce9c = L.marker(
+                [34.751019899999996, 127.06967420000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_7a0b76a5b2e446469e51ce1c5bb2e44f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e95a143aba884685844bff9da565ce9c.setIcon(icon_7a0b76a5b2e446469e51ce1c5bb2e44f);
+        
+    
+            marker_e95a143aba884685844bff9da565ce9c.bindTooltip(
+                `<div>
+                     카페스토리플러스 : 카페/주점 - 전남 보성군 보성읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abb1aae569df42e2adaa60872d851671 = L.marker(
+                [34.80594179999999, 126.391802],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_c17b868bfb30412aa853020e1aae0a4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_abb1aae569df42e2adaa60872d851671.setIcon(icon_c17b868bfb30412aa853020e1aae0a4a);
+        
+    
+            marker_abb1aae569df42e2adaa60872d851671.bindTooltip(
+                `<div>
+                     88포장마차 : 카페/주점 - 전남 목포시 용당1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acc7c7ac6e924e2aaa467bccc7aa277c = L.marker(
+                [34.739954600000004, 127.73242900000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_1e239fb4674a4c278b2d0b6b808a2d98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_acc7c7ac6e924e2aaa467bccc7aa277c.setIcon(icon_1e239fb4674a4c278b2d0b6b808a2d98);
+        
+    
+            marker_acc7c7ac6e924e2aaa467bccc7aa277c.bindTooltip(
+                `<div>
+                     원앙식당 : 한식 - 전남 여수시 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a36b83a3147342d8a8bf416c1528366c = L.marker(
+                [34.8465759, 127.32068500000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_57367582519d4b33bc6a6a82f4d3ffff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a36b83a3147342d8a8bf416c1528366c.setIcon(icon_57367582519d4b33bc6a6a82f4d3ffff);
+        
+    
+            marker_a36b83a3147342d8a8bf416c1528366c.bindTooltip(
+                `<div>
+                     다성촌 : 한식 - 전남 보성군 벌교읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fadc016435ee4d02bb47269b18bdc5f2 = L.marker(
+                [34.9430342, 127.47796149999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_2b72d561b85a4a0db910a788f02209b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fadc016435ee4d02bb47269b18bdc5f2.setIcon(icon_2b72d561b85a4a0db910a788f02209b7);
+        
+    
+            marker_fadc016435ee4d02bb47269b18bdc5f2.bindTooltip(
+                `<div>
+                     건봉국밥 : 한식 - 전남 순천시 인제동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e8e9b723e5d46a39a56eabfdbb62b95 = L.marker(
+                [34.7384241, 127.7375229],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_729af5a35edf4df68405dc881128a0dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9e8e9b723e5d46a39a56eabfdbb62b95.setIcon(icon_729af5a35edf4df68405dc881128a0dc);
+        
+    
+            marker_9e8e9b723e5d46a39a56eabfdbb62b95.bindTooltip(
+                `<div>
+                     어라연 : 한식 - 전남 여수시 중앙동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80893393491a47aaa2584863fbff89ea = L.marker(
+                [34.743552, 127.7540088],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_afde27d148a84133abf3435598c8b971 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_80893393491a47aaa2584863fbff89ea.setIcon(icon_afde27d148a84133abf3435598c8b971);
+        
+    
+            marker_80893393491a47aaa2584863fbff89ea.bindTooltip(
+                `<div>
+                     동백회관 : 한식 - 전남 여수시 수정동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b685b919cf6d4ee289217e3928e123e7 = L.marker(
+                [35.231244200000006, 127.01498649999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_4e528f0943734b1180d089808d36d8f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b685b919cf6d4ee289217e3928e123e7.setIcon(icon_4e528f0943734b1180d089808d36d8f3);
+        
+    
+            marker_b685b919cf6d4ee289217e3928e123e7.bindTooltip(
+                `<div>
+                     전통창평국밥 : 한식 - 전남 담양군 창평면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24350dd8a016414b875f845d15d7755c = L.marker(
+                [34.6457729, 127.76221740000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_0b1cadfaee104557aa2701347ca7ed25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_24350dd8a016414b875f845d15d7755c.setIcon(icon_0b1cadfaee104557aa2701347ca7ed25);
+        
+    
+            marker_24350dd8a016414b875f845d15d7755c.bindTooltip(
+                `<div>
+                     돌산갓밥상뷔페 : 뷔페 - 전남 여수시 돌산읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7017c25ddd34494be2ba23c421cc359 = L.marker(
+                [35.3208704, 126.9826119],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_b4f7df82e92a43ad9656125f56ba3379 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7017c25ddd34494be2ba23c421cc359.setIcon(icon_b4f7df82e92a43ad9656125f56ba3379);
+        
+    
+            marker_b7017c25ddd34494be2ba23c421cc359.bindTooltip(
+                `<div>
+                     덕인관 본관 : 한식 - 전남 담양군 담양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2938c3deabed4ab79a5ce34069f4abd5 = L.marker(
+                [34.8077435, 126.41854140000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_210fa2903fee442f955c233cd3a7cac3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2938c3deabed4ab79a5ce34069f4abd5.setIcon(icon_210fa2903fee442f955c233cd3a7cac3);
+        
+    
+            marker_2938c3deabed4ab79a5ce34069f4abd5.bindTooltip(
+                `<div>
+                     소담 : 한식 - 전남 목포시 상동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4147e6a6281f417c85903b1116e53825 = L.marker(
+                [35.24324910000001, 127.4994267],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_9306bf14959d4b6ca9f6c7f734ac050a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4147e6a6281f417c85903b1116e53825.setIcon(icon_9306bf14959d4b6ca9f6c7f734ac050a);
+        
+    
+            marker_4147e6a6281f417c85903b1116e53825.bindTooltip(
+                `<div>
+                     지리산식당 : 한식 - 전남 구례군 마산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8627789c404a4762827491018d5464bf = L.marker(
+                [34.9860013, 127.478839],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_87d77fb345b14adeb33df7a751bc3126 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8627789c404a4762827491018d5464bf.setIcon(icon_87d77fb345b14adeb33df7a751bc3126);
+        
+    
+            marker_8627789c404a4762827491018d5464bf.bindTooltip(
+                `<div>
+                     순천보리밥뷔페 : 뷔페 - 전남 순천시 가곡동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_edf6b0e512da4918ac65599796f3524f = L.marker(
+                [34.927558000000005, 127.49984109999998],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_b55098370898455a9dd8e123d314e762 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_edf6b0e512da4918ac65599796f3524f.setIcon(icon_b55098370898455a9dd8e123d314e762);
+        
+    
+            marker_edf6b0e512da4918ac65599796f3524f.bindTooltip(
+                `<div>
+                     오천동연탄집 : 한식 - 전남 순천시 오천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67d362e36c7b4bbc9238d020935925c1 = L.marker(
+                [34.9614526, 127.5244699],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_7a73c37a424845e7927d2f717e2f1b50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_67d362e36c7b4bbc9238d020935925c1.setIcon(icon_7a73c37a424845e7927d2f717e2f1b50);
+        
+    
+            marker_67d362e36c7b4bbc9238d020935925c1.bindTooltip(
+                `<div>
+                     나주곰탕염대감 : 한식 - 전남 순천시 조례동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0117edd2182a4ebc9542692a59d17949 = L.marker(
+                [35.233837, 127.32148219999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_d5ca4bb89ff94cf8ad9761f3d5782302 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0117edd2182a4ebc9542692a59d17949.setIcon(icon_d5ca4bb89ff94cf8ad9761f3d5782302);
+        
+    
+            marker_0117edd2182a4ebc9542692a59d17949.bindTooltip(
+                `<div>
+                     구름다리가든 : 한식 - 전남 곡성군 오곡면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b34d266d01c4b8bb268b80829de3be4 = L.marker(
+                [34.7358806, 127.7207465],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_b916a047cec0441fa3fe1d235778f66d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2b34d266d01c4b8bb268b80829de3be4.setIcon(icon_b916a047cec0441fa3fe1d235778f66d);
+        
+    
+            marker_2b34d266d01c4b8bb268b80829de3be4.bindTooltip(
+                `<div>
+                     청정게장촌 : 한식 - 전남 여수시 봉산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ab50e6c1a5c4ca880a5742b162666f5 = L.marker(
+                [34.9404044, 127.52011399999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_4ae01908f19648ac8e9640f707ab1a69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2ab50e6c1a5c4ca880a5742b162666f5.setIcon(icon_4ae01908f19648ac8e9640f707ab1a69);
+        
+    
+            marker_2ab50e6c1a5c4ca880a5742b162666f5.bindTooltip(
+                `<div>
+                     석암정돌솥밥 : 한식 - 전남 순천시 연향동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7aedbfa50574aa3ad932fb48f00e1a6 = L.marker(
+                [34.937484600000005, 127.6930041],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_3b21d3d623484d539a73ca58a4364680 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7aedbfa50574aa3ad932fb48f00e1a6.setIcon(icon_3b21d3d623484d539a73ca58a4364680);
+        
+    
+            marker_b7aedbfa50574aa3ad932fb48f00e1a6.bindTooltip(
+                `<div>
+                     금정광양불고기 : 한식 - 전남 광양시 중동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b13d79e246454cdda5c4aa6bdaba6dac = L.marker(
+                [34.9404044, 127.52011399999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_421310a7db1c4b84aac2153404aeb2be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b13d79e246454cdda5c4aa6bdaba6dac.setIcon(icon_421310a7db1c4b84aac2153404aeb2be);
+        
+    
+            marker_b13d79e246454cdda5c4aa6bdaba6dac.bindTooltip(
+                `<div>
+                     가빈 : 한식 - 전남 순천시 연향동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4aa38494eadc4555b4120a8dcf7cbcdd = L.marker(
+                [34.9267876, 127.4816435],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_8b7788c34a2e45a6a610ceed3bc3b6de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4aa38494eadc4555b4120a8dcf7cbcdd.setIcon(icon_8b7788c34a2e45a6a610ceed3bc3b6de);
+        
+    
+            marker_4aa38494eadc4555b4120a8dcf7cbcdd.bindTooltip(
+                `<div>
+                     청향당 : 한식 - 전남 순천시 덕월동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49ec1d165a0b4fe68530d68b691881da = L.marker(
+                [35.085809999999995, 127.39006670000002],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_7d06f26ac51d4c4dba69b1311ac5d678 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_49ec1d165a0b4fe68530d68b691881da.setIcon(icon_7d06f26ac51d4c4dba69b1311ac5d678);
+        
+    
+            marker_49ec1d165a0b4fe68530d68b691881da.bindTooltip(
+                `<div>
+                     송치마을 : 기타/세계 - 전남 순천시 월등면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47ec626a9d49485993e78c54d65e1f3e = L.marker(
+                [35.2031525, 127.42594840000002],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_42dd0c01d2ea4b2b80801fc752f1bbbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_47ec626a9d49485993e78c54d65e1f3e.setIcon(icon_42dd0c01d2ea4b2b80801fc752f1bbbb);
+        
+    
+            marker_47ec626a9d49485993e78c54d65e1f3e.bindTooltip(
+                `<div>
+                     선미옥다슬기 : 한식 - 전남 구례군 구례읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_066c7e7c09c4418cbc7c5627ba482843 = L.marker(
+                [34.762109499999994, 127.66198689999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_de84156ccf184c35b730a347bb96519b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_066c7e7c09c4418cbc7c5627ba482843.setIcon(icon_de84156ccf184c35b730a347bb96519b);
+        
+    
+            marker_066c7e7c09c4418cbc7c5627ba482843.bindTooltip(
+                `<div>
+                     본가광양불고기 : 한식 - 전남 여수시 학동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea0195411dec42b98a6b45d25e53c63b = L.marker(
+                [34.7358806, 127.7207465],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_ffd9b3019f254bf3bb61581c232ae6d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ea0195411dec42b98a6b45d25e53c63b.setIcon(icon_ffd9b3019f254bf3bb61581c232ae6d2);
+        
+    
+            marker_ea0195411dec42b98a6b45d25e53c63b.bindTooltip(
+                `<div>
+                     두꺼비식당 : 한식 - 전남 여수시 봉산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b11efe3653f04094947eba5483b737d3 = L.marker(
+                [35.319743, 127.46784209999998],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_f88a389d7a714c569c1ee7b23ebe8034 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b11efe3653f04094947eba5483b737d3.setIcon(icon_f88a389d7a714c569c1ee7b23ebe8034);
+        
+    
+            marker_b11efe3653f04094947eba5483b737d3.bindTooltip(
+                `<div>
+                     옛날집 : 한식 - 전남 구례군 산동면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1be60a55915c48da813516b91f2bdd8e = L.marker(
+                [34.7911213, 126.7249291],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_24831b1c11854b348c7d405a8c78248c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1be60a55915c48da813516b91f2bdd8e.setIcon(icon_24831b1c11854b348c7d405a8c78248c);
+        
+    
+            marker_1be60a55915c48da813516b91f2bdd8e.bindTooltip(
+                `<div>
+                     영빈관 : 한식 - 전남 영암군 영암읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8246fadf2cd74f6cb9be098e2a2e545a = L.marker(
+                [35.319743, 127.46784209999998],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_7b8d354604d147e9811f9c8207f9a53a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8246fadf2cd74f6cb9be098e2a2e545a.setIcon(icon_7b8d354604d147e9811f9c8207f9a53a);
+        
+    
+            marker_8246fadf2cd74f6cb9be098e2a2e545a.bindTooltip(
+                `<div>
+                     양미한옥가든 : 한식 - 전남 구례군 산동면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6eafc31e25d4481afd4104d23f0f1b4 = L.marker(
+                [34.9614526, 127.5244699],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_3b5a94fb8a5f41d7acca10a0c705d3aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b6eafc31e25d4481afd4104d23f0f1b4.setIcon(icon_3b5a94fb8a5f41d7acca10a0c705d3aa);
+        
+    
+            marker_b6eafc31e25d4481afd4104d23f0f1b4.bindTooltip(
+                `<div>
+                     몽돌해물탕 : 한식 - 전남 순천시 조례동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed07c1136b56494eaab14e6465cb85de = L.marker(
+                [35.2031525, 127.42594840000002],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_9b96a1b5f1f944d9992fadf4acf136f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ed07c1136b56494eaab14e6465cb85de.setIcon(icon_9b96a1b5f1f944d9992fadf4acf136f7);
+        
+    
+            marker_ed07c1136b56494eaab14e6465cb85de.bindTooltip(
+                `<div>
+                     전원가든 : 한식 - 전남 구례군 구례읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb7af235ffa54bf2b3997e3b11fff961 = L.marker(
+                [34.786395399999996, 126.3792131],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_2d03acd483cf49d0ad3269490cc59a9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bb7af235ffa54bf2b3997e3b11fff961.setIcon(icon_2d03acd483cf49d0ad3269490cc59a9b);
+        
+    
+            marker_bb7af235ffa54bf2b3997e3b11fff961.bindTooltip(
+                `<div>
+                     한미르 : 한식 - 전남 목포시 유달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf48fbbbe357496f9158e03289c2d76c = L.marker(
+                [35.3208704, 126.9826119],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_f113a82531b14d4f8bc7da48b2f1a868 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cf48fbbbe357496f9158e03289c2d76c.setIcon(icon_f113a82531b14d4f8bc7da48b2f1a868);
+        
+    
+            marker_cf48fbbbe357496f9158e03289c2d76c.bindTooltip(
+                `<div>
+                     구름다리 : 한식 - 전남 담양군 담양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_004707cb82974c7cbb20ca997fe637b8 = L.marker(
+                [34.751019899999996, 127.06967420000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_3c360ec9d4c44e00b2fded4d443c9136 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_004707cb82974c7cbb20ca997fe637b8.setIcon(icon_3c360ec9d4c44e00b2fded4d443c9136);
+        
+    
+            marker_004707cb82974c7cbb20ca997fe637b8.bindTooltip(
+                `<div>
+                     봉산식당 : 한식 - 전남 보성군 보성읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea5c09f3fa774040bc42edf0ef2c02d0 = L.marker(
+                [34.9581395, 127.6035014],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_902c4a3dd2334eca830cda25724a7807 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ea5c09f3fa774040bc42edf0ef2c02d0.setIcon(icon_902c4a3dd2334eca830cda25724a7807);
+        
+    
+            marker_ea5c09f3fa774040bc42edf0ef2c02d0.bindTooltip(
+                `<div>
+                     시내식당 : 한식 - 전남 광양시 광양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b91f5157153485dbb7dcf7a14b0288a = L.marker(
+                [35.0679146, 126.4888761],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_fe8bc5bf28e04fc09750b315865a4d98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2b91f5157153485dbb7dcf7a14b0288a.setIcon(icon_fe8bc5bf28e04fc09750b315865a4d98);
+        
+    
+            marker_2b91f5157153485dbb7dcf7a14b0288a.bindTooltip(
+                `<div>
+                     대흥식당 : 한식 - 전남 함평군 함평읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40f1d13ce80c406cb9db378c02351832 = L.marker(
+                [34.73162670000001, 126.5992957],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_c312bebc6e50475d81d68c8861d7b524 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_40f1d13ce80c406cb9db378c02351832.setIcon(icon_c312bebc6e50475d81d68c8861d7b524);
+        
+    
+            marker_40f1d13ce80c406cb9db378c02351832.bindTooltip(
+                `<div>
+                     독천식당 : 한식 - 전남 영암군 학산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0fedbfa2aa34e428cb3b05c6fe1ab4f = L.marker(
+                [34.9614526, 127.5244699],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_e777aee00656499ca2d2619b80266495 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e0fedbfa2aa34e428cb3b05c6fe1ab4f.setIcon(icon_e777aee00656499ca2d2619b80266495);
+        
+    
+            marker_e0fedbfa2aa34e428cb3b05c6fe1ab4f.bindTooltip(
+                `<div>
+                     향토정 : 한식 - 전남 순천시 조례동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dbe86091a82b4afc97d72e052b32a54b = L.marker(
+                [34.751019899999996, 127.06967420000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_d193930421944c7b899812c74ab294da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dbe86091a82b4afc97d72e052b32a54b.setIcon(icon_d193930421944c7b899812c74ab294da);
+        
+    
+            marker_dbe86091a82b4afc97d72e052b32a54b.bindTooltip(
+                `<div>
+                     청광도예원 : 한식 - 전남 보성군 보성읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c0bab3b81d0428da4cbaa8bbc5c9d1a = L.marker(
+                [34.9614526, 127.5244699],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_4a9000e420634077b1eac118f5879322 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0c0bab3b81d0428da4cbaa8bbc5c9d1a.setIcon(icon_4a9000e420634077b1eac118f5879322);
+        
+    
+            marker_0c0bab3b81d0428da4cbaa8bbc5c9d1a.bindTooltip(
+                `<div>
+                     만석꾼 : 한식 - 전남 순천시 조례동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb92d4f56e2d4c8cb08d7834b89dff5a = L.marker(
+                [34.8077435, 126.41854140000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_a2d99eea8de1450f842498da0dfd0c96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb92d4f56e2d4c8cb08d7834b89dff5a.setIcon(icon_a2d99eea8de1450f842498da0dfd0c96);
+        
+    
+            marker_eb92d4f56e2d4c8cb08d7834b89dff5a.bindTooltip(
+                `<div>
+                     송학낙지회관 : 한식 - 전남 목포시 상동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e6a4c78d4c1481d8c4981f534424693 = L.marker(
+                [35.21997, 126.97400890000002],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_ba38fd67c1784e2ba34828a53ad0df32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2e6a4c78d4c1481d8c4981f534424693.setIcon(icon_ba38fd67c1784e2ba34828a53ad0df32);
+        
+    
+            marker_2e6a4c78d4c1481d8c4981f534424693.bindTooltip(
+                `<div>
+                     담양전통식당 : 한식 - 전남 담양군 고서면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9920fd2b790450c9de12a3311dbb2dc = L.marker(
+                [34.9614526, 127.5244699],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_8808e19113054b4c91fe0c8f568a7637 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a9920fd2b790450c9de12a3311dbb2dc.setIcon(icon_8808e19113054b4c91fe0c8f568a7637);
+        
+    
+            marker_a9920fd2b790450c9de12a3311dbb2dc.bindTooltip(
+                `<div>
+                     꽃담 : 한식 - 전남 순천시 조례동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_327d5cb8b0a34a4b9dbd64d973af1847 = L.marker(
+                [34.9924588, 126.4713049],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_260c1547eb05498eaf8055c41db268d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_327d5cb8b0a34a4b9dbd64d973af1847.setIcon(icon_260c1547eb05498eaf8055c41db268d3);
+        
+    
+            marker_327d5cb8b0a34a4b9dbd64d973af1847.bindTooltip(
+                `<div>
+                     무안식당 : 한식 - 전남 무안군 무안읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9638df24d884b5da9f852c1bc42f5d5 = L.marker(
+                [34.9404044, 127.52011399999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_6ea440c6bdbc4734b0abf7e53f7e55ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c9638df24d884b5da9f852c1bc42f5d5.setIcon(icon_6ea440c6bdbc4734b0abf7e53f7e55ed);
+        
+    
+            marker_c9638df24d884b5da9f852c1bc42f5d5.bindTooltip(
+                `<div>
+                     용전갈치 : 한식 - 전남 순천시 연향동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2adb879bb754f9c8f6ca9328f46ecc0 = L.marker(
+                [34.4732686, 126.8307539],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_a40372b3733043edb5daa206f14000ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e2adb879bb754f9c8f6ca9328f46ecc0.setIcon(icon_a40372b3733043edb5daa206f14000ac);
+        
+    
+            marker_e2adb879bb754f9c8f6ca9328f46ecc0.bindTooltip(
+                `<div>
+                     궁전횟집 : 일식 - 전남 강진군 마량면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59a656a00d524a36bbc0d4d1975bb241 = L.marker(
+                [35.269112, 126.95595829999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_0571614d7e314a2197093c1bccab1907 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_59a656a00d524a36bbc0d4d1975bb241.setIcon(icon_0571614d7e314a2197093c1bccab1907);
+        
+    
+            marker_59a656a00d524a36bbc0d4d1975bb241.bindTooltip(
+                `<div>
+                     갤러리카페M : 카페/주점 - 전남 담양군 봉산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a66d939ec1342b5bd01c1f531ce6744 = L.marker(
+                [34.7358806, 127.7207465],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_66ac4b33caca4302ac9451897f1e1252 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a66d939ec1342b5bd01c1f531ce6744.setIcon(icon_66ac4b33caca4302ac9451897f1e1252);
+        
+    
+            marker_0a66d939ec1342b5bd01c1f531ce6744.bindTooltip(
+                `<div>
+                     소선우방풍꽃게장 : 한식 - 전남 여수시 봉산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f9816d8dfd2466cad96578d515b2a2e = L.marker(
+                [34.762109499999994, 127.66198689999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_647d2976df964ea6884bbcfe7d8b75e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7f9816d8dfd2466cad96578d515b2a2e.setIcon(icon_647d2976df964ea6884bbcfe7d8b75e4);
+        
+    
+            marker_7f9816d8dfd2466cad96578d515b2a2e.bindTooltip(
+                `<div>
+                     여진식당 : 한식 - 전남 여수시 학동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fd8d3958eb149b4b727011e46036cd8 = L.marker(
+                [34.8909242, 127.50689009999998],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_e7e1eb158eb8454dbf19048aeae459ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9fd8d3958eb149b4b727011e46036cd8.setIcon(icon_e7e1eb158eb8454dbf19048aeae459ed);
+        
+    
+            marker_9fd8d3958eb149b4b727011e46036cd8.bindTooltip(
+                `<div>
+                     향미정 : 한식 - 전남 순천시 대대동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ddd0be2802d4c7782ee2187a6d358c3 = L.marker(
+                [34.6307412, 126.73985320000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_703644291f9942f68ec6d7a42b0a74f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4ddd0be2802d4c7782ee2187a6d358c3.setIcon(icon_703644291f9942f68ec6d7a42b0a74f1);
+        
+    
+            marker_4ddd0be2802d4c7782ee2187a6d358c3.bindTooltip(
+                `<div>
+                     예향(구 명동) : 한식 - 전남 강진군 강진읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91c3fbc83718441a8d289de552822d15 = L.marker(
+                [34.807619, 126.44313249999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_7404fd6481fc46b8b60259fcd00091a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_91c3fbc83718441a8d289de552822d15.setIcon(icon_7404fd6481fc46b8b60259fcd00091a8);
+        
+    
+            marker_91c3fbc83718441a8d289de552822d15.bindTooltip(
+                `<div>
+                     인동주마을 : 한식 - 전남 목포시 옥암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e63964fabb742a1bc17c1ee42ffacbe = L.marker(
+                [34.7938496, 126.38802690000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_cd4f4e16979b4d329bf261d49443078d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1e63964fabb742a1bc17c1ee42ffacbe.setIcon(icon_cd4f4e16979b4d329bf261d49443078d);
+        
+    
+            marker_1e63964fabb742a1bc17c1ee42ffacbe.bindTooltip(
+                `<div>
+                     독천식당 : 한식 - 전남 목포시 호남동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e103b956a7054cb096da110ead540c95 = L.marker(
+                [35.3208704, 126.9826119],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_e41330afc53f47a6ae55ed5c6b66cae9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e103b956a7054cb096da110ead540c95.setIcon(icon_e41330afc53f47a6ae55ed5c6b66cae9);
+        
+    
+            marker_e103b956a7054cb096da110ead540c95.bindTooltip(
+                `<div>
+                     커피마운틴 : 카페/주점 - 전남 담양군 담양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e9c795effa74176ae30d0357e03e827 = L.marker(
+                [35.353458, 126.4719466],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_9b977c08e19145509b8885f476776e88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8e9c795effa74176ae30d0357e03e827.setIcon(icon_9b977c08e19145509b8885f476776e88);
+        
+    
+            marker_8e9c795effa74176ae30d0357e03e827.bindTooltip(
+                `<div>
+                     새깍두기식당 : 한식 - 전남 영광군 법성면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8441d23e55424ceeb720c34aaeae4e25 = L.marker(
+                [35.353458, 126.4719466],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_9de2ce2b4078455e99ccdd1e825b52d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8441d23e55424ceeb720c34aaeae4e25.setIcon(icon_9de2ce2b4078455e99ccdd1e825b52d8);
+        
+    
+            marker_8441d23e55424ceeb720c34aaeae4e25.bindTooltip(
+                `<div>
+                     골목식당 : 한식 - 전남 영광군 법성면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da742cbf2aa342299132feb62f7078ed = L.marker(
+                [35.21997, 126.97400890000002],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_6a4b475e47344b01b353036334f0e4ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_da742cbf2aa342299132feb62f7078ed.setIcon(icon_6a4b475e47344b01b353036334f0e4ac);
+        
+    
+            marker_da742cbf2aa342299132feb62f7078ed.bindTooltip(
+                `<div>
+                     명지원 : 한식 - 전남 담양군 고서면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4cd72ddc3234c4cb294d767719cfef9 = L.marker(
+                [34.9614526, 127.5244699],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_57368425ce474887bce750b15690c9df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b4cd72ddc3234c4cb294d767719cfef9.setIcon(icon_57368425ce474887bce750b15690c9df);
+        
+    
+            marker_b4cd72ddc3234c4cb294d767719cfef9.bindTooltip(
+                `<div>
+                     굴세상 : 한식 - 전남 순천시 조례동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdfb344ddf4e493e9ba9646f97872c6a = L.marker(
+                [35.21997, 126.97400890000002],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_5a6a07e3c28f4d46abdaa0ec696f6219 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bdfb344ddf4e493e9ba9646f97872c6a.setIcon(icon_5a6a07e3c28f4d46abdaa0ec696f6219);
+        
+    
+            marker_bdfb344ddf4e493e9ba9646f97872c6a.bindTooltip(
+                `<div>
+                     고서국밥 : 한식 - 전남 담양군 고서면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e9f5df79e96475886ed198b0249500f = L.marker(
+                [34.751019899999996, 127.06967420000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_e6351c225e1649a9ac38f15f3d39755c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8e9f5df79e96475886ed198b0249500f.setIcon(icon_e6351c225e1649a9ac38f15f3d39755c);
+        
+    
+            marker_8e9f5df79e96475886ed198b0249500f.bindTooltip(
+                `<div>
+                     카페앨리스(Cafe Alice) : 카페/주점 - 전남 보성군 보성읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_236bc12142b643a58ccde7a3d22d212d = L.marker(
+                [34.762109499999994, 127.66198689999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_a3426e9dfae44b349b5de4dcde4f4f97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_236bc12142b643a58ccde7a3d22d212d.setIcon(icon_a3426e9dfae44b349b5de4dcde4f4f97);
+        
+    
+            marker_236bc12142b643a58ccde7a3d22d212d.bindTooltip(
+                `<div>
+                     진미꽃게탕 : 한식 - 전남 여수시 학동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_659d6a80bbd542de9e02cd7585987745 = L.marker(
+                [34.8465759, 127.32068500000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_bfaa812fb5df4240b677a0829d66976b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_659d6a80bbd542de9e02cd7585987745.setIcon(icon_bfaa812fb5df4240b677a0829d66976b);
+        
+    
+            marker_659d6a80bbd542de9e02cd7585987745.bindTooltip(
+                `<div>
+                     원조수라상꼬막정식 : 한식 - 전남 보성군 벌교읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_625548fa01064a95990bfdbe7edf502d = L.marker(
+                [34.8077435, 126.41854140000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_141bf314a2ee4f0abc89fb4dc4c33b57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_625548fa01064a95990bfdbe7edf502d.setIcon(icon_141bf314a2ee4f0abc89fb4dc4c33b57);
+        
+    
+            marker_625548fa01064a95990bfdbe7edf502d.bindTooltip(
+                `<div>
+                     천가네볼태기 : 한식 - 전남 목포시 상동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_feec90c42ace4cf18fc7b037787875c4 = L.marker(
+                [34.7105708, 126.8254158],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_b63db9a1ca1d419ea7a976a313418d86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_feec90c42ace4cf18fc7b037787875c4.setIcon(icon_b63db9a1ca1d419ea7a976a313418d86);
+        
+    
+            marker_feec90c42ace4cf18fc7b037787875c4.bindTooltip(
+                `<div>
+                     병영연탄불고기 : 한식 - 전남 강진군 병영면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d82feb43c5248cea668c343ecd8a513 = L.marker(
+                [35.3588059, 126.93109369999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_939a7e96892b4bcda0d6d10c9ea9f3f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d82feb43c5248cea668c343ecd8a513.setIcon(icon_939a7e96892b4bcda0d6d10c9ea9f3f7);
+        
+    
+            marker_9d82feb43c5248cea668c343ecd8a513.bindTooltip(
+                `<div>
+                     한상근대통밥집 : 한식 - 전남 담양군 월산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88e346bff8af415c81515349b17a4d31 = L.marker(
+                [35.353458, 126.4719466],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_cbe420dc541c4f61a7aeed53a6838986 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_88e346bff8af415c81515349b17a4d31.setIcon(icon_cbe420dc541c4f61a7aeed53a6838986);
+        
+    
+            marker_88e346bff8af415c81515349b17a4d31.bindTooltip(
+                `<div>
+                     007식당 : 한식 - 전남 영광군 법성면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3175c5b128ab4f68b879e374c0d2aca6 = L.marker(
+                [34.762109499999994, 127.66198689999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_6ef0d10d7297454492714b7e3a8d2f0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3175c5b128ab4f68b879e374c0d2aca6.setIcon(icon_6ef0d10d7297454492714b7e3a8d2f0c);
+        
+    
+            marker_3175c5b128ab4f68b879e374c0d2aca6.bindTooltip(
+                `<div>
+                     경도회관 : 한식 - 전남 여수시 학동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7d09d11122649cd96b98bab0a450891 = L.marker(
+                [34.807619, 126.44313249999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_0708278be83840f2a8e24b69fb0a5d4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7d09d11122649cd96b98bab0a450891.setIcon(icon_0708278be83840f2a8e24b69fb0a5d4e);
+        
+    
+            marker_a7d09d11122649cd96b98bab0a450891.bindTooltip(
+                `<div>
+                     다솔헌명가 : 한식 - 전남 목포시 옥암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a120a45f8f0c49b6a304e5c5e2dc7d05 = L.marker(
+                [34.739954600000004, 127.73242900000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_31db323f66c544db994547d0b0d88e3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a120a45f8f0c49b6a304e5c5e2dc7d05.setIcon(icon_31db323f66c544db994547d0b0d88e3a);
+        
+    
+            marker_a120a45f8f0c49b6a304e5c5e2dc7d05.bindTooltip(
+                `<div>
+                     대성식당 : 한식 - 전남 여수시 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57e547b10dc54892ad48153778ba2f05 = L.marker(
+                [34.9497152, 127.4888457],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_01759810a9454ddaa79d0b4ee32354e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_57e547b10dc54892ad48153778ba2f05.setIcon(icon_01759810a9454ddaa79d0b4ee32354e9);
+        
+    
+            marker_57e547b10dc54892ad48153778ba2f05.bindTooltip(
+                `<div>
+                     대원식당 : 한식 - 전남 순천시 장천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dedfdd493a4a4188bc5a79f4dfbfb78c = L.marker(
+                [35.26994929999999, 127.4678382],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_4ecce516b1b340158ca5c9c95eba6f65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dedfdd493a4a4188bc5a79f4dfbfb78c.setIcon(icon_4ecce516b1b340158ca5c9c95eba6f65);
+        
+    
+            marker_dedfdd493a4a4188bc5a79f4dfbfb78c.bindTooltip(
+                `<div>
+                     고향산장펜션&식당 : 한식 - 전남 구례군 광의면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_574b0035f9334e1893cc3210f748e8e3 = L.marker(
+                [34.739954600000004, 127.73242900000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_f444eeeb2d134a9bb59d1ea30afa6526 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_574b0035f9334e1893cc3210f748e8e3.setIcon(icon_f444eeeb2d134a9bb59d1ea30afa6526);
+        
+    
+            marker_574b0035f9334e1893cc3210f748e8e3.bindTooltip(
+                `<div>
+                     구백식당 : 한식 - 전남 여수시 교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f19d686c13494ef894272de5819619c0 = L.marker(
+                [34.9404044, 127.52011399999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_14586f5b0cbf4a5dbb57c0482e7feebf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f19d686c13494ef894272de5819619c0.setIcon(icon_14586f5b0cbf4a5dbb57c0482e7feebf);
+        
+    
+            marker_f19d686c13494ef894272de5819619c0.bindTooltip(
+                `<div>
+                     나눌터 : 한식 - 전남 순천시 연향동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88e858b198f54925ad4efb64a0ffcfc5 = L.marker(
+                [34.8077435, 126.41854140000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_d22fcb10a87a4bb7b290ab76e87a331d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_88e858b198f54925ad4efb64a0ffcfc5.setIcon(icon_d22fcb10a87a4bb7b290ab76e87a331d);
+        
+    
+            marker_88e858b198f54925ad4efb64a0ffcfc5.bindTooltip(
+                `<div>
+                     한국추어탕 : 한식 - 전남 목포시 상동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4a69ea7f4c74ad8ae501ffbe0937502 = L.marker(
+                [35.3208704, 126.9826119],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_38829745903c4d19b14e4a3b5a9497d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a4a69ea7f4c74ad8ae501ffbe0937502.setIcon(icon_38829745903c4d19b14e4a3b5a9497d3);
+        
+    
+            marker_a4a69ea7f4c74ad8ae501ffbe0937502.bindTooltip(
+                `<div>
+                     금수한방숯불가든 : 한식 - 전남 담양군 담양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89c596d3a9ea4994aa038868fe06121b = L.marker(
+                [34.939338899999996, 127.48447649999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_8927bd3c71d449ac9ac2bdd6c92b6c0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_89c596d3a9ea4994aa038868fe06121b.setIcon(icon_8927bd3c71d449ac9ac2bdd6c92b6c0c);
+        
+    
+            marker_89c596d3a9ea4994aa038868fe06121b.bindTooltip(
+                `<div>
+                     풍어해물탕 : 한식 - 전남 순천시 남정동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b4afbd0962c43dca1567091aea2800c = L.marker(
+                [35.3208704, 126.9826119],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_88999af1ed36470eb7295531da1f7d2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4b4afbd0962c43dca1567091aea2800c.setIcon(icon_88999af1ed36470eb7295531da1f7d2a);
+        
+    
+            marker_4b4afbd0962c43dca1567091aea2800c.bindTooltip(
+                `<div>
+                     송죽정 본점 : 한식 - 전남 담양군 담양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cab7e7cc5834048b4838897f96c491b = L.marker(
+                [34.9497152, 127.4888457],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_cace4f1790c64b9da20e57d8ce6a9750 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8cab7e7cc5834048b4838897f96c491b.setIcon(icon_cace4f1790c64b9da20e57d8ce6a9750);
+        
+    
+            marker_8cab7e7cc5834048b4838897f96c491b.bindTooltip(
+                `<div>
+                     정락회관 : 한식 - 전남 순천시 장천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47dde578ad1942bc8f237d2feca90dd3 = L.marker(
+                [34.9556836, 127.48263329999999],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_2d30440800f34e109d9a7ac54e56bc59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_47dde578ad1942bc8f237d2feca90dd3.setIcon(icon_2d30440800f34e109d9a7ac54e56bc59);
+        
+    
+            marker_47dde578ad1942bc8f237d2feca90dd3.bindTooltip(
+                `<div>
+                     원조동경낙지 : 한식 - 전남 순천시 행동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d962599bd67a42a5979484228408e893 = L.marker(
+                [34.7317012, 127.71448170000001],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_5f3003f99952493fabfcf3e5e925bf6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d962599bd67a42a5979484228408e893.setIcon(icon_5f3003f99952493fabfcf3e5e925bf6b);
+        
+    
+            marker_d962599bd67a42a5979484228408e893.bindTooltip(
+                `<div>
+                     자매식당 : 한식 - 전남 여수시 국동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3c211bea08f4988953dbc40c9e516a6 = L.marker(
+                [34.9757145, 127.5387126],
+                {}
+            ).addTo(map_c94416f5ba324c318d6a1a84131d52d6);
+        
+    
+            var icon_717d2dd375c3431c8e299dad0c634d01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b3c211bea08f4988953dbc40c9e516a6.setIcon(icon_717d2dd375c3431c8e299dad0c634d01);
+        
+    
+            marker_b3c211bea08f4988953dbc40c9e516a6.bindTooltip(
+                `<div>
+                     청년다방 : 분식 - 전남 순천시 왕지동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

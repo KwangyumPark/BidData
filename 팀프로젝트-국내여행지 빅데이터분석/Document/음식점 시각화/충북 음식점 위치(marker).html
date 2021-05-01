@@ -1,0 +1,2836 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7b8ef2a912884adb8d5dc770124cf1f7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7b8ef2a912884adb8d5dc770124cf1f7" ></div>
+        
+</body>
+<script>    
+    
+            var map_7b8ef2a912884adb8d5dc770124cf1f7 = L.map(
+                "map_7b8ef2a912884adb8d5dc770124cf1f7",
+                {
+                    center: [36.779267, 127.833423],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ebc7972718cc4ce8bf921ac827630954 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var tile_layer_9e0d5e2f55ee43e28e32dfa88e482365 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_2b58efb3eb4044ddb02a48705c5ef980 = new L.Control.MiniMap(
+                tile_layer_9e0d5e2f55ee43e28e32dfa88e482365,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_7b8ef2a912884adb8d5dc770124cf1f7.addControl(mini_map_2b58efb3eb4044ddb02a48705c5ef980);
+        
+    
+            var marker_80f057a79d5346c69e7892a0e88b71b5 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_b7e7a47aae24426180e82c000ddde8c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_80f057a79d5346c69e7892a0e88b71b5.setIcon(icon_b7e7a47aae24426180e82c000ddde8c7);
+        
+    
+            marker_80f057a79d5346c69e7892a0e88b71b5.bindTooltip(
+                `<div>
+                     단양쏘가리 : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c651756063d408aba1efdf5314c1afe = L.marker(
+                [36.9742351, 127.9640592],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_39398f8d443d45bb9295dedc2b94873e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1c651756063d408aba1efdf5314c1afe.setIcon(icon_39398f8d443d45bb9295dedc2b94873e);
+        
+    
+            marker_1c651756063d408aba1efdf5314c1afe.bindTooltip(
+                `<div>
+                     노블레스 : 양식 - 충북 충주시 안림동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_514924bf50cb414d86e04b9b1fea8dd0 = L.marker(
+                [36.8683135, 128.37985690000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_3b25c09be1f64dc391bb22d95a340556 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_514924bf50cb414d86e04b9b1fea8dd0.setIcon(icon_3b25c09be1f64dc391bb22d95a340556);
+        
+    
+            marker_514924bf50cb414d86e04b9b1fea8dd0.bindTooltip(
+                `<div>
+                     고향집두부 : 한식 - 충북 단양군 대강면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7dc790250deb44409a14cf0c59a62bdb = L.marker(
+                [37.014621399999996, 128.4314449],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_398aa27dc2464de8beeb7055260d5f70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7dc790250deb44409a14cf0c59a62bdb.setIcon(icon_398aa27dc2464de8beeb7055260d5f70);
+        
+    
+            marker_7dc790250deb44409a14cf0c59a62bdb.bindTooltip(
+                `<div>
+                     포장마차(단양) : 한식 - 충북 단양군 가곡면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_553d8c0532bf4ab499c09b56f281b06a = L.marker(
+                [36.8977285, 128.2901048],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_2edee3c72ee94ebeb2fdd84ae700ecfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_553d8c0532bf4ab499c09b56f281b06a.setIcon(icon_2edee3c72ee94ebeb2fdd84ae700ecfc);
+        
+    
+            marker_553d8c0532bf4ab499c09b56f281b06a.bindTooltip(
+                `<div>
+                     호반식당(단양) : 한식 - 충북 단양군 단성면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a2302138c6a4c9d97033668838642aa = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_9239992618a94303bbcbe084753a40aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a2302138c6a4c9d97033668838642aa.setIcon(icon_9239992618a94303bbcbe084753a40aa);
+        
+    
+            marker_0a2302138c6a4c9d97033668838642aa.bindTooltip(
+                `<div>
+                     성원마늘약선요리 : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b4c505434ec40f08f43fdecb90f9c22 = L.marker(
+                [37.0683035, 128.5000984],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_5f84c32cd1bc4302b97991bd711d6c76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b4c505434ec40f08f43fdecb90f9c22.setIcon(icon_5f84c32cd1bc4302b97991bd711d6c76);
+        
+    
+            marker_1b4c505434ec40f08f43fdecb90f9c22.bindTooltip(
+                `<div>
+                     금강식당(단양) : 한식 - 충북 단양군 영춘면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09e8856951794e17a17e4599cece5ab3 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_13ea338089f24a7b81020f0cf4ea7188 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09e8856951794e17a17e4599cece5ab3.setIcon(icon_13ea338089f24a7b81020f0cf4ea7188);
+        
+    
+            marker_09e8856951794e17a17e4599cece5ab3.bindTooltip(
+                `<div>
+                     태능한우숯불갈비(단양) : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e345e5cd17424d0eb9859e9d1d88e099 = L.marker(
+                [36.96923220000001, 127.923181],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_bcd4dd0d98fd47989d9f384560544aa1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e345e5cd17424d0eb9859e9d1d88e099.setIcon(icon_bcd4dd0d98fd47989d9f384560544aa1);
+        
+    
+            marker_e345e5cd17424d0eb9859e9d1d88e099.bindTooltip(
+                `<div>
+                     가마소 : 한식 - 충북 충주시 문화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31ca741b647446f395eef705eac25335 = L.marker(
+                [36.345304299999995, 127.81554440000001],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_9eca2a69d3424bdbbe6d5b26636d4242 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_31ca741b647446f395eef705eac25335.setIcon(icon_9eca2a69d3424bdbbe6d5b26636d4242);
+        
+    
+            marker_31ca741b647446f395eef705eac25335.bindTooltip(
+                `<div>
+                     찐한식당 : 한식 - 충북 옥천군 청산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_961c5f0346f74537b232beb7a4a424ca = L.marker(
+                [36.986262599999996, 127.78334140000001],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_1148aa01631c4a6ba73aec3a8b0d9ba5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_961c5f0346f74537b232beb7a4a424ca.setIcon(icon_1148aa01631c4a6ba73aec3a8b0d9ba5);
+        
+    
+            marker_961c5f0346f74537b232beb7a4a424ca.bindTooltip(
+                `<div>
+                     단골식당 : 중식 - 충북 충주시 주덕읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6993d81eba6645a09c8bdce664fe232e = L.marker(
+                [36.64866370000001, 127.47479209999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_875bafe118b34b388b04d81fadae9ac8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6993d81eba6645a09c8bdce664fe232e.setIcon(icon_875bafe118b34b388b04d81fadae9ac8);
+        
+    
+            marker_6993d81eba6645a09c8bdce664fe232e.bindTooltip(
+                `<div>
+                     청주본가 : 한식 - 청주시 흥덕구 운천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94bedcfd285c4aa1a4479e7f6c1eb848 = L.marker(
+                [37.046183899999996, 128.3017199],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_b96a78f5ac2343c1958e15066677f7ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_94bedcfd285c4aa1a4479e7f6c1eb848.setIcon(icon_b96a78f5ac2343c1958e15066677f7ca);
+        
+    
+            marker_94bedcfd285c4aa1a4479e7f6c1eb848.bindTooltip(
+                `<div>
+                     장인가마솥 : 한식 - 충북 단양군 매포읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d16a723310d541c0b3a05f17fb40b194 = L.marker(
+                [36.9942545, 127.91858329999998],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_2dff395d6b0742bda769fd1bb6369c30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d16a723310d541c0b3a05f17fb40b194.setIcon(icon_2dff395d6b0742bda769fd1bb6369c30);
+        
+    
+            marker_d16a723310d541c0b3a05f17fb40b194.bindTooltip(
+                `<div>
+                     금능가든횟집 : 일식 - 충북 충주시 금릉동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e7b284f034c48ceb1307c83e4ded5ee = L.marker(
+                [37.0151515, 128.0206779],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_c0137f63b2d04f68a5f232881bee8f93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0e7b284f034c48ceb1307c83e4ded5ee.setIcon(icon_c0137f63b2d04f68a5f232881bee8f93);
+        
+    
+            marker_0e7b284f034c48ceb1307c83e4ded5ee.bindTooltip(
+                `<div>
+                     민들레카페 : 카페/주점 - 충북 충주시 동량면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_975f0ac8b08544a6960922b32b437470 = L.marker(
+                [36.2360152, 127.89680359999998],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_b63b4b28349d4cb0b99882ff96a53cf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_975f0ac8b08544a6960922b32b437470.setIcon(icon_b63b4b28349d4cb0b99882ff96a53cf0);
+        
+    
+            marker_975f0ac8b08544a6960922b32b437470.bindTooltip(
+                `<div>
+                     덕승관 : 중식 - 충북 영동군 황간면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2051557e0ab24d51b4bb356a98638b31 = L.marker(
+                [36.6347331, 127.46312309999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_1998d95b8ab74f35bfb5247c615e4446 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2051557e0ab24d51b4bb356a98638b31.setIcon(icon_1998d95b8ab74f35bfb5247c615e4446);
+        
+    
+            marker_2051557e0ab24d51b4bb356a98638b31.bindTooltip(
+                `<div>
+                     좋은아침 : 베이커리 - 청주시 흥덕구 사창동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a7a5015752d461e8d8a816bb2918326 = L.marker(
+                [36.6264016, 127.50585829999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_4365afee9d6d4abeac1951e6e7bc6d24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a7a5015752d461e8d8a816bb2918326.setIcon(icon_4365afee9d6d4abeac1951e6e7bc6d24);
+        
+    
+            marker_7a7a5015752d461e8d8a816bb2918326.bindTooltip(
+                `<div>
+                     카페클렌첸 : 카페/주점 - 청주시 상당구 금천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_717cb0144210442da16ac64ca04f2ccb = L.marker(
+                [36.608956299999996, 127.4666106],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_55b486770fd445c59f77e67838706c2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_717cb0144210442da16ac64ca04f2ccb.setIcon(icon_55b486770fd445c59f77e67838706c2c);
+        
+    
+            marker_717cb0144210442da16ac64ca04f2ccb.bindTooltip(
+                `<div>
+                     무한사케무사 청주산남점 : 일식 - 청주시 흥덕구 산남동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_302208a495fb4d95ba4e0379b3a710d2 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_e11490415e6c4d4bb54b7990a5bcf8eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_302208a495fb4d95ba4e0379b3a710d2.setIcon(icon_e11490415e6c4d4bb54b7990a5bcf8eb);
+        
+    
+            marker_302208a495fb4d95ba4e0379b3a710d2.bindTooltip(
+                `<div>
+                     돌집식당(단양) : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5d043180b55414b8d600260c88f1538 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_dbe086219a3541aa9df36d216738f62d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f5d043180b55414b8d600260c88f1538.setIcon(icon_dbe086219a3541aa9df36d216738f62d);
+        
+    
+            marker_f5d043180b55414b8d600260c88f1538.bindTooltip(
+                `<div>
+                     계절그리기(단양) : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb727d236f8d4798a31dc66943593a2a = L.marker(
+                [36.8683135, 128.37985690000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_8c5273bcb49241fb93480023cb6861a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bb727d236f8d4798a31dc66943593a2a.setIcon(icon_8c5273bcb49241fb93480023cb6861a2);
+        
+    
+            marker_bb727d236f8d4798a31dc66943593a2a.bindTooltip(
+                `<div>
+                     장림산방 : 한식 - 충북 단양군 대강면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1da00a26faf41eea4eb4f5b44eb579a = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_e5072c15806348e291756874a1b479c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f1da00a26faf41eea4eb4f5b44eb579a.setIcon(icon_e5072c15806348e291756874a1b479c9);
+        
+    
+            marker_f1da00a26faf41eea4eb4f5b44eb579a.bindTooltip(
+                `<div>
+                     자연식당(단양) : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a4d1380acef4f2398a3979ac2683b36 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_d638fb4d09e645abb6ccda25565fdb7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a4d1380acef4f2398a3979ac2683b36.setIcon(icon_d638fb4d09e645abb6ccda25565fdb7e);
+        
+    
+            marker_0a4d1380acef4f2398a3979ac2683b36.bindTooltip(
+                `<div>
+                     두진한우명가 : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8883bf23fcc741bdb5aa41618c67a4a2 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_e16bd3ff03514162876b13bc33dad0ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8883bf23fcc741bdb5aa41618c67a4a2.setIcon(icon_e16bd3ff03514162876b13bc33dad0ed);
+        
+    
+            marker_8883bf23fcc741bdb5aa41618c67a4a2.bindTooltip(
+                `<div>
+                     송이마을(단양) : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e69d71392af4e5da9cfbf8d54abc38e = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_79a503974c4444caa948325b7e709ab6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8e69d71392af4e5da9cfbf8d54abc38e.setIcon(icon_79a503974c4444caa948325b7e709ab6);
+        
+    
+            marker_8e69d71392af4e5da9cfbf8d54abc38e.bindTooltip(
+                `<div>
+                     소백산묵촌 : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_523b0a308e714dd79c463b173753c135 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_e93d7b0148fa4e44920d5978ea9fd8fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_523b0a308e714dd79c463b173753c135.setIcon(icon_e93d7b0148fa4e44920d5978ea9fd8fb);
+        
+    
+            marker_523b0a308e714dd79c463b173753c135.bindTooltip(
+                `<div>
+                     온누리회관(단양) : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a65a4b40d2634437ba1fdb57dce49705 = L.marker(
+                [36.6697498, 127.4662249],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_ba6a8eb2482c4cce8367ea489e1a1ae1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a65a4b40d2634437ba1fdb57dce49705.setIcon(icon_ba6a8eb2482c4cce8367ea489e1a1ae1);
+        
+    
+            marker_a65a4b40d2634437ba1fdb57dce49705.bindTooltip(
+                `<div>
+                     입이즐거운그만두 : 한식 - 청주시 상당구 사천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27d217bbe24944e9a3c7223d31d612ee = L.marker(
+                [36.63915, 127.5071523],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_a0d61941bc044ad2ab8e3a0cd26b7de8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_27d217bbe24944e9a3c7223d31d612ee.setIcon(icon_a0d61941bc044ad2ab8e3a0cd26b7de8);
+        
+    
+            marker_27d217bbe24944e9a3c7223d31d612ee.bindTooltip(
+                `<div>
+                     오징어총각 : 한식 - 청주시 상당구 용담동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c53740381d944484936b0690ec9de89e = L.marker(
+                [36.6484364, 127.45825239999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_7195f9efc47844de966fb1f5623baccf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c53740381d944484936b0690ec9de89e.setIcon(icon_7195f9efc47844de966fb1f5623baccf);
+        
+    
+            marker_c53740381d944484936b0690ec9de89e.bindTooltip(
+                `<div>
+                     전통꽃게장 : 한식 - 청주시 흥덕구 봉명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a77a009f2a5741a48fd390b2c01476a7 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_ad1c97e789084d79a0b7fa5b6128bdd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a77a009f2a5741a48fd390b2c01476a7.setIcon(icon_ad1c97e789084d79a0b7fa5b6128bdd5);
+        
+    
+            marker_a77a009f2a5741a48fd390b2c01476a7.bindTooltip(
+                `<div>
+                     경주식당(단양) : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8ff484941364791b24f4c5fbcf32237 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_25ba2032e937402a8e60cecffe3924b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a8ff484941364791b24f4c5fbcf32237.setIcon(icon_25ba2032e937402a8e60cecffe3924b9);
+        
+    
+            marker_a8ff484941364791b24f4c5fbcf32237.bindTooltip(
+                `<div>
+                     보신각 : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a98f0c7f84164ed9b9e4a633d9cd9bb7 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_3a01ddcdf0e743aa98c30dd8564fe7a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a98f0c7f84164ed9b9e4a633d9cd9bb7.setIcon(icon_3a01ddcdf0e743aa98c30dd8564fe7a2);
+        
+    
+            marker_a98f0c7f84164ed9b9e4a633d9cd9bb7.bindTooltip(
+                `<div>
+                     락송정 : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1454a8b378b4040a24b8d145357786b = L.marker(
+                [37.046183899999996, 128.3017199],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_de9ee4092a4043caacaa2b619eeb6e48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d1454a8b378b4040a24b8d145357786b.setIcon(icon_de9ee4092a4043caacaa2b619eeb6e48);
+        
+    
+            marker_d1454a8b378b4040a24b8d145357786b.bindTooltip(
+                `<div>
+                     한일맛집 : 한식 - 충북 단양군 매포읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e20dc37554e34b88b02bac25cd9b4729 = L.marker(
+                [36.5750386, 127.52058829999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_9ce7c92fbe6542fda314b541cae15eef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e20dc37554e34b88b02bac25cd9b4729.setIcon(icon_9ce7c92fbe6542fda314b541cae15eef);
+        
+    
+            marker_e20dc37554e34b88b02bac25cd9b4729.bindTooltip(
+                `<div>
+                     돈버거하우스 : 양식 - 청주시 상당구 남일면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f5421eb4d2d460bb173a7765b0ab0af = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_9bdb0c2e7ee3416bbae92981c2ed938a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4f5421eb4d2d460bb173a7765b0ab0af.setIcon(icon_9bdb0c2e7ee3416bbae92981c2ed938a);
+        
+    
+            marker_4f5421eb4d2d460bb173a7765b0ab0af.bindTooltip(
+                `<div>
+                     불총칼국수 : 한식 - 청주시 상당구 북문로2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc6112d6111145438de3b66e2b12c2c8 = L.marker(
+                [36.6176827, 127.42085959999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_decab884026f46a59e7d8f1ef797b3b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cc6112d6111145438de3b66e2b12c2c8.setIcon(icon_decab884026f46a59e7d8f1ef797b3b6);
+        
+    
+            marker_cc6112d6111145438de3b66e2b12c2c8.bindTooltip(
+                `<div>
+                     본궁석갈비 : 한식 - 청주시 흥덕구 강서동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1f94662c7134860a4c23549b4f9409e = L.marker(
+                [36.6410325, 127.48559070000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_0fc3de23478a409fbb00cddb2e04e693 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e1f94662c7134860a4c23549b4f9409e.setIcon(icon_0fc3de23478a409fbb00cddb2e04e693);
+        
+    
+            marker_e1f94662c7134860a4c23549b4f9409e.bindTooltip(
+                `<div>
+                     극동반점 : 중식 - 청주시 상당구 영동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3b9f0406c2342eebce408859dfbeb27 = L.marker(
+                [36.6366932, 127.47627109999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_6626c9474d084a0fa39fd7b54595ba6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e3b9f0406c2342eebce408859dfbeb27.setIcon(icon_6626c9474d084a0fa39fd7b54595ba6d);
+        
+    
+            marker_e3b9f0406c2342eebce408859dfbeb27.bindTooltip(
+                `<div>
+                     사직골 : 한식 - 청주시 흥덕구 사직동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90eb9922971e493c9662c45fb92d6225 = L.marker(
+                [36.6635659, 127.4863581],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_1d0fd4a761b34aa3a046c368af933277 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90eb9922971e493c9662c45fb92d6225.setIcon(icon_1d0fd4a761b34aa3a046c368af933277);
+        
+    
+            marker_90eb9922971e493c9662c45fb92d6225.bindTooltip(
+                `<div>
+                     스시노백쉐프 청주율량 10호점 : 일식 - 청주시 청원구 율량동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ff329e3e3744c24a794d32e527774ae = L.marker(
+                [36.6355199, 127.43260149999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_839408782d53472ea288d2454841beb5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2ff329e3e3744c24a794d32e527774ae.setIcon(icon_839408782d53472ea288d2454841beb5);
+        
+    
+            marker_2ff329e3e3744c24a794d32e527774ae.bindTooltip(
+                `<div>
+                     바누아투과자점 : 베이커리 - 청주시 흥덕구 복대1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4241eb0b53aa467abd59d93fd370546c = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_01eb8d919a544104b77ad4a8cf468412 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4241eb0b53aa467abd59d93fd370546c.setIcon(icon_01eb8d919a544104b77ad4a8cf468412);
+        
+    
+            marker_4241eb0b53aa467abd59d93fd370546c.bindTooltip(
+                `<div>
+                     장다리식당 : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fa68dedebf04005aa3be6d88a81124d = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_679a6ca598ea4174bc355c507bad0363 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8fa68dedebf04005aa3be6d88a81124d.setIcon(icon_679a6ca598ea4174bc355c507bad0363);
+        
+    
+            marker_8fa68dedebf04005aa3be6d88a81124d.bindTooltip(
+                `<div>
+                     공원떡볶이 : 분식 - 청주시 상당구 남문로2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_496f7ed536e846b49c0db2e383484a6a = L.marker(
+                [37.046183899999996, 128.3017199],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_1922fed43f2842f1b8407befa018b4c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_496f7ed536e846b49c0db2e383484a6a.setIcon(icon_1922fed43f2842f1b8407befa018b4c2);
+        
+    
+            marker_496f7ed536e846b49c0db2e383484a6a.bindTooltip(
+                `<div>
+                     향미식당 : 중식 - 충북 단양군 매포읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa8ae53bf76c48c288d78752db8bb9a2 = L.marker(
+                [36.6352601, 127.43863059999998],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_c38d05c3ee2d407b98ddff5896ad8591 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa8ae53bf76c48c288d78752db8bb9a2.setIcon(icon_c38d05c3ee2d407b98ddff5896ad8591);
+        
+    
+            marker_aa8ae53bf76c48c288d78752db8bb9a2.bindTooltip(
+                `<div>
+                     힐링캠프 : 한식 - 청주시 흥덕구 복대동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbae13d5da934cbc8e000385c9ccfb82 = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_d98974d86745442a9f6f2f03c2f585b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cbae13d5da934cbc8e000385c9ccfb82.setIcon(icon_d98974d86745442a9f6f2f03c2f585b6);
+        
+    
+            marker_cbae13d5da934cbc8e000385c9ccfb82.bindTooltip(
+                `<div>
+                     쉐프뉴욕 청주성안점 : 양식 - 청주시 상당구 북문로1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf64a411abc34d47994c68aa72e8c414 = L.marker(
+                [36.9454584, 127.9089011],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_8fb428b0c4ad46d59f434d18b8bad32d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bf64a411abc34d47994c68aa72e8c414.setIcon(icon_8fb428b0c4ad46d59f434d18b8bad32d);
+        
+    
+            marker_bf64a411abc34d47994c68aa72e8c414.bindTooltip(
+                `<div>
+                     장수촌 : 한식 - 충북 충주시 단월동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fec23fe0bf354708874370762fe9c4df = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_8c1ec65756604fa38d712c3f7b2e3782 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fec23fe0bf354708874370762fe9c4df.setIcon(icon_8c1ec65756604fa38d712c3f7b2e3782);
+        
+    
+            marker_fec23fe0bf354708874370762fe9c4df.bindTooltip(
+                `<div>
+                     신송보리밥집 : 한식 - 청주시 상당구 남문로1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_128b2acce0a44c4d809527f58a40afe3 = L.marker(
+                [36.3015065, 127.58375149999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_700ca3333ecb4eb69da27b6bd1891634 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_128b2acce0a44c4d809527f58a40afe3.setIcon(icon_700ca3333ecb4eb69da27b6bd1891634);
+        
+    
+            marker_128b2acce0a44c4d809527f58a40afe3.bindTooltip(
+                `<div>
+                     구읍할매묵집 : 한식 - 충북 옥천군 옥천읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b82581a39624864bee772cb969c8f74 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_64dadc1c527a423084d11a45f8ba7a06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b82581a39624864bee772cb969c8f74.setIcon(icon_64dadc1c527a423084d11a45f8ba7a06);
+        
+    
+            marker_7b82581a39624864bee772cb969c8f74.bindTooltip(
+                `<div>
+                     영남식당(단양) : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f89b02fd85ff48489d0addae8783328f = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_ddb5827b8c71469a95c2c3db3eeb85bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f89b02fd85ff48489d0addae8783328f.setIcon(icon_ddb5827b8c71469a95c2c3db3eeb85bf);
+        
+    
+            marker_f89b02fd85ff48489d0addae8783328f.bindTooltip(
+                `<div>
+                     전원회관(단양) : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f762b9475cba47568bf40b19eb0acad5 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_be75539508ac4cacaa78dad25579341d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f762b9475cba47568bf40b19eb0acad5.setIcon(icon_be75539508ac4cacaa78dad25579341d);
+        
+    
+            marker_f762b9475cba47568bf40b19eb0acad5.bindTooltip(
+                `<div>
+                     어부네회매운탕 : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8d1faab40c9464489826d286cae8227 = L.marker(
+                [36.9742351, 127.9640592],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_8c92ecca32c24d879afd8dd02a47e030 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b8d1faab40c9464489826d286cae8227.setIcon(icon_8c92ecca32c24d879afd8dd02a47e030);
+        
+    
+            marker_b8d1faab40c9464489826d286cae8227.bindTooltip(
+                `<div>
+                     샤브락 : 한식 - 충북 충주시 안림동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a390d71f4b84a95949f101fd071b091 = L.marker(
+                [36.9942545, 127.91858329999998],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_00be47ff00a040ec87e9603e173e049e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4a390d71f4b84a95949f101fd071b091.setIcon(icon_00be47ff00a040ec87e9603e173e049e);
+        
+    
+            marker_4a390d71f4b84a95949f101fd071b091.bindTooltip(
+                `<div>
+                     숲속장수촌 : 한식 - 충북 충주시 금릉동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_520fe93d61c34cf59b6fba3ff5431fb8 = L.marker(
+                [36.6366932, 127.47627109999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_29c6fc5f77f04847908cc8a12a26f99f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_520fe93d61c34cf59b6fba3ff5431fb8.setIcon(icon_29c6fc5f77f04847908cc8a12a26f99f);
+        
+    
+            marker_520fe93d61c34cf59b6fba3ff5431fb8.bindTooltip(
+                `<div>
+                     샷보로일식 : 일식 - 청주시 서원구 사직동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c0ccbce28184deebdb527fa5263e3bc = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_5e65e82438214b09b91590ee40d613b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2c0ccbce28184deebdb527fa5263e3bc.setIcon(icon_5e65e82438214b09b91590ee40d613b4);
+        
+    
+            marker_2c0ccbce28184deebdb527fa5263e3bc.bindTooltip(
+                `<div>
+                     착한돼지 : 뷔페 - 청주시 상당구 북문로1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f13f23e79b246e7873319939f604dca = L.marker(
+                [36.641488, 127.4311487],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_edf17cd1dfc6448f99cf3199b1b6c0ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f13f23e79b246e7873319939f604dca.setIcon(icon_edf17cd1dfc6448f99cf3199b1b6c0ff);
+        
+    
+            marker_3f13f23e79b246e7873319939f604dca.bindTooltip(
+                `<div>
+                     대명도리탕 : 한식 - 청주시 흥덕구 봉명2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ea36dcf71df4ef7901a394824dfb003 = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_dd4ec569e9304ff3a786798c304b5ac2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ea36dcf71df4ef7901a394824dfb003.setIcon(icon_dd4ec569e9304ff3a786798c304b5ac2);
+        
+    
+            marker_9ea36dcf71df4ef7901a394824dfb003.bindTooltip(
+                `<div>
+                     25시삼계탕 : 한식 - 청주시 상당구 북문로3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4728d8bc6a6e4bc5b2f4b2ab14251c75 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_f1a0babe952446678e2759fa394c8a0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4728d8bc6a6e4bc5b2f4b2ab14251c75.setIcon(icon_f1a0babe952446678e2759fa394c8a0e);
+        
+    
+            marker_4728d8bc6a6e4bc5b2f4b2ab14251c75.bindTooltip(
+                `<div>
+                     다리안레스토랑 : 양식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_846f8953bef84a2582dff5ac02a6a4bf = L.marker(
+                [36.6339841, 127.485358],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_341562a3624a497991dfdd0f44f7df7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_846f8953bef84a2582dff5ac02a6a4bf.setIcon(icon_341562a3624a497991dfdd0f44f7df7b);
+        
+    
+            marker_846f8953bef84a2582dff5ac02a6a4bf.bindTooltip(
+                `<div>
+                     조선면옥 : 한식 - 청주시 상당구 서문동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3fe960f0e78428fbf0b0531486c8c85 = L.marker(
+                [36.844225200000004, 128.0263278],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_303d1e610adb404aa9d5af91c0b42843 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b3fe960f0e78428fbf0b0531486c8c85.setIcon(icon_303d1e610adb404aa9d5af91c0b42843);
+        
+    
+            marker_b3fe960f0e78428fbf0b0531486c8c85.bindTooltip(
+                `<div>
+                     영화식당 : 한식 - 충북 충주시 수안보면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b977fddde9a04acf8d21b5417019bc42 = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_41402dc06c8e457baa570cbb9f226d22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b977fddde9a04acf8d21b5417019bc42.setIcon(icon_41402dc06c8e457baa570cbb9f226d22);
+        
+    
+            marker_b977fddde9a04acf8d21b5417019bc42.bindTooltip(
+                `<div>
+                     시골길 : 한식 - 청주시 상당구 북문로1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd86689649c9459fb3d25e7c79e9f045 = L.marker(
+                [36.61780529999999, 127.4807031],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_7593d95ae4094eb39ab692da6d937056 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cd86689649c9459fb3d25e7c79e9f045.setIcon(icon_7593d95ae4094eb39ab692da6d937056);
+        
+    
+            marker_cd86689649c9459fb3d25e7c79e9f045.bindTooltip(
+                `<div>
+                     연탄불에모든것을 : 한식 - 청주시 흥덕구 수곡동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_324a9191f81949a9b140fe8255d94e47 = L.marker(
+                [36.6587289, 127.48068559999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_aa97184148e24cc7a248fd8b60b147a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_324a9191f81949a9b140fe8255d94e47.setIcon(icon_aa97184148e24cc7a248fd8b60b147a8);
+        
+    
+            marker_324a9191f81949a9b140fe8255d94e47.bindTooltip(
+                `<div>
+                     마포이모네 : 카페/주점 - 청주시 상당구 내덕1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71eb0d6372a6495dbd1c39a1b5baefcc = L.marker(
+                [36.962965600000004, 127.9320702],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_ad801a4242ce417dbb95f3955533d7b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_71eb0d6372a6495dbd1c39a1b5baefcc.setIcon(icon_ad801a4242ce417dbb95f3955533d7b4);
+        
+    
+            marker_71eb0d6372a6495dbd1c39a1b5baefcc.bindTooltip(
+                `<div>
+                     아름다운달 벨라루나 : 양식 - 충북 충주시 지현동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54563a78712e478bb9a015ab2710c1a5 = L.marker(
+                [36.6587289, 127.48068559999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_cf26dd037a73462b921934a95d0f312c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_54563a78712e478bb9a015ab2710c1a5.setIcon(icon_cf26dd037a73462b921934a95d0f312c);
+        
+    
+            marker_54563a78712e478bb9a015ab2710c1a5.bindTooltip(
+                `<div>
+                     동굴역사 : 중식 - 청주시 상당구 내덕1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff028d8a30354d1db9fda447cfc5f6d5 = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_830c291a9312474e94d34d3cf5db7d27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ff028d8a30354d1db9fda447cfc5f6d5.setIcon(icon_830c291a9312474e94d34d3cf5db7d27);
+        
+    
+            marker_ff028d8a30354d1db9fda447cfc5f6d5.bindTooltip(
+                `<div>
+                     서가앤쿡 청주성안점 : 양식 - 청주시 상당구 북문로1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b83aa637c5741f486c6105065524504 = L.marker(
+                [36.8977285, 128.2901048],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_7dd7818127e34dfcab181b9381261dd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b83aa637c5741f486c6105065524504.setIcon(icon_7dd7818127e34dfcab181b9381261dd5);
+        
+    
+            marker_7b83aa637c5741f486c6105065524504.bindTooltip(
+                `<div>
+                     선암가든 : 한식 - 충북 단양군 단성면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7567e396ae8b4f7c9e42dcece3fe93d4 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_4daf9d56662d49a5b2da412b46f270a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7567e396ae8b4f7c9e42dcece3fe93d4.setIcon(icon_4daf9d56662d49a5b2da412b46f270a0);
+        
+    
+            marker_7567e396ae8b4f7c9e42dcece3fe93d4.bindTooltip(
+                `<div>
+                     왕릉숯불돼지갈비 : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae3d13fc8c4f46128f75a0b22b572c6e = L.marker(
+                [37.046183899999996, 128.3017199],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_882003083f8540589e9ed2c9d148c720 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ae3d13fc8c4f46128f75a0b22b572c6e.setIcon(icon_882003083f8540589e9ed2c9d148c720);
+        
+    
+            marker_ae3d13fc8c4f46128f75a0b22b572c6e.bindTooltip(
+                `<div>
+                     박경리메밀향 : 한식 - 충북 단양군 매포읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2e97f2343ef4656a6dc5bf7715175d3 = L.marker(
+                [36.844225200000004, 128.0263278],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_9ce8f621b5314191a7bf07e9d4a3f088 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e2e97f2343ef4656a6dc5bf7715175d3.setIcon(icon_9ce8f621b5314191a7bf07e9d4a3f088);
+        
+    
+            marker_e2e97f2343ef4656a6dc5bf7715175d3.bindTooltip(
+                `<div>
+                     국화농부맛집 : 한식 - 충북 충주시 수안보면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebffb9508a394693aaf0c4d097001dd2 = L.marker(
+                [37.0683035, 128.5000984],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_760eabc6249241159c22f998f5f69dd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ebffb9508a394693aaf0c4d097001dd2.setIcon(icon_760eabc6249241159c22f998f5f69dd2);
+        
+    
+            marker_ebffb9508a394693aaf0c4d097001dd2.bindTooltip(
+                `<div>
+                     장미식당(단양) : 한식 - 충북 단양군 영춘면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5cae8521b8bd46c7a060dfcb8c3a989a = L.marker(
+                [36.6501193, 127.49249809999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_095bb69f1b9b47259c08e7a9910e6229 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5cae8521b8bd46c7a060dfcb8c3a989a.setIcon(icon_095bb69f1b9b47259c08e7a9910e6229);
+        
+    
+            marker_5cae8521b8bd46c7a060dfcb8c3a989a.bindTooltip(
+                `<div>
+                     왕뚝배기 : 한식 - 청주시 상당구 우암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a64435d0fa1041d6935e0712acde7b9a = L.marker(
+                [36.6501193, 127.49249809999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_c16d39cc674047158f4cf720b8e97966 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a64435d0fa1041d6935e0712acde7b9a.setIcon(icon_c16d39cc674047158f4cf720b8e97966);
+        
+    
+            marker_a64435d0fa1041d6935e0712acde7b9a.bindTooltip(
+                `<div>
+                     다누끼 : 일식 - 청주시 상당구 우암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_407b49a2839a47f5b001369357809644 = L.marker(
+                [36.990511600000005, 127.9446166],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_f84dd70fc20b4766ab22bed021750303 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_407b49a2839a47f5b001369357809644.setIcon(icon_f84dd70fc20b4766ab22bed021750303);
+        
+    
+            marker_407b49a2839a47f5b001369357809644.bindTooltip(
+                `<div>
+                     만나밥집 : 한식 - 충북 충주시 연수동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_570962691c3a47d1a2a748723ccd6e6a = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_4d4e531760024333a781b342d0dd1413 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_570962691c3a47d1a2a748723ccd6e6a.setIcon(icon_4d4e531760024333a781b342d0dd1413);
+        
+    
+            marker_570962691c3a47d1a2a748723ccd6e6a.bindTooltip(
+                `<div>
+                     쫄쫄호떡 : 분식 - 청주시 상당구 남문로2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1246a67b4fab498b98f947dc76015333 = L.marker(
+                [36.6355199, 127.43260149999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_19694d29254042c9b4097b353c3d6890 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1246a67b4fab498b98f947dc76015333.setIcon(icon_19694d29254042c9b4097b353c3d6890);
+        
+    
+            marker_1246a67b4fab498b98f947dc76015333.bindTooltip(
+                `<div>
+                     통불닭발 : 한식 - 청주시 흥덕구 복대1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c30792cefc24bd88f1e74e726d4f96a = L.marker(
+                [36.6410325, 127.48559070000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_9cbdaa983c924525bb52f1ebcd35cd91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5c30792cefc24bd88f1e74e726d4f96a.setIcon(icon_9cbdaa983c924525bb52f1ebcd35cd91);
+        
+    
+            marker_5c30792cefc24bd88f1e74e726d4f96a.bindTooltip(
+                `<div>
+                     앤(Anne) : 카페/주점 - 청주시 상당구 영동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d20b669673454fc9b684687ef5c8588a = L.marker(
+                [36.6065719, 127.44186780000001],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_06466f0587dc42e8b31d3180f7f025a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d20b669673454fc9b684687ef5c8588a.setIcon(icon_06466f0587dc42e8b31d3180f7f025a8);
+        
+    
+            marker_d20b669673454fc9b684687ef5c8588a.bindTooltip(
+                `<div>
+                     빈센트마퀴스 : 카페/주점 - 청주시 흥덕구 죽림동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fe1a5685a6d4d2083f0e05f6184ab99 = L.marker(
+                [36.6768762, 127.4946831],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_f11d9c98fc8945968e33cacbdbdea7ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4fe1a5685a6d4d2083f0e05f6184ab99.setIcon(icon_f11d9c98fc8945968e33cacbdbdea7ee);
+        
+    
+            marker_4fe1a5685a6d4d2083f0e05f6184ab99.bindTooltip(
+                `<div>
+                     산골짜기왕돌판구이 : 한식 - 청주시 청원구 주성동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6721ac37c4a64b6dab25f9fa58f5cd21 = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_c8f866d6f69b4794b9584cae38fe45bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6721ac37c4a64b6dab25f9fa58f5cd21.setIcon(icon_c8f866d6f69b4794b9584cae38fe45bc);
+        
+    
+            marker_6721ac37c4a64b6dab25f9fa58f5cd21.bindTooltip(
+                `<div>
+                     성안골 : 한식 - 청주시 상당구 남문로2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0e79de5a44a4962942ee2e7389966b3 = L.marker(
+                [36.6429635, 127.49669399999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_0437309acc2742dcb63a3bf12072c9d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e0e79de5a44a4962942ee2e7389966b3.setIcon(icon_0437309acc2742dcb63a3bf12072c9d8);
+        
+    
+            marker_e0e79de5a44a4962942ee2e7389966b3.bindTooltip(
+                `<div>
+                     영광이네국수집 : 한식 - 청주시 상당구 수동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0b9b0a8eb19445f9f5ff984fe897939 = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_0ea8185252554adb89e1e4e1248362e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d0b9b0a8eb19445f9f5ff984fe897939.setIcon(icon_0ea8185252554adb89e1e4e1248362e2);
+        
+    
+            marker_d0b9b0a8eb19445f9f5ff984fe897939.bindTooltip(
+                `<div>
+                     카페아카이브 : 카페/주점 - 청주시 상당구 북문로2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d7ebb5cf66446d3a3984cab0b518c84 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_48674b48cc6247b6803271f3e950f110 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5d7ebb5cf66446d3a3984cab0b518c84.setIcon(icon_48674b48cc6247b6803271f3e950f110);
+        
+    
+            marker_5d7ebb5cf66446d3a3984cab0b518c84.bindTooltip(
+                `<div>
+                     다원(단양) : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbeaf7d56aaf40fa9c9fdcb1b25e24e3 = L.marker(
+                [36.604175899999994, 127.46976210000001],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_96b4d5ca509048148faa3eebb21547ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fbeaf7d56aaf40fa9c9fdcb1b25e24e3.setIcon(icon_96b4d5ca509048148faa3eebb21547ea);
+        
+    
+            marker_fbeaf7d56aaf40fa9c9fdcb1b25e24e3.bindTooltip(
+                `<div>
+                     산책중화요리 : 중식 - 청주시 흥덕구 미평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a24eea6fd9454c97b40ec03b55c10e26 = L.marker(
+                [36.6501193, 127.49249809999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_857b0a8fc0774813a4b4cbfa92f8f464 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a24eea6fd9454c97b40ec03b55c10e26.setIcon(icon_857b0a8fc0774813a4b4cbfa92f8f464);
+        
+    
+            marker_a24eea6fd9454c97b40ec03b55c10e26.bindTooltip(
+                `<div>
+                     싱그레복집 : 한식 - 청주시 상당구 우암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_348c08b98e5440c0a864e88e2048c8fd = L.marker(
+                [36.6332419, 127.44064679999998],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_f4a5391890fd45fab1f94b5bf786c3a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_348c08b98e5440c0a864e88e2048c8fd.setIcon(icon_f4a5391890fd45fab1f94b5bf786c3a5);
+        
+    
+            marker_348c08b98e5440c0a864e88e2048c8fd.bindTooltip(
+                `<div>
+                     카페봄 : 카페/주점 - 청주시 서원구 산남동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a64bdad2d9fe4615817c38e6366f5b83 = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_51f3f181504b471094390d4a61ac7f8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a64bdad2d9fe4615817c38e6366f5b83.setIcon(icon_51f3f181504b471094390d4a61ac7f8e);
+        
+    
+            marker_a64bdad2d9fe4615817c38e6366f5b83.bindTooltip(
+                `<div>
+                     상상공장 : 카페/주점 - 청주시 상당구 북문로1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd5ac37883144c1684eda8d35cd524f2 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_37c1fbd03ad14816b76f34d2e02c8ccc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cd5ac37883144c1684eda8d35cd524f2.setIcon(icon_37c1fbd03ad14816b76f34d2e02c8ccc);
+        
+    
+            marker_cd5ac37883144c1684eda8d35cd524f2.bindTooltip(
+                `<div>
+                     레인보우 : 기타/세계 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_baa52abe5cfc4a249a6563bcefbaca0f = L.marker(
+                [36.617851200000004, 127.5195743],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_7d37ff02a016463d9c440d67e0408ee5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_baa52abe5cfc4a249a6563bcefbaca0f.setIcon(icon_7d37ff02a016463d9c440d67e0408ee5);
+        
+    
+            marker_baa52abe5cfc4a249a6563bcefbaca0f.bindTooltip(
+                `<div>
+                     햇잎갈비 용암동점 : 한식 - 청주시 상당구 용암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34b8aa26e6274e55a1226c5cad4ed026 = L.marker(
+                [36.6352601, 127.43863059999998],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_a41a6b72dc6849b3b540f1d976337052 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_34b8aa26e6274e55a1226c5cad4ed026.setIcon(icon_a41a6b72dc6849b3b540f1d976337052);
+        
+    
+            marker_34b8aa26e6274e55a1226c5cad4ed026.bindTooltip(
+                `<div>
+                     트렁크다이닝 : 양식 - 청주시 흥덕구 복대동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2dea225fccb74d7cb357535c6f23a833 = L.marker(
+                [36.6332419, 127.44064679999998],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_b54f5d924bf94cd8bfeec5375e5ff149 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2dea225fccb74d7cb357535c6f23a833.setIcon(icon_b54f5d924bf94cd8bfeec5375e5ff149);
+        
+    
+            marker_2dea225fccb74d7cb357535c6f23a833.bindTooltip(
+                `<div>
+                     투핸즈 : 카페/주점 - 청주시 서원구 산남동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4101591859d44fdab744180f2e293d7e = L.marker(
+                [36.9894607, 127.98963159999998],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_30cde5c0c13645d2b8b0fe470f6d012a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4101591859d44fdab744180f2e293d7e.setIcon(icon_30cde5c0c13645d2b8b0fe470f6d012a);
+        
+    
+            marker_4101591859d44fdab744180f2e293d7e.bindTooltip(
+                `<div>
+                     아넬 : 카페/주점 - 충북 충주시 종민동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec6825fd8f0e4e07b506fe00adb3c20c = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_8da2c995ee834a139242d73168597307 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ec6825fd8f0e4e07b506fe00adb3c20c.setIcon(icon_8da2c995ee834a139242d73168597307);
+        
+    
+            marker_ec6825fd8f0e4e07b506fe00adb3c20c.bindTooltip(
+                `<div>
+                     평강 : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bbfbd27d1ef45b5b6d16d5b81928c8c = L.marker(
+                [36.8683135, 128.37985690000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_44300f920482492ea1b1be7447e9bdcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6bbfbd27d1ef45b5b6d16d5b81928c8c.setIcon(icon_44300f920482492ea1b1be7447e9bdcd);
+        
+    
+            marker_6bbfbd27d1ef45b5b6d16d5b81928c8c.bindTooltip(
+                `<div>
+                     갈매기식당(단양) : 한식 - 충북 단양군 대강면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fa63ff1fd0f47dcaeb4123e31063325 = L.marker(
+                [36.984568700000004, 127.90859609999998],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_c70f98015c544fd69c8ecac740bee760 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0fa63ff1fd0f47dcaeb4123e31063325.setIcon(icon_c70f98015c544fd69c8ecac740bee760);
+        
+    
+            marker_0fa63ff1fd0f47dcaeb4123e31063325.bindTooltip(
+                `<div>
+                     참치본가 : 일식 - 충북 충주시 칠금동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38b0790ab8f34c9c81deb673c926e044 = L.marker(
+                [36.6484364, 127.45825239999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_212f5cc67a334c13a40da1f2373cfe9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_38b0790ab8f34c9c81deb673c926e044.setIcon(icon_212f5cc67a334c13a40da1f2373cfe9b);
+        
+    
+            marker_38b0790ab8f34c9c81deb673c926e044.bindTooltip(
+                `<div>
+                     양자강 : 중식 - 청주시 흥덕구 봉명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7592b1333d44e4fafca084f7c325621 = L.marker(
+                [36.6332419, 127.44064679999998],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_64b2aa88a05046aa956ab91795ad9194 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c7592b1333d44e4fafca084f7c325621.setIcon(icon_64b2aa88a05046aa956ab91795ad9194);
+        
+    
+            marker_c7592b1333d44e4fafca084f7c325621.bindTooltip(
+                `<div>
+                     이찌바 : 일식 - 청주시 서원구 산남동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_576cad8160b84c52b9f5cb763e4b80e8 = L.marker(
+                [36.6332419, 127.44064679999998],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_41e5f7b8395d49a6954f3f2f2686ec6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_576cad8160b84c52b9f5cb763e4b80e8.setIcon(icon_41e5f7b8395d49a6954f3f2f2686ec6e);
+        
+    
+            marker_576cad8160b84c52b9f5cb763e4b80e8.bindTooltip(
+                `<div>
+                     쿠키앤 : 카페/주점 - 청주시 서원구 산남동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db712c7f7ca94574a1887854cfaa8157 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_6895836a5a5441679ec511d630604908 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_db712c7f7ca94574a1887854cfaa8157.setIcon(icon_6895836a5a5441679ec511d630604908);
+        
+    
+            marker_db712c7f7ca94574a1887854cfaa8157.bindTooltip(
+                `<div>
+                     마늘석갈비막국수 : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72c0560c768c4c50b410d52e19f9223b = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_107f958b64e647a8ab57639d7a63b059 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_72c0560c768c4c50b410d52e19f9223b.setIcon(icon_107f958b64e647a8ab57639d7a63b059);
+        
+    
+            marker_72c0560c768c4c50b410d52e19f9223b.bindTooltip(
+                `<div>
+                     단양모아 : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0285c37af8ce4f298dda242155539cc2 = L.marker(
+                [36.990511600000005, 127.9446166],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_7c161d9ae7894c669e0f26a82da294d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0285c37af8ce4f298dda242155539cc2.setIcon(icon_7c161d9ae7894c669e0f26a82da294d5);
+        
+    
+            marker_0285c37af8ce4f298dda242155539cc2.bindTooltip(
+                `<div>
+                     굿충주한우 : 한식 - 충북 충주시 연수동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8caa568416ec4db9b5c4d9c078c123ba = L.marker(
+                [36.6319698, 127.4177784],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_7bdb9c9fcc5f407c8e03d0c3950b38a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8caa568416ec4db9b5c4d9c078c123ba.setIcon(icon_7bdb9c9fcc5f407c8e03d0c3950b38a8);
+        
+    
+            marker_8caa568416ec4db9b5c4d9c078c123ba.bindTooltip(
+                `<div>
+                     효성반점 : 중식 - 청주시 흥덕구 비하동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f221400fab424894922b454767603056 = L.marker(
+                [36.844225200000004, 128.0263278],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_7b2ee92d50654991afc16086fd0b44d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f221400fab424894922b454767603056.setIcon(icon_7b2ee92d50654991afc16086fd0b44d2);
+        
+    
+            marker_f221400fab424894922b454767603056.bindTooltip(
+                `<div>
+                     수안보상록호텔 한식당 : 한식 - 충북 충주시 수안보면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35a14d72ac544848add8fe31567df3e7 = L.marker(
+                [37.046183899999996, 128.3017199],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_8fd312f0e364433c9673f4173ff20c0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_35a14d72ac544848add8fe31567df3e7.setIcon(icon_8fd312f0e364433c9673f4173ff20c0a);
+        
+    
+            marker_35a14d72ac544848add8fe31567df3e7.bindTooltip(
+                `<div>
+                     매포한우일번가(단양) : 한식 - 충북 단양군 매포읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6bf6a4403e049f2a78c45ca1a91310d = L.marker(
+                [37.014621399999996, 128.4314449],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_0429ddc17b9442c68397e1d37df9e527 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6bf6a4403e049f2a78c45ca1a91310d.setIcon(icon_0429ddc17b9442c68397e1d37df9e527);
+        
+    
+            marker_c6bf6a4403e049f2a78c45ca1a91310d.bindTooltip(
+                `<div>
+                     신군관식당 : 한식 - 충북 단양군 가곡면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_423bb2eb8763424da07801f07b0f5158 = L.marker(
+                [36.6635659, 127.4863581],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_0960cbf661a14ef0a9d6f6e7a6473de6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_423bb2eb8763424da07801f07b0f5158.setIcon(icon_0960cbf661a14ef0a9d6f6e7a6473de6);
+        
+    
+            marker_423bb2eb8763424da07801f07b0f5158.bindTooltip(
+                `<div>
+                     바람막이 : 양식 - 청주시 상당구 율량동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_010ac2ae98224b7a83ac545280d209d9 = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_8cb961bdf6e748058fcdcc2709931694 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_010ac2ae98224b7a83ac545280d209d9.setIcon(icon_8cb961bdf6e748058fcdcc2709931694);
+        
+    
+            marker_010ac2ae98224b7a83ac545280d209d9.bindTooltip(
+                `<div>
+                     황할머니갈비찌개 : 한식 - 청주시 상당구 남문로1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f760ba910a214ea0b685b99c3eafbb54 = L.marker(
+                [36.6346188, 127.525352],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_ab44b7d02bcc4c47be3f00dbe52aa7ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f760ba910a214ea0b685b99c3eafbb54.setIcon(icon_ab44b7d02bcc4c47be3f00dbe52aa7ab);
+        
+    
+            marker_f760ba910a214ea0b685b99c3eafbb54.bindTooltip(
+                `<div>
+                     천리향 : 중식 - 청주시 상당구 용정동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d992c098afff479286c6769dde83bf39 = L.marker(
+                [37.009324799999995, 128.144596],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_e773a32d60724c398a2f446f555bf00c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d992c098afff479286c6769dde83bf39.setIcon(icon_e773a32d60724c398a2f446f555bf00c);
+        
+    
+            marker_d992c098afff479286c6769dde83bf39.bindTooltip(
+                `<div>
+                     예촌 : 한식 - 충북 제천시 청풍면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ccc0336d62941e19e8ef5a8d9adfc33 = L.marker(
+                [36.6501193, 127.49249809999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_7b88570b224a4c16af9a9cdc97a6b291 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7ccc0336d62941e19e8ef5a8d9adfc33.setIcon(icon_7b88570b224a4c16af9a9cdc97a6b291);
+        
+    
+            marker_7ccc0336d62941e19e8ef5a8d9adfc33.bindTooltip(
+                `<div>
+                     또또와포장마차 : 한식 - 청주시 상당구 우암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6afa6441f5164621b895800eb5472a24 = L.marker(
+                [36.5750386, 127.52058829999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_542c363b48de491baa4580b10d7bcbae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6afa6441f5164621b895800eb5472a24.setIcon(icon_542c363b48de491baa4580b10d7bcbae);
+        
+    
+            marker_6afa6441f5164621b895800eb5472a24.bindTooltip(
+                `<div>
+                     충청수산 : 한식 - 충북 청원군 남일면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4446482630347f09c8d3111415c3f2b = L.marker(
+                [36.6339841, 127.485358],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_52da3b5e10614fd18295b5c470ac605a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e4446482630347f09c8d3111415c3f2b.setIcon(icon_52da3b5e10614fd18295b5c470ac605a);
+        
+    
+            marker_e4446482630347f09c8d3111415c3f2b.bindTooltip(
+                `<div>
+                     서문우동 : 한식 - 청주시 상당구 서문동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6648b6c0e3648a1991c20e339b331ea = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_efcaf2db0c304cf08c852e6b8f27faec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6648b6c0e3648a1991c20e339b331ea.setIcon(icon_efcaf2db0c304cf08c852e6b8f27faec);
+        
+    
+            marker_c6648b6c0e3648a1991c20e339b331ea.bindTooltip(
+                `<div>
+                     미래지 : 한식 - 청주시 상당구 남문로2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21d7fcc643a94c2cac26497dfedf19ec = L.marker(
+                [36.6240169, 127.4569699],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_d4d7ebd4befa44a6945068905d5e3acd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_21d7fcc643a94c2cac26497dfedf19ec.setIcon(icon_d4d7ebd4befa44a6945068905d5e3acd);
+        
+    
+            marker_21d7fcc643a94c2cac26497dfedf19ec.bindTooltip(
+                `<div>
+                     장군집 : 한식 - 청주시 흥덕구 개신동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6204639c87541bb9239d6c73e2bc401 = L.marker(
+                [36.6339841, 127.485358],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_325c6f1fa70943fd9ee837ede7f945cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b6204639c87541bb9239d6c73e2bc401.setIcon(icon_325c6f1fa70943fd9ee837ede7f945cd);
+        
+    
+            marker_b6204639c87541bb9239d6c73e2bc401.bindTooltip(
+                `<div>
+                     충주돌구이 : 한식 - 청주시 상당구 서문동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85c0f41589cf4fdd8f2dafa173f4e66b = L.marker(
+                [36.5246341, 127.83395719999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_6012ae4eaa9740c9a9e69427782ec663 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_85c0f41589cf4fdd8f2dafa173f4e66b.setIcon(icon_6012ae4eaa9740c9a9e69427782ec663);
+        
+    
+            marker_85c0f41589cf4fdd8f2dafa173f4e66b.bindTooltip(
+                `<div>
+                     경희식당 : 한식 - 충북 보은군 속리산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e38af34be704aac8fae857cf84639a9 = L.marker(
+                [36.634682500000004, 127.4884844],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_928358c428fc4c03affce28995666b8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6e38af34be704aac8fae857cf84639a9.setIcon(icon_928358c428fc4c03affce28995666b8b);
+        
+    
+            marker_6e38af34be704aac8fae857cf84639a9.bindTooltip(
+                `<div>
+                     청송통닭 : 한식 - 청주시 상당구 남문로2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c14f4d5bbe142b2acc1d62a69312f78 = L.marker(
+                [36.6366932, 127.47627109999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_0f9499badd8f47a1a1b8e5a92ff7bc0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6c14f4d5bbe142b2acc1d62a69312f78.setIcon(icon_0f9499badd8f47a1a1b8e5a92ff7bc0d);
+        
+    
+            marker_6c14f4d5bbe142b2acc1d62a69312f78.bindTooltip(
+                `<div>
+                     사직동손칼국수 : 한식 - 청주시 서원구 사직동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2a4207653634a1ba3b80a4434790be2 = L.marker(
+                [36.6339841, 127.485358],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_9bf2ab3c5a8c43e49e5adeeb2657eb48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c2a4207653634a1ba3b80a4434790be2.setIcon(icon_9bf2ab3c5a8c43e49e5adeeb2657eb48);
+        
+    
+            marker_c2a4207653634a1ba3b80a4434790be2.bindTooltip(
+                `<div>
+                     상주집 : 한식 - 청주시 상당구 서문동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f97e11d6193a45b687cbeae8ba184dd7 = L.marker(
+                [36.62027929999999, 127.43423370000001],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_2eef68df85c7424c8231b7c5fd06db12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f97e11d6193a45b687cbeae8ba184dd7.setIcon(icon_2eef68df85c7424c8231b7c5fd06db12);
+        
+    
+            marker_f97e11d6193a45b687cbeae8ba184dd7.bindTooltip(
+                `<div>
+                     진국본가 청주점 : 한식 - 청주시 흥덕구 가경동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e40accc3994461397012c26106964a1 = L.marker(
+                [37.136247600000004, 128.20265690000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_4e0bbf08bfb14b1892132ea9473a02ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3e40accc3994461397012c26106964a1.setIcon(icon_4e0bbf08bfb14b1892132ea9473a02ac);
+        
+    
+            marker_3e40accc3994461397012c26106964a1.bindTooltip(
+                `<div>
+                     수가성식당 : 한식 - 충북 제천시 서부동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37523db12fdb49b38c3c6a3cd56cdf37 = L.marker(
+                [36.6343436, 127.4626785],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_ac6fc0d898bf4548b0fe1f0cc0f81e37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_37523db12fdb49b38c3c6a3cd56cdf37.setIcon(icon_ac6fc0d898bf4548b0fe1f0cc0f81e37);
+        
+    
+            marker_37523db12fdb49b38c3c6a3cd56cdf37.bindTooltip(
+                `<div>
+                     파브리카 : 양식 - 청주시 서원구 사창동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8ca4613b44f40bb9f643481d44a7085 = L.marker(
+                [37.0837399, 128.0048033],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_30f9d70c0c574d90a80e5c9fa434a31a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a8ca4613b44f40bb9f643481d44a7085.setIcon(icon_30f9d70c0c574d90a80e5c9fa434a31a);
+        
+    
+            marker_a8ca4613b44f40bb9f643481d44a7085.bindTooltip(
+                `<div>
+                     산모퉁이집 : 한식 - 충북 충주시 산척면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_021199c86eb34265ac85dacc5924596a = L.marker(
+                [36.609658700000004, 127.45258799999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_173e01bb16494760acf50607fc399dfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_021199c86eb34265ac85dacc5924596a.setIcon(icon_173e01bb16494760acf50607fc399dfb);
+        
+    
+            marker_021199c86eb34265ac85dacc5924596a.bindTooltip(
+                `<div>
+                     맷돌포두부 : 한식 - 청주시 서원구 성화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44aaca42d9db4f1b9d2c99fe30e419a6 = L.marker(
+                [36.6065719, 127.44186780000001],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_e7b9e1d9d5774d6cad59fc187be3a2b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_44aaca42d9db4f1b9d2c99fe30e419a6.setIcon(icon_e7b9e1d9d5774d6cad59fc187be3a2b9);
+        
+    
+            marker_44aaca42d9db4f1b9d2c99fe30e419a6.bindTooltip(
+                `<div>
+                     김가네더덕밥 : 한식 - 청주시 서원구 죽림동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3e7255e2dac4222a619f57bdbc3eab9 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_990d8bc35da041f198440170b20e0f9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3e7255e2dac4222a619f57bdbc3eab9.setIcon(icon_990d8bc35da041f198440170b20e0f9e);
+        
+    
+            marker_c3e7255e2dac4222a619f57bdbc3eab9.bindTooltip(
+                `<div>
+                     그집쏘가리 : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b86c5828bec341b98b1646641e135dfa = L.marker(
+                [36.844225200000004, 128.0263278],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_ac9301f95a1d49a08ba45e609e63e3f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b86c5828bec341b98b1646641e135dfa.setIcon(icon_ac9301f95a1d49a08ba45e609e63e3f6);
+        
+    
+            marker_b86c5828bec341b98b1646641e135dfa.bindTooltip(
+                `<div>
+                     감나무집 : 한식 - 충북 충주시 수안보면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7049748d0fd46e297f4ad7f7a2e39de = L.marker(
+                [36.91272670000001, 127.9957247],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_5000abcb6e0d4d6088df2c120100c07d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d7049748d0fd46e297f4ad7f7a2e39de.setIcon(icon_5000abcb6e0d4d6088df2c120100c07d);
+        
+    
+            marker_d7049748d0fd46e297f4ad7f7a2e39de.bindTooltip(
+                `<div>
+                     갈마가든 : 한식 - 충북 충주시 살미면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3e19c2f84264904ba64b8f6232cdd40 = L.marker(
+                [36.6250448, 127.4813477],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_449ffa514705491bafcf53bca15bee4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a3e19c2f84264904ba64b8f6232cdd40.setIcon(icon_449ffa514705491bafcf53bca15bee4f);
+        
+    
+            marker_a3e19c2f84264904ba64b8f6232cdd40.bindTooltip(
+                `<div>
+                     남들갈비 : 한식 - 청주시 서원구 모충동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8538e287302e43719c34e29a1ed32d27 = L.marker(
+                [36.6339841, 127.485358],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_56f3b356b83c480c9e3e182ed546d4d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8538e287302e43719c34e29a1ed32d27.setIcon(icon_56f3b356b83c480c9e3e182ed546d4d6);
+        
+    
+            marker_8538e287302e43719c34e29a1ed32d27.bindTooltip(
+                `<div>
+                     경주집 : 한식 - 청주시 상당구 서문동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a808c28a6e8d48238c19975a0b2283a2 = L.marker(
+                [36.6697498, 127.4662249],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_6be51b552045487f8a5c65d46fbac555 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a808c28a6e8d48238c19975a0b2283a2.setIcon(icon_6be51b552045487f8a5c65d46fbac555);
+        
+    
+            marker_a808c28a6e8d48238c19975a0b2283a2.bindTooltip(
+                `<div>
+                     대추나무집 : 한식 - 청주시 청원구 사천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a201ed5ddaa44272b06d9872d128bbbf = L.marker(
+                [37.0372194, 127.8511706],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_22001e5cc7ec4991a92798f1f9eb6f59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a201ed5ddaa44272b06d9872d128bbbf.setIcon(icon_22001e5cc7ec4991a92798f1f9eb6f59);
+        
+    
+            marker_a201ed5ddaa44272b06d9872d128bbbf.bindTooltip(
+                `<div>
+                     중앙탑오리집 본점 : 한식 - 충북 충주시 중앙탑면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6068cb869a544438b9cdc4bed45ebd66 = L.marker(
+                [36.6429635, 127.49669399999999],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_a5f0dfc156ee4140b0383af7f97cb7bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6068cb869a544438b9cdc4bed45ebd66.setIcon(icon_a5f0dfc156ee4140b0383af7f97cb7bf);
+        
+    
+            marker_6068cb869a544438b9cdc4bed45ebd66.bindTooltip(
+                `<div>
+                     소영칼국수 : 한식 - 청주시 상당구 수동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e346f2f8366d4e35a0dd36647697ebc4 = L.marker(
+                [36.626441299999996, 127.54523710000001],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_3ff9fb2c81744064a22f233d4a9e3417 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e346f2f8366d4e35a0dd36647697ebc4.setIcon(icon_3ff9fb2c81744064a22f233d4a9e3417);
+        
+    
+            marker_e346f2f8366d4e35a0dd36647697ebc4.bindTooltip(
+                `<div>
+                     월오동묵집 : 한식 - 청주시 상당구 월오동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45a84c1d586b43b6b6fc5c8fc8424f2b = L.marker(
+                [36.6343436, 127.4626785],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_9de4493d15e649c1812c05b7c8466519 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_45a84c1d586b43b6b6fc5c8fc8424f2b.setIcon(icon_9de4493d15e649c1812c05b7c8466519);
+        
+    
+            marker_45a84c1d586b43b6b6fc5c8fc8424f2b.bindTooltip(
+                `<div>
+                     아트에스프레소 : 카페/주점 - 청주시 서원구 사창동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd05f839ca824fe6a68048ff17f46099 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_607abf7342524e7797465565a2958b31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dd05f839ca824fe6a68048ff17f46099.setIcon(icon_607abf7342524e7797465565a2958b31);
+        
+    
+            marker_dd05f839ca824fe6a68048ff17f46099.bindTooltip(
+                `<div>
+                     비스트로리버 : 양식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_606d14cff7c34f90a0f7376813cf2516 = L.marker(
+                [36.9609258, 128.39118670000002],
+                {}
+            ).addTo(map_7b8ef2a912884adb8d5dc770124cf1f7);
+        
+    
+            var icon_f303b4449f65400e8b6dc743c199a47a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_606d14cff7c34f90a0f7376813cf2516.setIcon(icon_f303b4449f65400e8b6dc743c199a47a);
+        
+    
+            marker_606d14cff7c34f90a0f7376813cf2516.bindTooltip(
+                `<div>
+                     별곡분식 : 한식 - 충북 단양군 단양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

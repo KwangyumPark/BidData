@@ -1,0 +1,2256 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_43a300cd43624f17bb4fb50f4b2a80b8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_43a300cd43624f17bb4fb50f4b2a80b8" ></div>
+        
+</body>
+<script>    
+    
+            var map_43a300cd43624f17bb4fb50f4b2a80b8 = L.map(
+                "map_43a300cd43624f17bb4fb50f4b2a80b8",
+                {
+                    center: [35.865839, 128.596363],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_61a5ecf127e24a5b9a1bf89acb28431d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var tile_layer_bf61cc2d1ba14fa4bff946f7a6740958 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_fd01675a1e1544f78ededadd541dcfce = new L.Control.MiniMap(
+                tile_layer_bf61cc2d1ba14fa4bff946f7a6740958,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_43a300cd43624f17bb4fb50f4b2a80b8.addControl(mini_map_fd01675a1e1544f78ededadd541dcfce);
+        
+    
+            var marker_7263b2204ba0495e9115b5708f06103b = L.marker(
+                [35.8372869, 128.5791721],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_d8db573ca2664cd3a8d16a4af6c4fac2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7263b2204ba0495e9115b5708f06103b.setIcon(icon_d8db573ca2664cd3a8d16a4af6c4fac2);
+        
+    
+            marker_7263b2204ba0495e9115b5708f06103b.bindTooltip(
+                `<div>
+                     다도막창 : 한식 - 대구 남구 대명9동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb220df58b664b9bb3291a6cf0d04301 = L.marker(
+                [35.86171470000001, 128.5597405],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_2b914eb218a84922acc4c820a19d6ff4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bb220df58b664b9bb3291a6cf0d04301.setIcon(icon_2b914eb218a84922acc4c820a19d6ff4);
+        
+    
+            marker_bb220df58b664b9bb3291a6cf0d04301.bindTooltip(
+                `<div>
+                     돼지새끼 : 한식 - 대구 서구 내당동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3395b480ff5641bf93ce41756f0cd86e = L.marker(
+                [35.8717898, 128.6292774],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_26cb358483934f61a0efdcc77c1f406c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3395b480ff5641bf93ce41756f0cd86e.setIcon(icon_26cb358483934f61a0efdcc77c1f406c);
+        
+    
+            marker_3395b480ff5641bf93ce41756f0cd86e.bindTooltip(
+                `<div>
+                     장군찜닭 : 한식 - 대구 동구 신천4동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58f7efdbdab74b9f987e0f23493dd938 = L.marker(
+                [35.857718799999994, 128.6312809],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_b0bc52de51924269ab9a1dbeb0334dde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58f7efdbdab74b9f987e0f23493dd938.setIcon(icon_b0bc52de51924269ab9a1dbeb0334dde);
+        
+    
+            marker_58f7efdbdab74b9f987e0f23493dd938.bindTooltip(
+                `<div>
+                     영덕횟집 : 한식 - 대구 수성구 범어동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ad6d22b851d4e71a6f6179eae142be0 = L.marker(
+                [35.8458071, 128.523595],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_ca33e8b2ac4446039757023a0ecacd05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0ad6d22b851d4e71a6f6179eae142be0.setIcon(icon_ca33e8b2ac4446039757023a0ecacd05);
+        
+    
+            marker_0ad6d22b851d4e71a6f6179eae142be0.bindTooltip(
+                `<div>
+                     소백산 양대창 참숯구이 : 한식 - 대구 달서구 장기동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8687b9b305d94bd8bf52c98cc89bea08 = L.marker(
+                [35.854473, 128.5369377],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_69c5834d3b5f4cbd8194ec617f24690a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8687b9b305d94bd8bf52c98cc89bea08.setIcon(icon_69c5834d3b5f4cbd8194ec617f24690a);
+        
+    
+            marker_8687b9b305d94bd8bf52c98cc89bea08.bindTooltip(
+                `<div>
+                     영양뚝배기 : 한식 - 대구 달서구 죽전동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f666edb964347f9b04c2a2d58f35da0 = L.marker(
+                [35.8839826, 128.6244896],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_4439eee4f7014b7ab029dbffefa78e6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8f666edb964347f9b04c2a2d58f35da0.setIcon(icon_4439eee4f7014b7ab029dbffefa78e6d);
+        
+    
+            marker_8f666edb964347f9b04c2a2d58f35da0.bindTooltip(
+                `<div>
+                     똥집본부 : 한식 - 대구 동구 신암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64eb5558aa7740bb84caf6adfd5a2c55 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_10ce44b8a4104d769bc9554fc4ea79ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_64eb5558aa7740bb84caf6adfd5a2c55.setIcon(icon_10ce44b8a4104d769bc9554fc4ea79ec);
+        
+    
+            marker_64eb5558aa7740bb84caf6adfd5a2c55.bindTooltip(
+                `<div>
+                     라마앤바바나 대구점 : 기타/세계 - 대구 서울시 중구 봉산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1065a8aca7d947fd9a938258386abcf3 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_4a76de0aa29b443d9b354b13ad9e1200 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1065a8aca7d947fd9a938258386abcf3.setIcon(icon_4a76de0aa29b443d9b354b13ad9e1200);
+        
+    
+            marker_1065a8aca7d947fd9a938258386abcf3.bindTooltip(
+                `<div>
+                     신흥짬뽕 : 중식 - 대구 서울시 중구 봉산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90a5c5d99b144ed2a8437d7acd265818 = L.marker(
+                [35.872686200000004, 128.62330459999998],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_cec5094544de472899d54b71e854b36d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90a5c5d99b144ed2a8437d7acd265818.setIcon(icon_cec5094544de472899d54b71e854b36d);
+        
+    
+            marker_90a5c5d99b144ed2a8437d7acd265818.bindTooltip(
+                `<div>
+                     청송보쌈식 왕족발 : 한식 - 대구 동구 신천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d60e2a7eb6794a19bbf203e685246116 = L.marker(
+                [35.828355, 128.62066670000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_95c7d2da27aa4fbaa1eddd1cb5ebb262 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d60e2a7eb6794a19bbf203e685246116.setIcon(icon_95c7d2da27aa4fbaa1eddd1cb5ebb262);
+        
+    
+            marker_d60e2a7eb6794a19bbf203e685246116.bindTooltip(
+                `<div>
+                     핸즈커피 들안길점 : 카페/주점 - 대구 수성구 두산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_285a8d5f34c34855b09acd8ece789bf1 = L.marker(
+                [35.844685600000005, 128.6121372],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_5325517188df4cf5b6d19a1d53fe9e19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_285a8d5f34c34855b09acd8ece789bf1.setIcon(icon_5325517188df4cf5b6d19a1d53fe9e19);
+        
+    
+            marker_285a8d5f34c34855b09acd8ece789bf1.bindTooltip(
+                `<div>
+                     대한상회 : 한식 - 대구 수성구 중동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04e1da9e664a42c7a5a88784f0ef4953 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_b813bafb0ef64ae3b8af1a40f1a2ccee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_04e1da9e664a42c7a5a88784f0ef4953.setIcon(icon_b813bafb0ef64ae3b8af1a40f1a2ccee);
+        
+    
+            marker_04e1da9e664a42c7a5a88784f0ef4953.bindTooltip(
+                `<div>
+                     미림식당 : 일식 - 대구 서울시 중구 대신동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca75c266ddd54f09b8d18ca8d38714d7 = L.marker(
+                [35.828355, 128.62066670000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_005715ffb6d54b67bd198265a19b97db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ca75c266ddd54f09b8d18ca8d38714d7.setIcon(icon_005715ffb6d54b67bd198265a19b97db);
+        
+    
+            marker_ca75c266ddd54f09b8d18ca8d38714d7.bindTooltip(
+                `<div>
+                     내안에 들안길점 : 일식 - 대구 수성구 두산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c0d62303745490eb1dd490b7a6a0c1e = L.marker(
+                [35.8717898, 128.6292774],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_4252d810319c472cba7243c5e5e42de8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7c0d62303745490eb1dd490b7a6a0c1e.setIcon(icon_4252d810319c472cba7243c5e5e42de8);
+        
+    
+            marker_7c0d62303745490eb1dd490b7a6a0c1e.bindTooltip(
+                `<div>
+                     청정한우숯불식육식당(본점) : 한식 - 대구 동구 신천4동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_491a840341b64781a7d2845852a72903 = L.marker(
+                [35.8356871, 128.48220849999998],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_382cbb2c934b4f969dffa57a4079fa51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_491a840341b64781a7d2845852a72903.setIcon(icon_382cbb2c934b4f969dffa57a4079fa51);
+        
+    
+            marker_491a840341b64781a7d2845852a72903.bindTooltip(
+                `<div>
+                     호미곶 : 한식 - 대구 달서구 호림동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_284b1a04097046aea59f708838cc363a = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_d8ded097a6cc4326b863f38bc6eabff9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_284b1a04097046aea59f708838cc363a.setIcon(icon_d8ded097a6cc4326b863f38bc6eabff9);
+        
+    
+            marker_284b1a04097046aea59f708838cc363a.bindTooltip(
+                `<div>
+                     삼락원냉면 : 한식 - 대구 서울시 중구 공평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aea85ba04bf240d59b8750ab458e3fc3 = L.marker(
+                [35.897971000000005, 128.42929180000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_8266bc393ad74001bc7d64c680d94507 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aea85ba04bf240d59b8750ab458e3fc3.setIcon(icon_8266bc393ad74001bc7d64c680d94507);
+        
+    
+            marker_aea85ba04bf240d59b8750ab458e3fc3.bindTooltip(
+                `<div>
+                     원조동곡할매손칼국수 : 한식 - 대구 달성군 하빈면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_922b85b38ca244f2864e6e2d99ed0f6d = L.marker(
+                [35.7578054, 128.61945490000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_6c957091765244609fbd8bbd90d47ec6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_922b85b38ca244f2864e6e2d99ed0f6d.setIcon(icon_6c957091765244609fbd8bbd90d47ec6);
+        
+    
+            marker_922b85b38ca244f2864e6e2d99ed0f6d.bindTooltip(
+                `<div>
+                     가창칼국수 : 한식 - 대구 달성군 가창면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53d187ff7c9c4ba096fc02a27e5c93c3 = L.marker(
+                [35.837270600000004, 128.57694709999998],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_977033e85f134278a77e6674d1e11718 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_53d187ff7c9c4ba096fc02a27e5c93c3.setIcon(icon_977033e85f134278a77e6674d1e11718);
+        
+    
+            marker_53d187ff7c9c4ba096fc02a27e5c93c3.bindTooltip(
+                `<div>
+                     성주막창(대명점) : 한식 - 대구 남구 대명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4d97a0b6c6e4ae9903a7888d295942f = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_d84d03c023b144de90ec23a5f4456839 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f4d97a0b6c6e4ae9903a7888d295942f.setIcon(icon_d84d03c023b144de90ec23a5f4456839);
+        
+    
+            marker_f4d97a0b6c6e4ae9903a7888d295942f.bindTooltip(
+                `<div>
+                     빌리엔젤 대구롯데영플라자점 : 카페/주점 - 대구 서울시 중구 사일동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7002c93ad8ec46e0a313f4952bd3e268 = L.marker(
+                [35.9393289, 128.5593008],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_3cdde06561474801a0e4d8ee4b0b602e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7002c93ad8ec46e0a313f4952bd3e268.setIcon(icon_3cdde06561474801a0e4d8ee4b0b602e);
+        
+    
+            marker_7002c93ad8ec46e0a313f4952bd3e268.bindTooltip(
+                `<div>
+                     참치앤참치 : 일식 - 대구 북구 동천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_265723d7f8fa407e9a2b26475713ee67 = L.marker(
+                [35.8839826, 128.6244896],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_a4d156666c154037b3abb90e2243a997 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_265723d7f8fa407e9a2b26475713ee67.setIcon(icon_a4d156666c154037b3abb90e2243a997);
+        
+    
+            marker_265723d7f8fa407e9a2b26475713ee67.bindTooltip(
+                `<div>
+                     궁전통닭 : 한식 - 대구 동구 신암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23eb3de81a0342e9bcd8be584202dd04 = L.marker(
+                [35.8567636, 128.49246680000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_a308c3feb9ed4b4a85d04949e40b3be1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_23eb3de81a0342e9bcd8be584202dd04.setIcon(icon_a308c3feb9ed4b4a85d04949e40b3be1);
+        
+    
+            marker_23eb3de81a0342e9bcd8be584202dd04.bindTooltip(
+                `<div>
+                     와일드스시(계대직영점) : 일식 - 대구 달서구 신당동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e6dac2d869a456d8415bd16b7539307 = L.marker(
+                [35.8508894, 128.48296470000003],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_593cc0c6622c4e6f8ff3d1421dc396a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5e6dac2d869a456d8415bd16b7539307.setIcon(icon_593cc0c6622c4e6f8ff3d1421dc396a0);
+        
+    
+            marker_5e6dac2d869a456d8415bd16b7539307.bindTooltip(
+                `<div>
+                     다금정 : 한식 - 대구 달서구 호산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ca3f9d7a7084045b705da1bce75671e = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_7289700df81740f89dc21ba3908d7aae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ca3f9d7a7084045b705da1bce75671e.setIcon(icon_7289700df81740f89dc21ba3908d7aae);
+        
+    
+            marker_9ca3f9d7a7084045b705da1bce75671e.bindTooltip(
+                `<div>
+                     고기굽는남자 : 한식 - 대구 서울시 중구 삼덕동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_175939cb9b9d4b2ab16934d3041c23c0 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_d63f2332d47c4798a6de0b682b79c91b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_175939cb9b9d4b2ab16934d3041c23c0.setIcon(icon_d63f2332d47c4798a6de0b682b79c91b);
+        
+    
+            marker_175939cb9b9d4b2ab16934d3041c23c0.bindTooltip(
+                `<div>
+                     바이데일리(BI DAILY) : 양식 - 대구 서울시 중구 공평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7ee78ec1add4e29892d6daa55e22090 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_b2e111441183434ca56211e1922937f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e7ee78ec1add4e29892d6daa55e22090.setIcon(icon_b2e111441183434ca56211e1922937f0);
+        
+    
+            marker_e7ee78ec1add4e29892d6daa55e22090.bindTooltip(
+                `<div>
+                     이태리&이태리 : 양식 - 대구 서울시 중구 삼덕동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28f9a490642643629d8372a2ba53e41a = L.marker(
+                [35.814002, 128.5452854],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_23350199312c41fb952b316e9206c4f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_28f9a490642643629d8372a2ba53e41a.setIcon(icon_23350199312c41fb952b316e9206c4f2);
+        
+    
+            marker_28f9a490642643629d8372a2ba53e41a.bindTooltip(
+                `<div>
+                     라마앤바바나 상인점 : 양식 - 대구 달서구 상인1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ea0a89f8b714231962f26156c51f4d4 = L.marker(
+                [35.829193200000006, 128.5957373],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_f874134e6b9c42a28080f0a0a3714b62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0ea0a89f8b714231962f26156c51f4d4.setIcon(icon_f874134e6b9c42a28080f0a0a3714b62);
+        
+    
+            marker_0ea0a89f8b714231962f26156c51f4d4.bindTooltip(
+                `<div>
+                     대동강(大同江) : 한식 - 대구 남구 봉덕동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd9aa7e752694610bb4fd9f0d628667b = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_04133c22a97e41008e7a44b791ce7f21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cd9aa7e752694610bb4fd9f0d628667b.setIcon(icon_04133c22a97e41008e7a44b791ce7f21);
+        
+    
+            marker_cd9aa7e752694610bb4fd9f0d628667b.bindTooltip(
+                `<div>
+                     대백손칼국수(본점) : 한식 - 대구 서울시 중구 삼덕동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6934d719ba3a40b0a4c46f84042926f3 = L.marker(
+                [35.8737779, 128.5570457],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_7a63d1bada2046fc9ab788cad153385f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6934d719ba3a40b0a4c46f84042926f3.setIcon(icon_7a63d1bada2046fc9ab788cad153385f);
+        
+    
+            marker_6934d719ba3a40b0a4c46f84042926f3.bindTooltip(
+                `<div>
+                     녹향구이식당 본점 : 한식 - 대구 서구 평리동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65b63b92a247424bb1d68b227a90fd1a = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_c9a01b568fd2414890e880276b669ccf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65b63b92a247424bb1d68b227a90fd1a.setIcon(icon_c9a01b568fd2414890e880276b669ccf);
+        
+    
+            marker_65b63b92a247424bb1d68b227a90fd1a.bindTooltip(
+                `<div>
+                     읍내밥집 : 한식 - 대구 서울시 중구 공평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01e86e1c9b3f44e9bf8afa237ccfee94 = L.marker(
+                [35.88497589999999, 128.6293042],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_ebf6505e0ac746ca87d6975c447673d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_01e86e1c9b3f44e9bf8afa237ccfee94.setIcon(icon_ebf6505e0ac746ca87d6975c447673d3);
+        
+    
+            marker_01e86e1c9b3f44e9bf8afa237ccfee94.bindTooltip(
+                `<div>
+                     해금강 : 한식 - 대구 동구 신암4동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48be44025b064f0994bdf144ab87aa96 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_9fb70cb1047e413db13a00be4d664a8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_48be44025b064f0994bdf144ab87aa96.setIcon(icon_9fb70cb1047e413db13a00be4d664a8d);
+        
+    
+            marker_48be44025b064f0994bdf144ab87aa96.bindTooltip(
+                `<div>
+                     벙글벙글찜갈비 : 한식 - 대구 서울시 중구 동인동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f699e8d4ce1d4689be716df2d9c476b5 = L.marker(
+                [35.837270600000004, 128.57694709999998],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_97e6933e1f8a491ea32b6d77d314fee8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f699e8d4ce1d4689be716df2d9c476b5.setIcon(icon_97e6933e1f8a491ea32b6d77d314fee8);
+        
+    
+            marker_f699e8d4ce1d4689be716df2d9c476b5.bindTooltip(
+                `<div>
+                     또이스치킨찜닭 : 한식 - 대구 남구 대명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9755c23a95fe4c5fbbd0c62bf412733b = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_d81c57c94b6f431587f735037fd9d2ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9755c23a95fe4c5fbbd0c62bf412733b.setIcon(icon_d81c57c94b6f431587f735037fd9d2ba);
+        
+    
+            marker_9755c23a95fe4c5fbbd0c62bf412733b.bindTooltip(
+                `<div>
+                     중앙떡볶이 : 분식 - 대구 서울시 중구 동성로2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d72d9a36a2f34bd28990def3135d3d11 = L.marker(
+                [35.837270600000004, 128.57694709999998],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_a756b703a2fc49f380ccd99b14ab4434 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d72d9a36a2f34bd28990def3135d3d11.setIcon(icon_a756b703a2fc49f380ccd99b14ab4434);
+        
+    
+            marker_d72d9a36a2f34bd28990def3135d3d11.bindTooltip(
+                `<div>
+                     벨로 이태리 : 양식 - 대구 남구 대명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3f623180c4d421ba67b402b6aa8e120 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_52ec2ca4972443308ce07fada602246f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3f623180c4d421ba67b402b6aa8e120.setIcon(icon_52ec2ca4972443308ce07fada602246f);
+        
+    
+            marker_c3f623180c4d421ba67b402b6aa8e120.bindTooltip(
+                `<div>
+                     커피명가 반월당점 : 카페/주점 - 대구 서울시 중구 동성로3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e873f10f2eb646bab0e71c218d65b63d = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_9b843af51794405082e128b37ec70903 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e873f10f2eb646bab0e71c218d65b63d.setIcon(icon_9b843af51794405082e128b37ec70903);
+        
+    
+            marker_e873f10f2eb646bab0e71c218d65b63d.bindTooltip(
+                `<div>
+                     더빠에야(the paella) : 양식 - 대구 서울시 중구 봉산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ad9c643b2184dddbe3e74e9b07c4df4 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_ed54f2453e6f480c99333f3c6424dcd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ad9c643b2184dddbe3e74e9b07c4df4.setIcon(icon_ed54f2453e6f480c99333f3c6424dcd4);
+        
+    
+            marker_9ad9c643b2184dddbe3e74e9b07c4df4.bindTooltip(
+                `<div>
+                     인투(Into) : 양식 - 대구 서울시 중구 삼덕동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a52702e96684780b58d82503c67d53d = L.marker(
+                [35.855114799999996, 128.5866532],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_8a50a15fa2df4bf0bd6c3edd6deab5a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4a52702e96684780b58d82503c67d53d.setIcon(icon_8a50a15fa2df4bf0bd6c3edd6deab5a3);
+        
+    
+            marker_4a52702e96684780b58d82503c67d53d.bindTooltip(
+                `<div>
+                     웰빙콩국 : 한식 - 대구 남구 대명2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa097d1b47344405a88c7b69b0383403 = L.marker(
+                [35.9393289, 128.5593008],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_6b137ede2a824abdac496388d2886ff7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fa097d1b47344405a88c7b69b0383403.setIcon(icon_6b137ede2a824abdac496388d2886ff7);
+        
+    
+            marker_fa097d1b47344405a88c7b69b0383403.bindTooltip(
+                `<div>
+                     스시노백쉐프 대구칠곡 45호점 : 일식 - 대구 북구 동천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b7e88934f1b4a339d61aeb1b142348e = L.marker(
+                [35.884304, 128.58015659999998],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_481489ba61eb456b9d32fd31f3de2527 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b7e88934f1b4a339d61aeb1b142348e.setIcon(icon_481489ba61eb456b9d32fd31f3de2527);
+        
+    
+            marker_1b7e88934f1b4a339d61aeb1b142348e.bindTooltip(
+                `<div>
+                     추가네 대구뽈찜 : 한식 - 대구 서구 원대동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43ce122a942e4236aa589f22096bdaff = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_2b2a131aff6d49b0ba966dad8ebfc866 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_43ce122a942e4236aa589f22096bdaff.setIcon(icon_2b2a131aff6d49b0ba966dad8ebfc866);
+        
+    
+            marker_43ce122a942e4236aa589f22096bdaff.bindTooltip(
+                `<div>
+                     동성로떡볶이 : 한식 - 대구 서울시 중구 사일동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e637122eb14641e6b75880a1a296905a = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_7243c99fdca349a880a9c2d143556de5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e637122eb14641e6b75880a1a296905a.setIcon(icon_7243c99fdca349a880a9c2d143556de5);
+        
+    
+            marker_e637122eb14641e6b75880a1a296905a.bindTooltip(
+                `<div>
+                     카페루시드(Cafe Lucid) : 카페/주점 - 대구 서울시 중구 공평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc4b7c44476f40d68bb29027269e54fa = L.marker(
+                [35.884268, 128.6163402],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_44f3fb4a3c6746308cc0363a846f74de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fc4b7c44476f40d68bb29027269e54fa.setIcon(icon_44f3fb4a3c6746308cc0363a846f74de);
+        
+    
+            marker_fc4b7c44476f40d68bb29027269e54fa.bindTooltip(
+                `<div>
+                     더큰본부(본점) : 한식 - 대구 동구 신암1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20295d26893641da9ad5a487b776da52 = L.marker(
+                [35.875799799999996, 128.6048791],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_809375b0c5f44aec894b7e32e9697cca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20295d26893641da9ad5a487b776da52.setIcon(icon_809375b0c5f44aec894b7e32e9697cca);
+        
+    
+            marker_20295d26893641da9ad5a487b776da52.bindTooltip(
+                `<div>
+                     단골식당 : 한식 - 대구 북구 칠성동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f51f7d0f1024a67bd037514ac483523 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_f2f11153c47940eabb2e65eb4f99c762 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f51f7d0f1024a67bd037514ac483523.setIcon(icon_f2f11153c47940eabb2e65eb4f99c762);
+        
+    
+            marker_1f51f7d0f1024a67bd037514ac483523.bindTooltip(
+                `<div>
+                     스시라스또 : 일식 - 대구 서울시 중구 공평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b54f9ed2843442948a9ba7502b6daa53 = L.marker(
+                [35.8935466, 128.60845890000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_2325e47a355c4570b5e2910e11b60ba7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b54f9ed2843442948a9ba7502b6daa53.setIcon(icon_2325e47a355c4570b5e2910e11b60ba7);
+        
+    
+            marker_b54f9ed2843442948a9ba7502b6daa53.bindTooltip(
+                `<div>
+                     팀스쿠치나 : 양식 - 대구 북구 산격3동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b11b22e85eda44ea9d114502820bf178 = L.marker(
+                [35.8935466, 128.60845890000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_c901b2dd87e34ca3984e93f9c46b0b40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b11b22e85eda44ea9d114502820bf178.setIcon(icon_c901b2dd87e34ca3984e93f9c46b0b40);
+        
+    
+            marker_b11b22e85eda44ea9d114502820bf178.bindTooltip(
+                `<div>
+                     더만족 : 한식 - 대구 북구 산격3동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_638ec61a7caf4886a5fdecbc7996c806 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_afc36e0d21d341ca839ad491b9ea8920 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_638ec61a7caf4886a5fdecbc7996c806.setIcon(icon_afc36e0d21d341ca839ad491b9ea8920);
+        
+    
+            marker_638ec61a7caf4886a5fdecbc7996c806.bindTooltip(
+                `<div>
+                     와일드스시 동성로점 : 일식 - 대구 서울시 중구 삼덕동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9f3de8aef1e445d8c3231964d436edd = L.marker(
+                [35.8625834, 128.616128],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_61123d63b8fd4e7cac0b2c3926d9353c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b9f3de8aef1e445d8c3231964d436edd.setIcon(icon_61123d63b8fd4e7cac0b2c3926d9353c);
+        
+    
+            marker_b9f3de8aef1e445d8c3231964d436edd.bindTooltip(
+                `<div>
+                     윤옥연할매떡볶이 : 분식 - 대구 수성구 수성동4가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccc75c53671d42a6861082389409c97a = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_99a8282b37074cca89cae8e69b390c2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ccc75c53671d42a6861082389409c97a.setIcon(icon_99a8282b37074cca89cae8e69b390c2d);
+        
+    
+            marker_ccc75c53671d42a6861082389409c97a.bindTooltip(
+                `<div>
+                     힛또(HITTO) : 일식 - 대구 서울시 중구 대봉동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0241c4955ce146aba7da79f37281bd38 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_0c54f48a86704f5999d568d3b3ddd4fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0241c4955ce146aba7da79f37281bd38.setIcon(icon_0c54f48a86704f5999d568d3b3ddd4fb);
+        
+    
+            marker_0241c4955ce146aba7da79f37281bd38.bindTooltip(
+                `<div>
+                     머꼬삽겹살 : 한식 - 대구 서울시 중구 삼덕동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bc21ac61aa94760937b0461df6e1a75 = L.marker(
+                [35.884268, 128.6163402],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_55fe93633871466c9e933766f4d0137d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9bc21ac61aa94760937b0461df6e1a75.setIcon(icon_55fe93633871466c9e933766f4d0137d);
+        
+    
+            marker_9bc21ac61aa94760937b0461df6e1a75.bindTooltip(
+                `<div>
+                     타이타닉찜닭똥집 : 한식 - 대구 동구 신암1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85764466f8864fc4ac7bcfb37f082829 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_547c6636eaf44ea1b6ada4e4b673fdd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_85764466f8864fc4ac7bcfb37f082829.setIcon(icon_547c6636eaf44ea1b6ada4e4b673fdd7);
+        
+    
+            marker_85764466f8864fc4ac7bcfb37f082829.bindTooltip(
+                `<div>
+                     모던다방(MODERN DABANG) : 카페/주점 - 대구 서울시 중구 남성로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cee676bf847649ce80bb6f8ea9518890 = L.marker(
+                [35.8801449, 128.64291029999998],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_ae937c6bfc3247ee983cfe5d7588a00a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cee676bf847649ce80bb6f8ea9518890.setIcon(icon_ae937c6bfc3247ee983cfe5d7588a00a);
+        
+    
+            marker_cee676bf847649ce80bb6f8ea9518890.bindTooltip(
+                `<div>
+                     밥먹고갑시다 : 한식 - 대구 동구 효목동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97e82cf46df74cef9304df31f5f8d3be = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_103bc573f79e48199e152c8fb2226a50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_97e82cf46df74cef9304df31f5f8d3be.setIcon(icon_103bc573f79e48199e152c8fb2226a50);
+        
+    
+            marker_97e82cf46df74cef9304df31f5f8d3be.bindTooltip(
+                `<div>
+                     팔공막창 : 한식 - 대구 서울시 중구 공평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4027fb9b6d044f17a139033264da86ae = L.marker(
+                [35.828355, 128.62066670000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_3a5342f1859d4b40995d1b8bc857fa2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4027fb9b6d044f17a139033264da86ae.setIcon(icon_3a5342f1859d4b40995d1b8bc857fa2d);
+        
+    
+            marker_4027fb9b6d044f17a139033264da86ae.bindTooltip(
+                `<div>
+                     부바스 : 양식 - 대구 수성구 두산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_086ca98df0a546f2a99be80a6ddff9d1 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_641c7b1f6c724dc78619a02b10b97e70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_086ca98df0a546f2a99be80a6ddff9d1.setIcon(icon_641c7b1f6c724dc78619a02b10b97e70);
+        
+    
+            marker_086ca98df0a546f2a99be80a6ddff9d1.bindTooltip(
+                `<div>
+                     천계 : 한식 - 대구 서울시 중구 동성로3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_207302faedf7461cb3ca6d36a9b1c0d8 = L.marker(
+                [35.9252905, 128.594119],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_16eb688625554e549a756507ccec19bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_207302faedf7461cb3ca6d36a9b1c0d8.setIcon(icon_16eb688625554e549a756507ccec19bd);
+        
+    
+            marker_207302faedf7461cb3ca6d36a9b1c0d8.bindTooltip(
+                `<div>
+                     인사동고깃집 : 한식 - 대구 북구 서변동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_034862b8ef8c450c9622cbb8ea05ef4b = L.marker(
+                [35.851504999999996, 128.60214820000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_0337a1c2a3e945cc8e4ef21cd8c4ba53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_034862b8ef8c450c9622cbb8ea05ef4b.setIcon(icon_0337a1c2a3e945cc8e4ef21cd8c4ba53);
+        
+    
+            marker_034862b8ef8c450c9622cbb8ea05ef4b.bindTooltip(
+                `<div>
+                     진흥반점 : 중식 - 대구 남구 이천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21623195117d476ea9d410386c275ecd = L.marker(
+                [35.855114799999996, 128.5866532],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_9198ac9671f94e20bb8b317bcec428bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_21623195117d476ea9d410386c275ecd.setIcon(icon_9198ac9671f94e20bb8b317bcec428bf);
+        
+    
+            marker_21623195117d476ea9d410386c275ecd.bindTooltip(
+                `<div>
+                     이바네 : 일식 - 대구 남구 대명2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44e0544109e842fc907ad1cc1eeab351 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_0254ea88737c47cab9c2a6d33c399f34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_44e0544109e842fc907ad1cc1eeab351.setIcon(icon_0254ea88737c47cab9c2a6d33c399f34);
+        
+    
+            marker_44e0544109e842fc907ad1cc1eeab351.bindTooltip(
+                `<div>
+                     원주통닭 : 한식 - 대구 서울시 중구 공평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7393cd4829d457cba412e6aa3705f30 = L.marker(
+                [35.8855676, 128.7301973],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_5f323032cf514f8d8d044a406307fe85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f7393cd4829d457cba412e6aa3705f30.setIcon(icon_5f323032cf514f8d8d044a406307fe85);
+        
+    
+            marker_f7393cd4829d457cba412e6aa3705f30.bindTooltip(
+                `<div>
+                     홍익궁중전통육개장 : 한식 - 대구 동구 신서동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_107d19f359c64cd29a5b864dd466ba26 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_96db6bd0f67a43058e3a2234800c58c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_107d19f359c64cd29a5b864dd466ba26.setIcon(icon_96db6bd0f67a43058e3a2234800c58c0);
+        
+    
+            marker_107d19f359c64cd29a5b864dd466ba26.bindTooltip(
+                `<div>
+                     뜨삽FMD(DD'SAP) : 양식 - 대구 서울시 중구 삼덕동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_318229e0cb8e4abc8b704af5c09ec19d = L.marker(
+                [35.8954152, 128.62544340000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_e039e698b4ee4862b601d3423d29bc18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_318229e0cb8e4abc8b704af5c09ec19d.setIcon(icon_e039e698b4ee4862b601d3423d29bc18);
+        
+    
+            marker_318229e0cb8e4abc8b704af5c09ec19d.bindTooltip(
+                `<div>
+                     서울식당 : 한식 - 대구 북구 복현2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37153e00eece4c7ba93d1c8f4bdf0a54 = L.marker(
+                [35.833359, 128.6115631],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_93675d9a1014423baea8322f955bb9cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_37153e00eece4c7ba93d1c8f4bdf0a54.setIcon(icon_93675d9a1014423baea8322f955bb9cc);
+        
+    
+            marker_37153e00eece4c7ba93d1c8f4bdf0a54.bindTooltip(
+                `<div>
+                     굽달선생의 삼일막창 : 한식 - 대구 수성구 상동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68c7fb3f615348339b5ad6da264b6a96 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_40b986d2896148a5a3d1311fa72a6e9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_68c7fb3f615348339b5ad6da264b6a96.setIcon(icon_40b986d2896148a5a3d1311fa72a6e9b);
+        
+    
+            marker_68c7fb3f615348339b5ad6da264b6a96.bindTooltip(
+                `<div>
+                     진주통닭 : 한식 - 대구 서울시 중구 남산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b04bb427bb141b9aa06105be71fb424 = L.marker(
+                [35.8567636, 128.49246680000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_85a58141af364e039311ed8ac836abf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4b04bb427bb141b9aa06105be71fb424.setIcon(icon_85a58141af364e039311ed8ac836abf6);
+        
+    
+            marker_4b04bb427bb141b9aa06105be71fb424.bindTooltip(
+                `<div>
+                     달인의찜닭(성서점) : 한식 - 대구 달서구 신당동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6af334c9c1c495fb6569ff1d9a65ab5 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_ea413c560a1e4304be99ddf9e980a06f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a6af334c9c1c495fb6569ff1d9a65ab5.setIcon(icon_ea413c560a1e4304be99ddf9e980a06f);
+        
+    
+            marker_a6af334c9c1c495fb6569ff1d9a65ab5.bindTooltip(
+                `<div>
+                     전국지 : 카페/주점 - 대구 서울시 중구 봉산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fad58cff17e4c5bb0874bba485dac33 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_344a1633acf34e22be1b746baccb5ffd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3fad58cff17e4c5bb0874bba485dac33.setIcon(icon_344a1633acf34e22be1b746baccb5ffd);
+        
+    
+            marker_3fad58cff17e4c5bb0874bba485dac33.bindTooltip(
+                `<div>
+                     노엘블랑 : 카페/주점 - 대구 서울시 중구 삼덕동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f498e46500fa4bc981ed7e44369993a0 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_23995fcaaa844dbdb15b78b85387c2de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f498e46500fa4bc981ed7e44369993a0.setIcon(icon_23995fcaaa844dbdb15b78b85387c2de);
+        
+    
+            marker_f498e46500fa4bc981ed7e44369993a0.bindTooltip(
+                `<div>
+                     도니발 : 양식 - 대구 서울시 중구 삼덕동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f4671b21ec24d089330daf99c8f8cf1 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_5e8d7dc1586e4a64bc1badd661f545c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5f4671b21ec24d089330daf99c8f8cf1.setIcon(icon_5e8d7dc1586e4a64bc1badd661f545c7);
+        
+    
+            marker_5f4671b21ec24d089330daf99c8f8cf1.bindTooltip(
+                `<div>
+                     옐로우코너(Yellow Corner) : 양식 - 대구 서울시 중구 공평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64d54bf22b6142d49d01348c4a7a0f25 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_fb0c28b6273a478388b7c7de3b234f8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_64d54bf22b6142d49d01348c4a7a0f25.setIcon(icon_fb0c28b6273a478388b7c7de3b234f8d);
+        
+    
+            marker_64d54bf22b6142d49d01348c4a7a0f25.bindTooltip(
+                `<div>
+                     대한뉴스 : 한식 - 대구 서울시 중구 대봉동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b68d04cccc284ee6bde8e5a8a79cb20f = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_eeaf60ecc09d4d03a2e4bdc61f512a9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b68d04cccc284ee6bde8e5a8a79cb20f.setIcon(icon_eeaf60ecc09d4d03a2e4bdc61f512a9c);
+        
+    
+            marker_b68d04cccc284ee6bde8e5a8a79cb20f.bindTooltip(
+                `<div>
+                     마이커피컬로맨스 : 카페/주점 - 대구 서울시 중구 공평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_496fb927a226449bbd0628e2c81d9fde = L.marker(
+                [35.881612700000005, 128.6448493],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_38caf8742fc048f6af5f634ec67b8d08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_496fb927a226449bbd0628e2c81d9fde.setIcon(icon_38caf8742fc048f6af5f634ec67b8d08);
+        
+    
+            marker_496fb927a226449bbd0628e2c81d9fde.bindTooltip(
+                `<div>
+                     면장님 : 한식 - 대구 동구 효목1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a164c3472b44f40af82552456cb638b = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_4337536d34d543dbbb10b8db9504caa9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a164c3472b44f40af82552456cb638b.setIcon(icon_4337536d34d543dbbb10b8db9504caa9);
+        
+    
+            marker_7a164c3472b44f40af82552456cb638b.bindTooltip(
+                `<div>
+                     전통콩국 : 한식 - 대구 서울시 중구 남산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f23772a64ef467cacac2d4e156ae22a = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_c697e104289c4a19b589c1dd760eb3ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9f23772a64ef467cacac2d4e156ae22a.setIcon(icon_c697e104289c4a19b589c1dd760eb3ee);
+        
+    
+            marker_9f23772a64ef467cacac2d4e156ae22a.bindTooltip(
+                `<div>
+                     낙원식당 : 한식 - 대구 서울시 중구 문화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14c1807ed8c942908e56a80389f8207a = L.marker(
+                [35.8258365, 128.5551168],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_42016602d9a54205959a0b4329a75c7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_14c1807ed8c942908e56a80389f8207a.setIcon(icon_42016602d9a54205959a0b4329a75c7c);
+        
+    
+            marker_14c1807ed8c942908e56a80389f8207a.bindTooltip(
+                `<div>
+                     당인가 : 중식 - 대구 달서구 송현동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc1dc18708004e30a76d72ca05c83075 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_f3a541dc5dfa43a5ac6dc034bd11a84e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fc1dc18708004e30a76d72ca05c83075.setIcon(icon_f3a541dc5dfa43a5ac6dc034bd11a84e);
+        
+    
+            marker_fc1dc18708004e30a76d72ca05c83075.bindTooltip(
+                `<div>
+                     전원돈까스 : 양식 - 대구 서울시 중구 삼덕동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df7f95fa004b48dfb0f14b4413f653b4 = L.marker(
+                [35.875361299999994, 128.6236578],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_d57a3109dd9c43708367d42bb7638b61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_df7f95fa004b48dfb0f14b4413f653b4.setIcon(icon_d57a3109dd9c43708367d42bb7638b61);
+        
+    
+            marker_df7f95fa004b48dfb0f14b4413f653b4.bindTooltip(
+                `<div>
+                     미도반점 : 중식 - 대구 동구 신천3동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5d61f6ec2784a0c8c295d2dc7fe7fba = L.marker(
+                [35.828355, 128.62066670000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_2c3f5d60a53a4a928fea1d198fdf4026 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f5d61f6ec2784a0c8c295d2dc7fe7fba.setIcon(icon_2c3f5d60a53a4a928fea1d198fdf4026);
+        
+    
+            marker_f5d61f6ec2784a0c8c295d2dc7fe7fba.bindTooltip(
+                `<div>
+                     황제잠수함 : 한식 - 대구 수성구 두산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5654fa24f0ed43dfae775d4d8b1cc1c3 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_506c8879c6a348a0832bfeb978c54e52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5654fa24f0ed43dfae775d4d8b1cc1c3.setIcon(icon_506c8879c6a348a0832bfeb978c54e52);
+        
+    
+            marker_5654fa24f0ed43dfae775d4d8b1cc1c3.bindTooltip(
+                `<div>
+                     국일따로국밥 : 한식 - 대구 서울시 중구 전동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb5d79e6e4f245a8b292fb6a28b128ed = L.marker(
+                [35.828355, 128.62066670000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_0db1a7ece0f74b30b6319dcd128d8b78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fb5d79e6e4f245a8b292fb6a28b128ed.setIcon(icon_0db1a7ece0f74b30b6319dcd128d8b78);
+        
+    
+            marker_fb5d79e6e4f245a8b292fb6a28b128ed.bindTooltip(
+                `<div>
+                     아리조나막창 : 한식 - 대구 수성구 두산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25bc6752e76547748f511970cf5cd9cc = L.marker(
+                [35.833359, 128.6115631],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_d10a50064f0c4e5c98611a40e9f44098 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_25bc6752e76547748f511970cf5cd9cc.setIcon(icon_d10a50064f0c4e5c98611a40e9f44098);
+        
+    
+            marker_25bc6752e76547748f511970cf5cd9cc.bindTooltip(
+                `<div>
+                     가츠라 들안길점 : 일식 - 대구 수성구 상동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bf7e269b7a847b987b0dd4da7585b22 = L.marker(
+                [35.9879442, 128.6355328],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_80c1a7bf3e964d5a85df968d94fdc5d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6bf7e269b7a847b987b0dd4da7585b22.setIcon(icon_80c1a7bf3e964d5a85df968d94fdc5d1);
+        
+    
+            marker_6bf7e269b7a847b987b0dd4da7585b22.bindTooltip(
+                `<div>
+                     블루문레스토랑 : 양식 - 대구 동구 중대동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1e6a954805a436e8b7470016acbd6f3 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_842011bc74e24365b7ca90b664be8279 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c1e6a954805a436e8b7470016acbd6f3.setIcon(icon_842011bc74e24365b7ca90b664be8279);
+        
+    
+            marker_c1e6a954805a436e8b7470016acbd6f3.bindTooltip(
+                `<div>
+                     실비찜갈비 : 한식 - 대구 서울시 중구 동인동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f3099020e3943ff898d755893763031 = L.marker(
+                [35.8372869, 128.5791721],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_e6d745d766e04f869f81cf7d94aa9a91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2f3099020e3943ff898d755893763031.setIcon(icon_e6d745d766e04f869f81cf7d94aa9a91);
+        
+    
+            marker_2f3099020e3943ff898d755893763031.bindTooltip(
+                `<div>
+                     대덕식당 : 한식 - 대구 남구 대명9동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70c5b002205b48abbe3dfba44d8d879e = L.marker(
+                [35.8551412, 128.6191151],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_b4d1f36c3d98400dad4c3be238f47c65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_70c5b002205b48abbe3dfba44d8d879e.setIcon(icon_b4d1f36c3d98400dad4c3be238f47c65);
+        
+    
+            marker_70c5b002205b48abbe3dfba44d8d879e.bindTooltip(
+                `<div>
+                     대정옥(구 옛날가마솥소고기국밥) : 한식 - 대구 수성구 수성동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7894acca8f0e4257ac88971b630ca1b5 = L.marker(
+                [35.9006745, 128.6052012],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_8859a80bae3942959c36fb242e3402c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7894acca8f0e4257ac88971b630ca1b5.setIcon(icon_8859a80bae3942959c36fb242e3402c0);
+        
+    
+            marker_7894acca8f0e4257ac88971b630ca1b5.bindTooltip(
+                `<div>
+                     아라쭈꾸미 : 한식 - 대구 북구 산격동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_498d7f2841c64fedaa652157cfe87cf3 = L.marker(
+                [35.9006745, 128.6052012],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_582714403ade4301899b8dcab9abda28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_498d7f2841c64fedaa652157cfe87cf3.setIcon(icon_582714403ade4301899b8dcab9abda28);
+        
+    
+            marker_498d7f2841c64fedaa652157cfe87cf3.bindTooltip(
+                `<div>
+                     옛날화로 : 한식 - 대구 북구 산격동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1e9e2352f584d339185304af66c2d90 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_83c1f95c1f9d4b73b84146c8327a583c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c1e9e2352f584d339185304af66c2d90.setIcon(icon_83c1f95c1f9d4b73b84146c8327a583c);
+        
+    
+            marker_c1e9e2352f584d339185304af66c2d90.bindTooltip(
+                `<div>
+                     bbq카페(동성로) : 카페/주점 - 대구 서울시 중구 삼덕동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_075c6f3b20e14048b11ce11cf5848b0b = L.marker(
+                [35.8737779, 128.5570457],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_f725e81889654ac79b9137eccbb0eed9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_075c6f3b20e14048b11ce11cf5848b0b.setIcon(icon_f725e81889654ac79b9137eccbb0eed9);
+        
+    
+            marker_075c6f3b20e14048b11ce11cf5848b0b.bindTooltip(
+                `<div>
+                     우복당 : 한식 - 대구 서구 평리동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3edd568be954ba3b21bf98f8a9838b7 = L.marker(
+                [35.854144399999996, 128.5614919],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_3a37cd588cc14f70b350fb55966fb7c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e3edd568be954ba3b21bf98f8a9838b7.setIcon(icon_3a37cd588cc14f70b350fb55966fb7c7);
+        
+    
+            marker_e3edd568be954ba3b21bf98f8a9838b7.bindTooltip(
+                `<div>
+                     리미니(Rimini) 대구83타워점 : 양식 - 대구 달서구 두류동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_540c7de8ce604e348acb7acfb307d230 = L.marker(
+                [35.9322424, 128.5674517],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_3306a4bf778b4b14b311ab5a1f8f2ea0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_540c7de8ce604e348acb7acfb307d230.setIcon(icon_3306a4bf778b4b14b311ab5a1f8f2ea0);
+        
+    
+            marker_540c7de8ce604e348acb7acfb307d230.bindTooltip(
+                `<div>
+                     팔봉초계국수 : 한식 - 대구 북구 구암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b85f9e7d3853469c9803047d7b4966f3 = L.marker(
+                [35.9006745, 128.6052012],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_abdc092b52354b0e86896fd93883b63b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b85f9e7d3853469c9803047d7b4966f3.setIcon(icon_abdc092b52354b0e86896fd93883b63b);
+        
+    
+            marker_b85f9e7d3853469c9803047d7b4966f3.bindTooltip(
+                `<div>
+                     다도회수산 : 한식 - 대구 북구 산격동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35e6ee437f80409f8e80c393980477aa = L.marker(
+                [35.8796362, 128.6231486],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_28e4c52b321a4658b423508f128e538a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_35e6ee437f80409f8e80c393980477aa.setIcon(icon_28e4c52b321a4658b423508f128e538a);
+        
+    
+            marker_35e6ee437f80409f8e80c393980477aa.bindTooltip(
+                `<div>
+                     돈수 : 한식 - 대구 동구 신암3동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6af751b371d44182bec75680da74078e = L.marker(
+                [35.7578054, 128.61945490000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_8a67439697c944e889011abdb303be3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6af751b371d44182bec75680da74078e.setIcon(icon_8a67439697c944e889011abdb303be3c);
+        
+    
+            marker_6af751b371d44182bec75680da74078e.bindTooltip(
+                `<div>
+                     강원도집 : 한식 - 대구 달성군 가창면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_608f89c8a8cf47398c8975cb871daeee = L.marker(
+                [35.8606825, 128.56074080000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_92fb0396b8a04a3c9e2f3bac980a0739 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_608f89c8a8cf47398c8975cb871daeee.setIcon(icon_92fb0396b8a04a3c9e2f3bac980a0739);
+        
+    
+            marker_608f89c8a8cf47398c8975cb871daeee.bindTooltip(
+                `<div>
+                     광장복어 : 한식 - 대구 서구 내당1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c84cbf4b1b604cfabb095df4927f9306 = L.marker(
+                [35.7578054, 128.61945490000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_8b10115b218241168b549bef529290f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c84cbf4b1b604cfabb095df4927f9306.setIcon(icon_8b10115b218241168b549bef529290f2);
+        
+    
+            marker_c84cbf4b1b604cfabb095df4927f9306.bindTooltip(
+                `<div>
+                     시크릿가든 : 양식 - 대구 달성군 가창면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b75304edabf443ca83d9f4ceb76bca2 = L.marker(
+                [35.8804011, 128.5949355],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_f1cc3537c3cb434e8a9d32c7c40d93f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b75304edabf443ca83d9f4ceb76bca2.setIcon(icon_f1cc3537c3cb434e8a9d32c7c40d93f7);
+        
+    
+            marker_6b75304edabf443ca83d9f4ceb76bca2.bindTooltip(
+                `<div>
+                     페이지35 : 양식 - 대구 북구 칠성동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1f1474d253e487e835f73120ed21cc5 = L.marker(
+                [35.8717898, 128.6292774],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_b4473eab4e434d0b999e064cd580b88d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d1f1474d253e487e835f73120ed21cc5.setIcon(icon_b4473eab4e434d0b999e064cd580b88d);
+        
+    
+            marker_d1f1474d253e487e835f73120ed21cc5.bindTooltip(
+                `<div>
+                     온통연탄불고기 : 한식 - 대구 동구 신천4동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a188c5cab21493683136de5df1cd880 = L.marker(
+                [35.7578054, 128.61945490000002],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_1dc88753924e425ebba0583b12bb713e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a188c5cab21493683136de5df1cd880.setIcon(icon_1dc88753924e425ebba0583b12bb713e);
+        
+    
+            marker_7a188c5cab21493683136de5df1cd880.bindTooltip(
+                `<div>
+                     대자연식당 : 한식 - 대구 달성군 가창면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b59619a26b7541018109ff740548fac9 = L.marker(
+                [35.9252905, 128.594119],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_f37121db636f4bfabb889ba49b3f9f44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b59619a26b7541018109ff740548fac9.setIcon(icon_f37121db636f4bfabb889ba49b3f9f44);
+        
+    
+            marker_b59619a26b7541018109ff740548fac9.bindTooltip(
+                `<div>
+                     미성참갈비 : 한식 - 대구 북구 서변동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec49c70a046843c0ada72fb3ac640360 = L.marker(
+                [35.9006745, 128.6052012],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_e1873dc089134331935c5bb014b48839 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ec49c70a046843c0ada72fb3ac640360.setIcon(icon_e1873dc089134331935c5bb014b48839);
+        
+    
+            marker_ec49c70a046843c0ada72fb3ac640360.bindTooltip(
+                `<div>
+                     딱조아막창 : 한식 - 대구 북구 산격동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_879085c134b3461cb1bc87ec36ed2021 = L.marker(
+                [35.87141679999999, 128.6018115],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_1910b0b38a2c42058e167e15994d480b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_879085c134b3461cb1bc87ec36ed2021.setIcon(icon_1910b0b38a2c42058e167e15994d480b);
+        
+    
+            marker_879085c134b3461cb1bc87ec36ed2021.bindTooltip(
+                `<div>
+                     삼송베이커리 본점 : 베이커리 - 대구 서울시 중구 동성로3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb5e480d39e949f5ad99f482249745bb = L.marker(
+                [35.833359, 128.6115631],
+                {}
+            ).addTo(map_43a300cd43624f17bb4fb50f4b2a80b8);
+        
+    
+            var icon_c947af5e32514f5bb90b55850e433e91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fb5e480d39e949f5ad99f482249745bb.setIcon(icon_c947af5e32514f5bb90b55850e433e91);
+        
+    
+            marker_fb5e480d39e949f5ad99f482249745bb.bindTooltip(
+                `<div>
+                     미성복어불고기 : 한식 - 대구 수성구 상동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

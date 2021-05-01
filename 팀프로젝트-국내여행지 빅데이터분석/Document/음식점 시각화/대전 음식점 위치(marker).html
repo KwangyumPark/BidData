@@ -1,0 +1,1996 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0f90aebb3e734876bfa6fcb9635f1231 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0f90aebb3e734876bfa6fcb9635f1231" ></div>
+        
+</body>
+<script>    
+    
+            var map_0f90aebb3e734876bfa6fcb9635f1231 = L.map(
+                "map_0f90aebb3e734876bfa6fcb9635f1231",
+                {
+                    center: [36.356547, 127.379159],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_26195561662145e7a28ea179b645c47d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var tile_layer_eb78fc48a89e4c94b6caf19e9c1a389d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_77e5509a5c3345d295356030bd096fcf = new L.Control.MiniMap(
+                tile_layer_eb78fc48a89e4c94b6caf19e9c1a389d,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_0f90aebb3e734876bfa6fcb9635f1231.addControl(mini_map_77e5509a5c3345d295356030bd096fcf);
+        
+    
+            var marker_2db9f7f5b30c417e8643dc172743597d = L.marker(
+                [36.3450247, 127.39162490000001],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_dcece26bb43140188195805593799f67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2db9f7f5b30c417e8643dc172743597d.setIcon(icon_dcece26bb43140188195805593799f67);
+        
+    
+            marker_2db9f7f5b30c417e8643dc172743597d.bindTooltip(
+                `<div>
+                     샤브웰 탄방점 : 뷔페 - 대전 서구 탄방동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ceb07ccf5c5e4278a6f0f29ccb66e1a6 = L.marker(
+                [36.3670125, 127.288376],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_9c736acf7f094c08a4e1c37fc2652d9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ceb07ccf5c5e4278a6f0f29ccb66e1a6.setIcon(icon_9c736acf7f094c08a4e1c37fc2652d9b);
+        
+    
+            marker_ceb07ccf5c5e4278a6f0f29ccb66e1a6.bindTooltip(
+                `<div>
+                     대사봉무쇠솥밥 : 한식 - 대전 유성구 갑동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a26d52c0e6e4730aa3d09beb04d6924 = L.marker(
+                [36.355799299999994, 127.3890119],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_ab0b69afbe2145dda81ce2050a86a3f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1a26d52c0e6e4730aa3d09beb04d6924.setIcon(icon_ab0b69afbe2145dda81ce2050a86a3f7);
+        
+    
+            marker_1a26d52c0e6e4730aa3d09beb04d6924.bindTooltip(
+                `<div>
+                     태원 : 중식 - 대전 서구 둔산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8bf640d816464433b26967122baf9e17 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_8940d9d70c6c4061a2050950d6c7e42e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8bf640d816464433b26967122baf9e17.setIcon(icon_8940d9d70c6c4061a2050950d6c7e42e);
+        
+    
+            marker_8bf640d816464433b26967122baf9e17.bindTooltip(
+                `<div>
+                     대들보함흥면옥 : 한식 - 대전 서울시 중구 유천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45e3f5087bbd453c9035de613f40f42e = L.marker(
+                [36.3679162, 127.38281040000001],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_54ddd5588fc641cebf81f467dd539568 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_45e3f5087bbd453c9035de613f40f42e.setIcon(icon_54ddd5588fc641cebf81f467dd539568);
+        
+    
+            marker_45e3f5087bbd453c9035de613f40f42e.bindTooltip(
+                `<div>
+                     귀빈돌솥밥 : 한식 - 대전 서구 만년동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdeb3cd1a40544d1bacb0084413b78fc = L.marker(
+                [36.3645877, 127.4427428],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_c973b5742fec447ab323ff49643de31a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cdeb3cd1a40544d1bacb0084413b78fc.setIcon(icon_c973b5742fec447ab323ff49643de31a);
+        
+    
+            marker_cdeb3cd1a40544d1bacb0084413b78fc.bindTooltip(
+                `<div>
+                     맑은골 호박꼬지(본점) : 한식 - 대전 대덕구 송촌동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_629043ed11994410ac86c5846aeae74d = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_220c9990b50741558ce12bc3dbc8a1bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_629043ed11994410ac86c5846aeae74d.setIcon(icon_220c9990b50741558ce12bc3dbc8a1bd);
+        
+    
+            marker_629043ed11994410ac86c5846aeae74d.bindTooltip(
+                `<div>
+                     한밭칼국수 : 한식 - 대전 서울시 중구 은행동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b75251c09d0c48e381158d06e0649449 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_b1c1adf370624227b672096773aa1d22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b75251c09d0c48e381158d06e0649449.setIcon(icon_b1c1adf370624227b672096773aa1d22);
+        
+    
+            marker_b75251c09d0c48e381158d06e0649449.bindTooltip(
+                `<div>
+                     정식당 : 한식 - 대전 서울시 중구 유천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0f043cbc59e4ddf8bc65113c319cc87 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_a28784429b754312b30817d4b72cf89a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a0f043cbc59e4ddf8bc65113c319cc87.setIcon(icon_a28784429b754312b30817d4b72cf89a);
+        
+    
+            marker_a0f043cbc59e4ddf8bc65113c319cc87.bindTooltip(
+                `<div>
+                     영희네매운갈비찜 : 한식 - 대전 서울시 중구 대흥동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2d2fd9c23cc4ab2ac5dc08f470c67d7 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_4ca23f25aa944d1e8e2fd1b47e85f61f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b2d2fd9c23cc4ab2ac5dc08f470c67d7.setIcon(icon_4ca23f25aa944d1e8e2fd1b47e85f61f);
+        
+    
+            marker_b2d2fd9c23cc4ab2ac5dc08f470c67d7.bindTooltip(
+                `<div>
+                     이봉구 베이커리(본점) : 베이커리 - 대전 서울시 중구 유천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3889d12bf1e144a3b35edfe87f9703ce = L.marker(
+                [36.294712100000005, 127.3332321],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_b53185fc6d1d480289e8906c2a00fb30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3889d12bf1e144a3b35edfe87f9703ce.setIcon(icon_b53185fc6d1d480289e8906c2a00fb30);
+        
+    
+            marker_3889d12bf1e144a3b35edfe87f9703ce.bindTooltip(
+                `<div>
+                     장마을닷컴 : 한식 - 대전 서구 관저동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef83caeb3b4349d998da14e238505f72 = L.marker(
+                [36.3674914, 127.34533770000002],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_b5070ea134bb4dbf8b80bac434825b7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ef83caeb3b4349d998da14e238505f72.setIcon(icon_b5070ea134bb4dbf8b80bac434825b7b);
+        
+    
+            marker_ef83caeb3b4349d998da14e238505f72.bindTooltip(
+                `<div>
+                     메이드바이 더초콜릿 : 카페/주점 - 대전 유성구 궁동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_476751710700426c81271aa9f2f391cc = L.marker(
+                [36.313801, 127.4641181],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_a72937d4138d4d479f9dc71df0de844f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_476751710700426c81271aa9f2f391cc.setIcon(icon_a72937d4138d4d479f9dc71df0de844f);
+        
+    
+            marker_476751710700426c81271aa9f2f391cc.bindTooltip(
+                `<div>
+                     판암면옥 : 한식 - 대전 동구 판암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41405c55fdbe4e6fb0d40e5af481f4d4 = L.marker(
+                [36.33141129999999, 127.38719740000002],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_0494adc80e04487e95fc5ee597fd95e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_41405c55fdbe4e6fb0d40e5af481f4d4.setIcon(icon_0494adc80e04487e95fc5ee597fd95e0);
+        
+    
+            marker_41405c55fdbe4e6fb0d40e5af481f4d4.bindTooltip(
+                `<div>
+                     옥천순대 : 한식 - 대전 서구 가장동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c77889b3f9e4ba2b9ef6b41292389d9 = L.marker(
+                [36.3645877, 127.4427428],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_77d866d768a14cc7ab4a74db7e1c2127 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c77889b3f9e4ba2b9ef6b41292389d9.setIcon(icon_77d866d768a14cc7ab4a74db7e1c2127);
+        
+    
+            marker_3c77889b3f9e4ba2b9ef6b41292389d9.bindTooltip(
+                `<div>
+                     홍콩삼겹살식당 : 한식 - 대전 대덕구 송촌동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33a1bf296fec444697075d877d7be3d0 = L.marker(
+                [36.42369229999999, 127.389551],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_1faf6756c664436b9e3ab90af7b7858d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_33a1bf296fec444697075d877d7be3d0.setIcon(icon_1faf6756c664436b9e3ab90af7b7858d);
+        
+    
+            marker_33a1bf296fec444697075d877d7be3d0.bindTooltip(
+                `<div>
+                     1152미정네 : 한식 - 대전 유성구 관평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0bad4424aee043e4abb3c5aa7ba98cc8 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_ca24d43afe444ed19835665843a851fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0bad4424aee043e4abb3c5aa7ba98cc8.setIcon(icon_ca24d43afe444ed19835665843a851fc);
+        
+    
+            marker_0bad4424aee043e4abb3c5aa7ba98cc8.bindTooltip(
+                `<div>
+                     초록지붕 : 카페/주점 - 대전 서울시 중구 대흥동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51dd5b887e6243669c4cb956902cb7fe = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_5ba35ae520ac44479c34cd989aeaf6de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_51dd5b887e6243669c4cb956902cb7fe.setIcon(icon_5ba35ae520ac44479c34cd989aeaf6de);
+        
+    
+            marker_51dd5b887e6243669c4cb956902cb7fe.bindTooltip(
+                `<div>
+                     한영식당 : 한식 - 대전 서울시 중구 오류동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbf3a4b266704a48971d9628438967c5 = L.marker(
+                [36.3326744, 127.43313470000001],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_4ba688a716f04d21ad7d3fed4a67b733 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fbf3a4b266704a48971d9628438967c5.setIcon(icon_4ba688a716f04d21ad7d3fed4a67b733);
+        
+    
+            marker_fbf3a4b266704a48971d9628438967c5.bindTooltip(
+                `<div>
+                     태화장 : 중식 - 대전 동구 정동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c3976dfc36f449f8930b9c6ccb69f1c = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_264b416a737844b9be177ead2573a166 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6c3976dfc36f449f8930b9c6ccb69f1c.setIcon(icon_264b416a737844b9be177ead2573a166);
+        
+    
+            marker_6c3976dfc36f449f8930b9c6ccb69f1c.bindTooltip(
+                `<div>
+                     스마일칼국수 : 한식 - 대전 서울시 중구 대흥동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_454b62e58d7a46c499c741295479e173 = L.marker(
+                [36.355799299999994, 127.3890119],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_2ba763d2c94540419ce6b6f3d8956730 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_454b62e58d7a46c499c741295479e173.setIcon(icon_2ba763d2c94540419ce6b6f3d8956730);
+        
+    
+            marker_454b62e58d7a46c499c741295479e173.bindTooltip(
+                `<div>
+                     무젠스시 : 일식 - 대전 서구 둔산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8603a24b84546b3be31b8f01d12cea7 = L.marker(
+                [36.3770399, 127.33308740000001],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_f4aad5e5b56e4ebbb330a43861390091 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b8603a24b84546b3be31b8f01d12cea7.setIcon(icon_f4aad5e5b56e4ebbb330a43861390091);
+        
+    
+            marker_b8603a24b84546b3be31b8f01d12cea7.bindTooltip(
+                `<div>
+                     리엔차이 : 중식 - 대전 유성구 죽동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0239cf57d7e9436ab384ac682caecef9 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_6fef98665f0440f0a90d7151af2ad1aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0239cf57d7e9436ab384ac682caecef9.setIcon(icon_6fef98665f0440f0a90d7151af2ad1aa);
+        
+    
+            marker_0239cf57d7e9436ab384ac682caecef9.bindTooltip(
+                `<div>
+                     온유네닭매운탕 : 한식 - 대전 서울시 중구 선화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4c2d16d11d54975ac4fad82b981fad6 = L.marker(
+                [36.353589299999996, 127.3460669],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_fab1648185e340b8bbae845030945bd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f4c2d16d11d54975ac4fad82b981fad6.setIcon(icon_fab1648185e340b8bbae845030945bd0);
+        
+    
+            marker_f4c2d16d11d54975ac4fad82b981fad6.bindTooltip(
+                `<div>
+                     제이부페 : 뷔페 - 대전 유성구 봉명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0f8e9d5ccce40e98095569438e3d196 = L.marker(
+                [36.3540407, 127.4345396],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_41e11f3bebce482197c9aa62c7e1e02e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b0f8e9d5ccce40e98095569438e3d196.setIcon(icon_41e11f3bebce482197c9aa62c7e1e02e);
+        
+    
+            marker_b0f8e9d5ccce40e98095569438e3d196.bindTooltip(
+                `<div>
+                     함초양념갈비 : 한식 - 대전 동구 용전동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec23782d63bb4822bae73d6467d1d883 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_f694ca5ebddf4f909e2ae94c4ba36eba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ec23782d63bb4822bae73d6467d1d883.setIcon(icon_f694ca5ebddf4f909e2ae94c4ba36eba);
+        
+    
+            marker_ec23782d63bb4822bae73d6467d1d883.bindTooltip(
+                `<div>
+                     내집식당 : 한식 - 대전 서울시 중구 대흥동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8999689cadc44c418baa1962e9c5bd84 = L.marker(
+                [36.35468839999999, 127.35762290000001],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_bc6dd0d23f494794b6d9ea7fedce713a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8999689cadc44c418baa1962e9c5bd84.setIcon(icon_bc6dd0d23f494794b6d9ea7fedce713a);
+        
+    
+            marker_8999689cadc44c418baa1962e9c5bd84.bindTooltip(
+                `<div>
+                     이비가짬뽕 월평점 : 중식 - 대전 서구 월평1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20087228913f4a36afaa84d64950ba14 = L.marker(
+                [36.3525385, 127.38582859999998],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_e6e8cf01193f4323bd151f95f0b87e77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20087228913f4a36afaa84d64950ba14.setIcon(icon_e6e8cf01193f4323bd151f95f0b87e77);
+        
+    
+            marker_20087228913f4a36afaa84d64950ba14.bindTooltip(
+                `<div>
+                     만석집 : 한식 - 대전 서구 둔산1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9db72456b03f4c4cb9c9cda5784ea7f8 = L.marker(
+                [36.32738, 127.4341754],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_fe73d1c1969748a38b496434708d27b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9db72456b03f4c4cb9c9cda5784ea7f8.setIcon(icon_fe73d1c1969748a38b496434708d27b1);
+        
+    
+            marker_9db72456b03f4c4cb9c9cda5784ea7f8.bindTooltip(
+                `<div>
+                     개천식당 : 한식 - 대전 동구 원동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53a9001b3c2049318e533c2a0241e74c = L.marker(
+                [36.394158399999995, 127.29917569999999],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_bfd5c1d3e7b641ba90de84a447a44dc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_53a9001b3c2049318e533c2a0241e74c.setIcon(icon_bfd5c1d3e7b641ba90de84a447a44dc7);
+        
+    
+            marker_53a9001b3c2049318e533c2a0241e74c.bindTooltip(
+                `<div>
+                     오모리생바지락손칼국수 : 한식 - 대전 유성구 반석동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b522bdc9a184ec8b8740195e239208c = L.marker(
+                [36.3679162, 127.38281040000001],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_9bc6cbedac334bb4a438086bfd6facb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0b522bdc9a184ec8b8740195e239208c.setIcon(icon_9bc6cbedac334bb4a438086bfd6facb1);
+        
+    
+            marker_0b522bdc9a184ec8b8740195e239208c.bindTooltip(
+                `<div>
+                     병규돈까스 : 일식 - 대전 서구 만년동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be40562e47b246c4b9b50464815751ac = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_793ee985c3344e439541b1fc3ce4f05c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_be40562e47b246c4b9b50464815751ac.setIcon(icon_793ee985c3344e439541b1fc3ce4f05c);
+        
+    
+            marker_be40562e47b246c4b9b50464815751ac.bindTooltip(
+                `<div>
+                     공주얼큰이칼국수 : 한식 - 대전 서울시 중구 은행동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49f6d2f919404187bdcf322852fa71ae = L.marker(
+                [36.370324100000005, 127.35580049999999],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_21b7722c239d419d9042f49847a2ea60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_49f6d2f919404187bdcf322852fa71ae.setIcon(icon_21b7722c239d419d9042f49847a2ea60);
+        
+    
+            marker_49f6d2f919404187bdcf322852fa71ae.bindTooltip(
+                `<div>
+                     란스시 : 일식 - 대전 유성구 어은동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed0934faefa1423a874a64b31b1d9e54 = L.marker(
+                [36.355799299999994, 127.3890119],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_cfacb921f5ff4cadae5bb266cf6895af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ed0934faefa1423a874a64b31b1d9e54.setIcon(icon_cfacb921f5ff4cadae5bb266cf6895af);
+        
+    
+            marker_ed0934faefa1423a874a64b31b1d9e54.bindTooltip(
+                `<div>
+                     원플레이트스탠다드키친 : 양식 - 대전 서구 둔산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79abf89c2a434c58adfc94bd345af84d = L.marker(
+                [36.355799299999994, 127.3890119],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_4e420ade9d114eadbfb54374986598c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_79abf89c2a434c58adfc94bd345af84d.setIcon(icon_4e420ade9d114eadbfb54374986598c7);
+        
+    
+            marker_79abf89c2a434c58adfc94bd345af84d.bindTooltip(
+                `<div>
+                     마르가 : 카페/주점 - 대전 서구 둔산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99ff84907d3a4b36822388954ce6ed69 = L.marker(
+                [36.3770399, 127.33308740000001],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_81a034b7b9624ecfaf5c355575632fd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_99ff84907d3a4b36822388954ce6ed69.setIcon(icon_81a034b7b9624ecfaf5c355575632fd0);
+        
+    
+            marker_99ff84907d3a4b36822388954ce6ed69.bindTooltip(
+                `<div>
+                     피제리아614 죽동점 : 양식 - 대전 유성구 죽동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8e17d28346f4e4f952fdc2951cb8356 = L.marker(
+                [36.4351811, 127.4503805],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_56447ba777c94a689f8c08611d9f5ceb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8e17d28346f4e4f952fdc2951cb8356.setIcon(icon_56447ba777c94a689f8c08611d9f5ceb);
+        
+    
+            marker_d8e17d28346f4e4f952fdc2951cb8356.bindTooltip(
+                `<div>
+                     역발산 본점 : 한식 - 대전 대덕구 용호동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfd134916312440286e9ac015ffb771d = L.marker(
+                [36.338692200000004, 127.3799777],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_2ebd2ec162554dc7b85a5745d2c7df9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cfd134916312440286e9ac015ffb771d.setIcon(icon_2ebd2ec162554dc7b85a5745d2c7df9c);
+        
+    
+            marker_cfd134916312440286e9ac015ffb771d.bindTooltip(
+                `<div>
+                     한민원조막창 : 한식 - 대전 서구 괴정동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92741b9d231f4e2587149efdfe2ed134 = L.marker(
+                [36.338692200000004, 127.3799777],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_934e7a25a7f7499787e524b8818b7efe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92741b9d231f4e2587149efdfe2ed134.setIcon(icon_934e7a25a7f7499787e524b8818b7efe);
+        
+    
+            marker_92741b9d231f4e2587149efdfe2ed134.bindTooltip(
+                `<div>
+                     공주칼국수 : 한식 - 대전 서구 괴정동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4794646bdc084deca2744bbeefb5f00d = L.marker(
+                [36.355799299999994, 127.3890119],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_14719be5fadf4143bfc1c5fae33d87bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4794646bdc084deca2744bbeefb5f00d.setIcon(icon_14719be5fadf4143bfc1c5fae33d87bf);
+        
+    
+            marker_4794646bdc084deca2744bbeefb5f00d.bindTooltip(
+                `<div>
+                     파더스스테이크하우스 : 양식 - 대전 서구 둔산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_211f3f1219e24a58b23b5141361ed795 = L.marker(
+                [36.353589299999996, 127.3460669],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_4cc0aa68348f46c3956693439fc3f964 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_211f3f1219e24a58b23b5141361ed795.setIcon(icon_4cc0aa68348f46c3956693439fc3f964);
+        
+    
+            marker_211f3f1219e24a58b23b5141361ed795.bindTooltip(
+                `<div>
+                     스바라시라멘 : 일식 - 대전 유성구 봉명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd0e50f2d96f4c5089a3bbf05aa8f555 = L.marker(
+                [36.327615, 127.3763453],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_d4cae8c71c504e3fbbbd3db0f19372b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd0e50f2d96f4c5089a3bbf05aa8f555.setIcon(icon_d4cae8c71c504e3fbbbd3db0f19372b1);
+        
+    
+            marker_bd0e50f2d96f4c5089a3bbf05aa8f555.bindTooltip(
+                `<div>
+                     옥수숯불구이 : 한식 - 대전 서구 변동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64b3e82857764175b01cd58260847225 = L.marker(
+                [36.353589299999996, 127.3460669],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_bacba4b2b7714058ab49ecbdf2d9e0fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_64b3e82857764175b01cd58260847225.setIcon(icon_bacba4b2b7714058ab49ecbdf2d9e0fa);
+        
+    
+            marker_64b3e82857764175b01cd58260847225.bindTooltip(
+                `<div>
+                     무창포막회 : 한식 - 대전 유성구 봉명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91ed103962ed4e83bb781d0d7f50c86d = L.marker(
+                [36.3822109, 127.30428729999998],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_8fbce76439374a9c84947aa6c2f8ad15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_91ed103962ed4e83bb781d0d7f50c86d.setIcon(icon_8fbce76439374a9c84947aa6c2f8ad15);
+        
+    
+            marker_91ed103962ed4e83bb781d0d7f50c86d.bindTooltip(
+                `<div>
+                     스시노백쉐프 대전노은 14호점 : 일식 - 대전 유성구 지족동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d49f45d8f604c7297137c0eab454823 = L.marker(
+                [36.3645877, 127.4427428],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_610d6d3716664483bd68546a0e103438 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d49f45d8f604c7297137c0eab454823.setIcon(icon_610d6d3716664483bd68546a0e103438);
+        
+    
+            marker_9d49f45d8f604c7297137c0eab454823.bindTooltip(
+                `<div>
+                     옥순네 추어칼국수 : 한식 - 대전 대덕구 송촌동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1cf10e1cf7e49ef9505ed89d6ddb077 = L.marker(
+                [36.355799299999994, 127.3890119],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_381a9d13c4f34b8cb933f893d841814e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b1cf10e1cf7e49ef9505ed89d6ddb077.setIcon(icon_381a9d13c4f34b8cb933f893d841814e);
+        
+    
+            marker_b1cf10e1cf7e49ef9505ed89d6ddb077.bindTooltip(
+                `<div>
+                     사리원 : 한식 - 대전 서구 둔산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20ad5a87071540c796d5225765b36b54 = L.marker(
+                [36.363588899999996, 127.3739078],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_59fa03fa992d4e7fb8899a9fb7a57cbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20ad5a87071540c796d5225765b36b54.setIcon(icon_59fa03fa992d4e7fb8899a9fb7a57cbf);
+        
+    
+            marker_20ad5a87071540c796d5225765b36b54.bindTooltip(
+                `<div>
+                     브라우니24 : 카페/주점 - 대전 서구 월평2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34b53a8bc5c84b8a82781108d51012a0 = L.marker(
+                [36.3674914, 127.34533770000002],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_0b5f0daa95fe4145bc6d340c20be9247 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_34b53a8bc5c84b8a82781108d51012a0.setIcon(icon_0b5f0daa95fe4145bc6d340c20be9247);
+        
+    
+            marker_34b53a8bc5c84b8a82781108d51012a0.bindTooltip(
+                `<div>
+                     누오보나폴리 : 양식 - 대전 유성구 궁동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe419d9eec8b4c73b37391b6342262e8 = L.marker(
+                [36.3467556, 127.4493426],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_a96b583ddf6245388f78eb062e97b9b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe419d9eec8b4c73b37391b6342262e8.setIcon(icon_a96b583ddf6245388f78eb062e97b9b0);
+        
+    
+            marker_fe419d9eec8b4c73b37391b6342262e8.bindTooltip(
+                `<div>
+                     적덕식당 : 한식 - 대전 동구 가양동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18183e86ebec4ad2ab0e4eb364c911b9 = L.marker(
+                [36.3467768, 127.3748668],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_3bfac28a479c4da4909a66babeb50065 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_18183e86ebec4ad2ab0e4eb364c911b9.setIcon(icon_3bfac28a479c4da4909a66babeb50065);
+        
+    
+            marker_18183e86ebec4ad2ab0e4eb364c911b9.bindTooltip(
+                `<div>
+                     찬이락이 : 한식 - 대전 서구 갈마2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3fea59467e346a3bc587ca4170cc5ff = L.marker(
+                [36.3822109, 127.30428729999998],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_c44fa17265b74cc7af7e6d069925e953 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a3fea59467e346a3bc587ca4170cc5ff.setIcon(icon_c44fa17265b74cc7af7e6d069925e953);
+        
+    
+            marker_a3fea59467e346a3bc587ca4170cc5ff.bindTooltip(
+                `<div>
+                     마들렌과자점 : 베이커리 - 대전 유성구 지족동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8146d6682784ec28c1cc5ca5c5f08bf = L.marker(
+                [36.3679162, 127.38281040000001],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_c798c59f78f54e09a7df6c42471dd6f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8146d6682784ec28c1cc5ca5c5f08bf.setIcon(icon_c798c59f78f54e09a7df6c42471dd6f5);
+        
+    
+            marker_d8146d6682784ec28c1cc5ca5c5f08bf.bindTooltip(
+                `<div>
+                     대나무통밥맛정식 : 한식 - 대전 서구 만년동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84ed0057963e42a9a6a5332a4438f79f = L.marker(
+                [36.4027855, 127.3988007],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_d96209ad33944c4d8589acde5f94afec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_84ed0057963e42a9a6a5332a4438f79f.setIcon(icon_d96209ad33944c4d8589acde5f94afec);
+        
+    
+            marker_84ed0057963e42a9a6a5332a4438f79f.bindTooltip(
+                `<div>
+                     백리향 : 중식 - 대전 유성구 전민동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27e44a69baeb4fe48bb63dbf571a2b31 = L.marker(
+                [36.394158399999995, 127.29917569999999],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_e71dbc7ace6848e1b152030bbcc6f9b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_27e44a69baeb4fe48bb63dbf571a2b31.setIcon(icon_e71dbc7ace6848e1b152030bbcc6f9b7);
+        
+    
+            marker_27e44a69baeb4fe48bb63dbf571a2b31.bindTooltip(
+                `<div>
+                     이치고 : 일식 - 대전 유성구 반석동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59c59a4acf8e4f838b92a701a5ed42f0 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_b9de2b12795143ab83edf160aa9412b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_59c59a4acf8e4f838b92a701a5ed42f0.setIcon(icon_b9de2b12795143ab83edf160aa9412b1);
+        
+    
+            marker_59c59a4acf8e4f838b92a701a5ed42f0.bindTooltip(
+                `<div>
+                     소나무집 : 한식 - 대전 서울시 중구 대흥동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfdb61c6034d4f8394c2d9a4ed220e55 = L.marker(
+                [36.3770399, 127.33308740000001],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_6edc2b424abb4bd5af87f9bb1b6bb7c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cfdb61c6034d4f8394c2d9a4ed220e55.setIcon(icon_6edc2b424abb4bd5af87f9bb1b6bb7c8);
+        
+    
+            marker_cfdb61c6034d4f8394c2d9a4ed220e55.bindTooltip(
+                `<div>
+                     로아커피 : 카페/주점 - 대전 유성구 죽동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38ced13620064798b3aa162037ba5ab8 = L.marker(
+                [36.3537971, 127.38347890000001],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_f487976face94ba7b576acda81042e5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_38ced13620064798b3aa162037ba5ab8.setIcon(icon_f487976face94ba7b576acda81042e5e);
+        
+    
+            marker_38ced13620064798b3aa162037ba5ab8.bindTooltip(
+                `<div>
+                     행복조개찜 : 한식 - 대전 서구 둔산2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b097497b320c4ba38aba386f439aebc2 = L.marker(
+                [36.4027855, 127.3988007],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_5669817f71c54a0d844dc6ed4f6da2cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b097497b320c4ba38aba386f439aebc2.setIcon(icon_5669817f71c54a0d844dc6ed4f6da2cc);
+        
+    
+            marker_b097497b320c4ba38aba386f439aebc2.bindTooltip(
+                `<div>
+                     와인아트 위 : 양식 - 대전 유성구 전민동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48ae451334b94c898005712fb8d9a495 = L.marker(
+                [36.3537971, 127.38347890000001],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_82efea392e234ac8bc30a72bf914f7e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_48ae451334b94c898005712fb8d9a495.setIcon(icon_82efea392e234ac8bc30a72bf914f7e7);
+        
+    
+            marker_48ae451334b94c898005712fb8d9a495.bindTooltip(
+                `<div>
+                     모루 : 카페/주점 - 대전 서구 둔산2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8927c419c7eb4a399c90496dfca48eeb = L.marker(
+                [36.347406400000004, 127.3694919],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_025f66d9f9294f1eb94425eaa08e947b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8927c419c7eb4a399c90496dfca48eeb.setIcon(icon_025f66d9f9294f1eb94425eaa08e947b);
+        
+    
+            marker_8927c419c7eb4a399c90496dfca48eeb.bindTooltip(
+                `<div>
+                     바위섬횟집 : 일식 - 대전 서구 갈마동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8bd691010adb41399822daa719a46b98 = L.marker(
+                [36.3450247, 127.39162490000001],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_23906191741248c8bd8737e7415b1481 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8bd691010adb41399822daa719a46b98.setIcon(icon_23906191741248c8bd8737e7415b1481);
+        
+    
+            marker_8bd691010adb41399822daa719a46b98.bindTooltip(
+                `<div>
+                     병규돈가스 탄방점 : 일식 - 대전 서구 탄방동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48cd9debc5ca4fa6b120a8608cc58153 = L.marker(
+                [36.353589299999996, 127.3460669],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_4c11f4d5dd7e42988f31f6fb0b23dff6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_48cd9debc5ca4fa6b120a8608cc58153.setIcon(icon_4c11f4d5dd7e42988f31f6fb0b23dff6);
+        
+    
+            marker_48cd9debc5ca4fa6b120a8608cc58153.bindTooltip(
+                `<div>
+                     썸데이 : 한식 - 대전 유성구 봉명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef2bc6f53fb74cb69fe078d68789a0ef = L.marker(
+                [36.355799299999994, 127.3890119],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_b68f5fe01ac34a13a31d29adfc35341e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ef2bc6f53fb74cb69fe078d68789a0ef.setIcon(icon_b68f5fe01ac34a13a31d29adfc35341e);
+        
+    
+            marker_ef2bc6f53fb74cb69fe078d68789a0ef.bindTooltip(
+                `<div>
+                     인디 : 기타/세계 - 대전 서구 둔산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce648d4bbb8c4cafa7e15ed13ef1529c = L.marker(
+                [36.355799299999994, 127.3890119],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_88fc7f22df9445178fb36472a3e26262 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ce648d4bbb8c4cafa7e15ed13ef1529c.setIcon(icon_88fc7f22df9445178fb36472a3e26262);
+        
+    
+            marker_ce648d4bbb8c4cafa7e15ed13ef1529c.bindTooltip(
+                `<div>
+                     예술마당 : 한식 - 대전 서구 둔산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51387de56c4742a8b29aaa6bdb1243a3 = L.marker(
+                [36.313801, 127.4641181],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_dfed756b66df489da5d6caf80bbab30d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_51387de56c4742a8b29aaa6bdb1243a3.setIcon(icon_dfed756b66df489da5d6caf80bbab30d);
+        
+    
+            marker_51387de56c4742a8b29aaa6bdb1243a3.bindTooltip(
+                `<div>
+                     부여순대 : 한식 - 대전 동구 판암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_600cbcacfeaf4a3db90d91099f9ca4fd = L.marker(
+                [36.32738, 127.4341754],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_66b6b46de6f640d4a85997ccc18a8e0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_600cbcacfeaf4a3db90d91099f9ca4fd.setIcon(icon_66b6b46de6f640d4a85997ccc18a8e0d);
+        
+    
+            marker_600cbcacfeaf4a3db90d91099f9ca4fd.bindTooltip(
+                `<div>
+                     오씨칼국수 : 한식 - 대전 동구 원동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ed1ff05a6b342faa67cc0201a10de62 = L.marker(
+                [36.3326744, 127.43313470000001],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_344c1056c71242bfacded3733ba74d33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ed1ff05a6b342faa67cc0201a10de62.setIcon(icon_344c1056c71242bfacded3733ba74d33);
+        
+    
+            marker_9ed1ff05a6b342faa67cc0201a10de62.bindTooltip(
+                `<div>
+                     전통칼국수 : 한식 - 대전 동구 정동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c5e9e21955b4d8bb4f0b7ad5b312ae6 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_592341bb47d84279b757e6784752c4ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1c5e9e21955b4d8bb4f0b7ad5b312ae6.setIcon(icon_592341bb47d84279b757e6784752c4ed);
+        
+    
+            marker_1c5e9e21955b4d8bb4f0b7ad5b312ae6.bindTooltip(
+                `<div>
+                     쌍리 : 카페/주점 - 대전 서울시 중구 대흥동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f87972bc1f7847cf94f7b8882f319014 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_8d6a5610333d405fab636bca8c21d9b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f87972bc1f7847cf94f7b8882f319014.setIcon(icon_8d6a5610333d405fab636bca8c21d9b4);
+        
+    
+            marker_f87972bc1f7847cf94f7b8882f319014.bindTooltip(
+                `<div>
+                     라이트미디엄볼드 : 카페/주점 - 대전 서울시 중구 대흥동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28c56c2dbc5c42c7ac856ee644ec2ba0 = L.marker(
+                [36.347406400000004, 127.3694919],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_126f577d0d47461da72c5b2131d569b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_28c56c2dbc5c42c7ac856ee644ec2ba0.setIcon(icon_126f577d0d47461da72c5b2131d569b0);
+        
+    
+            marker_28c56c2dbc5c42c7ac856ee644ec2ba0.bindTooltip(
+                `<div>
+                     륀에이치(LUNE H) : 카페/주점 - 대전 서구 갈마동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7499bb15710c4921bf9f5945eafc6586 = L.marker(
+                [36.355799299999994, 127.3890119],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_ed9392132a1d4c13885e07719960e082 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7499bb15710c4921bf9f5945eafc6586.setIcon(icon_ed9392132a1d4c13885e07719960e082);
+        
+    
+            marker_7499bb15710c4921bf9f5945eafc6586.bindTooltip(
+                `<div>
+                     플레져 : 카페/주점 - 대전 서구 둔산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0778f3aff13c448d9dfb6510eab636f1 = L.marker(
+                [36.3394225, 127.4251098],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_f3239ae8c509436daca8a227f0a7e5c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0778f3aff13c448d9dfb6510eab636f1.setIcon(icon_f3239ae8c509436daca8a227f0a7e5c8);
+        
+    
+            marker_0778f3aff13c448d9dfb6510eab636f1.bindTooltip(
+                `<div>
+                     명랑식당 : 한식 - 대전 동구 삼성동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4ad0fa2c1574e4fab9fcb81c7cced99 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_9f862e3aee214ddba8d4767b52fc1380 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e4ad0fa2c1574e4fab9fcb81c7cced99.setIcon(icon_9f862e3aee214ddba8d4767b52fc1380);
+        
+    
+            marker_e4ad0fa2c1574e4fab9fcb81c7cced99.bindTooltip(
+                `<div>
+                     사리원면옥(본점) : 한식 - 대전 서울시 중구 대흥동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3fc7b90422a4e269912285abdae0207 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_621ec63eb9dd40f6a51b902180ddbcbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3fc7b90422a4e269912285abdae0207.setIcon(icon_621ec63eb9dd40f6a51b902180ddbcbd);
+        
+    
+            marker_c3fc7b90422a4e269912285abdae0207.bindTooltip(
+                `<div>
+                     대전갈비집 : 한식 - 대전 서울시 중구 대흥동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d948dc9cfbd04e41b99bc1838d74101e = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_27337fa3db4540aa93b15b374466db21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d948dc9cfbd04e41b99bc1838d74101e.setIcon(icon_27337fa3db4540aa93b15b374466db21);
+        
+    
+            marker_d948dc9cfbd04e41b99bc1838d74101e.bindTooltip(
+                `<div>
+                     학선식당 : 한식 - 대전 서울시 중구 선화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce7d974dc2a74a089065e625b06b9b68 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_9e091eae8e754aec9707e860a4294281 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ce7d974dc2a74a089065e625b06b9b68.setIcon(icon_9e091eae8e754aec9707e860a4294281);
+        
+    
+            marker_ce7d974dc2a74a089065e625b06b9b68.bindTooltip(
+                `<div>
+                     연아식당 : 한식 - 대전 서울시 중구 유천2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8ed503605404c908e57217d9b2fa110 = L.marker(
+                [36.3670125, 127.288376],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_8bb12bb7964e4f23a0b57f9179e4fb39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c8ed503605404c908e57217d9b2fa110.setIcon(icon_8bb12bb7964e4f23a0b57f9179e4fb39);
+        
+    
+            marker_c8ed503605404c908e57217d9b2fa110.bindTooltip(
+                `<div>
+                     60년대순대보리밥 : 한식 - 대전 유성구 갑동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_440f062135164b7689516d5e753a8b12 = L.marker(
+                [36.3674914, 127.34533770000002],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_1d6b89eca4864fde832c0dd735c9da3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_440f062135164b7689516d5e753a8b12.setIcon(icon_1d6b89eca4864fde832c0dd735c9da3a);
+        
+    
+            marker_440f062135164b7689516d5e753a8b12.bindTooltip(
+                `<div>
+                     살구나무집 : 한식 - 대전 유성구 궁동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2e459d6cb7547dea9938d0434045750 = L.marker(
+                [36.42369229999999, 127.389551],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_ea4c6d3cd2c446ef975a349b475cd076 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b2e459d6cb7547dea9938d0434045750.setIcon(icon_ea4c6d3cd2c446ef975a349b475cd076);
+        
+    
+            marker_b2e459d6cb7547dea9938d0434045750.bindTooltip(
+                `<div>
+                     산밑할머니묵집 : 한식 - 대전 유성구 관평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca6baa2535934c7494bd440132b704f9 = L.marker(
+                [36.353589299999996, 127.3460669],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_86427d160c1a440683ab8ab9de570afc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ca6baa2535934c7494bd440132b704f9.setIcon(icon_86427d160c1a440683ab8ab9de570afc);
+        
+    
+            marker_ca6baa2535934c7494bd440132b704f9.bindTooltip(
+                `<div>
+                     임진강장어 : 한식 - 대전 유성구 봉명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c087f51c18947a7a41f76c16dbb51d3 = L.marker(
+                [36.353589299999996, 127.3460669],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_588fc71581754c2fba3f80577ad73d1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5c087f51c18947a7a41f76c16dbb51d3.setIcon(icon_588fc71581754c2fba3f80577ad73d1b);
+        
+    
+            marker_5c087f51c18947a7a41f76c16dbb51d3.bindTooltip(
+                `<div>
+                     호텔리베라유성 델리샵 : 베이커리 - 대전 유성구 봉명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96b035c47bb9407a8649c74abb3c3e71 = L.marker(
+                [36.353589299999996, 127.3460669],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_b3d4585dedc840dbba4d8c401dc60e46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_96b035c47bb9407a8649c74abb3c3e71.setIcon(icon_b3d4585dedc840dbba4d8c401dc60e46);
+        
+    
+            marker_96b035c47bb9407a8649c74abb3c3e71.bindTooltip(
+                `<div>
+                     홍천식당 : 한식 - 대전 유성구 봉명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d399f3336c6e4862848beb43b66b7819 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_325cc4c9193e4eea869b925a7fc758be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d399f3336c6e4862848beb43b66b7819.setIcon(icon_325cc4c9193e4eea869b925a7fc758be);
+        
+    
+            marker_d399f3336c6e4862848beb43b66b7819.bindTooltip(
+                `<div>
+                     선화동실비식당 : 한식 - 대전 서울시 중구 선화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59a84d318c0d469b8f734431799272a1 = L.marker(
+                [36.3679162, 127.38281040000001],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_f590e5a1f4e045e59b2a0ff169568c52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_59a84d318c0d469b8f734431799272a1.setIcon(icon_f590e5a1f4e045e59b2a0ff169568c52);
+        
+    
+            marker_59a84d318c0d469b8f734431799272a1.bindTooltip(
+                `<div>
+                     천년의정원 : 중식 - 대전 서구 만년동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96a2d221513341b89b3f6b3059139d23 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_d188cbd0bdd2498e8c43e5fc5e12c301 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_96a2d221513341b89b3f6b3059139d23.setIcon(icon_d188cbd0bdd2498e8c43e5fc5e12c301);
+        
+    
+            marker_96a2d221513341b89b3f6b3059139d23.bindTooltip(
+                `<div>
+                     향촌한우타운 유천점 : 한식 - 대전 서울시 중구 유천2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad3b1655d6e0453dbd99bf4e39aab258 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_fa5c835cfaf440d39f5e4f21a7149c52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ad3b1655d6e0453dbd99bf4e39aab258.setIcon(icon_fa5c835cfaf440d39f5e4f21a7149c52);
+        
+    
+            marker_ad3b1655d6e0453dbd99bf4e39aab258.bindTooltip(
+                `<div>
+                     부잣집곰탕 : 한식 - 대전 서울시 중구 대흥동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14f95f5fee8049f8873bd48b3d76ead3 = L.marker(
+                [36.327615, 127.3763453],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_86f1211ff18e4c0eb75cecc6e0629f0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_14f95f5fee8049f8873bd48b3d76ead3.setIcon(icon_86f1211ff18e4c0eb75cecc6e0629f0d);
+        
+    
+            marker_14f95f5fee8049f8873bd48b3d76ead3.bindTooltip(
+                `<div>
+                     공주얼큰이칼국수쭈꾸미 : 한식 - 대전 서구 변동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e79ac98bbbfb4ca097e2a4adf7f71d88 = L.marker(
+                [36.370324100000005, 127.35580049999999],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_11333f77c3ed4507a7b8611ca453e3ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e79ac98bbbfb4ca097e2a4adf7f71d88.setIcon(icon_11333f77c3ed4507a7b8611ca453e3ea);
+        
+    
+            marker_e79ac98bbbfb4ca097e2a4adf7f71d88.bindTooltip(
+                `<div>
+                     라라랄라어은점 : 분식 - 대전 유성구 어은동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_362efd076bb048b683f831cc859b20c2 = L.marker(
+                [36.353589299999996, 127.3460669],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_7c7e1debf8a643de99e83f21894c6e54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_362efd076bb048b683f831cc859b20c2.setIcon(icon_7c7e1debf8a643de99e83f21894c6e54);
+        
+    
+            marker_362efd076bb048b683f831cc859b20c2.bindTooltip(
+                `<div>
+                     크래버대게나라 대전점 : 한식 - 대전 유성구 봉명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf4ebad847ab459dbbb023bc1df10d7d = L.marker(
+                [36.363588899999996, 127.3739078],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_aca73d27ad0e4dc0892b772b5c24fbb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cf4ebad847ab459dbbb023bc1df10d7d.setIcon(icon_aca73d27ad0e4dc0892b772b5c24fbb3);
+        
+    
+            marker_cf4ebad847ab459dbbb023bc1df10d7d.bindTooltip(
+                `<div>
+                     동천홍 : 중식 - 대전 서구 월평2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44bc720261ff4bf5a24a0208abf14b20 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_95128cc68f76485c868d06aa7383d1b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_44bc720261ff4bf5a24a0208abf14b20.setIcon(icon_95128cc68f76485c868d06aa7383d1b6);
+        
+    
+            marker_44bc720261ff4bf5a24a0208abf14b20.bindTooltip(
+                `<div>
+                     칸지고고(대전세이점) : 중식 - 대전 서울시 중구 문화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e6a80a044c946acab9bff39c3234640 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_c407d3e2922a4280a2d666a30a28f81d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1e6a80a044c946acab9bff39c3234640.setIcon(icon_c407d3e2922a4280a2d666a30a28f81d);
+        
+    
+            marker_1e6a80a044c946acab9bff39c3234640.bindTooltip(
+                `<div>
+                     선화동소머리해장국 : 한식 - 대전 서울시 중구 선화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f4438c3601d4f42a0fad17a28a50052 = L.marker(
+                [36.353589299999996, 127.3460669],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_2d7645c360bf4347abef1268c8d5fb95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9f4438c3601d4f42a0fad17a28a50052.setIcon(icon_2d7645c360bf4347abef1268c8d5fb95);
+        
+    
+            marker_9f4438c3601d4f42a0fad17a28a50052.bindTooltip(
+                `<div>
+                     호텔리베라유성 카페엘루스 : 카페/주점 - 대전 유성구 봉명동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c068c762c1d4a1b9f8726fd56a59d40 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_18189ef9d1494cb5b89b05f11f85c45b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0c068c762c1d4a1b9f8726fd56a59d40.setIcon(icon_18189ef9d1494cb5b89b05f11f85c45b);
+        
+    
+            marker_0c068c762c1d4a1b9f8726fd56a59d40.bindTooltip(
+                `<div>
+                     광천식당 : 한식 - 대전 서울시 중구 선화동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09726b4a3b164b03b9fdc75844468ef2 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_c6c7084a0e08404193af35539e8e5efb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09726b4a3b164b03b9fdc75844468ef2.setIcon(icon_c6c7084a0e08404193af35539e8e5efb);
+        
+    
+            marker_09726b4a3b164b03b9fdc75844468ef2.bindTooltip(
+                `<div>
+                     진로집 : 한식 - 대전 서울시 중구 대흥동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39ffabd3f85242b2a959a77ecc5c7108 = L.marker(
+                [36.3503525, 127.3848542],
+                {}
+            ).addTo(map_0f90aebb3e734876bfa6fcb9635f1231);
+        
+    
+            var icon_ae8a431b57e84c45bd4ade6282913986 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_39ffabd3f85242b2a959a77ecc5c7108.setIcon(icon_ae8a431b57e84c45bd4ade6282913986);
+        
+    
+            marker_39ffabd3f85242b2a959a77ecc5c7108.bindTooltip(
+                `<div>
+                     성심당 : 베이커리 - 대전 서울시 중구 은행동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

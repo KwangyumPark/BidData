@@ -1,0 +1,3276 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aad8075bbe6b480abc03abeb80a1b126 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_aad8075bbe6b480abc03abeb80a1b126" ></div>
+        
+</body>
+<script>    
+    
+            var map_aad8075bbe6b480abc03abeb80a1b126 = L.map(
+                "map_aad8075bbe6b480abc03abeb80a1b126",
+                {
+                    center: [37.509873, 126.618372],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11.4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cfa7363aae7b480988eaf84631ab5689 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var tile_layer_299c6f1ade834dff9bea0758285a82cc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_c0d776a8f25e4dd3a30e1c0a2c803ddc = new L.Control.MiniMap(
+                tile_layer_299c6f1ade834dff9bea0758285a82cc,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_aad8075bbe6b480abc03abeb80a1b126.addControl(mini_map_c0d776a8f25e4dd3a30e1c0a2c803ddc);
+        
+    
+            var marker_8bdcdfa51f6f444aa7a24ecfe1fb9e1e = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_83bca6dd4f3e426db21c026b1b68bc40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8bdcdfa51f6f444aa7a24ecfe1fb9e1e.setIcon(icon_83bca6dd4f3e426db21c026b1b68bc40);
+        
+    
+            marker_8bdcdfa51f6f444aa7a24ecfe1fb9e1e.bindTooltip(
+                `<div>
+                     송원식당 : 한식 - 인천 서울시 중구 항동7가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9138d0430f3c4b98ad27c8a83ffb453f = L.marker(
+                [37.4487209, 126.7111247],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_4ab20de575904fb59110af158f423749 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9138d0430f3c4b98ad27c8a83ffb453f.setIcon(icon_4ab20de575904fb59110af158f423749);
+        
+    
+            marker_9138d0430f3c4b98ad27c8a83ffb453f.bindTooltip(
+                `<div>
+                     안스베이커리 구월본점 : 베이커리 - 인천 남동구 구월동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39ae9bea41f44ed499a84b98151e5948 = L.marker(
+                [37.628423100000006, 126.49808780000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_2bf4d772992748b09bb27a9b7dc1e88e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_39ae9bea41f44ed499a84b98151e5948.setIcon(icon_2bf4d772992748b09bb27a9b7dc1e88e);
+        
+    
+            marker_39ae9bea41f44ed499a84b98151e5948.bindTooltip(
+                `<div>
+                     반선 : 한식 - 인천 강화군 길상면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d79d949902f4d4580d874ecd87ccfef = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_6d097f2c89834ccfb7da00ec67ad422a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0d79d949902f4d4580d874ecd87ccfef.setIcon(icon_6d097f2c89834ccfb7da00ec67ad422a);
+        
+    
+            marker_0d79d949902f4d4580d874ecd87ccfef.bindTooltip(
+                `<div>
+                     평양옥 : 한식 - 인천 서울시 중구 신흥동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d1d83aba6f044fe96175301d9cbf5a0 = L.marker(
+                [37.4043953, 126.72407150000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_8648a910a36843e8a9c918efa8724b66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8d1d83aba6f044fe96175301d9cbf5a0.setIcon(icon_8648a910a36843e8a9c918efa8724b66);
+        
+    
+            marker_8d1d83aba6f044fe96175301d9cbf5a0.bindTooltip(
+                `<div>
+                     지연네숯불조개구이 : 한식 - 인천 남동구 논현동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ba18dd7c31c4a0a8aa396173f298319 = L.marker(
+                [37.4068805, 126.66436840000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_92a26c8f025244f690618ea5acc75197 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3ba18dd7c31c4a0a8aa396173f298319.setIcon(icon_92a26c8f025244f690618ea5acc75197);
+        
+    
+            marker_3ba18dd7c31c4a0a8aa396173f298319.bindTooltip(
+                `<div>
+                     해변家 : 한식 - 인천 연수구 동춘동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c5bf1c046c245bb91112b08e0487800 = L.marker(
+                [37.4043953, 126.72407150000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_4edab13edc6647c7b4463c1efee8535d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9c5bf1c046c245bb91112b08e0487800.setIcon(icon_4edab13edc6647c7b4463c1efee8535d);
+        
+    
+            marker_9c5bf1c046c245bb91112b08e0487800.bindTooltip(
+                `<div>
+                     논현코다리냉면 : 한식 - 인천 남동구 논현동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_569cdaaca7f6490d9f32f41e68d303f8 = L.marker(
+                [37.5345045, 126.62769979999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_244ab84faf424460a4f1d784c27dc0d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_569cdaaca7f6490d9f32f41e68d303f8.setIcon(icon_244ab84faf424460a4f1d784c27dc0d2);
+        
+    
+            marker_569cdaaca7f6490d9f32f41e68d303f8.bindTooltip(
+                `<div>
+                     갯마을산낙지전문점 : 한식 - 인천 서구 청라동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3a119cff0a24a0d9441c3a7deab5e77 = L.marker(
+                [37.587247, 126.69419040000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_27ccc6b8a3bd492f871a8cfb608f19c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f3a119cff0a24a0d9441c3a7deab5e77.setIcon(icon_27ccc6b8a3bd492f871a8cfb608f19c5);
+        
+    
+            marker_f3a119cff0a24a0d9441c3a7deab5e77.bindTooltip(
+                `<div>
+                     닐리리손칼국수 : 한식 - 인천 서구 당하동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1513adc0ac7d48ed8225c33da8034d66 = L.marker(
+                [37.628423100000006, 126.49808780000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_cc4acd94d8d94228ba95cf51e5ffee9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1513adc0ac7d48ed8225c33da8034d66.setIcon(icon_cc4acd94d8d94228ba95cf51e5ffee9c);
+        
+    
+            marker_1513adc0ac7d48ed8225c33da8034d66.bindTooltip(
+                `<div>
+                     풀하우스 : 한식 - 인천 강화군 길상면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0189eac7699646dbbeae9fd430421df2 = L.marker(
+                [37.6193898, 126.4244405],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_fe5c2f933cca441387a33f75965e190e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0189eac7699646dbbeae9fd430421df2.setIcon(icon_fe5c2f933cca441387a33f75965e190e);
+        
+    
+            marker_0189eac7699646dbbeae9fd430421df2.bindTooltip(
+                `<div>
+                     마니산산채 : 한식 - 인천 강화군 화도면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_306250fd42cf46ccae76b8db6f516248 = L.marker(
+                [37.5969335, 126.70816459999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_f7c45b901d144a3f911be4348c245f65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_306250fd42cf46ccae76b8db6f516248.setIcon(icon_f7c45b901d144a3f911be4348c245f65);
+        
+    
+            marker_306250fd42cf46ccae76b8db6f516248.bindTooltip(
+                `<div>
+                     쭈꾸미일당백 본점 : 한식 - 인천 서구 원당동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8b228fb861440a1a804224ba05559d6 = L.marker(
+                [37.5648615, 126.6751919],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_09f5f2652c0d4d0e82245b21479d1e23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8b228fb861440a1a804224ba05559d6.setIcon(icon_09f5f2652c0d4d0e82245b21479d1e23);
+        
+    
+            marker_d8b228fb861440a1a804224ba05559d6.bindTooltip(
+                `<div>
+                     오스푼 : 한식 - 인천 서구 검암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f2e3e36fe1749b28eae438d81134fb0 = L.marker(
+                [37.4629186, 126.650373],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_00faeed11d124da2af1db5467a5c5ad3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4f2e3e36fe1749b28eae438d81134fb0.setIcon(icon_00faeed11d124da2af1db5467a5c5ad3);
+        
+    
+            marker_4f2e3e36fe1749b28eae438d81134fb0.bindTooltip(
+                `<div>
+                     마산집 : 한식 - 인천 남구 숭의동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c5f57683c1c4d10b2f7d42f1f42a8e8 = L.marker(
+                [37.4487209, 126.7111247],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_34a768257fcc480e9e68102994f137d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c5f57683c1c4d10b2f7d42f1f42a8e8.setIcon(icon_34a768257fcc480e9e68102994f137d9);
+        
+    
+            marker_3c5f57683c1c4d10b2f7d42f1f42a8e8.bindTooltip(
+                `<div>
+                     전복촌 : 한식 - 인천 남동구 구월동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14dc162960c341b7a1142c381577441d = L.marker(
+                [37.4569754, 126.68100829999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_28b86ae898a247b2aeaa2c8b0617f630 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_14dc162960c341b7a1142c381577441d.setIcon(icon_28b86ae898a247b2aeaa2c8b0617f630);
+        
+    
+            marker_14dc162960c341b7a1142c381577441d.bindTooltip(
+                `<div>
+                     청해김밥 : 분식 - 인천 남구 주안동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76bedae7d7784eebbaaf7e9c3bc0bf30 = L.marker(
+                [37.752549, 126.48740049999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_7a4caa1e013a4b529c64773e502b181c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_76bedae7d7784eebbaaf7e9c3bc0bf30.setIcon(icon_7a4caa1e013a4b529c64773e502b181c);
+        
+    
+            marker_76bedae7d7784eebbaaf7e9c3bc0bf30.bindTooltip(
+                `<div>
+                     우리옥 : 한식 - 인천 강화군 강화읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84a873490ad641ebbc7ed19b16a125e5 = L.marker(
+                [37.752549, 126.48740049999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_30cf4261977945bbb58b438d52843876 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_84a873490ad641ebbc7ed19b16a125e5.setIcon(icon_30cf4261977945bbb58b438d52843876);
+        
+    
+            marker_84a873490ad641ebbc7ed19b16a125e5.bindTooltip(
+                `<div>
+                     국화호수 : 한식 - 인천 강화군 강화읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62e08dcd3749460eb6cab1d57bada764 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_6f3cf9f02e114fd68009d87df81cdbb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_62e08dcd3749460eb6cab1d57bada764.setIcon(icon_6f3cf9f02e114fd68009d87df81cdbb7);
+        
+    
+            marker_62e08dcd3749460eb6cab1d57bada764.bindTooltip(
+                `<div>
+                     카페조선 송도신도시점 : 한식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ba97e08db4043fc8d42aa7688d4bc26 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_5b9a4f6d795143d6ae3ad891b567f860 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5ba97e08db4043fc8d42aa7688d4bc26.setIcon(icon_5b9a4f6d795143d6ae3ad891b567f860);
+        
+    
+            marker_5ba97e08db4043fc8d42aa7688d4bc26.bindTooltip(
+                `<div>
+                     송쭈집 : 한식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d264e0a752f641c6a72e1ccccb968b14 = L.marker(
+                [37.5422141, 126.6619689],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_b0dcc64bb63441f08ebe754486f69b25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d264e0a752f641c6a72e1ccccb968b14.setIcon(icon_b0dcc64bb63441f08ebe754486f69b25);
+        
+    
+            marker_d264e0a752f641c6a72e1ccccb968b14.bindTooltip(
+                `<div>
+                     스시노백쉐프 인천청라 15호점 : 일식 - 인천 서구 연희동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c990cde61b54751b4eff5b9fb39444f = L.marker(
+                [37.4569754, 126.68100829999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_946de17a619149ffb496ed4de9cfce93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5c990cde61b54751b4eff5b9fb39444f.setIcon(icon_946de17a619149ffb496ed4de9cfce93);
+        
+    
+            marker_5c990cde61b54751b4eff5b9fb39444f.bindTooltip(
+                `<div>
+                     문어시대 : 한식 - 인천 남구 주안동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad672eb928b3496390fb399a2c7bd72f = L.marker(
+                [37.4893695, 126.7230345],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_322d44b16d2b4b109abae4afa44e13a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ad672eb928b3496390fb399a2c7bd72f.setIcon(icon_322d44b16d2b4b109abae4afa44e13a6);
+        
+    
+            marker_ad672eb928b3496390fb399a2c7bd72f.bindTooltip(
+                `<div>
+                     참숯짝갈비 : 한식 - 인천 부평구 부평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9aa1cd934fc94bb1ab6e6c305779a38b = L.marker(
+                [37.628423100000006, 126.49808780000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_e29b06fcdd334b1e85250b3cbe001296 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9aa1cd934fc94bb1ab6e6c305779a38b.setIcon(icon_e29b06fcdd334b1e85250b3cbe001296);
+        
+    
+            marker_9aa1cd934fc94bb1ab6e6c305779a38b.bindTooltip(
+                `<div>
+                     데이지카페(Daisy) : 카페/주점 - 인천 강화군 길상면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6987a2e7596142d893e754ab01813294 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_0c0d55a88e7144d7a8dfe2f90700e347 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6987a2e7596142d893e754ab01813294.setIcon(icon_0c0d55a88e7144d7a8dfe2f90700e347);
+        
+    
+            marker_6987a2e7596142d893e754ab01813294.bindTooltip(
+                `<div>
+                     신포순대 : 한식 - 인천 서울시 중구 신포동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c455abc39914c44bb142a76aee146d2 = L.marker(
+                [37.6052719, 126.6672048],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_18230bc9da0e4a2ab9d82782f498d44f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c455abc39914c44bb142a76aee146d2.setIcon(icon_18230bc9da0e4a2ab9d82782f498d44f);
+        
+    
+            marker_3c455abc39914c44bb142a76aee146d2.bindTooltip(
+                `<div>
+                     정정아식당 : 한식 - 인천 서구 마전동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d0e90d5462e456abfbf764f59065c9b = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_de3b3b24f2244654b0b80a7b23a986f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2d0e90d5462e456abfbf764f59065c9b.setIcon(icon_de3b3b24f2244654b0b80a7b23a986f4);
+        
+    
+            marker_2d0e90d5462e456abfbf764f59065c9b.bindTooltip(
+                `<div>
+                     다복집 : 한식 - 인천 서울시 중구 항동7가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce94968bb5eb4fc68fb66d47eb8c9c87 = L.marker(
+                [37.4629186, 126.650373],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_bf08643fa6734442b36d75b06bffdb22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ce94968bb5eb4fc68fb66d47eb8c9c87.setIcon(icon_bf08643fa6734442b36d75b06bffdb22);
+        
+    
+            marker_ce94968bb5eb4fc68fb66d47eb8c9c87.bindTooltip(
+                `<div>
+                     오목골 : 일식 - 인천 미추홀구 숭의동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d35c97f0daa4f3b893e727bbde55bb6 = L.marker(
+                [37.4043953, 126.72407150000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_9752278fa6a642a8b84ab957b5f790a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d35c97f0daa4f3b893e727bbde55bb6.setIcon(icon_9752278fa6a642a8b84ab957b5f790a8);
+        
+    
+            marker_6d35c97f0daa4f3b893e727bbde55bb6.bindTooltip(
+                `<div>
+                     빌리엔젤 인천논현뉴코아아울렛점 : 카페/주점 - 인천 남동구 논현동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be571f1d81ba49fe8a417c921cd2d378 = L.marker(
+                [37.5155097, 126.72650300000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_a4eece3a853847e294d11d25d1ebad87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_be571f1d81ba49fe8a417c921cd2d378.setIcon(icon_a4eece3a853847e294d11d25d1ebad87);
+        
+    
+            marker_be571f1d81ba49fe8a417c921cd2d378.bindTooltip(
+                `<div>
+                     소금빛풍천장어 : 한식 - 인천 부평구 갈산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_762e2cd778794e66b5a760fe4eb306f8 = L.marker(
+                [37.4569754, 126.68100829999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_14a1a94463904b10a1e2815274ee21a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_762e2cd778794e66b5a760fe4eb306f8.setIcon(icon_14a1a94463904b10a1e2815274ee21a7);
+        
+    
+            marker_762e2cd778794e66b5a760fe4eb306f8.bindTooltip(
+                `<div>
+                     연중반점 : 중식 - 인천 남구 주안동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2ad7bba4e8a448c8b8aae040f35d1ed = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_c87b042d378749d082cc062bc0d35a4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c2ad7bba4e8a448c8b8aae040f35d1ed.setIcon(icon_c87b042d378749d082cc062bc0d35a4f);
+        
+    
+            marker_c2ad7bba4e8a448c8b8aae040f35d1ed.bindTooltip(
+                `<div>
+                     연경 : 중식 - 인천 서울시 중구 북성동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d330859023f54e7c89bcc3c3d18a8723 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_bce9c9053bf14774bb1a71d0f7dc4b9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d330859023f54e7c89bcc3c3d18a8723.setIcon(icon_bce9c9053bf14774bb1a71d0f7dc4b9f);
+        
+    
+            marker_d330859023f54e7c89bcc3c3d18a8723.bindTooltip(
+                `<div>
+                     경인면옥 : 한식 - 인천 서울시 중구 내동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a9f054f92ed4d618bb3108541e53a7a = L.marker(
+                [37.7234059, 126.39366709999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_6af5c64184f649978aa15412295f8f0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5a9f054f92ed4d618bb3108541e53a7a.setIcon(icon_6af5c64184f649978aa15412295f8f0e);
+        
+    
+            marker_5a9f054f92ed4d618bb3108541e53a7a.bindTooltip(
+                `<div>
+                     강화꽃게집 : 한식 - 인천 강화군 내가면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7a1e54bb6e64226ad02a651022aa03f = L.marker(
+                [37.4656799, 126.70714850000002],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_eb85900c8af840a5b05e022a953ba9b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7a1e54bb6e64226ad02a651022aa03f.setIcon(icon_eb85900c8af840a5b05e022a953ba9b3);
+        
+    
+            marker_a7a1e54bb6e64226ad02a651022aa03f.bindTooltip(
+                `<div>
+                     고기사냥 : 한식 - 인천 남동구 간석동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02ee31d833fd47109ba04ab94ff68076 = L.marker(
+                [37.6193898, 126.4244405],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_f92292c970f5419c8efe2694fd78b085 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_02ee31d833fd47109ba04ab94ff68076.setIcon(icon_f92292c970f5419c8efe2694fd78b085);
+        
+    
+            marker_02ee31d833fd47109ba04ab94ff68076.bindTooltip(
+                `<div>
+                     편가네된장 : 한식 - 인천 강화군 화도면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a71a3c9129f424aa609925ad380aad6 = L.marker(
+                [37.4569754, 126.68100829999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_3991320600944332aa449ca751433553 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a71a3c9129f424aa609925ad380aad6.setIcon(icon_3991320600944332aa449ca751433553);
+        
+    
+            marker_0a71a3c9129f424aa609925ad380aad6.bindTooltip(
+                `<div>
+                     불티나돈까스 : 양식 - 인천 남구 주안동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42bf6c98dbac4fdf9b5fde79e8cebe27 = L.marker(
+                [37.4936083, 126.7284129],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_cfe9f7ba201a4e9da7b143b437a75628 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_42bf6c98dbac4fdf9b5fde79e8cebe27.setIcon(icon_cfe9f7ba201a4e9da7b143b437a75628);
+        
+    
+            marker_42bf6c98dbac4fdf9b5fde79e8cebe27.bindTooltip(
+                `<div>
+                     카리브 : 양식 - 인천 부평구 부평5동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_606e9cbcb77640208abf0317905d98c2 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_71b0167dc52e4ab194c56f2796115771 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_606e9cbcb77640208abf0317905d98c2.setIcon(icon_71b0167dc52e4ab194c56f2796115771);
+        
+    
+            marker_606e9cbcb77640208abf0317905d98c2.bindTooltip(
+                `<div>
+                     고니면옥 : 한식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5bebd65c467946ce9a1e9a61dbcea18e = L.marker(
+                [37.5969335, 126.70816459999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_cce9466e6f5440cd8ae52e88a3dc2bb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5bebd65c467946ce9a1e9a61dbcea18e.setIcon(icon_cce9466e6f5440cd8ae52e88a3dc2bb2);
+        
+    
+            marker_5bebd65c467946ce9a1e9a61dbcea18e.bindTooltip(
+                `<div>
+                     문스커피(MOONS COFFEE) : 카페/주점 - 인천 서구 원당동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_742305120ca941d882f6b96bab1b7563 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_e6b08767f5204543b284b327f8594c8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_742305120ca941d882f6b96bab1b7563.setIcon(icon_e6b08767f5204543b284b327f8594c8f);
+        
+    
+            marker_742305120ca941d882f6b96bab1b7563.bindTooltip(
+                `<div>
+                     빌리엔젤 송도신도시점 : 카페/주점 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec5a56a0909d4bbfbd48f6e9f6fb264b = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_c9f9a3912320431bbb9c6554ebb8ec7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ec5a56a0909d4bbfbd48f6e9f6fb264b.setIcon(icon_c9f9a3912320431bbb9c6554ebb8ec7f);
+        
+    
+            marker_ec5a56a0909d4bbfbd48f6e9f6fb264b.bindTooltip(
+                `<div>
+                     풍미 : 중식 - 인천 서울시 중구 선린동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_065eeabdd0404f4386941f074e64d02a = L.marker(
+                [37.628423100000006, 126.49808780000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_decdbe898c4f4dd1979063a89951befa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_065eeabdd0404f4386941f074e64d02a.setIcon(icon_decdbe898c4f4dd1979063a89951befa);
+        
+    
+            marker_065eeabdd0404f4386941f074e64d02a.bindTooltip(
+                `<div>
+                     보광호횟집 : 일식 - 인천 강화군 길상면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb2a8c76def540cda16524f0dfa28194 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_6f30b615e5ad43b8bd2ab9821087e7af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb2a8c76def540cda16524f0dfa28194.setIcon(icon_6f30b615e5ad43b8bd2ab9821087e7af);
+        
+    
+            marker_eb2a8c76def540cda16524f0dfa28194.bindTooltip(
+                `<div>
+                     신성루 : 중식 - 인천 서울시 중구 신생동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_940e1d162d8e4670aa488006d69402b3 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_04d9815b7a69441999237e9efc2ad1e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_940e1d162d8e4670aa488006d69402b3.setIcon(icon_04d9815b7a69441999237e9efc2ad1e0);
+        
+    
+            marker_940e1d162d8e4670aa488006d69402b3.bindTooltip(
+                `<div>
+                     짱구네 : 한식 - 인천 서울시 중구 운서동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96fde4c2f07245b598dd2dd3f5a3b4fd = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_61bf63265b1a4fd7bdd064bc3e8bfbd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_96fde4c2f07245b598dd2dd3f5a3b4fd.setIcon(icon_61bf63265b1a4fd7bdd064bc3e8bfbd0);
+        
+    
+            marker_96fde4c2f07245b598dd2dd3f5a3b4fd.bindTooltip(
+                `<div>
+                     잉글랜드왕돈까스 : 일식 - 인천 서울시 중구 인현동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08342717bdc04c1dac92fd594209f166 = L.marker(
+                [37.420410100000005, 126.6832994],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_fc92512e36ef49de93b341c1a8f916f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_08342717bdc04c1dac92fd594209f166.setIcon(icon_fc92512e36ef49de93b341c1a8f916f3);
+        
+    
+            marker_08342717bdc04c1dac92fd594209f166.bindTooltip(
+                `<div>
+                     맛찬들왕소금구이 연수점 : 한식 - 인천 연수구 연수동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31594f297fa04b15874d44c00f2065f3 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_d0dfdc4462d0450da41c0b33be3293b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_31594f297fa04b15874d44c00f2065f3.setIcon(icon_d0dfdc4462d0450da41c0b33be3293b0);
+        
+    
+            marker_31594f297fa04b15874d44c00f2065f3.bindTooltip(
+                `<div>
+                     신일반점 : 중식 - 인천 서울시 중구 신흥동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c4827c0c493b4b5ba9c995ba3eeafab8 = L.marker(
+                [37.628423100000006, 126.49808780000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_a9cf6232ab5a4a98b5c39acb21790658 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c4827c0c493b4b5ba9c995ba3eeafab8.setIcon(icon_a9cf6232ab5a4a98b5c39acb21790658);
+        
+    
+            marker_c4827c0c493b4b5ba9c995ba3eeafab8.bindTooltip(
+                `<div>
+                     장어마을 : 한식 - 인천 강화군 길상면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a2ca81de9fe4c23a10a24ea1e462aeb = L.marker(
+                [37.6731059, 126.4325547],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_01cd900ba9754d64b5e27586e472c4e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9a2ca81de9fe4c23a10a24ea1e462aeb.setIcon(icon_01cd900ba9754d64b5e27586e472c4e2);
+        
+    
+            marker_9a2ca81de9fe4c23a10a24ea1e462aeb.bindTooltip(
+                `<div>
+                     충남서산집 : 한식 - 인천 강화군 양도면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd5e223842ce46fe96ab3f5933fe4823 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_4dcefc93f34f49238228977a2542926b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fd5e223842ce46fe96ab3f5933fe4823.setIcon(icon_4dcefc93f34f49238228977a2542926b);
+        
+    
+            marker_fd5e223842ce46fe96ab3f5933fe4823.bindTooltip(
+                `<div>
+                     십리향 : 중식 - 인천 서울시 중구 북성동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_266ceb480f1a41899c08c223a1e3d52b = L.marker(
+                [37.628423100000006, 126.49808780000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_1cb586a4ab0c40ab817e51834d48338c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_266ceb480f1a41899c08c223a1e3d52b.setIcon(icon_1cb586a4ab0c40ab817e51834d48338c);
+        
+    
+            marker_266ceb480f1a41899c08c223a1e3d52b.bindTooltip(
+                `<div>
+                     꼭대기집약수터 : 한식 - 인천 강화군 길상면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb065e2876754320bf62d31233aef400 = L.marker(
+                [37.4570703, 126.66937620000002],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_300310bb06d347ebbb783b64a2ff46e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb065e2876754320bf62d31233aef400.setIcon(icon_300310bb06d347ebbb783b64a2ff46e2);
+        
+    
+            marker_eb065e2876754320bf62d31233aef400.bindTooltip(
+                `<div>
+                     변가네옹진냉면 : 한식 - 인천 남구 주안2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_536edafda8444a85a5741ee1bee7a3cf = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_d4dc4691b80141b09de559ff2aee3af2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_536edafda8444a85a5741ee1bee7a3cf.setIcon(icon_d4dc4691b80141b09de559ff2aee3af2);
+        
+    
+            marker_536edafda8444a85a5741ee1bee7a3cf.bindTooltip(
+                `<div>
+                     삼강옥 : 한식 - 인천 서울시 중구 경동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26d0a02ae7cc4661bd2365ab246df0f0 = L.marker(
+                [37.4785754, 126.65089420000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_bb8803ab9e0b4684934884cc39cefea2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_26d0a02ae7cc4661bd2365ab246df0f0.setIcon(icon_bb8803ab9e0b4684934884cc39cefea2);
+        
+    
+            marker_26d0a02ae7cc4661bd2365ab246df0f0.bindTooltip(
+                `<div>
+                     아리랑회관 : 한식 - 인천 동구 송림동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d53f4f0e0794f1c9c3802a69ac4254f = L.marker(
+                [37.2573359, 126.4680971],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_bd991db20de7419ca9b74e8280c4bbb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1d53f4f0e0794f1c9c3802a69ac4254f.setIcon(icon_bd991db20de7419ca9b74e8280c4bbb4);
+        
+    
+            marker_1d53f4f0e0794f1c9c3802a69ac4254f.bindTooltip(
+                `<div>
+                     바다향기 : 기타/세계 - 인천 옹진군 영흥면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3554d6e817cf4ebf8b9360512b73df11 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_e525fd7108f04b05909f5f8b01d2efbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3554d6e817cf4ebf8b9360512b73df11.setIcon(icon_e525fd7108f04b05909f5f8b01d2efbd);
+        
+    
+            marker_3554d6e817cf4ebf8b9360512b73df11.bindTooltip(
+                `<div>
+                     중국제과 담 : 베이커리 - 인천 서울시 중구 북성동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa637bafa566439d8ea8ef3e69abb922 = L.marker(
+                [37.4524027, 126.7116379],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_7049bb79f16d4052ab3b458bee1d40f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fa637bafa566439d8ea8ef3e69abb922.setIcon(icon_7049bb79f16d4052ab3b458bee1d40f2);
+        
+    
+            marker_fa637bafa566439d8ea8ef3e69abb922.bindTooltip(
+                `<div>
+                     마노디셰프(인천점) : 양식 - 인천 남동구 구월1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f6a3530a181414698ffbcd27d2ed7ff = L.marker(
+                [37.4941667, 126.7200466],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_1e00cccc57b3444987a6748f4e9015b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6f6a3530a181414698ffbcd27d2ed7ff.setIcon(icon_1e00cccc57b3444987a6748f4e9015b7);
+        
+    
+            marker_6f6a3530a181414698ffbcd27d2ed7ff.bindTooltip(
+                `<div>
+                     뉴욕반점 : 중식 - 인천 부평구 부평1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3cedf9ad709a440ca77d5a4513621d26 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_bedc7844528146b1b6b6711ca4bdc5fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3cedf9ad709a440ca77d5a4513621d26.setIcon(icon_bedc7844528146b1b6b6711ca4bdc5fb);
+        
+    
+            marker_3cedf9ad709a440ca77d5a4513621d26.bindTooltip(
+                `<div>
+                     신승반점 : 중식 - 인천 서울시 중구 북성동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bee6a0064db443dfa129eac330456f3f = L.marker(
+                [37.6193898, 126.4244405],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_0cebbb6c21fe44d5b3f96590d8dbc8ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bee6a0064db443dfa129eac330456f3f.setIcon(icon_0cebbb6c21fe44d5b3f96590d8dbc8ea);
+        
+    
+            marker_bee6a0064db443dfa129eac330456f3f.bindTooltip(
+                `<div>
+                     내리해물 : 한식 - 인천 강화군 화도면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec352b10d5eb4b7990b99e6f6e6608a8 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_aeebc8129fbe44cab632c0ef1fa294c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ec352b10d5eb4b7990b99e6f6e6608a8.setIcon(icon_aeebc8129fbe44cab632c0ef1fa294c5);
+        
+    
+            marker_ec352b10d5eb4b7990b99e6f6e6608a8.bindTooltip(
+                `<div>
+                     레벨19(Level19) : 뷔페 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30b395fdbb53400d9fd054b9eb4b1b9a = L.marker(
+                [37.4893695, 126.7230345],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_253b0c5679ea429584f7052b16a6770d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_30b395fdbb53400d9fd054b9eb4b1b9a.setIcon(icon_253b0c5679ea429584f7052b16a6770d);
+        
+    
+            marker_30b395fdbb53400d9fd054b9eb4b1b9a.bindTooltip(
+                `<div>
+                     포다쌀국수 : 기타/세계 - 인천 부평구 부평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df817777632d45b581b8f9a57713c4f6 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_14016046bf0c43de945dad1a754267bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_df817777632d45b581b8f9a57713c4f6.setIcon(icon_14016046bf0c43de945dad1a754267bf);
+        
+    
+            marker_df817777632d45b581b8f9a57713c4f6.bindTooltip(
+                `<div>
+                     미즈스몰플레이트 현대아울렛 송도점 : 양식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68ede36c233047b28d377312c0aa6582 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_8a3ddd3da0bf4e5aad38814e3e8fcace = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_68ede36c233047b28d377312c0aa6582.setIcon(icon_8a3ddd3da0bf4e5aad38814e3e8fcace);
+        
+    
+            marker_68ede36c233047b28d377312c0aa6582.bindTooltip(
+                `<div>
+                     명월집 : 한식 - 인천 서울시 중구 중앙동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55d8b5ae2ba4420db267058648610725 = L.marker(
+                [37.4487209, 126.7111247],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_6555bf45c99c457b93c3226f2d31005d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55d8b5ae2ba4420db267058648610725.setIcon(icon_6555bf45c99c457b93c3226f2d31005d);
+        
+    
+            marker_55d8b5ae2ba4420db267058648610725.bindTooltip(
+                `<div>
+                     스시노백쉐프 인천구월 37호점 : 일식 - 인천 남동구 구월동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d58eaf4fde2492481f89adcfcb02470 = L.marker(
+                [37.4893695, 126.7230345],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_ba52c9740bfe459ba3337c1743c81b06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d58eaf4fde2492481f89adcfcb02470.setIcon(icon_ba52c9740bfe459ba3337c1743c81b06);
+        
+    
+            marker_6d58eaf4fde2492481f89adcfcb02470.bindTooltip(
+                `<div>
+                     홍대돈부리 부평역점 : 일식 - 인천 부평구 부평동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9dc723751bdf4cd29f1b0950b8aea51b = L.marker(
+                [37.452915999999995, 126.69682340000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_c8296298e53c4134a8d7f60d59cdde2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9dc723751bdf4cd29f1b0950b8aea51b.setIcon(icon_c8296298e53c4134a8d7f60d59cdde2f);
+        
+    
+            marker_9dc723751bdf4cd29f1b0950b8aea51b.bindTooltip(
+                `<div>
+                     함춘원 : 중식 - 인천 남동구 구월3동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18a8ebc4ff9e443a8f109b1f9a04f930 = L.marker(
+                [37.7234059, 126.39366709999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_871b06255f414835bd3392415282eacc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_18a8ebc4ff9e443a8f109b1f9a04f930.setIcon(icon_871b06255f414835bd3392415282eacc);
+        
+    
+            marker_18a8ebc4ff9e443a8f109b1f9a04f930.bindTooltip(
+                `<div>
+                     외내골가든 : 한식 - 인천 강화군 내가면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_743d521006ec4d2189cf2e5f4d021a61 = L.marker(
+                [37.452233899999996, 126.6591997],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_d3b337bb50804f088aded9bb6645b552 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_743d521006ec4d2189cf2e5f4d021a61.setIcon(icon_d3b337bb50804f088aded9bb6645b552);
+        
+    
+            marker_743d521006ec4d2189cf2e5f4d021a61.bindTooltip(
+                `<div>
+                     까사올리브 : 카페/주점 - 인천 남구 용현1.4동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b72790e4ce7e480a94e79cb639a5bf6a = L.marker(
+                [37.6987953, 126.32023490000002],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_9001d25c49e541ab99a8497f2849af27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b72790e4ce7e480a94e79cb639a5bf6a.setIcon(icon_9001d25c49e541ab99a8497f2849af27);
+        
+    
+            marker_b72790e4ce7e480a94e79cb639a5bf6a.bindTooltip(
+                `<div>
+                     노을내리는아름다운집 : 카페/주점 - 인천 강화군 삼산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_094460c30b344438895e8f0473c7bf77 = L.marker(
+                [37.4515119, 126.647244],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_9d69022d85ca445ab47cd83fd90dbe7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_094460c30b344438895e8f0473c7bf77.setIcon(icon_9d69022d85ca445ab47cd83fd90dbe7a);
+        
+    
+            marker_094460c30b344438895e8f0473c7bf77.bindTooltip(
+                `<div>
+                     고수찜닭 : 한식 - 인천 남구 용현동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a602ceca7244f31b01891b991c212ff = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_1319fa1954d14840bfb46c34053f76f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6a602ceca7244f31b01891b991c212ff.setIcon(icon_1319fa1954d14840bfb46c34053f76f3);
+        
+    
+            marker_6a602ceca7244f31b01891b991c212ff.bindTooltip(
+                `<div>
+                     신포닭강정 : 한식 - 인천 서울시 중구 신포동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27ddc854dd5b4b86b5e9cdaf392df148 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_f345d4a5888f4aa58f418e74555f000a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_27ddc854dd5b4b86b5e9cdaf392df148.setIcon(icon_f345d4a5888f4aa58f418e74555f000a);
+        
+    
+            marker_27ddc854dd5b4b86b5e9cdaf392df148.bindTooltip(
+                `<div>
+                     맷돌칼국수 : 한식 - 인천 서울시 중구 신포동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01a89eb2464d414a90e288d74efd1b28 = L.marker(
+                [37.7234059, 126.39366709999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_1d9aaf2a0e0d493d86be791dd569f563 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_01a89eb2464d414a90e288d74efd1b28.setIcon(icon_1d9aaf2a0e0d493d86be791dd569f563);
+        
+    
+            marker_01a89eb2464d414a90e288d74efd1b28.bindTooltip(
+                `<div>
+                     진두강참장어 : 한식 - 인천 강화군 내가면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a81789e3949845b2a621d8a70796cea2 = L.marker(
+                [37.5422141, 126.6619689],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_53ec7c10afd84c38aceb3eda2cc56f73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a81789e3949845b2a621d8a70796cea2.setIcon(icon_53ec7c10afd84c38aceb3eda2cc56f73);
+        
+    
+            marker_a81789e3949845b2a621d8a70796cea2.bindTooltip(
+                `<div>
+                     버거앤프라이즈 : 패스트푸드 - 인천 서구 연희동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4296b4f08fff4ffca07c3b513fc048b1 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_634a02aecdf2455ebcce8ccd425748a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4296b4f08fff4ffca07c3b513fc048b1.setIcon(icon_634a02aecdf2455ebcce8ccd425748a6);
+        
+    
+            marker_4296b4f08fff4ffca07c3b513fc048b1.bindTooltip(
+                `<div>
+                     한우가만두 현대아울렛 송도점 : 분식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b137b4fdc474de38af7ebede1e496d2 = L.marker(
+                [37.752549, 126.48740049999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_e88033f362e442c98407c8d9a23f7a6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2b137b4fdc474de38af7ebede1e496d2.setIcon(icon_e88033f362e442c98407c8d9a23f7a6b);
+        
+    
+            marker_2b137b4fdc474de38af7ebede1e496d2.bindTooltip(
+                `<div>
+                     왕자정묵밥집 : 한식 - 인천 강화군 강화읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c68f907f11464e369c34fcbfa4e06875 = L.marker(
+                [37.4524027, 126.7116379],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_97fb80beb94341ffb3af511842ea3185 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c68f907f11464e369c34fcbfa4e06875.setIcon(icon_97fb80beb94341ffb3af511842ea3185);
+        
+    
+            marker_c68f907f11464e369c34fcbfa4e06875.bindTooltip(
+                `<div>
+                     문파스타 : 양식 - 인천 남동구 구월1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6020e0a7ae942cda253aa9ea1ad8e20 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_629962a921f0469eb01e925999cd59c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d6020e0a7ae942cda253aa9ea1ad8e20.setIcon(icon_629962a921f0469eb01e925999cd59c6);
+        
+    
+            marker_d6020e0a7ae942cda253aa9ea1ad8e20.bindTooltip(
+                `<div>
+                     카페 오라 : 카페/주점 - 인천 서울시 중구 을왕동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59c02b70e57a40d4b33871c0174800e4 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_a3ec279518d44a90a4a1c2f28b58ca0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_59c02b70e57a40d4b33871c0174800e4.setIcon(icon_a3ec279518d44a90a4a1c2f28b58ca0f);
+        
+    
+            marker_59c02b70e57a40d4b33871c0174800e4.bindTooltip(
+                `<div>
+                     통꼬집 : 한식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f2262a2f6da4da59c5c158a3bf93ad3 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_9f91673e83874ce1984e06405b39b436 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4f2262a2f6da4da59c5c158a3bf93ad3.setIcon(icon_9f91673e83874ce1984e06405b39b436);
+        
+    
+            marker_4f2262a2f6da4da59c5c158a3bf93ad3.bindTooltip(
+                `<div>
+                     호남완도마구잡이 : 한식 - 인천 서울시 중구 북성동1가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd7b8b370e9c4c62a77fe3d023b1fb6e = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_6b16d8a6dec24c41b2ac82776d9a930c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fd7b8b370e9c4c62a77fe3d023b1fb6e.setIcon(icon_6b16d8a6dec24c41b2ac82776d9a930c);
+        
+    
+            marker_fd7b8b370e9c4c62a77fe3d023b1fb6e.bindTooltip(
+                `<div>
+                     인천집 : 한식 - 인천 서울시 중구 전동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0b02929ccbd476db08ee5bbaa302c03 = L.marker(
+                [37.5748831, 126.77207659999998],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_a33d32eeaaaf4959be326e804223e81d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d0b02929ccbd476db08ee5bbaa302c03.setIcon(icon_a33d32eeaaaf4959be326e804223e81d);
+        
+    
+            marker_d0b02929ccbd476db08ee5bbaa302c03.bindTooltip(
+                `<div>
+                     벌말매운탕 : 한식 - 인천 계양구 상야동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55d344babc5b45ee9a2b575670d3f206 = L.marker(
+                [37.4569754, 126.68100829999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_02a33b1a5d024055b60432741afc1b00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55d344babc5b45ee9a2b575670d3f206.setIcon(icon_02a33b1a5d024055b60432741afc1b00);
+        
+    
+            marker_55d344babc5b45ee9a2b575670d3f206.bindTooltip(
+                `<div>
+                     뽀까뽀까신볶음닭 : 한식 - 인천 남구 주안동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b60398a86454cb09ca9f648d6c31d18 = L.marker(
+                [37.628423100000006, 126.49808780000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_b49ab443647d4605beaf16c639f2d882 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b60398a86454cb09ca9f648d6c31d18.setIcon(icon_b49ab443647d4605beaf16c639f2d882);
+        
+    
+            marker_1b60398a86454cb09ca9f648d6c31d18.bindTooltip(
+                `<div>
+                     숲길따라 : 카페/주점 - 인천 강화군 길상면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_743edd6c19cb4ab5af474f2ebccbbef3 = L.marker(
+                [37.752549, 126.48740049999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_5118d9f9ed9041ae928e3529110acfbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_743edd6c19cb4ab5af474f2ebccbbef3.setIcon(icon_5118d9f9ed9041ae928e3529110acfbb);
+        
+    
+            marker_743edd6c19cb4ab5af474f2ebccbbef3.bindTooltip(
+                `<div>
+                     신아리랑식당 : 한식 - 인천 강화군 강화읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65b07580865f443c8d869c2eb5e9459a = L.marker(
+                [37.6987953, 126.32023490000002],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_ec77ec9e748548d2af34870b0ac62fb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65b07580865f443c8d869c2eb5e9459a.setIcon(icon_ec77ec9e748548d2af34870b0ac62fb2);
+        
+    
+            marker_65b07580865f443c8d869c2eb5e9459a.bindTooltip(
+                `<div>
+                     토담마을 : 한식 - 인천 강화군 삼산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8431aa9439447d488da27ca86287f3b = L.marker(
+                [37.4524027, 126.7116379],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_f4201c8375914f4db2281647d1bd5612 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e8431aa9439447d488da27ca86287f3b.setIcon(icon_f4201c8375914f4db2281647d1bd5612);
+        
+    
+            marker_e8431aa9439447d488da27ca86287f3b.bindTooltip(
+                `<div>
+                     와규홀릭 : 양식 - 인천 남동구 구월1동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49da793d0ee04c2f828deb613569795f = L.marker(
+                [37.7234059, 126.39366709999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_0ccb3129dd9c4678a6cea0b56450dafc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_49da793d0ee04c2f828deb613569795f.setIcon(icon_0ccb3129dd9c4678a6cea0b56450dafc);
+        
+    
+            marker_49da793d0ee04c2f828deb613569795f.bindTooltip(
+                `<div>
+                     서울횟집 : 일식 - 인천 강화군 내가면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f67a41b027d4494fa8b1717c84deac84 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_4f1daae49d2e4ba99c8a060e8c95cb75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f67a41b027d4494fa8b1717c84deac84.setIcon(icon_4f1daae49d2e4ba99c8a060e8c95cb75);
+        
+    
+            marker_f67a41b027d4494fa8b1717c84deac84.bindTooltip(
+                `<div>
+                     만다복 : 중식 - 인천 서울시 중구 북성동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5c92a0e4f8746779dd479f9a9fd839f = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_18ad06d8111942c089eaa28f83c2ad5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c5c92a0e4f8746779dd479f9a9fd839f.setIcon(icon_18ad06d8111942c089eaa28f83c2ad5f);
+        
+    
+            marker_c5c92a0e4f8746779dd479f9a9fd839f.bindTooltip(
+                `<div>
+                     서해안조개광장 : 한식 - 인천 서울시 중구 덕교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a285e11bc18f4afc86f19eb593adf6ae = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_61cc76d6d6fa4a1ca473f5a70fd3ea08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a285e11bc18f4afc86f19eb593adf6ae.setIcon(icon_61cc76d6d6fa4a1ca473f5a70fd3ea08);
+        
+    
+            marker_a285e11bc18f4afc86f19eb593adf6ae.bindTooltip(
+                `<div>
+                     시래옥반상 현대아울렛 송도점 : 한식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1b3aaa391d4481e9ae2a1147a0a3912 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_70ef2d591b1a4170a38fbdf2aa5aeb2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c1b3aaa391d4481e9ae2a1147a0a3912.setIcon(icon_70ef2d591b1a4170a38fbdf2aa5aeb2f);
+        
+    
+            marker_c1b3aaa391d4481e9ae2a1147a0a3912.bindTooltip(
+                `<div>
+                     산동공갈빵 : 기타/세계 - 인천 서울시 중구 신포동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af075f57ef7d4cc2b470580d20199ba9 = L.marker(
+                [37.6731059, 126.4325547],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_b22c0f6ad8104297b40c7239273b9a3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_af075f57ef7d4cc2b470580d20199ba9.setIcon(icon_b22c0f6ad8104297b40c7239273b9a3d);
+        
+    
+            marker_af075f57ef7d4cc2b470580d20199ba9.bindTooltip(
+                `<div>
+                     해운정양식장 : 한식 - 인천 강화군 양도면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_123a9d33d8f04dbf928dd2c010d98100 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_8fe774509f5f4aba9f1f25002476448c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_123a9d33d8f04dbf928dd2c010d98100.setIcon(icon_8fe774509f5f4aba9f1f25002476448c);
+        
+    
+            marker_123a9d33d8f04dbf928dd2c010d98100.bindTooltip(
+                `<div>
+                     구르망 by 마스터키친 : 일식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce7a7a8b90bc4dc59f427299f1c2c909 = L.marker(
+                [37.6987953, 126.32023490000002],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_5f94fe505ab14b2999d1222a0a0c3f75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ce7a7a8b90bc4dc59f427299f1c2c909.setIcon(icon_5f94fe505ab14b2999d1222a0a0c3f75);
+        
+    
+            marker_ce7a7a8b90bc4dc59f427299f1c2c909.bindTooltip(
+                `<div>
+                     감로다원 : 카페/주점 - 인천 강화군 삼산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4be6b428256e41e38d71b3a99cd928ff = L.marker(
+                [37.6987953, 126.32023490000002],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_5bec2c7df86740e8a25ab126ad7fecf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4be6b428256e41e38d71b3a99cd928ff.setIcon(icon_5bec2c7df86740e8a25ab126ad7fecf8);
+        
+    
+            marker_4be6b428256e41e38d71b3a99cd928ff.bindTooltip(
+                `<div>
+                     솔밭식당 : 한식 - 인천 강화군 삼산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34e6cef726ed4014a8503fed882c28d2 = L.marker(
+                [37.7169649, 126.4856179],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_60ca05026cf842068718bfe439d193b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_34e6cef726ed4014a8503fed882c28d2.setIcon(icon_60ca05026cf842068718bfe439d193b3);
+        
+    
+            marker_34e6cef726ed4014a8503fed882c28d2.bindTooltip(
+                `<div>
+                     카페바그다드 : 카페/주점 - 인천 강화군 선원면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3876b58768946de97a948ddd6d051de = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_d08ed82944194fa39fda73f5b901f6f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3876b58768946de97a948ddd6d051de.setIcon(icon_d08ed82944194fa39fda73f5b901f6f7);
+        
+    
+            marker_c3876b58768946de97a948ddd6d051de.bindTooltip(
+                `<div>
+                     중화방 : 중식 - 인천 서울시 중구 중앙동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8e432419ae744848954fbe9a91f6b02 = L.marker(
+                [37.4515119, 126.647244],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_68f7157d5286469b90d594fd5078006c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8e432419ae744848954fbe9a91f6b02.setIcon(icon_68f7157d5286469b90d594fd5078006c);
+        
+    
+            marker_d8e432419ae744848954fbe9a91f6b02.bindTooltip(
+                `<div>
+                     뚱아뚱아오릿대 : 한식 - 인천 남구 용현동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37ff8875f35c48bfa5f2335360b15bd3 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_cb624469ec2f4539b9fcb646b23cb367 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_37ff8875f35c48bfa5f2335360b15bd3.setIcon(icon_cb624469ec2f4539b9fcb646b23cb367);
+        
+    
+            marker_37ff8875f35c48bfa5f2335360b15bd3.bindTooltip(
+                `<div>
+                     퍼블리칸바이츠 현대아울렛 송도점 : 양식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_caa0111278634b248e70b211c0fb3b46 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_1c86fe12895b46068f7216a20a44c06c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_caa0111278634b248e70b211c0fb3b46.setIcon(icon_1c86fe12895b46068f7216a20a44c06c);
+        
+    
+            marker_caa0111278634b248e70b211c0fb3b46.bindTooltip(
+                `<div>
+                     화통삼 송도점 : 한식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f86fe0b70e67422e9d29c0076aa381e1 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_aed70b3339424919b5ce3fef32f95d3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f86fe0b70e67422e9d29c0076aa381e1.setIcon(icon_aed70b3339424919b5ce3fef32f95d3d);
+        
+    
+            marker_f86fe0b70e67422e9d29c0076aa381e1.bindTooltip(
+                `<div>
+                     아키노주방 : 일식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37242049772d40db8d5a35b80eb3fba8 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_a278288a2a7b438f82bfb732fee72c88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_37242049772d40db8d5a35b80eb3fba8.setIcon(icon_a278288a2a7b438f82bfb732fee72c88);
+        
+    
+            marker_37242049772d40db8d5a35b80eb3fba8.bindTooltip(
+                `<div>
+                     열두바구니 : 한식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b594799b2514093b907751a3f64bae7 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_ac81a36e578247658026d7e012bd8ccc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2b594799b2514093b907751a3f64bae7.setIcon(icon_ac81a36e578247658026d7e012bd8ccc);
+        
+    
+            marker_2b594799b2514093b907751a3f64bae7.bindTooltip(
+                `<div>
+                     클럽지움 : 카페/주점 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01785879428246fbbcc70453bff77c8c = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_183bc9286c924d0890f8d5b21b0f5c2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_01785879428246fbbcc70453bff77c8c.setIcon(icon_183bc9286c924d0890f8d5b21b0f5c2a);
+        
+    
+            marker_01785879428246fbbcc70453bff77c8c.bindTooltip(
+                `<div>
+                     일인식샤브 현대아울렛 송도점 : 한식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca2c4cc576cc451595068cb176fb1360 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_a1be16935b2245cfb6b857367b4c523a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ca2c4cc576cc451595068cb176fb1360.setIcon(icon_a1be16935b2245cfb6b857367b4c523a);
+        
+    
+            marker_ca2c4cc576cc451595068cb176fb1360.bindTooltip(
+                `<div>
+                     하와이인더보울 현대아울렛 송도점 : 기타/세계 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06864ac4b9c0411da5fcb931f1fcaf4d = L.marker(
+                [37.4515119, 126.647244],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_c5b5ac93ab794307953c0ebf1b20a0f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_06864ac4b9c0411da5fcb931f1fcaf4d.setIcon(icon_c5b5ac93ab794307953c0ebf1b20a0f1);
+        
+    
+            marker_06864ac4b9c0411da5fcb931f1fcaf4d.bindTooltip(
+                `<div>
+                     바리바리 : 한식 - 인천 남구 용현동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e718f6ac052d4885974afb9fe49b011a = L.marker(
+                [37.4569754, 126.68100829999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_d113f3223d0a405e92dacb5df24f7e9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e718f6ac052d4885974afb9fe49b011a.setIcon(icon_d113f3223d0a405e92dacb5df24f7e9c);
+        
+    
+            marker_e718f6ac052d4885974afb9fe49b011a.bindTooltip(
+                `<div>
+                     청실홍실 주안점 : 한식 - 인천 남구 주안동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14478c5d36a549ef85b1ee203d84f0b8 = L.marker(
+                [37.452915999999995, 126.69682340000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_f47efbba12b946eaaf9e5f2c225222f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_14478c5d36a549ef85b1ee203d84f0b8.setIcon(icon_f47efbba12b946eaaf9e5f2c225222f6);
+        
+    
+            marker_14478c5d36a549ef85b1ee203d84f0b8.bindTooltip(
+                `<div>
+                     돈불1971 : 한식 - 인천 남동구 구월3동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb59d12e9b2f44e2b08f59fd073d1cb9 = L.marker(
+                [37.6987953, 126.32023490000002],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_5d7780cd5c8f4517a6e9394f1721e301 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb59d12e9b2f44e2b08f59fd073d1cb9.setIcon(icon_5d7780cd5c8f4517a6e9394f1721e301);
+        
+    
+            marker_eb59d12e9b2f44e2b08f59fd073d1cb9.bindTooltip(
+                `<div>
+                     낙가산식당 : 한식 - 인천 강화군 삼산면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18c7580d44924af1851b589bc87bed57 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_1dada43f5c87461ba465174108c996c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_18c7580d44924af1851b589bc87bed57.setIcon(icon_1dada43f5c87461ba465174108c996c8);
+        
+    
+            marker_18c7580d44924af1851b589bc87bed57.bindTooltip(
+                `<div>
+                     소복 인천공항점 : 카페/주점 - 인천 서울시 중구 운서동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d071b6d4b0c9466c8ee62343b388e09a = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_7ef2cb27e40b4023afdc00b242fe4c62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d071b6d4b0c9466c8ee62343b388e09a.setIcon(icon_7ef2cb27e40b4023afdc00b242fe4c62);
+        
+    
+            marker_d071b6d4b0c9466c8ee62343b388e09a.bindTooltip(
+                `<div>
+                     루나씨키친 : 카페/주점 - 인천 서울시 중구 선린동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_664d3c23823b4e50b393f36e5026259a = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_fe79a850f2014187bae913d66d0e051d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_664d3c23823b4e50b393f36e5026259a.setIcon(icon_fe79a850f2014187bae913d66d0e051d);
+        
+    
+            marker_664d3c23823b4e50b393f36e5026259a.bindTooltip(
+                `<div>
+                     을왕어촌계 : 한식 - 인천 서울시 중구 을왕동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a22d45780d24298a9e9a2296e05b34e = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_f6c381d81c4248b2b66100b446a8a71c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1a22d45780d24298a9e9a2296e05b34e.setIcon(icon_f6c381d81c4248b2b66100b446a8a71c);
+        
+    
+            marker_1a22d45780d24298a9e9a2296e05b34e.bindTooltip(
+                `<div>
+                     홍예문커피집 : 카페/주점 - 인천 서울시 중구 송학동3가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cab7643ed9e541f8a0bc033fcedec30f = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_8647e17c84a6439e8afeb69c0ddef429 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cab7643ed9e541f8a0bc033fcedec30f.setIcon(icon_8647e17c84a6439e8afeb69c0ddef429);
+        
+    
+            marker_cab7643ed9e541f8a0bc033fcedec30f.bindTooltip(
+                `<div>
+                     편장군족발 현대프리미엄아울렛 송도 : 한식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3bf3538da26b45bd9bf32aa7151fa402 = L.marker(
+                [37.6193898, 126.4244405],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_8bf76817def0477bbc136ec20d9b6c61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3bf3538da26b45bd9bf32aa7151fa402.setIcon(icon_8bf76817def0477bbc136ec20d9b6c61);
+        
+    
+            marker_3bf3538da26b45bd9bf32aa7151fa402.bindTooltip(
+                `<div>
+                     토가 : 한식 - 인천 강화군 화도면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4ee54c4475e4c90b64570a3968b2efb = L.marker(
+                [37.752549, 126.48740049999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_dffc124268d04b84a63f35023d6070f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d4ee54c4475e4c90b64570a3968b2efb.setIcon(icon_dffc124268d04b84a63f35023d6070f2);
+        
+    
+            marker_d4ee54c4475e4c90b64570a3968b2efb.bindTooltip(
+                `<div>
+                     소문난감자탕 : 한식 - 인천 강화군 강화읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2ba25c69ebd481bae1ac3f773b62532 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_0b7fda6c2f1942648a562f2d129b0c17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e2ba25c69ebd481bae1ac3f773b62532.setIcon(icon_0b7fda6c2f1942648a562f2d129b0c17);
+        
+    
+            marker_e2ba25c69ebd481bae1ac3f773b62532.bindTooltip(
+                `<div>
+                     구수한설렁탕꼬리곰탕 : 한식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5229a31ec2f44da7bb0eaf735b1ca3a6 = L.marker(
+                [37.7169649, 126.4856179],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_2b9417263af745d784d39197b6a2fa15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5229a31ec2f44da7bb0eaf735b1ca3a6.setIcon(icon_2b9417263af745d784d39197b6a2fa15);
+        
+    
+            marker_5229a31ec2f44da7bb0eaf735b1ca3a6.bindTooltip(
+                `<div>
+                     옛날손칼국수 : 한식 - 인천 강화군 선원면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8664f198d2fb4753afb4e3fa39afb7ae = L.marker(
+                [37.752549, 126.48740049999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_0984b954d2e244f39c1f8d60c3736ab1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8664f198d2fb4753afb4e3fa39afb7ae.setIcon(icon_0984b954d2e244f39c1f8d60c3736ab1);
+        
+    
+            marker_8664f198d2fb4753afb4e3fa39afb7ae.bindTooltip(
+                `<div>
+                     다온 : 카페/주점 - 인천 강화군 강화읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a6f9284ef4e426dbb8984ee70f83261 = L.marker(
+                [37.6849185, 126.4815082],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_a0040595a35e4c05a04f2095c41eff85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a6f9284ef4e426dbb8984ee70f83261.setIcon(icon_a0040595a35e4c05a04f2095c41eff85);
+        
+    
+            marker_0a6f9284ef4e426dbb8984ee70f83261.bindTooltip(
+                `<div>
+                     바베큐캠프 : 한식 - 인천 강화군 불은면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebe685f8f0184640aa6f74f070bfda84 = L.marker(
+                [37.57079829999999, 126.6880253],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_2bd9a2592ed74698954adece73b919f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ebe685f8f0184640aa6f74f070bfda84.setIcon(icon_2bd9a2592ed74698954adece73b919f0);
+        
+    
+            marker_ebe685f8f0184640aa6f74f070bfda84.bindTooltip(
+                `<div>
+                     라메르커피 : 카페/주점 - 인천 서구 시천동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0eef457127284b04b3d122c10a95b33b = L.marker(
+                [37.628423100000006, 126.49808780000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_6622df7aa04a4e51acf4e791603e7844 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0eef457127284b04b3d122c10a95b33b.setIcon(icon_6622df7aa04a4e51acf4e791603e7844);
+        
+    
+            marker_0eef457127284b04b3d122c10a95b33b.bindTooltip(
+                `<div>
+                     카페초지 : 카페/주점 - 인천 강화군 길상면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8675b2e560ef4631a77c4f66cc332a29 = L.marker(
+                [37.6193898, 126.4244405],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_3c695f2dca6d40abb38ceb945e603b7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8675b2e560ef4631a77c4f66cc332a29.setIcon(icon_3c695f2dca6d40abb38ceb945e603b7e);
+        
+    
+            marker_8675b2e560ef4631a77c4f66cc332a29.bindTooltip(
+                `<div>
+                     한자리한턱 : 한식 - 인천 강화군 화도면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b98f2c298f94bc59f9daa8d29314030 = L.marker(
+                [37.7169649, 126.4856179],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_c54383eef0af48579fee22a5ad9a1a61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b98f2c298f94bc59f9daa8d29314030.setIcon(icon_c54383eef0af48579fee22a5ad9a1a61);
+        
+    
+            marker_7b98f2c298f94bc59f9daa8d29314030.bindTooltip(
+                `<div>
+                     별미정숯불장어 : 한식 - 인천 강화군 선원면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_299e8a277ad049f9a6aeb358036ad264 = L.marker(
+                [37.6193898, 126.4244405],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_25957c5331b242fd8a92e0330a457b7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_299e8a277ad049f9a6aeb358036ad264.setIcon(icon_25957c5331b242fd8a92e0330a457b7f);
+        
+    
+            marker_299e8a277ad049f9a6aeb358036ad264.bindTooltip(
+                `<div>
+                     카페더뷰인갤러리(cafe the view) : 카페/주점 - 인천 강화군 화도면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d47b3dde98c4d53a69b56de9d88e134 = L.marker(
+                [37.4262234, 126.6483206],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_ee36067819c84758895c9ae772fdf10f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d47b3dde98c4d53a69b56de9d88e134.setIcon(icon_ee36067819c84758895c9ae772fdf10f);
+        
+    
+            marker_6d47b3dde98c4d53a69b56de9d88e134.bindTooltip(
+                `<div>
+                     할머니즉석떡볶이 : 분식 - 인천 연수구 옥련2동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e217eced58dc4392b16180bb776f128b = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_be0d061668904ea18119e1d444469d99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e217eced58dc4392b16180bb776f128b.setIcon(icon_be0d061668904ea18119e1d444469d99);
+        
+    
+            marker_e217eced58dc4392b16180bb776f128b.bindTooltip(
+                `<div>
+                     C27 현대프리미엄아울렛송도점 : 카페/주점 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51bf3c85b749452fbf7414ea910c0b6c = L.marker(
+                [37.7169649, 126.4856179],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_8f3b6e58cd89454b9238dda1cda03ca2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_51bf3c85b749452fbf7414ea910c0b6c.setIcon(icon_8f3b6e58cd89454b9238dda1cda03ca2);
+        
+    
+            marker_51bf3c85b749452fbf7414ea910c0b6c.bindTooltip(
+                `<div>
+                     카페나들(Cafe나들) : 카페/주점 - 인천 강화군 선원면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_967f090c42664bb59af89ee061beeda8 = L.marker(
+                [37.4068805, 126.66436840000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_d8c2bdb3d22245e3a3a4611cf394e129 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_967f090c42664bb59af89ee061beeda8.setIcon(icon_d8c2bdb3d22245e3a3a4611cf394e129);
+        
+    
+            marker_967f090c42664bb59af89ee061beeda8.bindTooltip(
+                `<div>
+                     경복궁불고기 송도점 : 한식 - 인천 연수구 동춘동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4012c00dc98048e3a839d899d19f6568 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_3809d6b5a5764acca0d198c794424c01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4012c00dc98048e3a839d899d19f6568.setIcon(icon_3809d6b5a5764acca0d198c794424c01);
+        
+    
+            marker_4012c00dc98048e3a839d899d19f6568.bindTooltip(
+                `<div>
+                     송도국제경양식 : 양식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c28fa51c2934cbb92328ec5de2ff847 = L.marker(
+                [37.6731059, 126.4325547],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_44418a1e26a94bea8ff9140b92745dd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2c28fa51c2934cbb92328ec5de2ff847.setIcon(icon_44418a1e26a94bea8ff9140b92745dd7);
+        
+    
+            marker_2c28fa51c2934cbb92328ec5de2ff847.bindTooltip(
+                `<div>
+                     일오삼간장게장무한리필 : 한식 - 인천 강화군 양도면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d9aafc936194e698a8506a79dd09e0e = L.marker(
+                [37.5171239, 126.74345459999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_24c534f99019412a817c3a3df53e5ad6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d9aafc936194e698a8506a79dd09e0e.setIcon(icon_24c534f99019412a817c3a3df53e5ad6);
+        
+    
+            marker_9d9aafc936194e698a8506a79dd09e0e.bindTooltip(
+                `<div>
+                     막걸리주가 : 카페/주점 - 인천 부평구 삼산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44e6a4a2511448d0976277568a26b2ab = L.marker(
+                [37.7169649, 126.4856179],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_cd2e758686be4d5886c80675ce21f048 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_44e6a4a2511448d0976277568a26b2ab.setIcon(icon_cd2e758686be4d5886c80675ce21f048);
+        
+    
+            marker_44e6a4a2511448d0976277568a26b2ab.bindTooltip(
+                `<div>
+                     원조선창집장어구이 : 한식 - 인천 강화군 선원면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9612a5c59da4e97be78cf1ebf957baa = L.marker(
+                [37.500285, 126.7019152],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_ec842072ab5240598a3ebe5ad6870bdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f9612a5c59da4e97be78cf1ebf957baa.setIcon(icon_ec842072ab5240598a3ebe5ad6870bdc);
+        
+    
+            marker_f9612a5c59da4e97be78cf1ebf957baa.bindTooltip(
+                `<div>
+                     애간장게장 : 한식 - 인천 부평구 산곡동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38e311bed0aa4112bed4ef7687e922e9 = L.marker(
+                [37.4487209, 126.7111247],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_41330736671e42a5ba72e5899be634f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_38e311bed0aa4112bed4ef7687e922e9.setIcon(icon_41330736671e42a5ba72e5899be634f1);
+        
+    
+            marker_38e311bed0aa4112bed4ef7687e922e9.bindTooltip(
+                `<div>
+                     포항집 : 일식 - 인천 남동구 구월동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fbc6044179c448d8293b9efaa452c7d = L.marker(
+                [37.4656799, 126.70714850000002],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_d9e24df3bd0c43d0820d0f485ff9dedb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1fbc6044179c448d8293b9efaa452c7d.setIcon(icon_d9e24df3bd0c43d0820d0f485ff9dedb);
+        
+    
+            marker_1fbc6044179c448d8293b9efaa452c7d.bindTooltip(
+                `<div>
+                     부암갈비 : 한식 - 인천 남동구 간석동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96f2a407aa0042299982a19b3b02974d = L.marker(
+                [37.4068805, 126.66436840000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_ee81206a61ad4684b54b54720202854a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_96f2a407aa0042299982a19b3b02974d.setIcon(icon_ee81206a61ad4684b54b54720202854a);
+        
+    
+            marker_96f2a407aa0042299982a19b3b02974d.bindTooltip(
+                `<div>
+                     송도주막 : 한식 - 인천 연수구 동춘동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_064d23b494e34a69b74ecf53524cc3a8 = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_5390b64903b44b08aa37c5fc01b46eb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_064d23b494e34a69b74ecf53524cc3a8.setIcon(icon_5390b64903b44b08aa37c5fc01b46eb2);
+        
+    
+            marker_064d23b494e34a69b74ecf53524cc3a8.bindTooltip(
+                `<div>
+                     크래버대게나라 송도점 : 한식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da44ca07ccb546cc9e7c2cc13da9aa06 = L.marker(
+                [37.587247, 126.69419040000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_a42403d7a3ba46668951e050afa91ce5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_da44ca07ccb546cc9e7c2cc13da9aa06.setIcon(icon_a42403d7a3ba46668951e050afa91ce5);
+        
+    
+            marker_da44ca07ccb546cc9e7c2cc13da9aa06.bindTooltip(
+                `<div>
+                     아낙네 : 한식 - 인천 서구 당하동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91fe47c5a3664708af19ed85a3276756 = L.marker(
+                [37.424242299999996, 126.648424],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_5df3434732a74bce982a5167cd47b17d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_91fe47c5a3664708af19ed85a3276756.setIcon(icon_5df3434732a74bce982a5167cd47b17d);
+        
+    
+            marker_91fe47c5a3664708af19ed85a3276756.bindTooltip(
+                `<div>
+                     명문숯불갈비 : 한식 - 인천 연수구 옥련동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e99ab6b1150346ff931b9d33bd26826e = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_8d638c3b63374f479803e75e7091c038 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e99ab6b1150346ff931b9d33bd26826e.setIcon(icon_8d638c3b63374f479803e75e7091c038);
+        
+    
+            marker_e99ab6b1150346ff931b9d33bd26826e.bindTooltip(
+                `<div>
+                     쭈꾸아구 : 한식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_686a8c61ca1e437685684a58c9b0c7d7 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_e219201a19454b028329d52053b05620 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_686a8c61ca1e437685684a58c9b0c7d7.setIcon(icon_e219201a19454b028329d52053b05620);
+        
+    
+            marker_686a8c61ca1e437685684a58c9b0c7d7.bindTooltip(
+                `<div>
+                     아라베스크 : 기타/세계 - 인천 서울시 중구 내동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a63082c90f6543138048ceac62dab673 = L.marker(
+                [37.424242299999996, 126.648424],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_d1fd0d61c6cc4e979241f1d2e8f53393 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a63082c90f6543138048ceac62dab673.setIcon(icon_d1fd0d61c6cc4e979241f1d2e8f53393);
+        
+    
+            marker_a63082c90f6543138048ceac62dab673.bindTooltip(
+                `<div>
+                     수밀원 : 한식 - 인천 연수구 옥련동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3f0d02f77254fa9afb774bb947e5858 = L.marker(
+                [37.628423100000006, 126.49808780000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_55bd9292e35f4d5cb7e96bea4940ac1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c3f0d02f77254fa9afb774bb947e5858.setIcon(icon_55bd9292e35f4d5cb7e96bea4940ac1d);
+        
+    
+            marker_c3f0d02f77254fa9afb774bb947e5858.bindTooltip(
+                `<div>
+                     등나무가든 : 일식 - 인천 강화군 길상면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d95fe6d099941419e2b0d154c8598ea = L.marker(
+                [37.4043953, 126.72407150000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_37cf6c8a1f2b45a9914b56f54040a93c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7d95fe6d099941419e2b0d154c8598ea.setIcon(icon_37cf6c8a1f2b45a9914b56f54040a93c);
+        
+    
+            marker_7d95fe6d099941419e2b0d154c8598ea.bindTooltip(
+                `<div>
+                     커피하루 : 카페/주점 - 인천 남동구 논현동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67b5b10481e84761bc0040b2a40544ac = L.marker(
+                [37.542863200000006, 126.7230278],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_a93e6a0c9cc14a839a37aa9303a88b53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_67b5b10481e84761bc0040b2a40544ac.setIcon(icon_a93e6a0c9cc14a839a37aa9303a88b53);
+        
+    
+            marker_67b5b10481e84761bc0040b2a40544ac.bindTooltip(
+                `<div>
+                     개성옛닭 : 한식 - 인천 계양구 계산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9cdf8d1046cb4348919cccbd52e03179 = L.marker(
+                [37.4487209, 126.7111247],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_ddd7e9db00cf4c788e1a91152ae36ad6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9cdf8d1046cb4348919cccbd52e03179.setIcon(icon_ddd7e9db00cf4c788e1a91152ae36ad6);
+        
+    
+            marker_9cdf8d1046cb4348919cccbd52e03179.bindTooltip(
+                `<div>
+                     리미니(Rimini) 인천점 : 양식 - 인천 남동구 구월동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e732d00bae1b457db102c9aaea0d2d67 = L.marker(
+                [37.5422141, 126.6619689],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_a6eaaa49fe17460eacc7275de120f84b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e732d00bae1b457db102c9aaea0d2d67.setIcon(icon_a6eaaa49fe17460eacc7275de120f84b);
+        
+    
+            marker_e732d00bae1b457db102c9aaea0d2d67.bindTooltip(
+                `<div>
+                     미미짱 : 카페/주점 - 인천 서구 연희동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1efcd93b9f143b8b65dea8fc5ec165e = L.marker(
+                [37.6193898, 126.4244405],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_11d366b1dcf14da58c6f1939b7f4120b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f1efcd93b9f143b8b65dea8fc5ec165e.setIcon(icon_11d366b1dcf14da58c6f1939b7f4120b);
+        
+    
+            marker_f1efcd93b9f143b8b65dea8fc5ec165e.bindTooltip(
+                `<div>
+                     강화백년횟집 : 일식 - 인천 강화군 화도면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8725d2952c248ae9e40c1edac4e78c8 = L.marker(
+                [37.6193898, 126.4244405],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_f92cc6dfc5294e8eb02e7bb71e53a550 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e8725d2952c248ae9e40c1edac4e78c8.setIcon(icon_f92cc6dfc5294e8eb02e7bb71e53a550);
+        
+    
+            marker_e8725d2952c248ae9e40c1edac4e78c8.bindTooltip(
+                `<div>
+                     충무회수산 : 일식 - 인천 강화군 화도면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fa0b5c042504938863b5ff6aae9bdfd = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_55530aa79cd9410e8843bbca67325882 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4fa0b5c042504938863b5ff6aae9bdfd.setIcon(icon_55530aa79cd9410e8843bbca67325882);
+        
+    
+            marker_4fa0b5c042504938863b5ff6aae9bdfd.bindTooltip(
+                `<div>
+                     세렌디프(serendip) : 양식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_747c1bae1bc24c629e6e8cb49f5d68af = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_ef4f8260633945898ca4cd78da7aba67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_747c1bae1bc24c629e6e8cb49f5d68af.setIcon(icon_ef4f8260633945898ca4cd78da7aba67);
+        
+    
+            marker_747c1bae1bc24c629e6e8cb49f5d68af.bindTooltip(
+                `<div>
+                     차이홍 : 중식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_317596d4881441bab4c2bde1a25986de = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_765da3bcf06844cb9c812f836c3ff6a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_317596d4881441bab4c2bde1a25986de.setIcon(icon_765da3bcf06844cb9c812f836c3ff6a9);
+        
+    
+            marker_317596d4881441bab4c2bde1a25986de.bindTooltip(
+                `<div>
+                     더정든집 : 한식 - 인천 서울시 중구 운서동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b71247dc6c83479e91561f62f8bfb93b = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_4c05d683a5ab405ab4eb789b78740ef8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b71247dc6c83479e91561f62f8bfb93b.setIcon(icon_4c05d683a5ab405ab4eb789b78740ef8);
+        
+    
+            marker_b71247dc6c83479e91561f62f8bfb93b.bindTooltip(
+                `<div>
+                     문차이나(Moonchina) : 중식 - 인천 서울시 중구 북성동2가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81a5ca8f294e4c14a1ff45c79171c7ca = L.marker(
+                [37.6193898, 126.4244405],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_39eca1f7d8f9443dafc4277a9a2638f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_81a5ca8f294e4c14a1ff45c79171c7ca.setIcon(icon_39eca1f7d8f9443dafc4277a9a2638f7);
+        
+    
+            marker_81a5ca8f294e4c14a1ff45c79171c7ca.bindTooltip(
+                `<div>
+                     용궁횟집 : 한식 - 인천 강화군 화도면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14694c9a1eef428bb6de98ae9976f84c = L.marker(
+                [37.388046100000004, 126.63571529999999],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_a670655138e248f6b2aff5cfccada470 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_14694c9a1eef428bb6de98ae9976f84c.setIcon(icon_a670655138e248f6b2aff5cfccada470);
+        
+    
+            marker_14694c9a1eef428bb6de98ae9976f84c.bindTooltip(
+                `<div>
+                     백제원 송도점 : 한식 - 인천 연수구 송도동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_997b6ad518dd4001ba293a44c9706937 = L.marker(
+                [37.4561358, 126.70530090000001],
+                {}
+            ).addTo(map_aad8075bbe6b480abc03abeb80a1b126);
+        
+    
+            var icon_32f0cc53e5a44eb4b680a160bc41506e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_997b6ad518dd4001ba293a44c9706937.setIcon(icon_32f0cc53e5a44eb4b680a160bc41506e);
+        
+    
+            marker_997b6ad518dd4001ba293a44c9706937.bindTooltip(
+                `<div>
+                     황해칼국수 : 한식 - 인천 서울시 중구 덕교동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

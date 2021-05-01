@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_41cbf5fb6d2d412393573460e851c5ea {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_41cbf5fb6d2d412393573460e851c5ea" ></div>
+        
+</body>
+<script>    
+    
+            var map_41cbf5fb6d2d412393573460e851c5ea = L.map(
+                "map_41cbf5fb6d2d412393573460e851c5ea",
+                {
+                    center: [35.542308, 129.316177],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12.3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fd62adad27ba4fd3a60ba467f638c7c9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var tile_layer_9ec62a992705425c9ba0831df1fe8570 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_83aecf2bcbf147189b75c99c7d2055f0 = new L.Control.MiniMap(
+                tile_layer_9ec62a992705425c9ba0831df1fe8570,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_41cbf5fb6d2d412393573460e851c5ea.addControl(mini_map_83aecf2bcbf147189b75c99c7d2055f0);
+        
+    
+            var marker_4543bb4696f04b95806ed5f1fabf9c4c = L.marker(
+                [35.6154585, 129.442781],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_2f9cb756ecb043c5b1699f1051580001 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4543bb4696f04b95806ed5f1fabf9c4c.setIcon(icon_2f9cb756ecb043c5b1699f1051580001);
+        
+    
+            marker_4543bb4696f04b95806ed5f1fabf9c4c.bindTooltip(
+                `<div>
+                     바다바라기 : 일식 - 울산 북구 정자동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a332a45736c64a3cb9ea5167f634605a = L.marker(
+                [35.508995500000005, 129.2995375],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_bfc433c282494662809876f902a8491b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a332a45736c64a3cb9ea5167f634605a.setIcon(icon_bfc433c282494662809876f902a8491b);
+        
+    
+            marker_a332a45736c64a3cb9ea5167f634605a.bindTooltip(
+                `<div>
+                     두왕골 : 한식 - 울산 남구 두왕동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_963224dee86f4ab093f61fdcdae16d56 = L.marker(
+                [35.5661383, 129.35840459999997],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_bfcd7bf3a8804e5fa5ad24506e3b9849 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_963224dee86f4ab093f61fdcdae16d56.setIcon(icon_bfcd7bf3a8804e5fa5ad24506e3b9849);
+        
+    
+            marker_963224dee86f4ab093f61fdcdae16d56.bindTooltip(
+                `<div>
+                     명촌순두부보쌈 : 한식 - 울산 북구 진장동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b758e3b4f2e4a9491dbb58c0734d319 = L.marker(
+                [35.532224400000004, 129.0960345],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_d16e6e65f8b147769610d308d40abe09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b758e3b4f2e4a9491dbb58c0734d319.setIcon(icon_d16e6e65f8b147769610d308d40abe09);
+        
+    
+            marker_1b758e3b4f2e4a9491dbb58c0734d319.bindTooltip(
+                `<div>
+                     갈비구락부한우불고기 본점 : 한식 - 울산 울주군 삼남면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7723482f8f094efebf62c485c070ca07 = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_87098f6ae04d43929ba49f88587246d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7723482f8f094efebf62c485c070ca07.setIcon(icon_87098f6ae04d43929ba49f88587246d9);
+        
+    
+            marker_7723482f8f094efebf62c485c070ca07.bindTooltip(
+                `<div>
+                     조선의한우 울산점 : 한식 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_494d47d8086946ac95914a3258be0305 = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_2e22efa439e3441bb8e2c9b862cb606c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_494d47d8086946ac95914a3258be0305.setIcon(icon_2e22efa439e3441bb8e2c9b862cb606c);
+        
+    
+            marker_494d47d8086946ac95914a3258be0305.bindTooltip(
+                `<div>
+                     머릿골 한우곱창 : 한식 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b01f48039bb418f91043f72b24ff030 = L.marker(
+                [35.542741, 129.3446996],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_81e25d681de54fc68c9052d6e22eb196 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0b01f48039bb418f91043f72b24ff030.setIcon(icon_81e25d681de54fc68c9052d6e22eb196);
+        
+    
+            marker_0b01f48039bb418f91043f72b24ff030.bindTooltip(
+                `<div>
+                     트레비브로이(TREVI Brauhau) : 양식 - 울산 남구 삼산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_751c0af0f1184063a6983b5f92d27338 = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_2ddecfdae18f434aae1b74a8d7b17a98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_751c0af0f1184063a6983b5f92d27338.setIcon(icon_2ddecfdae18f434aae1b74a8d7b17a98);
+        
+    
+            marker_751c0af0f1184063a6983b5f92d27338.bindTooltip(
+                `<div>
+                     섬문어전복 : 한식 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a03702318cd41d8aca99a7e7cf49ecc = L.marker(
+                [35.5449795, 129.2635601],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_b05275ef322b401998a91f4557a53030 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5a03702318cd41d8aca99a7e7cf49ecc.setIcon(icon_b05275ef322b401998a91f4557a53030);
+        
+    
+            marker_5a03702318cd41d8aca99a7e7cf49ecc.bindTooltip(
+                `<div>
+                     04위로 엉클포크 : 양식 - 울산 남구 무거동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20315434994b41979990134dca894e79 = L.marker(
+                [35.53235120000001, 129.2815885],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_e2370d3d4a11491f85a00fce73e61689 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20315434994b41979990134dca894e79.setIcon(icon_e2370d3d4a11491f85a00fce73e61689);
+        
+    
+            marker_20315434994b41979990134dca894e79.bindTooltip(
+                `<div>
+                     순남시래기 울산옥동점 : 한식 - 울산 남구 옥동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b67a67cbaf5c4919ba5953ec4a655cea = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_c383ee27aa21480cb94174001313d450 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b67a67cbaf5c4919ba5953ec4a655cea.setIcon(icon_c383ee27aa21480cb94174001313d450);
+        
+    
+            marker_b67a67cbaf5c4919ba5953ec4a655cea.bindTooltip(
+                `<div>
+                     짬뽕이빨개 : 중식 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cd11c9b495d4e44a44f9a3a8876f0a9 = L.marker(
+                [35.5661383, 129.35840459999997],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_511d464f951d47cd83927a900c51f877 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8cd11c9b495d4e44a44f9a3a8876f0a9.setIcon(icon_511d464f951d47cd83927a900c51f877);
+        
+    
+            marker_8cd11c9b495d4e44a44f9a3a8876f0a9.bindTooltip(
+                `<div>
+                     쟈스민 울산점 : 양식 - 울산 북구 진장동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2b026799feb461298c9e99ec6a2c06f = L.marker(
+                [35.5384296, 129.3114362],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_c47b4ee6c20846c7a411a17a0298a29d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d2b026799feb461298c9e99ec6a2c06f.setIcon(icon_c47b4ee6c20846c7a411a17a0298a29d);
+        
+    
+            marker_d2b026799feb461298c9e99ec6a2c06f.bindTooltip(
+                `<div>
+                     나가사키짬뽕 : 일식 - 울산 서울시 중구 성남동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff64757c557f4adc9a41333a361c9d10 = L.marker(
+                [35.542741, 129.3446996],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_7b36811ec976425fb34600d7aebcba6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ff64757c557f4adc9a41333a361c9d10.setIcon(icon_7b36811ec976425fb34600d7aebcba6b);
+        
+    
+            marker_ff64757c557f4adc9a41333a361c9d10.bindTooltip(
+                `<div>
+                     삼산밀면 : 한식 - 울산 남구 삼산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14a100d235c4445897e9638bcb055c2d = L.marker(
+                [35.5384296, 129.3114362],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_bfe564a050c74b60a86508882ae7432c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_14a100d235c4445897e9638bcb055c2d.setIcon(icon_bfe564a050c74b60a86508882ae7432c);
+        
+    
+            marker_14a100d235c4445897e9638bcb055c2d.bindTooltip(
+                `<div>
+                     오타쿠 : 카페/주점 - 울산 서울시 중구 성남동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_483927db8994438785b2abfe59998489 = L.marker(
+                [35.6194138, 129.3341933],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_eda8ebc08e434434a2934b6486138f64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_483927db8994438785b2abfe59998489.setIcon(icon_eda8ebc08e434434a2934b6486138f64);
+        
+    
+            marker_483927db8994438785b2abfe59998489.bindTooltip(
+                `<div>
+                     히야꾸 : 일식 - 울산 북구 상안동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b739df566d954239b2225c7161fe2383 = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_44db38693b62494aba3d97ed407a78eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b739df566d954239b2225c7161fe2383.setIcon(icon_44db38693b62494aba3d97ed407a78eb);
+        
+    
+            marker_b739df566d954239b2225c7161fe2383.bindTooltip(
+                `<div>
+                     팝팩토리 : 양식 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f596593672b4dd8a2c5c400ea21c107 = L.marker(
+                [35.542741, 129.3446996],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_8da2e4fd5f444be0ab982ebc867b35af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2f596593672b4dd8a2c5c400ea21c107.setIcon(icon_8da2e4fd5f444be0ab982ebc867b35af);
+        
+    
+            marker_2f596593672b4dd8a2c5c400ea21c107.bindTooltip(
+                `<div>
+                     두울원 : 한식 - 울산 남구 삼산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28d09461f9fa4f24a5c717d9ee6bc813 = L.marker(
+                [35.5938511, 129.05734669999998],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_389931bcb2cc4c8389eda0c1b5d01128 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_28d09461f9fa4f24a5c717d9ee6bc813.setIcon(icon_389931bcb2cc4c8389eda0c1b5d01128);
+        
+    
+            marker_28d09461f9fa4f24a5c717d9ee6bc813.bindTooltip(
+                `<div>
+                     도동산방 : 한식 - 울산 울주군 상북면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5249a57bf01c4093bd41f8d9cb03dcfc = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_db4eb0039cf74df993e5ff0e2bacef82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5249a57bf01c4093bd41f8d9cb03dcfc.setIcon(icon_db4eb0039cf74df993e5ff0e2bacef82);
+        
+    
+            marker_5249a57bf01c4093bd41f8d9cb03dcfc.bindTooltip(
+                `<div>
+                     본여우&본정 : 일식 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_277bb43b86c04a90a6404046dac57735 = L.marker(
+                [35.3679367, 129.313074],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_104cfaa9f9a14f83b8b8bd718dbe65ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_277bb43b86c04a90a6404046dac57735.setIcon(icon_104cfaa9f9a14f83b8b8bd718dbe65ef);
+        
+    
+            marker_277bb43b86c04a90a6404046dac57735.bindTooltip(
+                `<div>
+                     대하횟집 : 한식 - 울산 울주군 서생면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8ce473dd05c4feeb1a1ace09164d850 = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_ab60dd2c7b0741bab147fc96605b320a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e8ce473dd05c4feeb1a1ace09164d850.setIcon(icon_ab60dd2c7b0741bab147fc96605b320a);
+        
+    
+            marker_e8ce473dd05c4feeb1a1ace09164d850.bindTooltip(
+                `<div>
+                     카츠애 : 일식 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0cf5936cfd4d4f6ab01c5c6d7b03789c = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_99848979eea140a1bfa2ce2644d73157 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0cf5936cfd4d4f6ab01c5c6d7b03789c.setIcon(icon_99848979eea140a1bfa2ce2644d73157);
+        
+    
+            marker_0cf5936cfd4d4f6ab01c5c6d7b03789c.bindTooltip(
+                `<div>
+                     오이시라멘 : 일식 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55228e1a54aa4b51bc50159f1c468643 = L.marker(
+                [35.531650299999995, 129.4198113],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_c5c2bb69a3584c39b34058109355dcfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55228e1a54aa4b51bc50159f1c468643.setIcon(icon_c5c2bb69a3584c39b34058109355dcfa);
+        
+    
+            marker_55228e1a54aa4b51bc50159f1c468643.bindTooltip(
+                `<div>
+                     게티스버그(Guette's Burg) : 양식 - 울산 동구 서부동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddd7f1c608104fc5bbbe97cd8d3767e1 = L.marker(
+                [35.5359299, 129.3083963],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_e0409a754a9247578e6a5eb7db331993 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ddd7f1c608104fc5bbbe97cd8d3767e1.setIcon(icon_e0409a754a9247578e6a5eb7db331993);
+        
+    
+            marker_ddd7f1c608104fc5bbbe97cd8d3767e1.bindTooltip(
+                `<div>
+                     함경면옥 : 한식 - 울산 남구 신정동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd28bbcaabd14e6cb3cdfee643011178 = L.marker(
+                [35.542741, 129.3446996],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_be91ced862e54f08ae469795b7937cfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd28bbcaabd14e6cb3cdfee643011178.setIcon(icon_be91ced862e54f08ae469795b7937cfa);
+        
+    
+            marker_bd28bbcaabd14e6cb3cdfee643011178.bindTooltip(
+                `<div>
+                     울산숯불갈비 : 한식 - 울산 남구 삼산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4710073740614139a0a68e6978aacece = L.marker(
+                [35.5384296, 129.3114362],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_66fee145bde54dbabbe438c158183c9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4710073740614139a0a68e6978aacece.setIcon(icon_66fee145bde54dbabbe438c158183c9a);
+        
+    
+            marker_4710073740614139a0a68e6978aacece.bindTooltip(
+                `<div>
+                     마카룬하우스(MACAROON HOUSE) : 베이커리 - 울산 서울시 중구 성안동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc237a8b9efd474e931d7431802cfa7e = L.marker(
+                [35.542741, 129.3446996],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_5ec813d194f045d58533a1954cad75ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bc237a8b9efd474e931d7431802cfa7e.setIcon(icon_5ec813d194f045d58533a1954cad75ae);
+        
+    
+            marker_bc237a8b9efd474e931d7431802cfa7e.bindTooltip(
+                `<div>
+                     남해꽃게탕 : 한식 - 울산 남구 삼산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_163558f3aba9472884954714361b4d3e = L.marker(
+                [35.5384296, 129.3114362],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_43c9f7bf2736444f8bb21050f240ef45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_163558f3aba9472884954714361b4d3e.setIcon(icon_43c9f7bf2736444f8bb21050f240ef45);
+        
+    
+            marker_163558f3aba9472884954714361b4d3e.bindTooltip(
+                `<div>
+                     비스콘티 : 양식 - 울산 서울시 중구 성남동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bb383d8deb245da8fc12046e9c95a80 = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_6c49cc4617f34048a6451d9f0cf7558f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6bb383d8deb245da8fc12046e9c95a80.setIcon(icon_6c49cc4617f34048a6451d9f0cf7558f);
+        
+    
+            marker_6bb383d8deb245da8fc12046e9c95a80.bindTooltip(
+                `<div>
+                     골까네 삼산점 : 카페/주점 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5636d9c189b94edfa6288ffc676290ad = L.marker(
+                [35.5384296, 129.3114362],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_fc3c9da8790246e4b4aee487ceb01c52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5636d9c189b94edfa6288ffc676290ad.setIcon(icon_fc3c9da8790246e4b4aee487ceb01c52);
+        
+    
+            marker_5636d9c189b94edfa6288ffc676290ad.bindTooltip(
+                `<div>
+                     레자카야본(Rezakaya) : 기타/세계 - 울산 서울시 중구 남외동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b0cce1a226a4e07bbd598c5761a1346 = L.marker(
+                [35.5384296, 129.3114362],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_8e7ae3dfdbd54e50bd2c28ed8c81de34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2b0cce1a226a4e07bbd598c5761a1346.setIcon(icon_8e7ae3dfdbd54e50bd2c28ed8c81de34);
+        
+    
+            marker_2b0cce1a226a4e07bbd598c5761a1346.bindTooltip(
+                `<div>
+                     멜팅문(MELTING MOON) : 양식 - 울산 서울시 중구 유곡동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_514fe986a9fc4e16bcde011b4acf827e = L.marker(
+                [35.4983912, 129.4336417],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_3ed5605db5614ef0911b4609d4799d1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_514fe986a9fc4e16bcde011b4acf827e.setIcon(icon_3ed5605db5614ef0911b4609d4799d1c);
+        
+    
+            marker_514fe986a9fc4e16bcde011b4acf827e.bindTooltip(
+                `<div>
+                     모비딕 : 카페/주점 - 울산 동구 일산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b131c16152e146c1b8b12a99575d0de9 = L.marker(
+                [35.5489518, 129.3646765],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_0973ed97f13547538af7fb5b0ad78891 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b131c16152e146c1b8b12a99575d0de9.setIcon(icon_0973ed97f13547538af7fb5b0ad78891);
+        
+    
+            marker_b131c16152e146c1b8b12a99575d0de9.bindTooltip(
+                `<div>
+                     돈몽가 : 한식 - 울산 북구 명촌동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dae89e11e1d646b9ba6a49ee399bfe37 = L.marker(
+                [35.62891870000001, 129.3643012],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_bf500f50c6374e37b846722bb08faab0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dae89e11e1d646b9ba6a49ee399bfe37.setIcon(icon_bf500f50c6374e37b846722bb08faab0);
+        
+    
+            marker_dae89e11e1d646b9ba6a49ee399bfe37.bindTooltip(
+                `<div>
+                     한량석쇠집 : 한식 - 울산 북구 호계동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5faa08f708bb4552b0cfc0bbb7ca2015 = L.marker(
+                [35.542741, 129.3446996],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_d283a09e81ae4d45811aef538b90c035 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5faa08f708bb4552b0cfc0bbb7ca2015.setIcon(icon_d283a09e81ae4d45811aef538b90c035);
+        
+    
+            marker_5faa08f708bb4552b0cfc0bbb7ca2015.bindTooltip(
+                `<div>
+                     나마스까르 : 기타/세계 - 울산 남구 삼산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d96ae501607479f981f6b9999434b51 = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_1df633fe89f944f89500b8d19eaf0964 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3d96ae501607479f981f6b9999434b51.setIcon(icon_1df633fe89f944f89500b8d19eaf0964);
+        
+    
+            marker_3d96ae501607479f981f6b9999434b51.bindTooltip(
+                `<div>
+                     바이데일리 삼산점 : 양식 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e7dae59a9644cc594164d83a9ae9f3b = L.marker(
+                [35.5847688, 129.1599067],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_5d1e8ddb60ce4470ab79353e3a78b750 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8e7dae59a9644cc594164d83a9ae9f3b.setIcon(icon_5d1e8ddb60ce4470ab79353e3a78b750);
+        
+    
+            marker_8e7dae59a9644cc594164d83a9ae9f3b.bindTooltip(
+                `<div>
+                     언양기와집불고기 : 한식 - 울산 울주군 언양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bc99c409568456ca6307ba000031d67 = L.marker(
+                [35.542741, 129.3446996],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_934f7ce73cf84ee58827e8afc2d224cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6bc99c409568456ca6307ba000031d67.setIcon(icon_934f7ce73cf84ee58827e8afc2d224cb);
+        
+    
+            marker_6bc99c409568456ca6307ba000031d67.bindTooltip(
+                `<div>
+                     로니로티 롯데점 : 양식 - 울산 남구 삼산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_307759f406154fc797d6bc66e3abcaea = L.marker(
+                [35.5384296, 129.3114362],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_ac5f0aae32884ec28a007b1ebc17f2b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_307759f406154fc797d6bc66e3abcaea.setIcon(icon_ac5f0aae32884ec28a007b1ebc17f2b1);
+        
+    
+            marker_307759f406154fc797d6bc66e3abcaea.bindTooltip(
+                `<div>
+                     MBC막창드라마 : 한식 - 울산 서울시 중구 남외동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a924e2987ee94e109dbdfed9a7ca3822 = L.marker(
+                [35.542741, 129.3446996],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_e07535e7e50d4453b66e9a9a5a5c34db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a924e2987ee94e109dbdfed9a7ca3822.setIcon(icon_e07535e7e50d4453b66e9a9a5a5c34db);
+        
+    
+            marker_a924e2987ee94e109dbdfed9a7ca3822.bindTooltip(
+                `<div>
+                     오발탄 울산점 : 한식 - 울산 남구 삼산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99ccc5aa3cb3423185763598872442a0 = L.marker(
+                [35.5847688, 129.1599067],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_7d2ffcd51ded42f88378f1f79d409a74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_99ccc5aa3cb3423185763598872442a0.setIcon(icon_7d2ffcd51ded42f88378f1f79d409a74);
+        
+    
+            marker_99ccc5aa3cb3423185763598872442a0.bindTooltip(
+                `<div>
+                     한마당한우촌 : 한식 - 울산 울주군 언양읍
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_035bc181b0ec44598c0c740c9262b45c = L.marker(
+                [35.51509229999999, 129.4305984],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_f16665b613254120a99c38f514184f06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_035bc181b0ec44598c0c740c9262b45c.setIcon(icon_f16665b613254120a99c38f514184f06);
+        
+    
+            marker_035bc181b0ec44598c0c740c9262b45c.bindTooltip(
+                `<div>
+                     토파즈 울산점 : 뷔페 - 울산 동구 전하동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac1fe0d0662447cdab00477bbe155e75 = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_ef90ae1f25c8459380a4f9c43f410e57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac1fe0d0662447cdab00477bbe155e75.setIcon(icon_ef90ae1f25c8459380a4f9c43f410e57);
+        
+    
+            marker_ac1fe0d0662447cdab00477bbe155e75.bindTooltip(
+                `<div>
+                     티기니 : 카페/주점 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae679916fc08439e8be886b22174be2f = L.marker(
+                [35.5384296, 129.3114362],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_63bb0ab0e23b41e8b167a92a08092eae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ae679916fc08439e8be886b22174be2f.setIcon(icon_63bb0ab0e23b41e8b167a92a08092eae);
+        
+    
+            marker_ae679916fc08439e8be886b22174be2f.bindTooltip(
+                `<div>
+                     다찌마 : 일식 - 울산 서울시 중구 유곡동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43d732cca3724640be9f10fc7384bc08 = L.marker(
+                [35.5359299, 129.3083963],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_dd93dcaa05a042cba71e7a958e4639d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_43d732cca3724640be9f10fc7384bc08.setIcon(icon_dd93dcaa05a042cba71e7a958e4639d4);
+        
+    
+            marker_43d732cca3724640be9f10fc7384bc08.bindTooltip(
+                `<div>
+                     빌리지커피(village coffee) : 카페/주점 - 울산 남구 신정동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1cc1599ee0146babf3713b6a27a6c45 = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_640885570e124de39e7d731cda740945 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d1cc1599ee0146babf3713b6a27a6c45.setIcon(icon_640885570e124de39e7d731cda740945);
+        
+    
+            marker_d1cc1599ee0146babf3713b6a27a6c45.bindTooltip(
+                `<div>
+                     육병장 삼산점 : 한식 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70bde2327fff49f5961bc596fe4b53d3 = L.marker(
+                [35.5384296, 129.3114362],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_845b2c130858466aa6c603b3e6781cb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_70bde2327fff49f5961bc596fe4b53d3.setIcon(icon_845b2c130858466aa6c603b3e6781cb1);
+        
+    
+            marker_70bde2327fff49f5961bc596fe4b53d3.bindTooltip(
+                `<div>
+                     낮밤프로젝트 : 카페/주점 - 울산 서울시 중구 장현동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_567ed4fd724641cdaf75957e1455b80f = L.marker(
+                [35.542741, 129.3446996],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_4006e801cbc44d1ea2d72adf7dbc56bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_567ed4fd724641cdaf75957e1455b80f.setIcon(icon_4006e801cbc44d1ea2d72adf7dbc56bf);
+        
+    
+            marker_567ed4fd724641cdaf75957e1455b80f.bindTooltip(
+                `<div>
+                     락시아 : 양식 - 울산 남구 삼산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ae5a2f6c3454fd39701f673b0040144 = L.marker(
+                [35.5449795, 129.2635601],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_e79caa20936c435a8695d26a13b43b4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1ae5a2f6c3454fd39701f673b0040144.setIcon(icon_e79caa20936c435a8695d26a13b43b4c);
+        
+    
+            marker_1ae5a2f6c3454fd39701f673b0040144.bindTooltip(
+                `<div>
+                     미진돌곱창 본점 : 한식 - 울산 남구 무거동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aabfef0dc1004a2c85a642150296fd7d = L.marker(
+                [35.542741, 129.3446996],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_0d9a7325c76d4147bf98c9d5c730df15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aabfef0dc1004a2c85a642150296fd7d.setIcon(icon_0d9a7325c76d4147bf98c9d5c730df15);
+        
+    
+            marker_aabfef0dc1004a2c85a642150296fd7d.bindTooltip(
+                `<div>
+                     서울원조순대 : 한식 - 울산 남구 삼산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3165e9b0a1f34a9486f046291420bebc = L.marker(
+                [35.630024600000006, 129.4275212],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_d0a6d8d06bec489cb88aff79fbe7b55b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3165e9b0a1f34a9486f046291420bebc.setIcon(icon_d0a6d8d06bec489cb88aff79fbe7b55b);
+        
+    
+            marker_3165e9b0a1f34a9486f046291420bebc.bindTooltip(
+                `<div>
+                     제이드 레스토랑 : 양식 - 울산 북구 산하동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac7a01a48a9849d0af9bf3a9e658c6ff = L.marker(
+                [35.5384296, 129.3114362],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_203f39081ecf42a0b06f101918b3cb96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac7a01a48a9849d0af9bf3a9e658c6ff.setIcon(icon_203f39081ecf42a0b06f101918b3cb96);
+        
+    
+            marker_ac7a01a48a9849d0af9bf3a9e658c6ff.bindTooltip(
+                `<div>
+                     외가집(울산) : 한식 - 울산 서울시 중구 학산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b627a1a4432413ca0c63f72e974c441 = L.marker(
+                [35.5938511, 129.05734669999998],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_72e6f04d6b5e4a168e60ca266209cf71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b627a1a4432413ca0c63f72e974c441.setIcon(icon_72e6f04d6b5e4a168e60ca266209cf71);
+        
+    
+            marker_6b627a1a4432413ca0c63f72e974c441.bindTooltip(
+                `<div>
+                     가랑잎새 : 한식 - 울산 울주군 상북면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6b9faeb253641989af0f3c39b9337ce = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_08a1d3252d0e4cf3a547c94aa1dc18ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f6b9faeb253641989af0f3c39b9337ce.setIcon(icon_08a1d3252d0e4cf3a547c94aa1dc18ee);
+        
+    
+            marker_f6b9faeb253641989af0f3c39b9337ce.bindTooltip(
+                `<div>
+                     함양집 : 한식 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_040b96f396364edfbd69e6b010667ca3 = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_d343001775b048eabafc6adca9df5902 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_040b96f396364edfbd69e6b010667ca3.setIcon(icon_d343001775b048eabafc6adca9df5902);
+        
+    
+            marker_040b96f396364edfbd69e6b010667ca3.bindTooltip(
+                `<div>
+                     선농설렁탕 : 한식 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7b6999d4ab244e0921eb885cf4880a0 = L.marker(
+                [35.5384296, 129.3114362],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_badeaa98bbfa440caa50c1132298ed7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7b6999d4ab244e0921eb885cf4880a0.setIcon(icon_badeaa98bbfa440caa50c1132298ed7d);
+        
+    
+            marker_b7b6999d4ab244e0921eb885cf4880a0.bindTooltip(
+                `<div>
+                     물참면옥 : 한식 - 울산 서울시 중구 성안동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d56fb5e5d26f4b1aad003243de92f61f = L.marker(
+                [35.3679367, 129.313074],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_61e5b62c395f46c98c403693f184c519 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d56fb5e5d26f4b1aad003243de92f61f.setIcon(icon_61e5b62c395f46c98c403693f184c519);
+        
+    
+            marker_d56fb5e5d26f4b1aad003243de92f61f.bindTooltip(
+                `<div>
+                     보광보리밥손칼국수 : 한식 - 울산 울주군 서생면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15b7560a76b2413fb5a852e73263f22c = L.marker(
+                [35.5810773, 129.3794317],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_2dcf9bbd3fd74b45a84dc11dc950915f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_15b7560a76b2413fb5a852e73263f22c.setIcon(icon_2dcf9bbd3fd74b45a84dc11dc950915f);
+        
+    
+            marker_15b7560a76b2413fb5a852e73263f22c.bindTooltip(
+                `<div>
+                     동해농장식당 : 한식 - 울산 북구 연암동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c70180bac5ec457ea4d77b3b6c2964c2 = L.marker(
+                [35.5384296, 129.3114362],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_8e8055fdcbb246b3aa44dcca6c835641 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c70180bac5ec457ea4d77b3b6c2964c2.setIcon(icon_8e8055fdcbb246b3aa44dcca6c835641);
+        
+    
+            marker_c70180bac5ec457ea4d77b3b6c2964c2.bindTooltip(
+                `<div>
+                     궁중삼계탕 : 한식 - 울산 서울시 중구 성남동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f9525bea6c14dc7b55c4afd7be34290 = L.marker(
+                [35.5372606, 129.3268438],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_17ff6e2b190d44d991bd23734e1aa1d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1f9525bea6c14dc7b55c4afd7be34290.setIcon(icon_17ff6e2b190d44d991bd23734e1aa1d7);
+        
+    
+            marker_1f9525bea6c14dc7b55c4afd7be34290.bindTooltip(
+                `<div>
+                     태평원 : 한식 - 울산 남구 달동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fdb6b82ce5d49d68a441ea2658220c7 = L.marker(
+                [35.542741, 129.3446996],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_27ee44fc2f1f44f29d2c8c708e21e516 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9fdb6b82ce5d49d68a441ea2658220c7.setIcon(icon_27ee44fc2f1f44f29d2c8c708e21e516);
+        
+    
+            marker_9fdb6b82ce5d49d68a441ea2658220c7.bindTooltip(
+                `<div>
+                     평양면옥 : 한식 - 울산 남구 삼산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c78a73bf572c4ff8955cdd492d5b7734 = L.marker(
+                [35.542741, 129.3446996],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_3da657ebab1049788d531e5df522f101 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c78a73bf572c4ff8955cdd492d5b7734.setIcon(icon_3da657ebab1049788d531e5df522f101);
+        
+    
+            marker_c78a73bf572c4ff8955cdd492d5b7734.bindTooltip(
+                `<div>
+                     베트죤 : 카페/주점 - 울산 남구 삼산동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11a76a80587f4edbbc43cf45e8fc83ba = L.marker(
+                [35.5449795, 129.2635601],
+                {}
+            ).addTo(map_41cbf5fb6d2d412393573460e851c5ea);
+        
+    
+            var icon_9def6caae92b49199c5004649ba47a38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_11a76a80587f4edbbc43cf45e8fc83ba.setIcon(icon_9def6caae92b49199c5004649ba47a38);
+        
+    
+            marker_11a76a80587f4edbbc43cf45e8fc83ba.bindTooltip(
+                `<div>
+                     세인트폴(Saint paul) : 카페/주점 - 울산 남구 무거동
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
